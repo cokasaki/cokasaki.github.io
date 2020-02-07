@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Survival Modeling | Academic</title>
+    <link>/tags/survival-modeling/</link>
+      <atom:link href="/tags/survival-modeling/index.xml" rel="self" type="application/rss+xml" />
+    <description>Survival Modeling</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Survival Modeling</title>
+      <link>/tags/survival-modeling/</link>
+    </image>
+    
+    <item>
+      <title>Collective Behavior During Dam Passage</title>
+      <link>/project/dam-passage-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/dam-passage-project/</guid>
+      <description>&lt;p&gt;In this project I use a bootstrap method to test a radio-telemetry dataset of Chinook and sockeye salmon for evidence of collective navigation while using fish ladders to pass dams.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

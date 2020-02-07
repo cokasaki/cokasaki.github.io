@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>spacetime | Academic</title>
+    <link>/categories/spacetime/</link>
+      <atom:link href="/categories/spacetime/index.xml" rel="self" type="application/rss+xml" />
+    <description>spacetime</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>spacetime</title>
+      <link>/categories/spacetime/</link>
+    </image>
+    
+    <item>
+      <title>Slides</title>
+      <link>/slides/spacetime-feb-2020/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/slides/spacetime-feb-2020/</guid>
+      <description>&lt;h1 id=&#34;the-spde-method-for-source-inference&#34;&gt;The SPDE Method for Source Inference&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pollution
+&lt;ul&gt;
+&lt;li&gt;Say, PCBs&lt;/li&gt;
+&lt;li&gt;Measure PCB concentration in the Duwamish&lt;/li&gt;
+&lt;li&gt;Where did it come from?&lt;/li&gt;
+&lt;li&gt;Easy case: point source
+&lt;ul&gt;
+&lt;li&gt;Measure all pipe outlets&lt;/li&gt;
+&lt;li&gt;Use regularization method for unknown point source&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hard case: non-point source
+&lt;ul&gt;
+&lt;li&gt;???&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;possible-approaches&#34;&gt;Possible Approaches&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Basically this is the advection-diffusion equation
+&lt;ul&gt;
+&lt;li&gt;Possibly with linear decay&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Existing methods
+&lt;ul&gt;
+&lt;li&gt;fast Fourier transform/Kalman filter (Sigrist et. al 2014)
+&lt;ul&gt;
+&lt;li&gt;complex method&lt;/li&gt;
+&lt;li&gt;non-local basis functions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;finite-difference/finite-element method (Stroud et. al 2010)
+&lt;ul&gt;
+&lt;li&gt;comparatively simple, very popular&lt;/li&gt;
+&lt;li&gt;local basis functions&lt;/li&gt;
+&lt;li&gt;possibly slower in some contexts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gaussian functional regression (Nguyen and Peraire 2015)
+&lt;ul&gt;
+&lt;li&gt;also complex, relatively unknown&lt;/li&gt;
+&lt;li&gt;basically a fancy &amp;ldquo;kernel trick&amp;rdquo; method&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;the-math&#34;&gt;The Math&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Our model is $\mathcal{L}u = f$&lt;/li&gt;
+&lt;li&gt;Assume $\mathcal{L}$ is a linear operator&lt;/li&gt;
+&lt;li&gt;Then we can discretize this as $Lu = f$&lt;/li&gt;
+&lt;li&gt;We model $f\sim X\beta + Z\gamma + \epsilon$&lt;/li&gt;
+&lt;li&gt;If everything is normal $[f|d] \sim \mbox{MVN}(\mu_{\rm post},Q_{\rm post}^{-1})$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;proscons&#34;&gt;Pros/Cons&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fast, lots of sparse matrices&lt;/li&gt;
+&lt;li&gt;Flexible modeling on $f$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Requires known physics&lt;/li&gt;
+&lt;li&gt;Requires linear PDE&lt;/li&gt;
+&lt;li&gt;Rigid statistical modeling of everything else&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Stationary distribution of a space-time SPDE process&lt;/li&gt;
+&lt;li&gt;Stochastic perturbation analysis&lt;/li&gt;
+&lt;li&gt;More case studies
+&lt;ul&gt;
+&lt;li&gt;Animal movement data&lt;/li&gt;
+&lt;li&gt;Snowpack data&lt;/li&gt;
+&lt;li&gt;Pollen data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

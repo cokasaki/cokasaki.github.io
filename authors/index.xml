@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 12 Feb 2020 13:30:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Authors</title>
@@ -15,16 +15,56 @@
     <item>
       <title></title>
       <link>/authors/admin/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 12 Feb 2020 13:30:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
       <description>&lt;p&gt;Colin Okasaki is a graduate student in Quantitative Ecology and Resource Management at the University of Washington. He is advised by Andrew Berdahl in the School of Aquatic and Fishery Sciences. His research interests include bridging the gaps between mechanistic modeling, spatial statistics, and constrained optimization.&lt;/p&gt;
 </description>
     </item>
     
     <item>
+      <title>Andre Archer</title>
+      <link>/authors/andre-archer/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/andre-archer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Eliza W. Matt</title>
+      <link>/authors/eliza-w.-matt/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/eliza-w.-matt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elizabeth Sherman</title>
+      <link>/authors/elizabeth-sherman/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/elizabeth-sherman/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Julie C. Blackwood</title>
+      <link>/authors/julie-c.-blackwood/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/julie-c.-blackwood/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kathryn Montovan</title>
+      <link>/authors/kathryn-montovan/</link>
+      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <guid>/authors/kathryn-montovan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Robert Ford</title>
       <link>/authors/robert-ford/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
       <guid>/authors/robert-ford/</guid>
       <description></description>
     </item>

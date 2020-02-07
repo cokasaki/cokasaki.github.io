@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Inverse Problems | Academic</title>
+    <link>/tags/inverse-problems/</link>
+      <atom:link href="/tags/inverse-problems/index.xml" rel="self" type="application/rss+xml" />
+    <description>Inverse Problems</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Inverse Problems</title>
+      <link>/tags/inverse-problems/</link>
+    </image>
+    
+    <item>
+      <title>Source Inference</title>
+      <link>/project/source-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/source-project/</guid>
+      <description>&lt;p&gt;In this project I investigate the use of stochastic PDEs to conduct inference on the source term of a linear PDE.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

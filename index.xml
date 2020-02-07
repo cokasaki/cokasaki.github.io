@@ -5,7 +5,7 @@
     <link>/</link>
       <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 12 Feb 2020 13:30:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Academic</title>
@@ -55,10 +55,10 @@
     </item>
     
     <item>
-      <title>Example Talk</title>
-      <link>/talk/example/</link>
-      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
-      <guid>/talk/example/</guid>
+      <title>Source Reconstruction for Linear PDEs</title>
+      <link>/talk/spacetime-feb-2020/</link>
+      <pubDate>Wed, 12 Feb 2020 13:30:00 +0000</pubDate>
+      <guid>/talk/spacetime-feb-2020/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
@@ -524,6 +524,110 @@ Three
     </item>
     
     <item>
+      <title>Slides</title>
+      <link>/slides/spacetime-feb-2020/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>/slides/spacetime-feb-2020/</guid>
+      <description>&lt;h1 id=&#34;the-spde-method-for-source-inference&#34;&gt;The SPDE Method for Source Inference&lt;/h1&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Pollution
+&lt;ul&gt;
+&lt;li&gt;Say, PCBs&lt;/li&gt;
+&lt;li&gt;Measure PCB concentration in the Duwamish&lt;/li&gt;
+&lt;li&gt;Where did it come from?&lt;/li&gt;
+&lt;li&gt;Easy case: point source
+&lt;ul&gt;
+&lt;li&gt;Measure all pipe outlets&lt;/li&gt;
+&lt;li&gt;Use regularization method for unknown point source&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Hard case: non-point source
+&lt;ul&gt;
+&lt;li&gt;???&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;possible-approaches&#34;&gt;Possible Approaches&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Basically this is the advection-diffusion equation
+&lt;ul&gt;
+&lt;li&gt;Possibly with linear decay&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Existing methods
+&lt;ul&gt;
+&lt;li&gt;fast Fourier transform/Kalman filter (Sigrist et. al 2014)
+&lt;ul&gt;
+&lt;li&gt;complex method&lt;/li&gt;
+&lt;li&gt;non-local basis functions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;finite-difference/finite-element method (Stroud et. al 2010)
+&lt;ul&gt;
+&lt;li&gt;comparatively simple, very popular&lt;/li&gt;
+&lt;li&gt;local basis functions&lt;/li&gt;
+&lt;li&gt;possibly slower in some contexts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Gaussian functional regression (Nguyen and Peraire 2015)
+&lt;ul&gt;
+&lt;li&gt;also complex, relatively unknown&lt;/li&gt;
+&lt;li&gt;basically a fancy &amp;ldquo;kernel trick&amp;rdquo; method&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;the-math&#34;&gt;The Math&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Our model is $\mathcal{L}u = f$&lt;/li&gt;
+&lt;li&gt;Assume $\mathcal{L}$ is a linear operator&lt;/li&gt;
+&lt;li&gt;Then we can discretize this as $Lu = f$&lt;/li&gt;
+&lt;li&gt;We model $f\sim X\beta + Z\gamma + \epsilon$&lt;/li&gt;
+&lt;li&gt;If everything is normal $[f|d] \sim \mbox{MVN}(\mu_{\rm post},Q_{\rm post}^{-1})$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;proscons&#34;&gt;Pros/Cons&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fast, lots of sparse matrices&lt;/li&gt;
+&lt;li&gt;Flexible modeling on $f$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;But:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Requires known physics&lt;/li&gt;
+&lt;li&gt;Requires linear PDE&lt;/li&gt;
+&lt;li&gt;Rigid statistical modeling of everything else&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;next-steps&#34;&gt;Next Steps&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Stationary distribution of a space-time SPDE process&lt;/li&gt;
+&lt;li&gt;Stochastic perturbation analysis&lt;/li&gt;
+&lt;li&gt;More case studies
+&lt;ul&gt;
+&lt;li&gt;Animal movement data&lt;/li&gt;
+&lt;li&gt;Snowpack data&lt;/li&gt;
+&lt;li&gt;Pollen data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Privacy Policy</title>
       <link>/privacy/</link>
       <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
@@ -542,6 +646,15 @@ Three
     </item>
     
     <item>
+      <title>Collective Behavior During Dam Passage</title>
+      <link>/project/dam-passage-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/dam-passage-project/</guid>
+      <description>&lt;p&gt;In this project I use a bootstrap method to test a radio-telemetry dataset of Chinook and sockeye salmon for evidence of collective navigation while using fish ladders to pass dams.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>External Project</title>
       <link>/project/external-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
@@ -550,15 +663,20 @@ Three
     </item>
     
     <item>
-      <title>Internal Project</title>
-      <link>/project/internal-project/</link>
+      <title>Logistically-Constrained Optimal Spatial Sampling Design</title>
+      <link>/project/opt-design-project/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/internal-project/</guid>
-      <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.&lt;/p&gt;
-&lt;p&gt;Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.&lt;/p&gt;
-&lt;p&gt;Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.&lt;/p&gt;
-&lt;p&gt;Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.&lt;/p&gt;
-&lt;p&gt;Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.&lt;/p&gt;
+      <guid>/project/opt-design-project/</guid>
+      <description>&lt;p&gt;In this project I investigate the use of sparse precision matrices and mixed integer/linear programs to efficient conduct logistically-constrained optimal spatial sampling design.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Source Inference</title>
+      <link>/project/source-project/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/source-project/</guid>
+      <description>&lt;p&gt;In this project I investigate the use of stochastic PDEs to conduct inference on the source term of a linear PDE.&lt;/p&gt;
 </description>
     </item>
     

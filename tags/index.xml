@@ -21,10 +21,10 @@
     </item>
     
     <item>
-      <title>Deep Learning</title>
-      <link>/tags/deep-learning/</link>
+      <title>Bootstrap</title>
+      <link>/tags/bootstrap/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/deep-learning/</guid>
+      <guid>/tags/bootstrap/</guid>
       <description></description>
     </item>
     
@@ -33,6 +33,62 @@
       <link>/tags/demo/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/tags/demo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inverse Problems</title>
+      <link>/tags/inverse-problems/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/inverse-problems/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operations Research</title>
+      <link>/tags/operations-research/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/operations-research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Optimal Sampling Design</title>
+      <link>/tags/optimal-sampling-design/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/optimal-sampling-design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reverse Causation</title>
+      <link>/tags/reverse-causation/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/reverse-causation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spatial Statistics</title>
+      <link>/tags/spatial-statistics/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/spatial-statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic PDE</title>
+      <link>/tags/stochastic-pde/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/stochastic-pde/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Survival Modeling</title>
+      <link>/tags/survival-modeling/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/survival-modeling/</guid>
       <description></description>
     </item>
     
