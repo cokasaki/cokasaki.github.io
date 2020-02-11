@@ -534,13 +534,12 @@ Three
 &lt;ul&gt;
 &lt;li&gt;Pollution
 &lt;ul&gt;
-&lt;li&gt;Say, PCBs&lt;/li&gt;
-&lt;li&gt;Measure PCB concentration in the Duwamish&lt;/li&gt;
+&lt;li&gt;Say, PCBs in the Duwamish&lt;/li&gt;
 &lt;li&gt;Where did it come from?&lt;/li&gt;
 &lt;li&gt;Easy case: point source
 &lt;ul&gt;
 &lt;li&gt;Measure all pipe outlets&lt;/li&gt;
-&lt;li&gt;Use regularization method for unknown point source&lt;/li&gt;
+&lt;li&gt;Use regularization method for unknown source&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;Hard case: non-point source
@@ -561,13 +560,13 @@ Three
 &lt;/li&gt;
 &lt;li&gt;Existing methods
 &lt;ul&gt;
-&lt;li&gt;fast Fourier transform/Kalman filter (Sigrist et. al 2014)
+&lt;li&gt;FFT/Kalman filter (Sigrist et. al 2014)
 &lt;ul&gt;
 &lt;li&gt;complex method&lt;/li&gt;
 &lt;li&gt;non-local basis functions&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;finite-difference/finite-element method (Stroud et. al 2010)
+&lt;li&gt;finite-difference/element method (Stroud et. al 2010)
 &lt;ul&gt;
 &lt;li&gt;comparatively simple, very popular&lt;/li&gt;
 &lt;li&gt;local basis functions&lt;/li&gt;
@@ -624,24 +623,6 @@ Three
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Privacy Policy</title>
-      <link>/privacy/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/privacy/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Terms</title>
-      <link>/terms/</link>
-      <pubDate>Thu, 28 Jun 2018 00:00:00 +0100</pubDate>
-      <guid>/terms/</guid>
-      <description>&lt;p&gt;&amp;hellip;&lt;/p&gt;
 </description>
     </item>
     
