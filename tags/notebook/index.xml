@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notebook | Academic</title>
+    <link>/tags/notebook/</link>
+      <atom:link href="/tags/notebook/index.xml" rel="self" type="application/rss+xml" />
+    <description>Notebook</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <title>Notebook</title>
+      <link>/tags/notebook/</link>
+    </image>
+    
+    <item>
+      <title>Lab Notebook Structure</title>
+      <link>/post/notebook/outline/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/outline/</guid>
+      <description>&lt;p&gt;In this post I will outline the structure of my virtual lab notebook, for use during this time of woe. This is necessitated by the current COVID-19 work-from-home crisis, but will be helpful in general as a tool for accountability and productivity.&lt;/p&gt;
+&lt;h2 id=&#34;post-frequency-&#34;&gt;Post Frequency&lt;/h2&gt;
+&lt;p&gt;I will post to the lab notebook at the beginning and end of each year, quarter, and week. I will also post to the lab notebook once per day.&lt;/p&gt;
+&lt;h2 id=&#34;post-content-&#34;&gt;Post Content&lt;/h2&gt;
+&lt;p&gt;In each multi-day post I will outline my goals for the current time period, along with a self-imposed due date, and (particularly for yearly and quarterly posts) a rough outline of intermediate steps. Then at the end of the period I will summarize my progress toward those goals as well as any major progress in addition to those goals that I undertook in that time.&lt;/p&gt;
+&lt;p&gt;In each daily post I will outline what my goals were for the day, along with what I actually spent my time on. I will post mathematical and scientific outputs such as documents and plots that I produced that day, and reflect on my productivity and time management.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 2020</title>
+      <link>/post/notebook/2020/annualpost-1/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/annualpost-1/</guid>
+      <description>&lt;p&gt;I am just starting this lab notebook now in March 2020, so almost a third of the year is behind me already. That said, one of my big goals for the year, submitting my 
+&lt;a href=&#34;content/project/dam-passage-time&#34;&gt;dam passage&lt;/a&gt;
+ paper to Proc B, I have already accomplished! Hooray! Hopefully I can continue the momentum now that COVID-19 has well and truly set in.&lt;/p&gt;
+&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;I have a tendency to be overly ambitious with my goal timelines. I think I&amp;rsquo;m okay with that for now, but I&amp;rsquo;m trying to temper my expectations a little bit. I&amp;rsquo;m hopeful that with my dam passage project behind me I can focus my time and make more steady progress on my other projects.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complete my bypass to the PhD track by April 1
+&lt;ul&gt;
+&lt;li&gt;This is a pretty near-term goal but has been a long time coming&lt;/li&gt;
+&lt;li&gt;At this point most of what I need is just to do a bunch of lit reviewing and write up a beefier dissertation proposal than I had the first time round&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Submit my source inference paper by August 1 2020
+&lt;ul&gt;
+&lt;li&gt;Hopefully the timeline on this is not too ambitious. I have a lot of the theory and code done already, but case studies, editting, and background reading take forever.&lt;/li&gt;
+&lt;li&gt;Sub goal: Write up animal movement case study by April 10&lt;/li&gt;
+&lt;li&gt;Sub goal: Set up model and begin data analysis for pollen case study by April 17&lt;/li&gt;
+&lt;li&gt;Sub goal: Write up pollen case study by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete third case study by June 5&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete all background reading by June 5&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete final editing by July 3&lt;/li&gt;
+&lt;li&gt;This leaves one month of wiggle room for things to take longer than I hope&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Prepare to TA by September 15
+&lt;ul&gt;
+&lt;li&gt;This fall will be my first time TAing in any capacity since I was an undergrad. I will have more responsibility now than I did then and I want to make sure I am prepared. To do this I plan on doing background reading on teaching and TAing ahead of time. I know the best experience comes from doing but this is all I can do for now.&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse UW TAing 
+&lt;a href=&#34;https://www.washington.edu/teaching/topics/just-for-tas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resources&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse CMU CollectedWisdom TAing 
+&lt;a href=&#34;https://www.cmu.edu/teaching/resources/PublicationsArchives/CollectedWisdom/collectwisdom-teachingstrategies.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resource&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Read some of the evidence-based 
+&lt;a href=&#34;https://visible-learning.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visible Learning&lt;/a&gt;
+ resources&lt;/li&gt;
+&lt;li&gt;I haven&amp;rsquo;t assigned sub-goal deadlines because these are resources I intend to digest slowly over the period. Instead my goal is to do a little of this every week.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Submit my spatial survey design paper by Jan 1
+&lt;ul&gt;
+&lt;li&gt;I feel pretty good about getting the other goals done, if not on time, at least this year. This one is the stretch-iest of all of them. But I certainly won&amp;rsquo;t do it if I give up on it now!&lt;/li&gt;
+&lt;li&gt;Sub goal: Find good spatial dataset by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete background reading by July 3&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete simulated case study by September 18&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete final edits by December 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 1</title>
+      <link>/post/notebook/2020/spring/week1/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Part of the week has already gone by, but I&amp;rsquo;ll go ahead and fill in some meta goals anyway&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure by Tuesday&lt;/li&gt;
+&lt;li&gt;Make schedule for reading about teaching and browse UW 
+&lt;a href=&#34;https://www.washington.edu/teaching/topics/just-for-tas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resources&lt;/a&gt;
+ by Wednesday&lt;/li&gt;
+&lt;li&gt;Refamiliarize myself with animal movement case study By Thursday&lt;/li&gt;
+&lt;li&gt;Complete all references for optimal design chapter in bypass proposal by Friday&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Spring 2020</title>
+      <link>/post/notebook/2020/spring/spring-post-1/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/spring-post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Much of this is copied and pasted from my goals for the year:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complete my bypass to the PhD track by April 1&lt;/li&gt;
+&lt;li&gt;Make progress on source inference
+&lt;ul&gt;
+&lt;li&gt;Sub goal: Write up animal movement case study by April 10&lt;/li&gt;
+&lt;li&gt;Sub goal: Set up model and begin data analysis for pollen case study by April 17&lt;/li&gt;
+&lt;li&gt;Sub goal: Write up pollen case study by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete third case study by June 5&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete all background reading by June 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Prepare to TA
+&lt;ul&gt;
+&lt;li&gt;My real goal here is to do just a little bit of reading, every single week&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse UW TAing 
+&lt;a href=&#34;https://www.washington.edu/teaching/topics/just-for-tas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resources&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse CMU CollectedWisdom TAing 
+&lt;a href=&#34;https://www.cmu.edu/teaching/resources/PublicationsArchives/CollectedWisdom/collectwisdom-teachingstrategies.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resource&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Read some of the evidence-based 
+&lt;a href=&#34;https://visible-learning.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visible Learning&lt;/a&gt;
+ resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Make progress on optimal survey design
+&lt;ul&gt;
+&lt;li&gt;Sub goal: Find good spatial dataset by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete half of background reading by June 15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

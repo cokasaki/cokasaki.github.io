@@ -5,12 +5,143 @@
     <link>/authors/admin/</link>
       <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 12 Feb 2020 13:30:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Academic</title>
       <link>/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>Lab Notebook Structure</title>
+      <link>/post/notebook/outline/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/outline/</guid>
+      <description>&lt;p&gt;In this post I will outline the structure of my virtual lab notebook, for use during this time of woe. This is necessitated by the current COVID-19 work-from-home crisis, but will be helpful in general as a tool for accountability and productivity.&lt;/p&gt;
+&lt;h2 id=&#34;post-frequency-&#34;&gt;Post Frequency&lt;/h2&gt;
+&lt;p&gt;I will post to the lab notebook at the beginning and end of each year, quarter, and week. I will also post to the lab notebook once per day.&lt;/p&gt;
+&lt;h2 id=&#34;post-content-&#34;&gt;Post Content&lt;/h2&gt;
+&lt;p&gt;In each multi-day post I will outline my goals for the current time period, along with a self-imposed due date, and (particularly for yearly and quarterly posts) a rough outline of intermediate steps. Then at the end of the period I will summarize my progress toward those goals as well as any major progress in addition to those goals that I undertook in that time.&lt;/p&gt;
+&lt;p&gt;In each daily post I will outline what my goals were for the day, along with what I actually spent my time on. I will post mathematical and scientific outputs such as documents and plots that I produced that day, and reflect on my productivity and time management.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 2020</title>
+      <link>/post/notebook/2020/annualpost-1/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/annualpost-1/</guid>
+      <description>&lt;p&gt;I am just starting this lab notebook now in March 2020, so almost a third of the year is behind me already. That said, one of my big goals for the year, submitting my 
+&lt;a href=&#34;content/project/dam-passage-time&#34;&gt;dam passage&lt;/a&gt;
+ paper to Proc B, I have already accomplished! Hooray! Hopefully I can continue the momentum now that COVID-19 has well and truly set in.&lt;/p&gt;
+&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;I have a tendency to be overly ambitious with my goal timelines. I think I&amp;rsquo;m okay with that for now, but I&amp;rsquo;m trying to temper my expectations a little bit. I&amp;rsquo;m hopeful that with my dam passage project behind me I can focus my time and make more steady progress on my other projects.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complete my bypass to the PhD track by April 1
+&lt;ul&gt;
+&lt;li&gt;This is a pretty near-term goal but has been a long time coming&lt;/li&gt;
+&lt;li&gt;At this point most of what I need is just to do a bunch of lit reviewing and write up a beefier dissertation proposal than I had the first time round&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Submit my source inference paper by August 1 2020
+&lt;ul&gt;
+&lt;li&gt;Hopefully the timeline on this is not too ambitious. I have a lot of the theory and code done already, but case studies, editting, and background reading take forever.&lt;/li&gt;
+&lt;li&gt;Sub goal: Write up animal movement case study by April 10&lt;/li&gt;
+&lt;li&gt;Sub goal: Set up model and begin data analysis for pollen case study by April 17&lt;/li&gt;
+&lt;li&gt;Sub goal: Write up pollen case study by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete third case study by June 5&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete all background reading by June 5&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete final editing by July 3&lt;/li&gt;
+&lt;li&gt;This leaves one month of wiggle room for things to take longer than I hope&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Prepare to TA by September 15
+&lt;ul&gt;
+&lt;li&gt;This fall will be my first time TAing in any capacity since I was an undergrad. I will have more responsibility now than I did then and I want to make sure I am prepared. To do this I plan on doing background reading on teaching and TAing ahead of time. I know the best experience comes from doing but this is all I can do for now.&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse UW TAing 
+&lt;a href=&#34;https://www.washington.edu/teaching/topics/just-for-tas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resources&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse CMU CollectedWisdom TAing 
+&lt;a href=&#34;https://www.cmu.edu/teaching/resources/PublicationsArchives/CollectedWisdom/collectwisdom-teachingstrategies.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resource&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Read some of the evidence-based 
+&lt;a href=&#34;https://visible-learning.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visible Learning&lt;/a&gt;
+ resources&lt;/li&gt;
+&lt;li&gt;I haven&amp;rsquo;t assigned sub-goal deadlines because these are resources I intend to digest slowly over the period. Instead my goal is to do a little of this every week.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Submit my spatial survey design paper by Jan 1
+&lt;ul&gt;
+&lt;li&gt;I feel pretty good about getting the other goals done, if not on time, at least this year. This one is the stretch-iest of all of them. But I certainly won&amp;rsquo;t do it if I give up on it now!&lt;/li&gt;
+&lt;li&gt;Sub goal: Find good spatial dataset by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete background reading by July 3&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete simulated case study by September 18&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete final edits by December 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 1</title>
+      <link>/post/notebook/2020/spring/week1/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Part of the week has already gone by, but I&amp;rsquo;ll go ahead and fill in some meta goals anyway&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure by Tuesday&lt;/li&gt;
+&lt;li&gt;Make schedule for reading about teaching and browse UW 
+&lt;a href=&#34;https://www.washington.edu/teaching/topics/just-for-tas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resources&lt;/a&gt;
+ by Wednesday&lt;/li&gt;
+&lt;li&gt;Refamiliarize myself with animal movement case study By Thursday&lt;/li&gt;
+&lt;li&gt;Complete all references for optimal design chapter in bypass proposal by Friday&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Spring 2020</title>
+      <link>/post/notebook/2020/spring/spring-post-1/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/spring-post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Much of this is copied and pasted from my goals for the year:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complete my bypass to the PhD track by April 1&lt;/li&gt;
+&lt;li&gt;Make progress on source inference
+&lt;ul&gt;
+&lt;li&gt;Sub goal: Write up animal movement case study by April 10&lt;/li&gt;
+&lt;li&gt;Sub goal: Set up model and begin data analysis for pollen case study by April 17&lt;/li&gt;
+&lt;li&gt;Sub goal: Write up pollen case study by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete third case study by June 5&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete all background reading by June 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Prepare to TA
+&lt;ul&gt;
+&lt;li&gt;My real goal here is to do just a little bit of reading, every single week&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse UW TAing 
+&lt;a href=&#34;https://www.washington.edu/teaching/topics/just-for-tas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resources&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse CMU CollectedWisdom TAing 
+&lt;a href=&#34;https://www.cmu.edu/teaching/resources/PublicationsArchives/CollectedWisdom/collectwisdom-teachingstrategies.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resource&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Read some of the evidence-based 
+&lt;a href=&#34;https://visible-learning.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visible Learning&lt;/a&gt;
+ resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Make progress on optimal survey design
+&lt;ul&gt;
+&lt;li&gt;Sub goal: Find good spatial dataset by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete half of background reading by June 15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Source Reconstruction for Linear PDEs</title>
@@ -33,76 +164,6 @@
 .&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Further talk details can easily be added to this page using &lt;em&gt;Markdown&lt;/em&gt; and $\rm \LaTeX$ math code.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example preprint / working paper</title>
-      <link>/publication/preprint/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/publication/preprint/</guid>
-      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
-  &lt;div&gt;
-    Click the &lt;em&gt;Slides&lt;/em&gt; button above to demo Academic&amp;rsquo;s Markdown slides feature.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;Supplementary notes can be added here, including 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;code and math&lt;/a&gt;
-.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Display Jupyter Notebooks with Academic</title>
-      <link>/post/jupyter/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/post/jupyter/</guid>
-      <description>&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;from IPython.core.display import Image
-Image(&#39;https://www.python.org/static/community_logos/python-logo-master-v3-TM-flattened.png&#39;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;&lt;img src=&#34;./index_1_0.png&#34; alt=&#34;png&#34;&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;print(&amp;quot;Welcome to Academic!&amp;quot;)
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;Welcome to Academic!
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;install-python-and-jupyterlab&#34;&gt;Install Python and JupyterLab&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://www.anaconda.com/distribution/#download-section&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Install Anaconda&lt;/a&gt;
- which includes Python 3 and JupyterLab.&lt;/p&gt;
-&lt;p&gt;Alternatively, install JupyterLab with &lt;code&gt;pip3 install jupyterlab&lt;/code&gt;.&lt;/p&gt;
-&lt;h2 id=&#34;create-or-upload-a-jupyter-notebook&#34;&gt;Create or upload a Jupyter notebook&lt;/h2&gt;
-&lt;p&gt;Run the following commands in your Terminal, substituting &lt;code&gt;&amp;lt;MY-WEBSITE-FOLDER&amp;gt;&lt;/code&gt; and &lt;code&gt;&amp;lt;SHORT-POST-TITLE&amp;gt;&lt;/code&gt; with the file path to your Academic website folder and a short title for your blog post (use hyphens instead of spaces), respectively:&lt;/p&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;mkdir -p &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-cd &amp;lt;MY-WEBSITE-FOLDER&amp;gt;/content/post/&amp;lt;SHORT-POST-TITLE&amp;gt;/
-jupyter lab index.ipynb
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;The &lt;code&gt;jupyter&lt;/code&gt; command above will launch the JupyterLab editor, allowing us to add Academic metadata and write the content.&lt;/p&gt;
-&lt;h2 id=&#34;edit-your-post-metadata&#34;&gt;Edit your post metadata&lt;/h2&gt;
-&lt;p&gt;The first cell of your Jupter notebook will contain your post metadata (
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/front-matter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;front matter&lt;/a&gt;
-).&lt;/p&gt;
-&lt;p&gt;In Jupter, choose &lt;em&gt;Markdown&lt;/em&gt; as the type of the first cell and wrap your Academic metadata in three dashes, indicating that it is YAML front matter:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;---
-title: My post&#39;s title
-date: 2019-09-01
-
-# Put any other Academic metadata here...
----
-&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Edit the metadata of your post, using the 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;documentation&lt;/a&gt;
- as a guide to the available options.&lt;/p&gt;
-&lt;p&gt;To set a 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/managing-content/#featured-image&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;featured image&lt;/a&gt;
-, place an image named &lt;code&gt;featured&lt;/code&gt; into your post&amp;rsquo;s folder.&lt;/p&gt;
-&lt;p&gt;For other tips, such as using math, see the guide on 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;writing content with Academic&lt;/a&gt;
-.&lt;/p&gt;
-&lt;h2 id=&#34;convert-notebook-to-markdown&#34;&gt;Convert notebook to Markdown&lt;/h2&gt;
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;jupyter nbconvert index.ipynb --to markdown --NbConvertApp.output_files_dir=.
-&lt;/code&gt;&lt;/pre&gt;
-&lt;h2 id=&#34;example&#34;&gt;Example&lt;/h2&gt;
-&lt;p&gt;This post was created with Jupyter. The orginal files can be found at &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&#34;&gt;https://github.com/gcushen/hugo-academic/tree/master/exampleSite/content/post/jupyter&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
@@ -348,195 +409,10 @@ Three
     </item>
     
     <item>
-      <title>Academic: the website builder for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/post/getting-started/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Create a free website with Academic using Markdown, Jupyter, or RStudio. Choose a beautiful color theme and build anything with the Page Builder - over 40 &lt;em&gt;widgets&lt;/em&gt;, &lt;em&gt;themes&lt;/em&gt;, and &lt;em&gt;language packs&lt;/em&gt; included!&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Check out the latest &lt;strong&gt;demo&lt;/strong&gt;&lt;/a&gt;
- of what you&amp;rsquo;ll get in less than 10 minutes, or 
-&lt;a href=&#34;https://sourcethemes.com/academic/#expo&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;view the &lt;strong&gt;showcase&lt;/strong&gt;&lt;/a&gt;
- of personal, project, and business sites.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;👉 
-&lt;a href=&#34;#install&#34;&gt;&lt;strong&gt;Get Started&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;📚 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the &lt;strong&gt;documentation&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;💬 
-&lt;a href=&#34;https://discourse.gohugo.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Ask a question&lt;/strong&gt; on the forum&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;👥 
-&lt;a href=&#34;https://spectrum.chat/academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Chat with the &lt;strong&gt;community&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;🐦 Twitter: 
-&lt;a href=&#34;https://twitter.com/source_themes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@source_themes&lt;/a&gt;
- 
-&lt;a href=&#34;https://twitter.com/GeorgeCushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@GeorgeCushen&lt;/a&gt;
- 
-&lt;a href=&#34;https://twitter.com/search?q=%23MadeWithAcademic&amp;amp;src=typd&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#MadeWithAcademic&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;💡 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Request a &lt;strong&gt;feature&lt;/strong&gt; or report a &lt;strong&gt;bug&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;⬆️ &lt;strong&gt;Updating?&lt;/strong&gt; View the 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Update Guide&lt;/a&gt;
- and 
-&lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Release Notes&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;❤ &lt;strong&gt;Support development&lt;/strong&gt; of Academic:
-&lt;ul&gt;
-&lt;li&gt;☕️ 
-&lt;a href=&#34;https://paypal.me/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Donate a coffee&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;💵 
-&lt;a href=&#34;https://www.patreon.com/cushen&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Become a backer on &lt;strong&gt;Patreon&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;🖼️ 
-&lt;a href=&#34;https://www.redbubble.com/people/neutreno/works/34387919-academic&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Decorate your laptop or journal with an Academic &lt;strong&gt;sticker&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;👕 
-&lt;a href=&#34;https://academic.threadless.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wear the &lt;strong&gt;T-shirt&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;👩‍💻 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/contribute/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Contribute&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure&gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; data-caption=&#34;Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.&#34;&gt;
-
-
-  &lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;&#34;  &gt;
-&lt;/a&gt;
-
-
-  
-  
-  &lt;figcaption&gt;
-    Academic is mobile first with a responsive design to ensure that your site looks stunning on every device.
-  &lt;/figcaption&gt;
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;&lt;strong&gt;Key features:&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Page builder&lt;/strong&gt; - Create &lt;em&gt;anything&lt;/em&gt; with 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/page-builder/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;widgets&lt;/strong&gt;&lt;/a&gt;
- and 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;elements&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Edit any type of content&lt;/strong&gt; - Blog posts, publications, talks, slides, projects, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Create content&lt;/strong&gt; in 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Markdown&lt;/strong&gt;&lt;/a&gt;
-, 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/jupyter/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Jupyter&lt;/strong&gt;&lt;/a&gt;
-, or 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Plugin System&lt;/strong&gt; - Fully customizable 
-&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;color&lt;/strong&gt; and &lt;strong&gt;font themes&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Display Code and Math&lt;/strong&gt; - Code highlighting and 
-&lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;LaTeX math&lt;/a&gt;
- supported&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Integrations&lt;/strong&gt; - 
-&lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Google Analytics&lt;/a&gt;
-, 
-&lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Disqus commenting&lt;/a&gt;
-, Maps, Contact Forms, and more!&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Beautiful Site&lt;/strong&gt; - Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Industry-Leading SEO&lt;/strong&gt; - Help get your website found on search engines and social media&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Media Galleries&lt;/strong&gt; - Display your images and videos with captions in a customizable gallery&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Mobile Friendly&lt;/strong&gt; - Look amazing on every screen with a mobile friendly version of your site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-language&lt;/strong&gt; - 15+ language packs including English, 中文, and Português&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Multi-user&lt;/strong&gt; - Each author gets their own profile page&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Privacy Pack&lt;/strong&gt; - Assists with GDPR&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Stand Out&lt;/strong&gt; - Bring your site to life with animation, parallax backgrounds, and scroll effects&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;One-Click Deployment&lt;/strong&gt; - No servers. No databases. Only files.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
-&lt;p&gt;Academic comes with &lt;strong&gt;automatic day (light) and night (dark) mode&lt;/strong&gt; built-in. Alternatively, visitors can  choose their preferred mode - click the sun/moon icon in the top right of the 
-&lt;a href=&#34;https://academic-demo.netlify.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Demo&lt;/a&gt;
- to see it in action! Day/night mode can also be disabled by the site admin in &lt;code&gt;params.toml&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/themes/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Choose a stunning &lt;strong&gt;theme&lt;/strong&gt; and &lt;strong&gt;font&lt;/strong&gt;&lt;/a&gt;
- for your site. Themes are fully 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/customization/#custom-theme&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;customizable&lt;/a&gt;
-.&lt;/p&gt;
-&lt;h2 id=&#34;ecosystem&#34;&gt;Ecosystem&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://github.com/sourcethemes/academic-admin&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Admin&lt;/a&gt;
-:&lt;/strong&gt; An admin tool to import publications from BibTeX or import assets for an offline site&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;
-&lt;a href=&#34;https://github.com/sourcethemes/academic-scripts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Academic Scripts&lt;/a&gt;
-:&lt;/strong&gt; Scripts to help migrate content to new versions of Academic&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-web-browser&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;one-click install using your web browser (recommended)&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-git&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer using &lt;strong&gt;Git&lt;/strong&gt; with the Command Prompt/Terminal app&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer by downloading the &lt;strong&gt;ZIP files&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;install on your computer with &lt;strong&gt;RStudio&lt;/strong&gt;&lt;/a&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Then 
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/get-started/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;personalize and deploy your new site&lt;/a&gt;
-.&lt;/p&gt;
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;View the Update Guide&lt;/a&gt;
-.&lt;/p&gt;
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Github&lt;/a&gt;
- to help keep track of 
-&lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;updates&lt;/a&gt;
-.&lt;/p&gt;
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-&lt;p&gt;Copyright 2016-present 
-&lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;George Cushen&lt;/a&gt;
-.&lt;/p&gt;
-&lt;p&gt;Released under the 
-&lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;MIT&lt;/a&gt;
- license.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>An example journal article</title>
-      <link>/publication/journal-article/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
-      <guid>/publication/journal-article/</guid>
+      <title>Modeling alternative stable state in Caribbean coral reefs</title>
+      <link>/publication/coral-reefs/</link>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/publication/coral-reefs/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.
@@ -554,10 +430,10 @@ Three
     </item>
     
     <item>
-      <title>An example conference paper</title>
-      <link>/publication/conference-paper/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/publication/conference-paper/</guid>
+      <title>Slowing the Evolution and Outbreak of Antibiotic Resistance</title>
+      <link>/publication/antibiotic-resistance/</link>
+      <pubDate>Thu, 01 Jun 2017 00:00:00 +0000</pubDate>
+      <guid>/publication/antibiotic-resistance/</guid>
       <description>&lt;div class=&#34;alert alert-note&#34;&gt;
   &lt;div&gt;
     Click the &lt;em&gt;Cite&lt;/em&gt; button above to demo the feature to enable visitors to import publication metadata into their reference management software.

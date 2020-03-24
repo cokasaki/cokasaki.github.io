@@ -19,17 +19,62 @@
   
   <url>
     <loc>/authors/admin/</loc>
-    <lastmod>2020-02-12T13:30:00+00:00</lastmod>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-02-12T13:30:00+00:00</lastmod>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-02-12T13:30:00+00:00</lastmod>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/notebook/outline/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/notebook/2020/annualpost-1/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/notebook/2020/spring/week1/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/notebook/2020/spring/spring-post-1/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/notebook/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/notebook/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-03-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -43,53 +88,13 @@
   </url>
   
   <url>
-    <loc>/post/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <loc>/tags/spacetime/</loc>
+    <lastmod>2020-02-12T13:30:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/writing-technical-content/</loc>
-    <lastmod>2019-07-12T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/3/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/preprint/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/source-themes/</loc>
-    <lastmod>2019-04-07T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/jupyter/</loc>
-    <lastmod>2019-09-05T00:00:00+00:00</lastmod>
+    <loc>/courses/</loc>
+    <lastmod>2019-05-05T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -118,13 +123,63 @@
   </url>
   
   <url>
-    <loc>/tags/spacetime/</loc>
+    <loc>/tags/spatial-statistics/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/spatial-statistics/</loc>
-    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/andre-archer/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/eliza-w.-matt/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/elizabeth-sherman/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/julie-c.-blackwood/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/kathryn-montovan/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/coral-reefs/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/source-themes/</loc>
+    <lastmod>2018-02-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/antibiotic-resistance/</loc>
+    <lastmod>2017-06-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -134,16 +189,6 @@
   
   <url>
     <loc>/project/dam-passage-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/demo/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/project/external-project/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -190,100 +235,6 @@
   <url>
     <loc>/tags/survival-modeling/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/academic/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/getting-started/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/demo/</loc>
-    <lastmod>2019-04-17T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/journal-article/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/andre-archer/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/eliza-w.-matt/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/elizabeth-sherman/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/julie-c.-blackwood/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/kathryn-montovan/</loc>
-    <lastmod>2015-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/2015-07-23-r-rmarkdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/plot/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/r/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/r-markdown/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/conference-paper/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/robert-ford/</loc>
-    <lastmod>2013-07-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/</loc>
   </url>
   
 </urlset>
