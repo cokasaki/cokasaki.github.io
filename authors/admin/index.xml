@@ -5,12 +5,33 @@
     <link>/authors/admin/</link>
       <atom:link href="/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Academic</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 24 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 25 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
       <title>Academic</title>
       <link>/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>Lab Notebook: 3/25</title>
+      <link>/post/notebook/2020/spring/week1/wedn/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week1/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make schedule for reading about teaching, and begin browsing UW resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make edits from yesterdays read-through of bypass proposal and look for last couple references&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Refamiliarize myself with animal movement case study&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>Lab Notebook Structure</title>
@@ -84,10 +105,57 @@
     </item>
     
     <item>
-      <title>Lab Notebook: Sp20 Week 1</title>
-      <link>/post/notebook/2020/spring/week1/</link>
+      <title>Lab Notebook: 3/24</title>
+      <link>/post/notebook/2020/spring/week1/tues/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/post/notebook/2020/spring/week1/</guid>
+      <guid>/post/notebook/2020/spring/week1/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add references for optimal design chapter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Refamiliarize myself with animal movement case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-4&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add references for optimal design chapter
+&lt;ul&gt;
+&lt;li&gt;including major reference to Lee 1998, which actually does do logistically constrained optimal design but with a different objective function&lt;/li&gt;
+&lt;li&gt;propose to compare performance of my method with his, as well as to speed up his method with sparse matrices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 4-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on new idea for logistically-constrained design
+&lt;ul&gt;
+&lt;li&gt;logistically-constrained random sampling?&lt;/li&gt;
+&lt;li&gt;a number of possibilities for how to achieve it&lt;/li&gt;
+&lt;li&gt;all rely upon being able to calculate or estimate $\pi_i$ and $\pi_{ij}$ the first- and second-order inclusion probabilities&lt;/li&gt;
+&lt;li&gt;if we want to estimate them, can we define a Gaussian-like spatial process over second-order inclusion probabilities&lt;/li&gt;
+&lt;li&gt;how can we do that? what is the domain of valid second-order inclusion probability matrices?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 1</title>
+      <link>/post/notebook/2020/spring/week1/post-1/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week1/post-1/</guid>
       <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Part of the week has already gone by, but I&amp;rsquo;ll go ahead and fill in some meta goals anyway&lt;/p&gt;
 &lt;ul&gt;
