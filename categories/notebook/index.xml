@@ -31,6 +31,22 @@
 &lt;li&gt;Think more about second-order inclusion probabilities&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Fixed Anaconda error, then discovered issue where some code was not pushed to GitHub. Unable to find the original code (mostly my implementation of Dirichlet BCs), but re-writing it should be a useful (if annyoing) exercise.&lt;/p&gt;
+&lt;p&gt;Started reading UW resources and made several 
+&lt;a href=&#34;/post/teaching&#34;&gt;posts&lt;/a&gt;
+. Not all of it is relevant just yet, but I&amp;rsquo;d like to get through all of it and start thinking about everything together.&lt;/p&gt;
+&lt;p&gt;Found 
+&lt;a href=&#34;https://www.jstor.org/stable/23357227&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this paper&lt;/a&gt;
+ about random sampling with given second-order inclusion probabilities. It gives results about which inclusion probability matrices (IPMs) are valid (the answer is complicated) and constructed a maximum-entropy distribution for fixed-size sampling with fixed IPM.&lt;/p&gt;
+&lt;p&gt;Thoughts on IPMs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Want to incorporate logistics somehow&lt;/li&gt;
+&lt;li&gt;Can we estimate IPMs after filtering for feasible designs?&lt;/li&gt;
+&lt;li&gt;Can we calculate IPMs after filtering for feasible designs?&lt;/li&gt;
+&lt;li&gt;Can we calculate probability of infeasibility for CP(2) designs?&lt;/li&gt;
+&lt;li&gt;How do CP(2) designs work in space-time?&lt;/li&gt;
+&lt;li&gt;I feel like there&amp;rsquo;s something in here somewhere but it&amp;rsquo;s buried deep&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
