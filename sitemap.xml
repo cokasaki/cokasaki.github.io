@@ -238,32 +238,22 @@
   </url>
   
   <url>
-    <loc>/tags/bootstrap/</loc>
+    <loc>/project/dam-passage/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/dam-passage-project/</loc>
+    <loc>/tags/ecology/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/tags/inverse-problems/</loc>
+    <loc>/project/opt-design/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/opt-design-project/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/operations-research/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/optimal-sampling-design/</loc>
+    <loc>/tags/optimization/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
@@ -273,22 +263,17 @@
   </url>
   
   <url>
-    <loc>/tags/reverse-causation/</loc>
+    <loc>/project/source/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/project/source-project/</loc>
+    <loc>/tags/statistics/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/stochastic-pde/</loc>
-    <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/survival-modeling/</loc>
     <lastmod>2016-04-27T00:00:00+00:00</lastmod>
   </url>
   
