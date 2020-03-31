@@ -5,12 +5,40 @@
     <link>/tags/notebook/</link>
       <atom:link href="/tags/notebook/index.xml" rel="self" type="application/rss+xml" />
     <description>Notebook</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 30 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 31 Mar 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon.png</url>
       <title>Notebook</title>
       <link>/tags/notebook/</link>
     </image>
+    
+    <item>
+      <title>Lab Notebook: 3/31</title>
+      <link>/post/notebook/2020/spring/week2/tues/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look over the rest of QSCI HW 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Take notes from Visible Learning Chapter 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hold office hours&lt;/li&gt;
+&lt;li&gt;When no one shows up finish up looking at QSCI HW 1&lt;/li&gt;
+&lt;li&gt;Then read Visible Learning Chapter 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
     
     <item>
       <title>Lab Notebook: 3/30</title>
@@ -31,6 +59,7 @@
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did the first half of the QSCI HW, read Ch 1, but did not end up having time to work on the BC code.&lt;/p&gt;
 </description>
     </item>
     

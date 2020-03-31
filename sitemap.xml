@@ -18,6 +18,36 @@
   </url>
   
   <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/notebook/2020/spring/week2/tues/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/notebook/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/notebook/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-03-31T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/teaching/visible-learning/ch-02/</loc>
     <lastmod>2020-03-30T10:56:37-07:00</lastmod>
   </url>
@@ -168,11 +198,6 @@
   </url>
   
   <url>
-    <loc>/authors/</loc>
-    <lastmod>2020-03-30T11:09:09-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/books/</loc>
     <lastmod>2020-03-30T10:56:37-07:00</lastmod>
   </url>
@@ -183,8 +208,8 @@
   </url>
   
   <url>
-    <loc>/categories/</loc>
-    <lastmod>2020-03-30T11:09:09-07:00</lastmod>
+    <loc>/post/teaching/visible-learning/core-takeaways/</loc>
+    <lastmod>2020-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -198,22 +223,7 @@
   </url>
   
   <url>
-    <loc>/tags/notebook/</loc>
-    <lastmod>2020-03-30T11:07:01-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/notebook/</loc>
-    <lastmod>2020-03-30T11:07:01-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/notes/</loc>
-    <lastmod>2020-03-30T11:09:09-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-03-30T11:09:09-07:00</lastmod>
   </url>
   

@@ -13,6 +13,34 @@
     </image>
     
     <item>
+      <title>Lab Notebook: 3/31</title>
+      <link>/post/notebook/2020/spring/week2/tues/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look over the rest of QSCI HW 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Take notes from Visible Learning Chapter 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hold office hours&lt;/li&gt;
+&lt;li&gt;When no one shows up finish up looking at QSCI HW 1&lt;/li&gt;
+&lt;li&gt;Then read Visible Learning Chapter 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
       <title></title>
       <link>/post/teaching/visible-learning/ch-02/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
@@ -253,6 +281,44 @@
     </item>
     
     <item>
+      <title>Broad Strokes of Learning</title>
+      <link>/post/teaching/visible-learning/core-takeaways/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/teaching/visible-learning/core-takeaways/</guid>
+      <description>&lt;p&gt;Nine basic principles:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Explanations of human learning in terms of innate talent are consistently undermined by research which states that substantial amounts of time, energy, instruction, and effort are required to develop mastery of any subject area.&lt;/li&gt;
+&lt;li&gt;We can naturally learn from any information, but to learn effectively that information has to be organized in a way that matches how our minds are organized. Minds are organized differently for different people, and even change as we age.&lt;/li&gt;
+&lt;li&gt;The brain has severe, inherent limitations and deep processing becomes impossible when those limits are reached (cognitive load principle)&lt;/li&gt;
+&lt;li&gt;People learn particularly well from other people, through directed instruction and feedback (social learning theory)&lt;/li&gt;
+&lt;li&gt;People put in a lot more effort when they are confident that worthwhile goals are achievable in the short term. Activating effort and motivation is difficult but not impossible.&lt;/li&gt;
+&lt;li&gt;Short-term goals are highly motivating, but when they conflict with valuable long-term goals we must develop and use strategies to control impulses and delay gratificatoin (personal regulation through self-control).&lt;/li&gt;
+&lt;li&gt;Learners are humans, and other parts of them &amp;ndash; self esteem, sociality, etc &amp;ndash; must be maintained and acknowledged during the learning process.&lt;/li&gt;
+&lt;li&gt;Humans are fundamentally social, down to the neurological level. This sociality can be used as a tool (social brain hypothesis)&lt;/li&gt;
+&lt;li&gt;Ideas about learning that are contradicted by scientific evidence abound. Many of these ideas can be harmful.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Section 1&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The mind may not be &amp;ldquo;designed for thinking&amp;rdquo; and requires time and effort to think&lt;/li&gt;
+&lt;li&gt;Teachers need to recognize how difficult tasks are for beginners. Focus should be not on material but on the actual process of moving from not knowing to knowing. To do this students need a safe environment to acknowledge they don&#39;t understand. We can only holld so much in our cognitive centers, so it is important to ``overlearn&amp;rsquo;&amp;rsquo; basic concepts until it is ingrained and automatic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Section 2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Major ideas about acquisition, memory retention, mental storage, and overload&lt;/li&gt;
+&lt;li&gt;Learning need not be conscious, we can only think about so much at once&lt;/li&gt;
+&lt;li&gt;We need to develop a vocabulary for learning, and need multiple strategies for learning&lt;/li&gt;
+&lt;li&gt;Challenges: learning styles (i.e. spatial, verbal, kinaesthetic), Mozart effects, multitasking, digital natives, and whether the Internet is really changing how we think&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Section 3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Self-esteem follows success more often than predicting it&lt;/li&gt;
+&lt;li&gt;Building confidence is still important though: in order to maintain positive views of ourselves we build explanations (I cannot; rather than I did not work hard enough) that help our self esteem but hurt our learning&lt;/li&gt;
+&lt;li&gt;Learning situations are often distracting and knowing how to pay attention to learning is important, but tiring. It is important to know when to stop thinking to save cognitive resources.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Lab Notebook: 3/30</title>
       <link>/post/notebook/2020/spring/week2/mon/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
@@ -271,6 +337,7 @@
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did the first half of the QSCI HW, read Ch 1, but did not end up having time to work on the BC code.&lt;/p&gt;
 </description>
     </item>
     
@@ -291,12 +358,11 @@
     </item>
     
     <item>
-      <title>Why Don&#39;t students like learning?</title>
+      <title>Why Don&#39;t Students Like School?</title>
       <link>/post/teaching/visible-learning/ch-01/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/visible-learning/ch-01/</guid>
-      <description>&lt;p&gt;abc&lt;/p&gt;
-</description>
+      <description></description>
     </item>
     
     <item>
