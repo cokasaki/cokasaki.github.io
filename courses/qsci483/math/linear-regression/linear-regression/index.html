@@ -28,10 +28,11 @@
   
     
   
-  <meta name="description" content="My notes on Chapter 1 of Visible Learning">
+  <meta name="description" content="In this document I will outline the math used in the analysis of a more general linear regression model, with more than one predictor variable. Make sure to check out my notation document to clarify any confusing notation, and check out my simple linear regression document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.
+The Model Linear regression is based upon the equation $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\">
 
   
-  <link rel="alternate" hreflang="en-us" href="/post/teaching/visible-learning/ch-08/">
+  <link rel="alternate" hreflang="en-us" href="/courses/qsci483/math/linear-regression/linear-regression/">
 
   
 
@@ -218,7 +219,7 @@
   <link rel="icon" type="image/png" href="/images/icon_hub75627969bdd01989db8aea0c9cc39c4_9892_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hub75627969bdd01989db8aea0c9cc39c4_9892_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/post/teaching/visible-learning/ch-08/">
+  <link rel="canonical" href="/courses/qsci483/math/linear-regression/linear-regression/">
 
   
   
@@ -231,65 +232,21 @@
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Colin Okasaki">
-  <meta property="og:url" content="/post/teaching/visible-learning/ch-08/">
-  <meta property="og:title" content=" | Colin Okasaki">
-  <meta property="og:description" content="My notes on Chapter 1 of Visible Learning"><meta property="og:image" content="/img/icon.png">
+  <meta property="og:url" content="/courses/qsci483/math/linear-regression/linear-regression/">
+  <meta property="og:title" content="Linear Regression | Colin Okasaki">
+  <meta property="og:description" content="In this document I will outline the math used in the analysis of a more general linear regression model, with more than one predictor variable. Make sure to check out my notation document to clarify any confusing notation, and check out my simple linear regression document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.
+The Model Linear regression is based upon the equation $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\"><meta property="og:image" content="/img/icon.png">
   <meta property="twitter:image" content="/img/icon.png"><meta property="og:locale" content="en-us">
   
     
-      <meta property="article:published_time" content="2020-03-30T00:00:00&#43;00:00">
+      <meta property="article:published_time" content="2020-03-31T00:00:00&#43;01:00">
     
-    <meta property="article:modified_time" content="2020-03-30T10:56:37-07:00">
+    <meta property="article:modified_time" content="2020-03-31T00:00:00&#43;01:00">
   
 
   
 
 
-    
-
-
-
-
-
-
-  
-
-
-
-
-
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "/post/teaching/visible-learning/ch-08/"
-  },
-  "headline": "",
-  
-  "datePublished": "2020-03-30T00:00:00Z",
-  "dateModified": "2020-03-30T10:56:37-07:00",
-  
-  "author": {
-    "@type": "Person",
-    "name": "Colin Okasaki"
-  },
-  
-  "publisher": {
-    "@type": "Organization",
-    "name": "Colin Okasaki",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "img//"
-    }
-  },
-  "description": "My notes on Chapter 1 of Visible Learning"
-}
-</script>
-
-  
 
   
 
@@ -303,7 +260,7 @@
 
 
 
-  <title> | Colin Okasaki</title>
+  <title>Linear Regression | Colin Okasaki</title>
 
 </head>
 
@@ -482,7 +439,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/courses"><span>Courses</span></a>
+          <a class="nav-link  active" href="/courses"><span>Courses</span></a>
         </li>
 
         
@@ -573,342 +530,261 @@
 </nav>
 
 
-  <article class="article">
+  
 
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
   
 
 
 
 
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
 
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
 
-
-
-
-
-
-
+<nav class="collapse docs-links" id="docs-nav">
   
 
   
   
   
-<div class="article-container pt-3">
-  <h1></h1>
-
   
-
-  
-    
-
-
-<div class="article-metadata">
-
-  
-  
-  
-  
-  <div>
-    
-
-
-
-  
-  <span><a href="/authors/admin/">Colin Okasaki</a></span>
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/qsci483/">QSCI 483</a>
 
   </div>
   
-  
-
-  
-  <span class="article-date">
-    
-    
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/qsci483/math/linear-regression/simple-linear-regression/">Linear Regression</a>
+    <ul class="nav docs-sidenav">
       
-          Last updated on
-      
-    
-    Mar 30, 2020
-  </span>
-  
-
-  
-
-  
-  <span class="middot-divider"></span>
-  <span class="article-reading-time">
-    0 min read
-  </span>
-  
-
-  
-  
-  
-
-  
-  
-  <span class="middot-divider"></span>
-  <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/teaching/">Teaching</a>, <a href="/categories/visible-learning/">Visible Learning</a>, <a href="/categories/books/">Books</a></span>
-  
-
-</div>
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-</div>
-
-
-
-  <div class="article-container">
-
-    <div class="article-style">
-      
-    </div>
-
-    
-
-
-
-
-
-<div class="article-tags">
-  
-  <a class="badge badge-light" href="/tags/teaching/">Teaching</a>
-  
-  <a class="badge badge-light" href="/tags/visible-learning/">Visible Learning</a>
-  
-  <a class="badge badge-light" href="/tags/books/">Books</a>
-  
-</div>
-
-
-
-<div class="share-box" aria-hidden="true">
-  <ul class="share">
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://twitter.com/intent/tweet?url=/post/teaching/visible-learning/ch-08/&amp;text=" target="_blank" rel="noopener" class="share-btn-twitter">
-          <i class="fab fa-twitter"></i>
-        </a>
+      <li >
+        <a href="/courses/qsci483/math/linear-regression/simple-linear-regression/">Simple Model</a>
       </li>
-    
       
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.facebook.com/sharer.php?u=/post/teaching/visible-learning/ch-08/&amp;t=" target="_blank" rel="noopener" class="share-btn-facebook">
-          <i class="fab fa-facebook"></i>
-        </a>
+      <li class="active">
+        <a href="/courses/qsci483/math/linear-regression/linear-regression/">General Model</a>
       </li>
-    
       
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="mailto:?subject=&amp;body=/post/teaching/visible-learning/ch-08/" target="_blank" rel="noopener" class="share-btn-email">
-          <i class="fas fa-envelope"></i>
-        </a>
+      <li >
+        <a href="/courses/qsci483/math/linear-regression/properties/">Properties</a>
       </li>
-    
       
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://www.linkedin.com/shareArticle?url=/post/teaching/visible-learning/ch-08/&amp;title=" target="_blank" rel="noopener" class="share-btn-linkedin">
-          <i class="fab fa-linkedin-in"></i>
-        </a>
+      <li >
+        <a href="/courses/qsci483/math/linear-regression/diagnostics/">Model Diagnostics</a>
       </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://web.whatsapp.com/send?text=%20/post/teaching/visible-learning/ch-08/" target="_blank" rel="noopener" class="share-btn-whatsapp">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </li>
-    
-      
-      
-      
-        
-      
-      
-      
-      <li>
-        <a href="https://service.weibo.com/share/share.php?url=/post/teaching/visible-learning/ch-08/&amp;title=" target="_blank" rel="noopener" class="share-btn-weibo">
-          <i class="fab fa-weibo"></i>
-        </a>
-      </li>
-    
-  </ul>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-  
-
-
-
-
-
-
-  
-  
-  
-    
-  
-  
-  
-  <div class="media author-card content-widget-hr">
-    
-      
-      <img class="avatar mr-3 avatar-circle" src="/authors/admin/avatar_hu2727e71cdaeed6d7d44584e8b2266305_21096_270x270_fill_q90_lanczos_center.jpg" alt="Avatar">
-    
-
-    <div class="media-body">
-      <h5 class="card-title"><a href="/">Colin Okasaki</a></h5>
-      <h6 class="card-subtitle">Graduate Student</h6>
-      <p class="card-text">My research interests include spatial statistics, constrained optimization, and bringing more explicit modeling of physics and biology into these fields.</p>
-      <ul class="network-icon" aria-hidden="true">
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="/#contact" >
-        <i class="fas fa-envelope"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://scholar.google.com/citations?user=YjWjPCAAAAAJ&amp;hl=en&amp;oi=ao" target="_blank" rel="noopener">
-        <i class="ai ai-google-scholar"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://github.com/cokasaki" target="_blank" rel="noopener">
-        <i class="fab fa-github"></i>
-      </a>
-    </li>
-  
-</ul>
-
-    </div>
-  </div>
-
-
-
-
-
-
-
-
-
-  
-  
-  <div class="article-widget content-widget-hr">
-    <h3>Related</h3>
-    <ul>
-      
-      <li><a href="/post/teaching/visible-learning/ch-24/"></a></li>
-      
-      <li><a href="/post/teaching/visible-learning/ch-19/"></a></li>
-      
-      <li><a href="/post/teaching/visible-learning/ch-05/"></a></li>
-      
-      <li><a href="/post/teaching/visible-learning/ch-16/"></a></li>
-      
-      <li><a href="/post/teaching/visible-learning/ch-12/"></a></li>
       
     </ul>
+    
+
   </div>
   
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-model-">The Model</a>
+      <ul>
+        <li><a href="#fitting-">Fitting</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Linear Regression</h1>
+
+          <div class="article-style">
+            <p>In this document I will outline the math used in the analysis of a more general linear regression model, with more than one predictor variable. Make sure to check out my 
+<a href="/courses/qsci483/math/notation">notation</a>
+ document to clarify any confusing notation, and check out my 
+<a href="/courses/qsci483/math/linear-regressoin/simple-linear-regression">simple linear regression</a>
+ document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.</p>
+<h2 id="the-model-">The Model</h2>
+<p>Linear regression is based upon the equation
+$$
+y_i \sim N(X\beta,\sigma^2)
+$$
+or equivalently
+\begin{align*}
+y_i &amp; \sim X\beta + \epsilon_i \\<br>
+\epsilon_i &amp; \sim N(0,\sigma^2)
+\end{align*}
+where the $\epsilon_i$ are iid. In the context of regression, it is important to remember that: $E[y_i] = X\beta$ and $E[\epsilon_i] = 0$. We will assume that there are $n$ data points and $k$ predictors. This $\beta$ is a $k\times 1$ vector, $X$ is a $n\times k$ matrix and $y$ and $\epsilon$ are $n\times 1$ vectors.</p>
+<h3 id="fitting-">Fitting</h3>
+<h4 id="objective-function-">Objective Function</h4>
+<p>To fit a simple linear regression we choose a measure of fit: least squares. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using the $1\times k$ vector $x_i$ of predictors for data point $i$:
+$$
+\hat{y}_i = x_i\hat{\beta}.
+$$
+Alternatively we can find the whole vector $\hat{y} = X\beta$. To find a single squared residuals we calculate $r_i^2 = (y_i - x_i\hat{\beta})^2$. We will define the function $f(\hat{\beta})$ to be the sum of squared residuals, as a function of the fitted coefficients. We want to find the coefficients which minimize this function. We can calculate this as:
+\begin{align*}
+f(\hat{\beta})
+&amp; = \sum_{i=1}^n (\mbox{residual})^2 \\<br>
+&amp; = \sum_{i=1}^n (y_i - x_i\hat{\beta})^2 \\<br>
+&amp; = \sum_{i=1}^n \left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2
+\end{align*}
+In matrix notation we can rewrite this, however. The residual _vector_ can be written as the $n\times 1$ vector
+$$
+r = y - X\hat{\beta}.
+$$
+The sum of squares can then be written as $r&rsquo;r$. So then
+\begin{align*}
+f(\hat{\beta})
+&amp; = r&rsquo;r \\<br>
+&amp; = (y-X\hat{\beta})'(y-X\hat{\beta}).
+\end{align*}
+We can expand this quadratic equation as
+\begin{align*}
+f(\hat{\beta})
+&amp; = y&rsquo;y - y&rsquo;X\hat{\beta} - \hat{\beta}&lsquo;X&rsquo;y + \hat{\beta}&lsquo;X&rsquo;X\hat{\beta}.
+\end{align*}</p>
+<h4 id="optimization-">Optimization</h4>
+<p>From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to each $\beta_i$, to find the minimum sum of squared residuals (the <em>least squares</em>). So let us take the partial derivative with respect to a particular coefficient:
+\begin{align*}
+\dfrac{\partial f}{ \partial \hat{\beta}_j}
+&amp; = \dfrac{\partial }{ \partial \hat{\beta}_j} \sum_{i=1}^n \left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2 \\<br>
+&amp; = \sum_{i=1}^n \dfrac{\partial }{ \partial \hat{\beta}_j}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2 \\<br>
+&amp; = \sum_{i=1}^n 2\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\dfrac{\partial }{ \partial \hat{\beta}_j}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right) \\<br>
+&amp; = \sum_{i=1}^n 2\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\left(-x_{ij}\right) \\<br>
+&amp; = -\sum_{i=1}^n 2x_{ij}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\end{align*}
+Verify that this can be written in matrix notation as
+\begin{align*}
+\dfrac{\partial f}{ \partial \hat{\beta}_j}
+&amp; = -2\left(X&rsquo;y - X&rsquo;X\hat{\beta}\right)_j,
+\end{align*}
+or in matrix calculus notation
+\begin{align*}
+\dfrac{\partial f}{ \partial \hat{\beta}} &amp; = -2\left(X&rsquo;y - X&rsquo;X\hat{\beta}\right).
+\end{align*}
+Remember that according to calculus, every single entry $\dfrac{\partial f}{ \partial \beta_j}$ must be equal to zero at any extremum (and in particular at the minimum). Thus we can set this whole matrix equation equal to zero, and we get
+$$
+X&rsquo;y = X&rsquo;X\hat{\beta}.
+$$
+Since we are trying to derive an equation for $\hat{\beta}$ we move the matrix over to the other side and we get
+$$
+\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y.
+$$
+We can derive this same equation in fewer steps using the more complex matrix calculus notation, which for example allows us to take the derivative of matrix products and use the matrix chain rule:
+\begin{align*}
+\dfrac{\partial f}{ \partial \hat{\beta}}
+&amp; = \dfrac{\partial }{ \partial \hat{\beta}}\left(y&rsquo;y - y&rsquo;X\hat{\beta} - \hat{\beta}&lsquo;X&rsquo;y + \hat{\beta}&lsquo;X&rsquo;X\hat{\beta}\right) \\<br>
+&amp; = - \dfrac{\partial }{ \partial \hat{\beta}}\left(y&rsquo;X\hat{\beta}\right) - \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&lsquo;X&rsquo;y\right) + \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&lsquo;X&rsquo;X\hat{\beta}\right) \\<br>
+&amp; = -y&rsquo;X-(X&rsquo;y)&lsquo;+\hat{\beta}&lsquo;X&rsquo;X + (X&rsquo;X\hat{\beta})&rsquo; \\<br>
+&amp; = -2(X&rsquo;y - X&rsquo;X\hat{\beta})&rsquo; \\<br>
+&amp; = 0.
+\end{align*}</p>
+
+          </div>
+
+          
 
 
 
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/qsci483/math/linear-regression/simple-linear-regression/" rel="next">Simple Linear Regression</a>
   </div>
-</article>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/qsci483/math/linear-regression/properties/" rel="prev">Properties of Linear Regression</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Mar 31, 2020</p>
+
+          
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/qsci483/math/linear-regression/linear-regression.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
 
       
 
@@ -962,6 +838,11 @@
 
     
     
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
 
     
     
@@ -1014,31 +895,6 @@
 
 
   
-  
-  <div class="container">
-    <footer class="site-footer">
-  
-
-  <p class="powered-by">
-    
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
-    
-    <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
-    
-  </p>
-</footer>
-
-  </div>
   
 
   

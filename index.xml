@@ -13,31 +13,110 @@
     </image>
     
     <item>
-      <title>Notation</title>
-      <link>/courses/qsci493/notation/</link>
+      <title>Simple Linear Regression</title>
+      <link>/courses/qsci483/math/linear-regression/simple-linear-regression/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci493/notation/</guid>
-      <description>&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
-&lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
-&lt;h3 id=&#34;advanced-notation-matrix-calculus-&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
-&lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
- or in the more extensive 
-&lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
-.&lt;/p&gt;
+      <guid>/courses/qsci483/math/linear-regression/simple-linear-regression/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used in the analysis of a simple linear regression model. Make sure to check out my 
+&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+ document to clarify any confusing notation.&lt;/p&gt;
+&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;p&gt;Simple Linear Regression is based upon the equation
+$$
+y_i \sim N(\beta_0 + \beta_1 x_i,\sigma^2)
+$$
+or equivalently
+\begin{align*}
+y_i &amp;amp; \sim \beta_0 + \beta_1 x_i + \epsilon_i \\&lt;br&gt;
+\epsilon_i &amp;amp; \sim N(0,\sigma^2)
+\end{align*}
+where the $\epsilon_i$ are iid. It is important to remember that the expectations, or means, of these variables are: $E[y_i] = \beta_0 + \beta_1 x_i$ and $E[\epsilon_i] = 0$. We will assume that there are $n$ data points and only 1 predictor. This is what makes it _simple_ linear regression. In more general linear regression models you have more than 1 predictor. In multivariate linear regression models you have more than one dependent variable as well. In addition to the predictor variable, we also have an intercept, or mean term, which can be thought of as a second predictor.&lt;/p&gt;
+&lt;h3 id=&#34;fitting-&#34;&gt;Fitting&lt;/h3&gt;
+&lt;h4 id=&#34;objective-function-&#34;&gt;Objective Function&lt;/h4&gt;
+&lt;p&gt;To fit a simple linear regression we first must choose a measure of fit. Here we will choose least squares, since this corresponds to 
+&lt;a href=&#34;/courses/qsci483/math/linear-regression/properties&#34;&gt;maximum likelihood esitmation&lt;/a&gt;
+ in this model. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using our predictor $x_i$ for data point $i$ along with estimated coefficients $\hat{\beta}_0$ and $\hat{\beta}_1$:
+$$
+\hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x.
+$$
+Alternatively we can find the whole vector $\hat{y} = \hat{\beta_0}\mathbf{1} + x\hat{\beta}$ (where $\mathbf{1}$ is a vector of all ones). To find a single squared residuals we calculate $r_i^2 = (y_i - \hat{\beta}_0 - \hat{\beta}_1 x)^2$. We will define the function $f(\hat{\beta}_0,\hat{\beta}_1)$ to be the sum of squared residuals, as a function of the fitted coefficients. We want to find the coefficients which minimize this function. We can calculate this as:
+\begin{align*}
+f(\hat{\beta})
+&amp;amp; = \sum_{i=1}^n (\mbox{residual})^2 \\&lt;br&gt;
+&amp;amp; = \sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1)^2 \\&lt;br&gt;
+\end{align*}&lt;/p&gt;
+&lt;h4 id=&#34;optimization-&#34;&gt;Optimization&lt;/h4&gt;
+&lt;p&gt;From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to both $\beta_0$ and $\beta_1$, to find the minimum sum of squared residuals (the &lt;em&gt;least squares&lt;/em&gt;). So let us take the partial derivative with respect to $\hat{\beta}_0$:
+\begin{align*}
+\dfrac{\partial f}{ \partial \hat{\beta}_0} }
+&amp;amp; = \dfrac{\partial }{ \partial \hat{\beta}_0} \sum_{i=1}^n \left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i)^2 \\&lt;br&gt;
+&amp;amp; = \sum_{i=1}^n \dfrac{\partial }{ \partial \hat{\beta}_0}\left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i)^2 \\&lt;br&gt;
+&amp;amp; = \sum_{i=1}^n 2\left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i\right)\dfrac{\partial }{ \partial \hat{\beta}_0}\left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i\right) \\&lt;br&gt;
+&amp;amp; = -\sum_{i=1}^n 2\left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i\right)
+\end{align*}
+To set this derivative equal to zero we need to set:
+\begin{align*}
+\sum_{i=1}^n \left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i\right) &amp;amp; = 0.
+\end{align*}
+This can be accomplished by splitting up the sum and getting
+\begin{align*}
+\sum_{i=1}^n y_i &amp;amp; = \sum_{i=1}^n \hat{\beta}_0 + \sum_{i=1}^n \hat{\beta}_1 x_i \\&lt;br&gt;
+n\hat{\beta}_0 &amp;amp; = \sum_{i=1}^n y_i - \hat{\beta}_1 \sum_{i=1}^n x_i \\&lt;br&gt;
+\hat{\beta}_0 &amp;amp; = \overline{y} - \hat{\beta}_1\overline{x}
+\end{align*}
+Now that we have calculated $\hat{\beta}_0$ in terms of $y,x,$ and $\hat{\beta_1}$ we can take the derivative with respect to $\beta_1$ to find the least squares estimator:
+\begin{align*}
+\dfrac{\partial f}{ \partial \hat{\beta}_1} }
+&amp;amp; = \dfrac{\partial }{ \partial \hat{\beta}_1} \sum_{i=1}^n \left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i)^2 \\&lt;br&gt;
+&amp;amp; = \sum_{i=1}^n \dfrac{\partial }{ \partial \hat{\beta}_1}\left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i)^2 \\&lt;br&gt;
+&amp;amp; = \sum_{i=1}^n 2\left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i\right)\dfrac{\partial }{ \partial \hat{\beta}_1}\left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i\right) \\&lt;br&gt;
+&amp;amp; = -\sum_{i=1}^n 2\left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i\right)(x_i)
+\end{align*}
+To set this derivative equal to zero we need to set:
+\begin{align*}
+\sum_{i=1}^n \left(y_i - \hat{\beta}_0 - \hat{\beta}_1x_i\right)x_i &amp;amp; = 0.
+\end{align*}
+But here we can plug in our estimator $\hat{\beta}_0$ to get
+\begin{align*}
+\sum_{i=1}^n \left(y_i - (\overline{y}-\hat{\beta}_1\overline{x}) - \hat{\beta}_1x_i\right)x_i &amp;amp; = 0.
+\end{align*}
+Then we can expand the sum on the left to get
+\begin{align*}
+\sum_{i=1}^n (y_i - \overline{y})x_i - \sum_{i=1}^n \hat{\beta}_1(x_i - \overline{x})x_i &amp;amp; = 0 \\&lt;br&gt;
+\hat{\beta}_1 \sum_{i=1}^n (x_i - \overline{x})x_i &amp;amp; = \sum_{i=1}^n (y_i-\overline{y})x_i \\&lt;br&gt;
+\hat{\beta}_1 &amp;amp; = \frac{\sum_{i=1}^n (y_i-\overline{y})x_i}{\sum_{i=1}^n (x_i - \overline{x})x_i}
+\end{align*}
+So we have found an estimator for $\hat{\beta}_1$ in terms of only the predictors and the responses. We also have an estimator for $\hat{\beta}_0$ in terms of the predictors, the responses, and $\hat{\beta}_1$. Now, traditionally, $\hat{\beta}_1$ is written in a slightly different form, as
+\begin{align*}
+\hat{\beta}_1 &amp;amp; = \frac{S_{xy}}{S_{xx}} \\&lt;br&gt;
+S_{xx} &amp;amp; = \frac{1}{n-1}\sum (x_i-\overline{x})^2 \\&lt;br&gt;
+S_{xy} &amp;amp; = \frac{1}{n-1}\sum (x_i-\overline{x})(y_i-\overline{y}).
+\end{align*}
+The reason for this is that $S_{xy}$ is the sample covariance of $x$ and $y$, and $S_{xx}$ is the sample variance of $x$, so it is nice to express $\hat{\beta}_1$ in terms of other statistics that we already know about. We can see that the two formulas for $\hat{\beta}_1$ are equivalent by doing a little more math, taking $S_{xx}$ and $S_{xy}$ and changing them to a slightly different format:
+\begin{align*}
+(N-1)S_{xy} &amp;amp; = \sum (x_i-\overline{x})(y_i-\overline{y}) \\&lt;br&gt;
+&amp;amp; = \sum (y_i-\overline{y})x_i - \sum (y_i-\overline{y})\overline{x} \\&lt;br&gt;
+&amp;amp; = \sum (y_i-\overline{y})x_i - \overline{x}\sum (y_i - \overline{y}) \\&lt;br&gt;
+&amp;amp; = \sum (y_i -\overline{y})x_i - \overline{x}(\sum \left(y_i - \frac{1}{n}\sum y_i\right) \\&lt;br&gt;
+&amp;amp; = \sum (y_i -\overline{y})x_i - \overline{x}(\sum y_i - \sum y_i) \\&lt;br&gt;
+&amp;amp; = \sum (y_i - \overline{y})x_i
+\end{align*}
+I encourage you to try doing the same calculation with $S_{xx}$: you will find that it follows exactly the same format. So we can see that the formula we have derived for $\hat{\beta}_1$ is exactly the same as the traditional format in terms of the sample (co)variances.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>The Math of Simple Linear Regression</title>
-      <link>/courses/qsci493/simple-linear-regression/</link>
+      <title>Linear Regression</title>
+      <link>/courses/qsci483/math/linear-regression/linear-regression/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci493/simple-linear-regression/</guid>
-      <description>&lt;p&gt;In this document I will outline the math used in the analysis of a simple linear regression model. Make sure to check out my 
-&lt;a href=&#34;/courses/qsci493/notation&#34;&gt;notation&lt;/a&gt;
- document to clarify any confusing notation.&lt;/p&gt;
+      <guid>/courses/qsci483/math/linear-regression/linear-regression/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used in the analysis of a more general linear regression model, with more than one predictor variable. Make sure to check out my 
+&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+ document to clarify any confusing notation, and check out my 
+&lt;a href=&#34;/courses/qsci483/math/linear-regressoin/simple-linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
+ document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.&lt;/p&gt;
 &lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
-&lt;p&gt;Simple Linear Regression is based upon the equation
+&lt;p&gt;Linear regression is based upon the equation
 $$
 y_i \sim N(X\beta,\sigma^2)
 $$
@@ -60,7 +139,7 @@ f(\hat{\beta})
 &amp;amp; = \sum_{i=1}^n (y_i - x_i\hat{\beta})^2 \\&lt;br&gt;
 &amp;amp; = \sum_{i=1}^n \left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2
 \end{align*}
-In matrix notation we can rewrite this, however. The residual *vector* can be written as the $n\times 1$ vector
+In matrix notation we can rewrite this, however. The residual _vector_ can be written as the $n\times 1$ vector
 $$
 r = y - X\hat{\beta}.
 $$
@@ -110,6 +189,160 @@ We can derive this same equation in fewer steps using the more complex matrix ca
 &amp;amp; = -2(X&amp;rsquo;y - X&amp;rsquo;X\hat{\beta})&amp;rsquo; \\&lt;br&gt;
 &amp;amp; = 0.
 \end{align*}&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Properties of Linear Regression</title>
+      <link>/courses/qsci483/math/linear-regression/properties/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/math/linear-regression/properties/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used to analyze our previous results for linear regression analysis. Make sure to check out my previous posts on 
+&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+ and 
+&lt;a href=&#34;/courses/qsci483/math/linear-regression/linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
+ before diving in.&lt;/p&gt;
+&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;p&gt;Recall that linear regression is based upon the equation:
+$$
+y_i \sim N(X\beta,\sigma^2)
+$$
+or equivalently
+\begin{align*}
+y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
+\epsilon_i &amp;amp; \sim N(0,\sigma^2)
+\end{align*}
+where the $\epsilon_i$ are iid. We have previously found that the estimate $\hat{\beta} = (X&amp;rsquo;X)^{-1}Xy$ minimizes the sum of squares. In this document we will show: (1) that $\hat{\beta}$ is also the maximum likelihood estimator, (2) that $\hat{\beta}$ is unbiased, and (3) the covariance matrix for the estimator $\hat{\beta}$.&lt;/p&gt;
+&lt;h3 id=&#34;maximum-likelihood-&#34;&gt;Maximum Likelihood&lt;/h3&gt;
+&lt;p&gt;Our probability model has that $y_i$ are normally distributed, and are independent of each other given the predictors $X$ and the coefficients $\beta$. The &lt;em&gt;likelihood function&lt;/em&gt; is given by the probability (density) of the data given the parameters ($\beta$), expressed as a function of the parameter estimate ($\hat{\beta}$). This function in our case can be written as a product of Gaussian (normal) probability density functions (pdfs):
+\begin{align*}
+\ell(\hat{\beta}) &amp;amp; = \prod_{i=1}^n N(y_i|X\hat{\beta},\sigma^2) \\&lt;br&gt;
+&amp;amp; = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(y_i - X\hat{\beta})}{2\sigma^2}\right) \\&lt;br&gt;
+&amp;amp; = \frac{1}{(2\pi\sigma^2)^{n/2}}\exp\left(-\sum_{i=1}^n \frac{(y_i - X\hat{\beta})}{2\sigma^2}\right).
+\end{align*}
+We will now make use of a common trick in statistics: we will calculate the log-likelihood function $\lambda(\hat{\beta}) = \log(\ell(\hat{\beta}))$. Since the probability density function is always non-negative, and therefore the likelihood is always non-negative, the log-likelihood can be defined. Furthermore, the log is a convex function, and because of this it has the property that $\ell$ and $\lambda$ are minimized at the same value $\hat{\beta}$. Why this is is not important for this class.&lt;/p&gt;
+&lt;p&gt;So taking the log we obtain
+\begin{align*}
+\lambda(\hat{\beta})
+&amp;amp; = \log\left(\frac{1}{(2\pi\sigma^2)^{n/2}}\exp\left(-\sum_{i=1}^n \frac{(y_i - X\hat{\beta})}{2\sigma^2}\right)\right) \\&lt;br&gt;
+&amp;amp; = \log\left(\frac{1}{(2\pi\sigma^2)^{n/2}}\right) + \log\left(\exp\left(-\sum_{i=1}^n \frac{(y_i - X\hat{\beta})}{2\sigma^2}\right)\right) \\&lt;br&gt;
+&amp;amp; = -\frac{n}{2}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2}\sum_{i=1}^n (y_i-X\hat{\beta})^2.
+\end{align*}
+Now remember that we are looking for the _maximum likelihood estimator_. So we want to find the value of $\hat{\beta}$ which maximizes the likelihood (i.e. maximizes the probability of that data, given the parameters). Viewing this as a function of $\hat{\beta}$ we see that maximizing $\lambda$ is equivalent to minimizing
+$$
+\sum_{i=1}^n (y_i-X\hat{\beta})^2.
+$$
+Therefore the maximum likelihood estimator (MLE) of $\hat{\beta}$ is exactly the least-squares estimator $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$. Importantly, we are at this point omitting the parameter $\sigma^2$. In fact, the MLE for $\hat{\beta}$ is unchanged if we estimate this parameter as well. The MLE for $\hat{\sigma^2}$ is given by
+\begin{align*}
+\hat{\sigma^2}
+&amp;amp; = \frac{1}{n}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\&lt;br&gt;
+&amp;amp; = \frac{1}{n}y&amp;rsquo;(I-X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)y.
+\end{align*}&lt;/p&gt;
+&lt;h3 id=&#34;unbiasedness-&#34;&gt;Unbiasedness&lt;/h3&gt;
+&lt;p&gt;It is important to remember that estimators (such as $\hat{\beta}) are themselves &lt;em&gt;random&lt;/em&gt;. If we were to simulate from our model, holding $\beta$ fixed, we would fit a different estimator $\hat{\beta}$ to every simulation. Thus an important quality that an estimator can have is &lt;em&gt;unbiasedness&lt;/em&gt;. This means that, if the model is correct, the estimator will neither tend to overestimate nor underestimate the true parameter. In mathematical terms, its expectation (or mean) is correct: $E[\hat{\beta}] = \beta$.&lt;/p&gt;
+&lt;p&gt;Using our matrix math this property can be derived fairly quickly. We know that $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$. We also know that $y = X\beta + \epsilon$. Putting these together we see:
+\begin{align*}
+\hat{\beta}
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;(X\beta + \epsilon) \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;X\beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon \\&lt;br&gt;
+&amp;amp; = \beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon.
+\end{align*}
+Therefore the mean is
+\begin{align*}
+E[\hat{\beta}]
+&amp;amp; = E\left[\beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon\right].
+\end{align*}
+The mean has a useful property which we will use here, which is that it is _linear_. This means that the expectation of a sum is the sum of the expectations. In math we write this as $E[A+B] = E[A] + E[B]$. Since matrix operations are essentially just a bunch of sums, we can also write $E[Mv] = ME[v]$, if $v$ is random and $M$ is constant. Using this property we get
+\begin{align*}
+E[\hat{\beta}]
+&amp;amp; = E\left[\beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon\right] \\&lt;br&gt;
+&amp;amp; = \beta + E\left[(X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon\right] \\&lt;br&gt;
+&amp;amp; = \beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;E[\epsilon] \\&lt;br&gt;
+&amp;amp; = \beta
+\end{align*}
+since we have assumed that $\epsilon$ is zero-mean noise. So, in fact, our estimator is unbiased!&lt;/p&gt;
+&lt;h3 id=&#34;covariance-of-hatbeta-&#34;&gt;Covariance of $\hat{\beta}$&lt;/h3&gt;
+&lt;p&gt;Remember that $\hat{\beta}$ is fundamentally a &lt;em&gt;random&lt;/em&gt; quantity. It is different in every realization (or simulation) of the statistical model we have written down. It is sensitive to the addition of random noise ($\epsilon_{i}$) to the data. Luckily, since we have written down a statistical model for our data $y$ we are able to do a statistical analysis for the estimator $\hat{\beta}$ to determine its random properties.&lt;/p&gt;
+&lt;p&gt;We showed in the previous section that $\hat{\beta}$ was unbiased, that is, it has its mean $E[\hat{\beta}] = \beta$ at the correct place. We will now calculate the variance-covariance (or just covariance) matrix of $\hat{\beta}$. This tells us how much we can expect $\hat{\beta}$ to vary for different datasets. The &lt;em&gt;diagonal&lt;/em&gt; of this covariance matrix tells us the variances of $\hat{\beta}_{i}$, which are important quantities that get used, for example, in calculating Rs model summaries.&lt;/p&gt;
+&lt;p&gt;The covariance of two random variables is given by $E[(A-E[A])(B-E[B])]$. In our case $A = \hat{\beta}_{i}$ and $B = \hat{\beta}_{j}$. This will give us the entry $\Sigma_{ij}$ in the covariance matrix. We already know that $E[\hat{\beta}_{i}] = \beta_{i}$ since the estimators are unbiased. Therefore the covariance is
+$$
+\Sigma_{ij} = E\left[(\hat{\beta}_{i} - \beta_{i})(\hat{\beta}_{j} - \beta_{j})\right].
+$$
+Expanding the quadratic in the middle, and remembering that expectations are linear, we get that
+\begin{align*}
+\Sigma_{ij}
+&amp;amp; = E[\hat{\beta}_i\hat{\beta}_j] - E[\beta_i\hat{\beta}_j] - E[\hat{\beta}_i\beta_j] + E[\beta_i\beta_j] \\&lt;br&gt;
+&amp;amp; = E[\hat{\beta}_i\hat{\beta}_j] - \beta_iE[\hat{\beta}_j] - E[\hat{\beta}_i]\beta_j + \beta_i\beta_j \\&lt;br&gt;
+&amp;amp; = E[\hat{\beta}_i\hat{\beta}_j] - \beta_i\beta_j.
+\end{align*}&lt;/p&gt;
+&lt;p&gt;This is a useful formula, but it would be far more effective to analyze this problem in terms of matrix notation. Let&amp;rsquo;s go ahead and make that switch. Using matrix notation, the single entry
+$$
+\Sigma_{ij} = E\left[(\hat{\beta}_i - \beta_i)(\hat{\beta}_j - \beta_j)\right].
+$$
+can be written as a whole matrix
+$$
+\Sigma = E\left[(\hat{\beta} - E[\hat{\beta}])(\hat{\beta} - E[\hat{\beta}])&#39;\right].
+$$
+Since we know that the estimator is unbiased we can plug this into the matrix equation to get
+\begin{align*}
+\Sigma
+&amp;amp; = E\left[(\hat{\beta} - \beta)(\hat{\beta}-\beta)&#39;\right] \\&lt;br&gt;
+&amp;amp; = E\left[\hat{\beta}\hat{\beta}&#39;\right] - \beta\beta&amp;rsquo;.
+\end{align*}
+This is exactly the same formula we have above, just written in matrix notation. Now, we already have a formula for $\hat{\beta}$ in matrix notation, $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$, so let&amp;rsquo;s plug this in here. We get
+\begin{align*}
+\Sigma
+&amp;amp; = E\left[(X&amp;rsquo;X)^{-1}X&amp;rsquo;yy&amp;rsquo;X(X&amp;rsquo;X)^{-1}\right] - \beta\beta&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo; E[yy&amp;rsquo;] X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo;.
+\end{align*}
+Now we can plug in our formula for $y = X\beta + \epsilon$. Remembering that expectations are linear (i.e. can be split up over summations), we get
+\begin{align*}
+E[yy&amp;rsquo;]
+&amp;amp; = E\left[(X\beta + \epsilon)(X\beta+\epsilon)&#39;\right] \\&lt;br&gt;
+&amp;amp; = E\left[X\beta\beta&amp;rsquo;X&amp;rsquo; + \epsilon X\beta + \beta&amp;rsquo;X&amp;rsquo;\epsilon + \epsilon\epsilon&amp;rsquo;\right] \\&lt;br&gt;
+&amp;amp; = X\beta\beta&amp;rsquo;X&amp;rsquo; + E[\epsilon]X\beta + \beta&amp;rsquo;X&amp;rsquo;E[\epsilon] + E[\epsilon\epsilon&amp;rsquo;]
+\end{align*}
+Now we already know that $E[\epsilon] = 0$. What about $E[\epsilon\epsilon&amp;rsquo;]$? Well,
+$$
+\mbox{cov}(\epsilon_i,\epsilon_j) = E[\epsilon_i\epsilon_j] - E[\epsilon_i]E[\epsilon_j] = E[\epsilon_i\epsilon_j].
+$$
+Since independent variables are uncorrelated (and we know that the $\epsilon_i$ are iid) we see that this matrix is diagonal with entries equal to $\sigma^2$, the variance of $\epsilon_i$. Thus:
+$$
+E[yy&amp;rsquo;] = X\beta\beta&amp;rsquo;X&amp;rsquo; + \sigma^2I.
+$$
+Finally, plugging this in, we can find that
+\begin{align*}
+\Sigma &amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo; E[yy&amp;rsquo;] X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;(X\beta\beta&amp;rsquo;X&amp;rsquo; + \sigma^2I)X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}(X&amp;rsquo;X)\beta\beta&amp;rsquo;(X&amp;rsquo;X)(X&amp;rsquo;X)^{-1} + (X&amp;rsquo;X)^{-1}X&amp;rsquo;(\sigma^2I)X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = \beta\beta&amp;rsquo; + \sigma^2(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = \sigma^2(X&amp;rsquo;X)^{-1}.
+\end{align*}
+This is the covariance matrix of $\hat{\beta}$! Notably, this has two important properties. One, it depends on $\sigma^2$, so if we want to use this we had better estimate $\sigma^2$ somehow. More on this in the next section. Two, it depends on the _inverse_ of $X&amp;rsquo;X$. There&amp;rsquo;s no guarantee that this matrix is invertible. For example, if we have more predictors than we have data points (i.e. $k &amp;gt; n$) this matrix will certainly _not_ be invertible. You may have been warned about this scenario in the past. However, even if you have many data points, other situations can crop up where $X&amp;rsquo;X$ is either numerically difficult to invert (i.e. difficult to calculate on a computer), or produces very large variances. One such case is where two of the predictor variables are very highly correlated. More on this later.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression Model Diagnostics</title>
+      <link>/courses/qsci483/math/linear-regression/diagnostics/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/math/linear-regression/diagnostics/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
+&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+ and 
+&lt;a href=&#34;/courses/qsci483/math/linear-regression/linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
+ before diving in.&lt;/p&gt;
+&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;p&gt;Recall that Simple Linear Regression is based upon the equation:
+$$
+y_i \sim N(X\beta,\sigma^2)
+$$
+or equivalently
+\begin{align*}
+y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
+\epsilon_i &amp;amp; \sim N(0,\sigma^2)
+\end{align*}
+where the $\epsilon_i$ are iid. We have previously derived the estimates for&lt;/p&gt;
 </description>
     </item>
     
@@ -1391,6 +1624,34 @@ Three
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/project/source/</guid>
       <description>&lt;p&gt;In this project I investigate the use of stochastic PDEs to conduct inference on the source term of a linear PDE.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/courses/qsci483/math/notation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/courses/qsci483/math/notation/</guid>
+      <description>&lt;h2 id=&#34;weight-1&#34;&gt;ls&amp;mdash;
+date: &amp;ldquo;2020-03-31T00:00:00+01:00&amp;rdquo;
+draft: false
+linktitle: Notation
+menu:
+qsci483:
+parent: QSCI 483
+weight: 1
+title: Notation
+toc: true
+type: docs
+weight: 1&lt;/h2&gt;
+&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
+&lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
+&lt;h3 id=&#34;advanced-notation-matrix-calculus-&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
+&lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
+ or in the more extensive 
+&lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
+.&lt;/p&gt;
 </description>
     </item>
     
