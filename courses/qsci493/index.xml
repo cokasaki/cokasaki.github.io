@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regression Analysis for Ecologists | Colin Okasaki</title>
+    <link>/courses/qsci493/</link>
+      <atom:link href="/courses/qsci493/index.xml" rel="self" type="application/rss+xml" />
+    <description>Regression Analysis for Ecologists</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 31 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon.png</url>
+      <title>Regression Analysis for Ecologists</title>
+      <link>/courses/qsci493/</link>
+    </image>
+    
+    <item>
+      <title>Notation</title>
+      <link>/courses/qsci493/notation/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci493/notation/</guid>
+      <description>&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
+&lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
+&lt;h3 id=&#34;advanced-notation-matrix-calculus-&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
+&lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
+ or in the more extensive 
+&lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
+.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Math of Simple Linear Regression</title>
+      <link>/courses/qsci493/simple-linear-regression/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci493/simple-linear-regression/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used in the analysis of a simple linear regression model. Make sure to check out my 
+&lt;a href=&#34;/courses/qsci493/notation&#34;&gt;notation&lt;/a&gt;
+ document to clarify any confusing notation.&lt;/p&gt;
+&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;p&gt;Simple Linear Regression is based upon the equation
+$$
+y_i \sim N(X\beta,\sigma^2)
+$$
+or equivalently
+\begin{align*}
+y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
+\epsilon_i &amp;amp; \sim N(0,\sigma^2)
+\end{align*}
+where the $\epsilon_i$ are iid. In the context of regression, it is important to remember that: $E[y_i] = X\beta$ and $E[\epsilon_i] = 0$. We will assume that there are $n$ data points and $k$ predictors. This $\beta$ is a $k\times 1$ vector, $X$ is a $n\times k$ matrix and $y$ and $\epsilon$ are $n\times 1$ vectors.&lt;/p&gt;
+&lt;h3 id=&#34;fitting-&#34;&gt;Fitting&lt;/h3&gt;
+&lt;h4 id=&#34;objective-function-&#34;&gt;Objective Function&lt;/h4&gt;
+&lt;p&gt;To fit a simple linear regression we choose a measure of fit: least squares. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using the $1\times k$ vector $x_i$ of predictors for data point $i$:
+$$
+\hat{y}_i = x_i\hat{\beta}.
+$$
+Alternatively we can find the whole vector $\hat{y} = X\beta$. To find a single squared residuals we calculate $r_i^2 = (y_i - x_i\hat{\beta})^2$. We will define the function $f(\hat{\beta})$ to be the sum of squared residuals, as a function of the fitted coefficients. We want to find the coefficients which minimize this function. We can calculate this as:
+\begin{align*}
+f(\hat{\beta})
+&amp;amp; = \sum_{i=1}^n (\mbox{residual})^2 \\&lt;br&gt;
+&amp;amp; = \sum_{i=1}^n (y_i - x_i\hat{\beta})^2 \\&lt;br&gt;
+&amp;amp; = \sum_{i=1}^n \left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2
+\end{align*}
+In matrix notation we can rewrite this, however. The residual *vector* can be written as the $n\times 1$ vector
+$$
+r = y - X\hat{\beta}.
+$$
+The sum of squares can then be written as $r&amp;rsquo;r$. So then
+\begin{align*}
+f(\hat{\beta})
+&amp;amp; = r&amp;rsquo;r \\&lt;br&gt;
+&amp;amp; = (y-X\hat{\beta})&#39;(y-X\hat{\beta}).
+\end{align*}
+We can expand this quadratic equation as
+\begin{align*}
+f(\hat{\beta})
+&amp;amp; = y&amp;rsquo;y - y&amp;rsquo;X\hat{\beta} - \hat{\beta}&amp;lsquo;X&amp;rsquo;y + \hat{\beta}&amp;lsquo;X&amp;rsquo;X\hat{\beta}.
+\end{align*}&lt;/p&gt;
+&lt;h4 id=&#34;optimization-&#34;&gt;Optimization&lt;/h4&gt;
+&lt;p&gt;From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to each $\beta_i$, to find the minimum sum of squared residuals (the &lt;em&gt;least squares&lt;/em&gt;). So let us take the partial derivative with respect to a particular coefficient:
+\begin{align*}
+\dfrac{\partial f}{ \partial \hat{\beta}_j}
+&amp;amp; = \dfrac{\partial }{ \partial \hat{\beta}_j} \sum_{i=1}^n \left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2 \\&lt;br&gt;
+&amp;amp; = \sum_{i=1}^n \dfrac{\partial }{ \partial \hat{\beta}_j}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2 \\&lt;br&gt;
+&amp;amp; = \sum_{i=1}^n 2\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\dfrac{\partial }{ \partial \hat{\beta}_j}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right) \\&lt;br&gt;
+&amp;amp; = \sum_{i=1}^n 2\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\left(-x_{ij}\right) \\&lt;br&gt;
+&amp;amp; = -\sum_{i=1}^n 2x_{ij}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\end{align*}
+Verify that this can be written in matrix notation as
+\begin{align*}
+\dfrac{\partial f}{ \partial \hat{\beta}_j}
+&amp;amp; = -2\left(X&amp;rsquo;y - X&amp;rsquo;X\hat{\beta}\right)_j,
+\end{align*}
+or in matrix calculus notation
+\begin{align*}
+\dfrac{\partial f}{ \partial \hat{\beta}} &amp;amp; = -2\left(X&amp;rsquo;y - X&amp;rsquo;X\hat{\beta}\right).
+\end{align*}
+Remember that according to calculus, every single entry $\dfrac{\partial f}{ \partial \beta_j}$ must be equal to zero at any extremum (and in particular at the minimum). Thus we can set this whole matrix equation equal to zero, and we get
+$$
+X&amp;rsquo;y = X&amp;rsquo;X\hat{\beta}.
+$$
+Since we are trying to derive an equation for $\hat{\beta}$ we move the matrix over to the other side and we get
+$$
+\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y.
+$$
+We can derive this same equation in fewer steps using the more complex matrix calculus notation, which for example allows us to take the derivative of matrix products and use the matrix chain rule:
+\begin{align*}
+\dfrac{\partial f}{ \partial \hat{\beta}}
+&amp;amp; = \dfrac{\partial }{ \partial \hat{\beta}}\left(y&amp;rsquo;y - y&amp;rsquo;X\hat{\beta} - \hat{\beta}&amp;lsquo;X&amp;rsquo;y + \hat{\beta}&amp;lsquo;X&amp;rsquo;X\hat{\beta}\right) \\&lt;br&gt;
+&amp;amp; = - \dfrac{\partial }{ \partial \hat{\beta}}\left(y&amp;rsquo;X\hat{\beta}\right) - \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&amp;lsquo;X&amp;rsquo;y\right) + \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&amp;lsquo;X&amp;rsquo;X\hat{\beta}\right) \\&lt;br&gt;
+&amp;amp; = -y&amp;rsquo;X-(X&amp;rsquo;y)&amp;lsquo;+\hat{\beta}&amp;lsquo;X&amp;rsquo;X + (X&amp;rsquo;X\hat{\beta})&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = -2(X&amp;rsquo;y - X&amp;rsquo;X\hat{\beta})&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = 0.
+\end{align*}&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
