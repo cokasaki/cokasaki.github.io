@@ -248,6 +248,48 @@ We can derive this same equation in fewer steps using the more complex matrix ca
 &amp;amp; = -2(X&amp;rsquo;y - X&amp;rsquo;X\hat{\beta})&amp;rsquo; \\&lt;br&gt;
 &amp;amp; = 0.
 \end{align*}&lt;/p&gt;
+&lt;h3 id=&#34;important-quantities&#34;&gt;Important Quantities&lt;/h3&gt;
+&lt;p&gt;Now we have shown that the ordinary least squares estimator for $\beta$ is $(X&amp;rsquo;X)^{-1}X&amp;rsquo;y$. Using this we may calculate all sorts of other things.&lt;/p&gt;
+&lt;h4 id=&#34;predicted-values-&#34;&gt;Predicted Values&lt;/h4&gt;
+&lt;p&gt;The predicted values are
+\begin{align*}
+\hat{y}
+&amp;amp; = X\hat{\beta} \\&lt;br&gt;
+&amp;amp; = X(X&amp;rsquo;X)^{-1}X&amp;rsquo;y \\&lt;br&gt;
+&amp;amp; = Hy.
+\end{align*}
+Here we have defined the &amp;ldquo;hat matrix,&amp;rdquo; $H = X(X&amp;rsquo;X)^{-1}X&#39;$. This is a useful matrix in linear regression, which maps the data to its predicted values. This is sometimes also called the projection matrix $P$, since it projects the data onto a lower-dimensional linear space. It is sometimes also called the influence matrix. It has two nice properties which we will use in a moment: it is symmetric and idempotent. This means $H&#39;=H$ and $H^2 = H&amp;rsquo;H = H$. We can see this by calculating:
+\begin{align*}
+H&amp;rsquo; &amp;amp; = (X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = X(X&amp;rsquo;X)^{-1}X&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = H \\&lt;br&gt;
+H^2 &amp;amp; = (X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)(X(X&amp;rsquo;X)^{-1}X&amp;rsquo;) \\&lt;br&gt;
+&amp;amp; = X(X&amp;rsquo;X)^{-1}(X&amp;rsquo;X)(X&amp;rsquo;X)^{-1}X&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = X(X&amp;rsquo;X)^{-1}X&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = H
+\end{align*}&lt;/p&gt;
+&lt;h4 id=&#34;residuals-&#34;&gt;Residuals&lt;/h4&gt;
+&lt;p&gt;The residuals are
+\begin{align*}
+\hat{\epsilon}
+&amp;amp; = y-\hat{y} \\&lt;br&gt;
+&amp;amp; = y-Hy \\&lt;br&gt;
+&amp;amp; = (I-H)y \\&lt;br&gt;
+&amp;amp; = (I-X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)y \\&lt;br&gt;
+&amp;amp; = My
+\end{align*}
+Here we have defined the &amp;ldquo;residual maker&amp;rdquo; matrix, which can also be called the residual operator. This matrix takes the data and gives you the residuals of the model. It also inherits symmetry and idempotency from the hat matrix, since:
+\begin{align*}
+M&amp;rsquo; &amp;amp; = (I-H)&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = I-H \\&lt;br&gt;
+M^2 &amp;amp; = (I-H)(I-H) \\&lt;br&gt;
+&amp;amp; = I - 2H + H^2 \\&lt;br&gt;
+&amp;amp; = I - 2H + H \\&lt;br&gt;
+&amp;amp; = I-H
+\end{align*}
+With all of this put together we now have the tools to analyze the 
+&lt;a href=&#34;../standard-error&#34;&gt;residual standard error&lt;/a&gt;
+. First, however, we will analyze the properties of $\hat{\beta}$.&lt;/p&gt;
 </description>
     </item>
     
@@ -284,6 +326,116 @@ C &amp;amp; D
 =
 \mbox{det}(A)\times \mbox{det}(D-CA^{-1}B) = \mbox{det}(D)\times\mbox{det}(A-BD^{-1}C)$$&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Residual Standard Error</title>
+      <link>/courses/qsci483/linear-regression/standard-error/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/linear-regression/standard-error/</guid>
+      <description>&lt;p&gt;A standard error is the estimated standard deviation $\hat{\sigma}$ for some variable. The residual standard error for linear regression is our estimate of the standard deviation of the noise $\epsilon$. Recall that we assume the noise is independent and heteroskedastic. This is important since it means we only need to estimate one single parameter for all of the noise variables.&lt;/p&gt;
+&lt;p&gt;We estimate the residual variance using the equation $$\hat{\sigma}^2 = \frac{1}{n-k}\sum \hat{\epsilon}_i^2.$$ You can think of the $n-k$ term as accounting for the fact that we have estimated $k$ parameters before making this estimate. Recall that we fit our model by minimizing the sum of squared residuals. So we&amp;rsquo;ve actually optimized this model to minimize exactly $\sum \hat{\epsilon}_i^2$. The more parameters we have to work with the better that optimization will be. So we would probably get an answer that was too small if we just calculated the mean $$\frac{1}{n}\sum \hat{\epsilon}_i^2.$$ Dividing by a smaller number $n-k$ accounts for this, making $\hat{\sigma}^2$ an unbiased estimator of the residual variance.&lt;/p&gt;
+&lt;h3 id=&#34;unbiasedness-&#34;&gt;Unbiasedness&lt;/h3&gt;
+&lt;p&gt;We can see why this is by calculating the expectation of $\hat{\sigma}^2$. We won&amp;rsquo;t even both trying to avoid matrices in this derivation:
+\begin{align*}
+E[\hat{\sigma}^2]
+&amp;amp; = E\left[\frac{1}{n-k}\hat{\epsilon}&#39;\hat{\epsilon}\right] \\&lt;br&gt;
+&amp;amp; = \frac{1}{n-k} E[y&amp;rsquo;M&amp;rsquo;My] \\&lt;br&gt;
+&amp;amp; = \frac{1}{n-k} E[y&amp;rsquo;My] \\&lt;br&gt;
+&amp;amp; = \frac{1}{n-k} E[(X\beta + \epsilon)&amp;lsquo;M(X\beta+\epsilon)] \\&lt;br&gt;
+&amp;amp; = \frac{1}{n-k} \left( E[\beta&amp;rsquo;X&amp;rsquo;MX\beta] + E[\epsilon&amp;rsquo;M\epsilon] \right)
+\end{align*}
+where we have eliminated the cross terms since $E[\epsilon]=0$. Now we can calculate
+\begin{align*}
+X&amp;rsquo;MX
+&amp;amp; = X&amp;rsquo;(I-H)X \\&lt;br&gt;
+&amp;amp; = X&amp;rsquo;X - X&amp;rsquo;(X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)X \\&lt;br&gt;
+&amp;amp; = X&amp;rsquo;X - X&amp;rsquo;X \\&lt;br&gt;
+&amp;amp; = 0
+\end{align*}
+so that the first term drops out. At this point we could either do a lot of algebra or we could make use of a convenient statistical property (we will do the latter). The expectation of a _quadratic form_ (i.e. $v&amp;rsquo;Mv$ for some random vector $v$ and constant matrix $M$) can be written as $$E[v&amp;rsquo;Mv] = \tr[M\Sigma] + \mu^TM\mu$$ where $\mu$ is the mean of $v$ and $\Sigma$ the covariance of $v$. Using this property we find that
+\begin{align*}
+E[\hat{\sigma^2}]
+&amp;amp; = \frac{1}{n-k}E[\epsilon&amp;rsquo;M\epsilon] \\&lt;br&gt;
+&amp;amp; = \frac{1}{n-k}\tr[M\Sigma(\epsilon)] \\&lt;br&gt;
+&amp;amp; = \frac{1}{n-k}\tr[\sigma^2M] \\&lt;br&gt;
+&amp;amp; = \frac{\sigma^2}{n-k}\tr[I-H].
+\end{align*}
+Now, so long as $X$ is full rank (i.e. there are no redundant predictors) the hat matrix has trace $k$. This can be shown using complicated eigenvalue proofs that you can find on Google. Thus $\tr[I-H] = \tr[I]-\tr[H] = n-k$. Thus indeed the $n-k$ term drops out and we find that $\hat{\sigma^2}$ is an unbiased estimator of the true residual variance.&lt;/p&gt;
+&lt;h3 id=&#34;distribution-&#34;&gt;Distribution&lt;/h3&gt;
+&lt;p&gt;In fact, we have done more than show it is unbiased. Much of the algebra that we did actually did not depend on the outer expectation. We actually showed more generally that $$\hat{\sigma^2} = \frac{1}{n-k}\epsilon&amp;rsquo;M\epsilon.$$ This is useful because it is a &lt;em&gt;quadratic form&lt;/em&gt;, as we described above. Quadratic forms over multivariate normal random vectors have nice properties which we will now derive. Specifically we will show that: $$\hat{\sigma^2} \sim \frac{\sigma^2}{n-k}\chi^2_{n-k}.$$&lt;/p&gt;
+&lt;p&gt;This proof will involve some additional use of linear algebraic terms and assumptions. Specifically, we will use the fact that a symmetric matrix $A$ can be decomposed into $A = PDP^T$ for an &lt;em&gt;orthogonal&lt;/em&gt; (i.e. $P^2 = I$) matrix $P$ and a diagonal matrix $D$. Orthogonal matrices are nice because $\tilde{z} = Pz$, the product of an orthogonal matrix with a standard normal vector, is still a standard normal vector.&lt;/p&gt;
+&lt;p&gt;We will also use the fact that if $A$ is symmetric &lt;em&gt;and&lt;/em&gt; idempotent then all the diagonal entries are either 0 or 1. We will further use the fact that the number of entries that are 1 is equal to the trace of $A$. Since $M$ is symmetric and idempotent we will use all these properties to show:
+\begin{align*}
+\epsilon&amp;rsquo;M\epsilon
+&amp;amp; = \epsilon&amp;rsquo;PDP^T\epsilon \\&lt;br&gt;
+&amp;amp; = \sigma^2 z&amp;rsquo;PDP^Tz \\&lt;br&gt;
+&amp;amp; = \sigma^2 \tilde{z}&amp;lsquo;D\tilde{z} \\&lt;br&gt;
+&amp;amp; = \sigma^2 \sum_{i=1}^n D_{ii}\tilde{z}_i^2 \\&lt;br&gt;
+&amp;amp; = \sigma^2 \sum_{i=1}^{n-k} \tilde{z}_i^2 \\&lt;br&gt;
+&amp;amp; = \sim \sigma^2 \chi^2_{n-k}.
+\end{align*}&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dirichlet BCs</title>
+      <link>/courses/gaussian-processes/dirichlet/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/dirichlet/</guid>
+      <description>&lt;p&gt;The simplest version of the finite element method is said to have &amp;ldquo;natural&amp;rdquo; Neumann boundary conditions, meaning that Neumann boundary conditions are naturally satisfied without imposing any additional structure. Dirichlet boundary conditions then are said to be &amp;ldquo;essential,&amp;rdquo; meaning they must be explicitly imposed after the fact. Certain FEM formulations change up this Neumann=natural, Dirichlet=essential default but for our purposes we will treat these terms as interchangeable.&lt;/p&gt;
+&lt;p&gt;Now, suppose that we are confronted with the FEM equation $$\begin{bmatrix} K_{11} &amp;amp; K_{12} \\ K_{21} &amp;amp; K_{22} \end{bmatrix}\begin{bmatrix} u_1 \\ u_2\end{bmatrix} = \begin{bmatrix} L_{11} &amp;amp; L_{12} \\ L_{21} &amp;amp; L_{22} \end{bmatrix} \begin{bmatrix} f_1 \\ f_2 \end{bmatrix},$$
+with the Dirichlet BC $u_2 = u^*$. We can modify our FEM equation to enforce this, to $$\begin{bmatrix} K_{11} &amp;amp; K_{12} \\ 0 &amp;amp; I \end{bmatrix}\begin{bmatrix} u_1 \\ u_2\end{bmatrix} = \begin{bmatrix} L_{11}f_1 + L_{12}f_2 \\ u^* \end{bmatrix}.$$ We can simplify this to an equation for $u$ by inverting the matrix on the left: $$\begin{bmatrix} u_1 \\ u_2 \end{bmatrix} = \begin{bmatrix} K_{11}^{-1} &amp;amp; -K_{11}^{-1}K_{12} \\ 0 &amp;amp; I \end{bmatrix} \begin{bmatrix} L_{11}f_1 + L_{12}f_2 \\ u^* \end{bmatrix}$$
+Now, assuming that $f\sim N(\mu_f,Q_f)$ and $u^*$ is given (often $u^* = 0$) we obtain the following distribution for $u_1$:
+\begin{align*}
+u_1 &amp;amp; = K_{11}^{-1}L_1f - K_{11}^{-1}K_{12}u^* \\&lt;br&gt;
+u_1 &amp;amp; \sim N\left(K_{11}^{-1}(L_1\mu_f - K_{12}u^*), K_{11}^{-1}L_1\Sigma_fL_1^TK_{11}^{-T}\right).
+\end{align*}&lt;/p&gt;
+&lt;p&gt;Now often we are interested in the posterior distribution for $u$ and/or $f$. Since we have assumed that $u^*$ is given the two are deterministically related. However, $u$ is of lower dimension than $f$. So, we will calculate the posterior distribution of $f$ since this can be used to calculate the posterior of $u$ but not vice versa. We will assume that we have made some observations $y = y_1 + y_2 = A_1u_1 + A_2u_2 + \epsilon$ of $u$ from which we wish to make inference. Since $u^*$ is known we essentially have observations:
+\begin{align*}
+y &amp;amp; = A_1K_{11}^{-1}(L_1f - K_{12}u^*) + A_2u^* + \epsilon \\&lt;br&gt;
+&amp;amp; = A_1K_{11}^{-1}L_1f + (A_2 - A_1K_{11}^{-1}K_{12})u^* + \epsilon \\&lt;br&gt;
+&amp;amp; = y_f + y^* + \epsilon
+\end{align*}
+Using the 
+&lt;a href=&#34;../posteriors/#linear-observations&#34;&gt;results&lt;/a&gt;
+ for a posterior from a linearly-observed MVN distribution we see that:
+\begin{align*}
+[f|y=a] &amp;amp; = N\left(\mu_f + Q_{f|y}^{-1}B^TQ_{\epsilon}(y - y^* - B^T\mu_f), Q_{f|y}^{-1}\right) \\&lt;br&gt;
+Q_{f|y} &amp;amp; = Q_f + B^TQ_{\epsilon}B \\&lt;br&gt;
+B &amp;amp; = A_1K_{11}^{-1}L_1
+\end{align*}&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Posteriors</title>
+      <link>/courses/gaussian-processes/posteriors/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/posteriors/</guid>
+      <description>&lt;p&gt;The multivariate normal distribution has nicely behaved posterior distributions. In particular, the posterior given an observation of the vector is also multivariate normal.&lt;/p&gt;
+&lt;h2 id=&#34;basic-posterior-&#34;&gt;Basic Posterior&lt;/h2&gt;
+&lt;p&gt;Let $x$ be an $n\times 1$ vector partitioned into $x = (x_1,x_2)$, with $x_1$ having dimension $k$ and $x_2$ having dimension $n-k$. Partition the mean $\mu = (\mu_1,\mu_2)$ and covariance matrix $$\Sigma = \begin{bmatrix} \Sigma_{11} &amp;amp; \Sigma_{12} \\ \Sigma_{21} &amp;amp; \Sigma_{22} \end{bmatrix}.$$ Then the posterior distribution for $x_1$ given $x_2=a$ is given by
+\begin{align*}
+[x_1|x_2=a]
+&amp;amp; = N\left(\mu_1 + \Sigma_{12}\Sigma_{22}^{-1}(a-\mu_2), \Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}\right).
+\end{align*}&lt;/p&gt;
+&lt;h2 id=&#34;precision-formulation&#34;&gt;Precision Formulation&lt;/h2&gt;
+&lt;p&gt;Often in my research we are interested in analyzing a MVN distribution with known sparse &lt;em&gt;precision&lt;/em&gt; matrix. It is expensive to invert matrices and cheap to work with sparse matrices so we wish to work directly with this precision matrix. Furthermore, we want to calculate the precision matrix for our posterior because it is likely to also be computational advantageous. Let the precision matrix be partitioned
+$$Q = \begin{bmatrix} Q_{11} &amp;amp; Q_{12} \\ Q_{21} &amp;amp; Q_{22} \end{bmatrix}.$$
+Then the equivalent posterior distribution is
+\begin{align*}
+[x_1|x_2=a]
+&amp;amp; = N\left(\mu_1 + Q_{11}^{-1}Q_{12}(a-\mu_2),Q_{11}\right).
+\end{align*}
+Furthermore, let $RR^T = Q$ be the Cholesky decomposition of $Q$ also be partitioned into blocks. If $Q$ is sparse then under mild conditions, $R$ is also sparse and we can work with it to do quick computation. The posterior distribution now is $$[x_1|x_2=a] = N\left(\mu_1 - R_{11}^{-1}(R_{11}^{-T}(Q_{12}(a-\mu_2))), Q_{11}\right).$$&lt;/p&gt;
+&lt;h2 id=&#34;linear-observations&#34;&gt;Linear Observations&lt;/h2&gt;
+&lt;p&gt;Often we are also interested in analyzing a MVN distribution where we observe not the individual components, but a linear combination thereof $y = Ax + \epsilon$ with some mean-zero MVN noise vector $\epsilon$. Then the observations are distributed $y|x \sim N( Ax , Q_\epsilon^{-1} )$. The posterior $x|y$ is given by:
+\begin{align*}
+[x|y=a] &amp;amp; = N\left(\mu_x + Q_{x|y}^{-1}A^TQ_{\epsilon}(y-A\mu_x), Q_{x|y}\right) \\&lt;br&gt;
+Q_{x|y} &amp;amp; = (Q + A^TQ_{\epsilon}A)^{-1}
+\end{align*}&lt;/p&gt;
 </description>
     </item>
     
@@ -418,62 +570,101 @@ This is the covariance matrix of $\hat{\beta}$! Notably, this has two important 
     </item>
     
     <item>
-      <title>Dirichlet BCs</title>
-      <link>/courses/gaussian-processes/dirichlet/</link>
+      <title>Linear Regression Confidence Intervals</title>
+      <link>/courses/qsci483/linear-regression/confidence-intervals/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/gaussian-processes/dirichlet/</guid>
-      <description>&lt;p&gt;The simplest version of the finite element method is said to have &amp;ldquo;natural&amp;rdquo; Neumann boundary conditions, meaning that Neumann boundary conditions are naturally satisfied without imposing any additional structure. Dirichlet boundary conditions then are said to be &amp;ldquo;essential,&amp;rdquo; meaning they must be explicitly imposed after the fact. Certain FEM formulations change up this Neumann=natural, Dirichlet=essential default but for our purposes we will treat these terms as interchangeable.&lt;/p&gt;
-&lt;p&gt;Now, suppose that we are confronted with the FEM equation $$\begin{bmatrix} K_{11} &amp;amp; K_{12} \\ K_{21} &amp;amp; K_{22} \end{bmatrix}\begin{bmatrix} u_1 \\ u_2\end{bmatrix} = \begin{bmatrix} L_{11} &amp;amp; L_{12} \\ L_{21} &amp;amp; L_{22} \end{bmatrix} \begin{bmatrix} f_1 \\ f_2 \end{bmatrix},$$
-with the Dirichlet BC $u_2 = u^*$. We can modify our FEM equation to enforce this, to $$\begin{bmatrix} K_{11} &amp;amp; K_{12} \\ 0 &amp;amp; I \end{bmatrix}\begin{bmatrix} u_1 \\ u_2\end{bmatrix} = \begin{bmatrix} L_{11}f_1 + L_{12}f_2 \\ u^* \end{bmatrix}.$$ We can simplify this to an equation for $u$ by inverting the matrix on the left: $$\begin{bmatrix} u_1 \\ u_2 \end{bmatrix} = \begin{bmatrix} K_{11}^{-1} &amp;amp; -K_{11}^{-1}K_{12} \\ 0 &amp;amp; I \end{bmatrix} \begin{bmatrix} L_{11}f_1 + L_{12}f_2 \\ u^* \end{bmatrix}$$
-Now, assuming that $f\sim N(\mu_f,Q_f)$ and $u^*$ is given (often $u^* = 0$) we obtain the following distribution for $u_1$:
-\begin{align*}
-u_1 &amp;amp; = K_{11}^{-1}L_1f - K_{11}^{-1}K_{12}u^* \\&lt;br&gt;
-u_1 &amp;amp; \sim N\left(K_{11}^{-1}(L_1\mu_f - K_{12}u^*), K_{11}^{-1}L_1\Sigma_fL_1^TK_{11}^{-T}\right).
-\end{align*}&lt;/p&gt;
-&lt;p&gt;Now often we are interested in the posterior distribution for $u$ and/or $f$. Since we have assumed that $u^*$ is given the two are deterministically related. However, $u$ is of lower dimension than $f$. So, we will calculate the posterior distribution of $f$ since this can be used to calculate the posterior of $u$ but not vice versa. We will assume that we have made some observations $y = y_1 + y_2 = A_1u_1 + A_2u_2 + \epsilon$ of $u$ from which we wish to make inference. Since $u^*$ is known we essentially have observations:
-\begin{align*}
-y &amp;amp; = A_1K_{11}^{-1}(L_1f - K_{12}u^*) + A_2u^* + \epsilon \\&lt;br&gt;
-&amp;amp; = A_1K_{11}^{-1}L_1f + (A_2 - A_1K_{11}^{-1}K_{12})u^* + \epsilon \\&lt;br&gt;
-&amp;amp; = y_f + y^* + \epsilon
-\end{align*}
-Using the 
-&lt;a href=&#34;../posteriors/#linear-observations&#34;&gt;results&lt;/a&gt;
- for a posterior from a linearly-observed MVN distribution we see that:
-\begin{align*}
-[f|y=a] &amp;amp; = N\left(\mu_f + Q_{f|y}^{-1}B^TQ_{\epsilon}(y - y^* - B^T\mu_f), Q_{f|y}^{-1}\right) \\&lt;br&gt;
-Q_{f|y} &amp;amp; = Q_f + B^TQ_{\epsilon}B \\&lt;br&gt;
-B &amp;amp; = A_1K_{11}^{-1}L_1
-\end{align*}&lt;/p&gt;
+      <guid>/courses/qsci483/linear-regression/confidence-intervals/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
+ and 
+&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;linear regression&lt;/a&gt;
+ before diving in.&lt;/p&gt;
+&lt;p&gt;Confidence intervals
+Simultaneous confidence intervals&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>Posteriors</title>
-      <link>/courses/gaussian-processes/posteriors/</link>
-      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/gaussian-processes/posteriors/</guid>
-      <description>&lt;p&gt;The multivariate normal distribution has nicely behaved posterior distributions. In particular, the posterior given an observation of the vector is also multivariate normal.&lt;/p&gt;
-&lt;h2 id=&#34;basic-posterior-&#34;&gt;Basic Posterior&lt;/h2&gt;
-&lt;p&gt;Let $x$ be an $n\times 1$ vector partitioned into $x = (x_1,x_2)$, with $x_1$ having dimension $k$ and $x_2$ having dimension $n-k$. Partition the mean $\mu = (\mu_1,\mu_2)$ and covariance matrix $$\Sigma = \begin{bmatrix} \Sigma_{11} &amp;amp; \Sigma_{12} \\ \Sigma_{21} &amp;amp; \Sigma_{22} \end{bmatrix}.$$ Then the posterior distribution for $x_1$ given $x_2=a$ is given by
+      <title>Linear Regression Model Diagnostics</title>
+      <link>/courses/qsci483/linear-regression/math-diagnostics/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/linear-regression/math-diagnostics/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a linear regression model. Make sure to check out my previous posts before diving in.&lt;/p&gt;
+&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;p&gt;Recall that linear regression is based upon the equation:
+$$
+y_i \sim N(X\beta,\sigma^2)
+$$
+or equivalently
 \begin{align*}
-[x_1|x_2=a]
-&amp;amp; = N\left(\mu_1 + \Sigma_{12}\Sigma_{22}^{-1}(a-\mu_2), \Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}\right).
-\end{align*}&lt;/p&gt;
-&lt;h2 id=&#34;precision-formulation&#34;&gt;Precision Formulation&lt;/h2&gt;
-&lt;p&gt;Often in my research we are interested in analyzing a MVN distribution with known sparse &lt;em&gt;precision&lt;/em&gt; matrix. It is expensive to invert matrices and cheap to work with sparse matrices so we wish to work directly with this precision matrix. Furthermore, we want to calculate the precision matrix for our posterior because it is likely to also be computational advantageous. Let the precision matrix be partitioned
-$$Q = \begin{bmatrix} Q_{11} &amp;amp; Q_{12} \\ Q_{21} &amp;amp; Q_{22} \end{bmatrix}.$$
-Then the equivalent posterior distribution is
-\begin{align*}
-[x_1|x_2=a]
-&amp;amp; = N\left(\mu_1 + Q_{11}^{-1}Q_{12}(a-\mu_2),Q_{11}\right).
+y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
+\epsilon_i &amp;amp; \sim N(0,\sigma^2)
 \end{align*}
-Furthermore, let $RR^T = Q$ be the Cholesky decomposition of $Q$ also be partitioned into blocks. If $Q$ is sparse then under mild conditions, $R$ is also sparse and we can work with it to do quick computation. The posterior distribution now is $$[x_1|x_2=a] = N\left(\mu_1 - R_{11}^{-1}(R_{11}^{-T}(Q_{12}(a-\mu_2))), Q_{11}\right).$$&lt;/p&gt;
-&lt;h2 id=&#34;linear-observations&#34;&gt;Linear Observations&lt;/h2&gt;
-&lt;p&gt;Often we are also interested in analyzing a MVN distribution where we observe not the individual components, but a linear combination thereof $y = Ax + \epsilon$ with some mean-zero MVN noise vector $\epsilon$. Then the observations are distributed $y|x \sim N( Ax , Q_\epsilon^{-1} )$. The posterior $x|y$ is given by:
+where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&amp;rsquo;X)^{-1}$.&lt;/p&gt;
+&lt;h3 id=&#34;the-t-statistic-&#34;&gt;The $t$ statistic&lt;/h3&gt;
+&lt;p&gt;The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\hat{\sigma}(\hat{\beta}_i)}$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Furthermore, $\hat{\sigma}(\hat{\beta}&lt;em&gt;i)$, the standard error for this estimate, is a product of the standard error $\hat{\sigma}(\epsilon)$ and the analytical standard deviation of $\beta_i$ (for $\sigma = 1$) which is just the $\sqrt{(X&amp;rsquo;X)^{-1}&lt;/em&gt;{ii}}$. The important thing is we have a normal variable and its standard error, and therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).&lt;/p&gt;
+&lt;h3 id=&#34;the-f-statistic-&#34;&gt;The $F$ statistic&lt;/h3&gt;
+&lt;p&gt;The $F$ test for the overall model is a formal test with hypothesis:
 \begin{align*}
-[x|y=a] &amp;amp; = N\left(\mu_x + Q_{x|y}^{-1}A^TQ_{\epsilon}(y-A\mu_x), Q_{x|y}\right) \\&lt;br&gt;
-Q_{x|y} &amp;amp; = (Q + A^TQ_{\epsilon}A)^{-1}
-\end{align*}&lt;/p&gt;
+H_0: &amp;amp; \beta_i = 0 \mbox{ for all } i \\&lt;br&gt;
+H_1: &amp;amp; \beta_i \neq 0 \mbox{ for some }i.
+\end{align*}
+Notably we will be assuming that there _is_ still a non-zero constant mean term even under $H_0$. If we do not assume this then we can basically set all the $\overline{y}$ terms equal to zero and remove the 1 degree of freedom from the null hypothesis terms. To test this we need to calculate a few important quantities, all of which are sums of squares:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SSE (sum of squares: error)
+&lt;ul&gt;
+&lt;li&gt;This is basically just the sum of squares for all the residuals&lt;/li&gt;
+&lt;li&gt;SSE$ = \sum_{i=1}^n (y_i - \hat{y}_i)^2 = \sum_{i=1}^n \epsilon_i^2$&lt;/li&gt;
+&lt;li&gt;We showed 
+&lt;a href=&#34;../standard-error&#34;&gt;previously&lt;/a&gt;
+ that SSE$\sim \chi^2_{n-k}$&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SSM (sum of squares: model)
+&lt;ul&gt;
+&lt;li&gt;This is basically how much extra variation from the mean the model explains&lt;/li&gt;
+&lt;li&gt;SSM$ = \sum_{i=1}^n (\hat{y}_i - \overline{y})^2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;SST (sum of squares: total)
+&lt;ul&gt;
+&lt;li&gt;This is how much total variation this is around the mean&lt;/li&gt;
+&lt;li&gt;SST$ = \sum_{i=1}^n (y_i-\overline{y})^2
+Remarkably SSE+SSM=SST. This is the famous variance decomposition for ANOVA models. Why is this true?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;variance-decomposition-&#34;&gt;Variance Decomposition&lt;/h4&gt;
+&lt;p&gt;We can think about the variance decomposition several ways. The simplest proof is geometric in nature but requires jumping through some linear-subspace hoops. We can think about three points in $\mathbb{R}^n$, $n-dimensional space where our datapoints $y$ live. One point is $y_i = (y_i)$. Another point is $\hat{y}_i = (\hat{y}_i)$ a third point is $\overline{y}&lt;em&gt;i = (\overline{y})$. We can also define $k$ vectors in this space, corresponding to the values of our predictors $x^{(j)}&lt;em&gt;i = X&lt;/em&gt;{ij}$. These $k$ vectors define a $k$-dimensional linear subspace of $\mathbb{R}^n$ (which you can think of as $X\beta$ for all of the possible $k$-dimensional values of $\beta$. The prediction vector $\hat{y}$ is nothing but the projection of $y$ onto the closest point of this subspace. Since one of the predictors is the mean (i.e. $X&lt;/em&gt;{i1} = 1$) the mean point $\hat{y}$ falls &lt;em&gt;inside&lt;/em&gt; this linear subspace. This gives us the following geometric intuition:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The mean is in the subspace&lt;/li&gt;
+&lt;li&gt;The projection is in the subspace&lt;/li&gt;
+&lt;li&gt;The projection is the &lt;em&gt;closest&lt;/em&gt; point in the subspace to the data&lt;/li&gt;
+&lt;li&gt;Therefore the vector leading from the data to the projection is &lt;em&gt;orthogonal&lt;/em&gt; or perpendicular to the subspace&lt;/li&gt;
+&lt;li&gt;In particular the vector leading from the data to the projection is orthogonal to the vector leading from the projection to the mean
+Therefore we can apply the Pythagorean theorem, to find that the squared distance between the data and the projection (prediction) plus the squared distance between the projection and the mean is equal to the squared distance between the data and the mean. If you sit down and think about what these &amp;ldquo;squared distance&amp;rdquo; mean in mathematical terms you will find that this is a geometric proof of SSE+SSM=SST.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can also think about the variance decomposition in terms of raw linear algebra and matrices: TODO&lt;/p&gt;
+&lt;p&gt;A common &lt;em&gt;mistake&lt;/em&gt; made in deriving the variance decomposition is noting that $$(y_i - \hat{y}_i) + (\hat{y}_i - \overline{y}) = (y_i-\overline{y}).$$ The &lt;em&gt;false&lt;/em&gt; argument then goes: square the terms and sum and the equality holds. However, as you likely know $A+B=C$ does &lt;em&gt;not&lt;/em&gt; imply that $A^2+B^2=C^2$. We require the additional structure of linear algebra and/or geometry to obtain this result&lt;/p&gt;
+&lt;h4 id=&#34;back-to-the-f-test-&#34;&gt;Back to the $F$ test&lt;/h4&gt;
+&lt;p&gt;We can now adjust SSE and SSM to get the &amp;ldquo;mean sum of squares,&amp;rdquo; by dividing by the degrees of freedom:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MSE = SSE/$(n-k)$&lt;/li&gt;
+&lt;li&gt;MSM = SSM/$(n-1)$
+Finally, our test statistic is $F = MSM/MSE$. Note that if the model explains a lot more variation than just the mean we expect for MSE to be small and MSM to be large: make sure this make sense to you. So if the model is &amp;ldquo;real&amp;rdquo; then we expect $F$ to be large. If the null hypothesis is true then we expect $F$ to be small. So we reject the null for large values of $F$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Multiple vs. adjusted $R^2$
+More on t-tests
+F-test for whole model
+Stundentized residuals ($t$ vs. standardized $N(0,1)$)
+DFFITS
+Cook&amp;rsquo;s distance ($F$-distribution)
+Skewness
+Kurtosis
+Leverage
+ANOVA
+Shapiro-wilks test
+ncV test&lt;/p&gt;
 </description>
     </item>
     
@@ -506,59 +697,6 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
     </item>
     
     <item>
-      <title>Linear Regression Model Diagnostics</title>
-      <link>/courses/qsci483/linear-regression/math-diagnostics/</link>
-      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci483/linear-regression/math-diagnostics/</guid>
-      <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
-&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
- and 
-&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;linear regression&lt;/a&gt;
- before diving in.&lt;/p&gt;
-&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
-&lt;p&gt;Recall that linear regression is based upon the equation:
-$$
-y_i \sim N(X\beta,\sigma^2)
-$$
-or equivalently
-\begin{align*}
-y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
-\epsilon_i &amp;amp; \sim N(0,\sigma^2)
-\end{align*}
-where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&amp;rsquo;X)^{-1}$.&lt;/p&gt;
-&lt;p&gt;The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\sqrt{\mbox{var}(\hat{\beta}_i)}$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).&lt;/p&gt;
-&lt;p&gt;Multiple vs. adjusted $R^2$
-Different page for estimating $\sigma^2$
-More on t-tests
-F-test for whole model
-Stundentized residuals ($t$ vs. standardized $N(0,1)$)
-DFFITS
-Cook&amp;rsquo;s distance ($F$-distribution)
-Skewness
-Kurtosis
-Leverage
-ANOVA
-Shapiro-wilks test
-ncV test&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Linear Regression Confidence Intervals</title>
-      <link>/courses/qsci483/linear-regression/confidence-intervals/</link>
-      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci483/linear-regression/confidence-intervals/</guid>
-      <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
-&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
- and 
-&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;linear regression&lt;/a&gt;
- before diving in.&lt;/p&gt;
-&lt;p&gt;Confidence intervals
-Simultaneous confidence intervals&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Is Knowledge an Obstacle to Teaching?</title>
       <link>/post/teaching/visible-learning/ch-02/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
@@ -579,6 +717,28 @@ Simultaneous confidence intervals&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;Knowledge about subject matter may make it harder to teach in a group setting, but on an individual level enables you to provide helpful feedback, and contextualize a student&amp;rsquo;s ideas and progress against your own knowledge base.&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/1</title>
+      <link>/post/notebook/2020/spring/week2/thurs/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look at QSCI stuff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
 </description>
     </item>
     

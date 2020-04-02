@@ -28,9 +28,9 @@
   
     
   
-  <meta name="description" content="In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on notation and linear regression before diving in.
+  <meta name="description" content="In this document I will outline the math used to derive and analyze the model diagnostics for a linear regression model. Make sure to check out my previous posts before diving in.
 The Model Recall that linear regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
-\epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid.">
+\epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&rsquo;X)^{-1}$.">
 
   
   <link rel="alternate" hreflang="en-us" href="/courses/qsci483/linear-regression/math-diagnostics/">
@@ -235,15 +235,15 @@ The Model Recall that linear regression is based upon the equation: $$ y_i \sim 
   <meta property="og:site_name" content="Colin Okasaki">
   <meta property="og:url" content="/courses/qsci483/linear-regression/math-diagnostics/">
   <meta property="og:title" content="Linear Regression Model Diagnostics | Colin Okasaki">
-  <meta property="og:description" content="In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on notation and linear regression before diving in.
+  <meta property="og:description" content="In this document I will outline the math used to derive and analyze the model diagnostics for a linear regression model. Make sure to check out my previous posts before diving in.
 The Model Recall that linear regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
-\epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid."><meta property="og:image" content="/img/icon.png">
+\epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&rsquo;X)^{-1}$."><meta property="og:image" content="/img/icon.png">
   <meta property="twitter:image" content="/img/icon.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-03-31T00:00:00&#43;01:00">
     
-    <meta property="article:modified_time" content="2020-03-31T00:00:00&#43;01:00">
+    <meta property="article:modified_time" content="2020-04-01T17:52:23-07:00">
   
 
   
@@ -596,16 +596,20 @@ The Model Recall that linear regression is based upon the equation: $$ y_i \sim 
         <a href="/courses/qsci483/linear-regression/properties/">Properties</a>
       </li>
       
+      <li >
+        <a href="/courses/qsci483/linear-regression/standard-error/">Standard Error</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/confidence-intervals/">Confidence Intervals</a>
+      </li>
+      
       <li class="active">
         <a href="/courses/qsci483/linear-regression/math-diagnostics/">Model Diagnostics</a>
       </li>
       
       <li >
         <a href="/courses/qsci483/linear-regression/diagnostics/">Using Diagnostics</a>
-      </li>
-      
-      <li >
-        <a href="/courses/qsci483/linear-regression/confidence-intervals/">Confidence Intervals</a>
       </li>
       
     </ul>
@@ -626,7 +630,12 @@ The Model Recall that linear regression is based upon the equation: $$ y_i \sim 
 
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-model-">The Model</a></li>
+    <li><a href="#the-model-">The Model</a>
+      <ul>
+        <li><a href="#the-t-statistic-">The $t$ statistic</a></li>
+        <li><a href="#the-f-statistic-">The $F$ statistic</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
@@ -642,11 +651,7 @@ The Model Recall that linear regression is based upon the equation: $$ y_i \sim 
           <h1>Linear Regression Model Diagnostics</h1>
 
           <div class="article-style">
-            <p>In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
-<a href="/courses/qsci483/notation">notation</a>
- and 
-<a href="/courses/qsci483/linear-regression/linear-regression">linear regression</a>
- before diving in.</p>
+            <p>In this document I will outline the math used to derive and analyze the model diagnostics for a linear regression model. Make sure to check out my previous posts before diving in.</p>
 <h2 id="the-model-">The Model</h2>
 <p>Recall that linear regression is based upon the equation:
 $$
@@ -658,9 +663,59 @@ y_i &amp; \sim X\beta + \epsilon_i \\<br>
 \epsilon_i &amp; \sim N(0,\sigma^2)
 \end{align*}
 where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&rsquo;X)^{-1}$.</p>
-<p>The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\sqrt{\mbox{var}(\hat{\beta}_i)}$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).</p>
+<h3 id="the-t-statistic-">The $t$ statistic</h3>
+<p>The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\hat{\sigma}(\hat{\beta}_i)}$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Furthermore, $\hat{\sigma}(\hat{\beta}<em>i)$, the standard error for this estimate, is a product of the standard error $\hat{\sigma}(\epsilon)$ and the analytical standard deviation of $\beta_i$ (for $\sigma = 1$) which is just the $\sqrt{(X&rsquo;X)^{-1}</em>{ii}}$. The important thing is we have a normal variable and its standard error, and therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).</p>
+<h3 id="the-f-statistic-">The $F$ statistic</h3>
+<p>The $F$ test for the overall model is a formal test with hypothesis:
+\begin{align*}
+H_0: &amp; \beta_i = 0 \mbox{ for all } i \\<br>
+H_1: &amp; \beta_i \neq 0 \mbox{ for some }i.
+\end{align*}
+Notably we will be assuming that there _is_ still a non-zero constant mean term even under $H_0$. If we do not assume this then we can basically set all the $\overline{y}$ terms equal to zero and remove the 1 degree of freedom from the null hypothesis terms. To test this we need to calculate a few important quantities, all of which are sums of squares:</p>
+<ul>
+<li>SSE (sum of squares: error)
+<ul>
+<li>This is basically just the sum of squares for all the residuals</li>
+<li>SSE$ = \sum_{i=1}^n (y_i - \hat{y}_i)^2 = \sum_{i=1}^n \epsilon_i^2$</li>
+<li>We showed 
+<a href="../standard-error">previously</a>
+ that SSE$\sim \chi^2_{n-k}$</li>
+</ul>
+</li>
+<li>SSM (sum of squares: model)
+<ul>
+<li>This is basically how much extra variation from the mean the model explains</li>
+<li>SSM$ = \sum_{i=1}^n (\hat{y}_i - \overline{y})^2</li>
+</ul>
+</li>
+<li>SST (sum of squares: total)
+<ul>
+<li>This is how much total variation this is around the mean</li>
+<li>SST$ = \sum_{i=1}^n (y_i-\overline{y})^2
+Remarkably SSE+SSM=SST. This is the famous variance decomposition for ANOVA models. Why is this true?</li>
+</ul>
+</li>
+</ul>
+<h4 id="variance-decomposition-">Variance Decomposition</h4>
+<p>We can think about the variance decomposition several ways. The simplest proof is geometric in nature but requires jumping through some linear-subspace hoops. We can think about three points in $\mathbb{R}^n$, $n-dimensional space where our datapoints $y$ live. One point is $y_i = (y_i)$. Another point is $\hat{y}_i = (\hat{y}_i)$ a third point is $\overline{y}<em>i = (\overline{y})$. We can also define $k$ vectors in this space, corresponding to the values of our predictors $x^{(j)}<em>i = X</em>{ij}$. These $k$ vectors define a $k$-dimensional linear subspace of $\mathbb{R}^n$ (which you can think of as $X\beta$ for all of the possible $k$-dimensional values of $\beta$. The prediction vector $\hat{y}$ is nothing but the projection of $y$ onto the closest point of this subspace. Since one of the predictors is the mean (i.e. $X</em>{i1} = 1$) the mean point $\hat{y}$ falls <em>inside</em> this linear subspace. This gives us the following geometric intuition:</p>
+<ul>
+<li>The mean is in the subspace</li>
+<li>The projection is in the subspace</li>
+<li>The projection is the <em>closest</em> point in the subspace to the data</li>
+<li>Therefore the vector leading from the data to the projection is <em>orthogonal</em> or perpendicular to the subspace</li>
+<li>In particular the vector leading from the data to the projection is orthogonal to the vector leading from the projection to the mean
+Therefore we can apply the Pythagorean theorem, to find that the squared distance between the data and the projection (prediction) plus the squared distance between the projection and the mean is equal to the squared distance between the data and the mean. If you sit down and think about what these &ldquo;squared distance&rdquo; mean in mathematical terms you will find that this is a geometric proof of SSE+SSM=SST.</li>
+</ul>
+<p>We can also think about the variance decomposition in terms of raw linear algebra and matrices: TODO</p>
+<p>A common <em>mistake</em> made in deriving the variance decomposition is noting that $$(y_i - \hat{y}_i) + (\hat{y}_i - \overline{y}) = (y_i-\overline{y}).$$ The <em>false</em> argument then goes: square the terms and sum and the equality holds. However, as you likely know $A+B=C$ does <em>not</em> imply that $A^2+B^2=C^2$. We require the additional structure of linear algebra and/or geometry to obtain this result</p>
+<h4 id="back-to-the-f-test-">Back to the $F$ test</h4>
+<p>We can now adjust SSE and SSM to get the &ldquo;mean sum of squares,&rdquo; by dividing by the degrees of freedom:</p>
+<ul>
+<li>MSE = SSE/$(n-k)$</li>
+<li>MSM = SSM/$(n-1)$
+Finally, our test statistic is $F = MSM/MSE$. Note that if the model explains a lot more variation than just the mean we expect for MSE to be small and MSM to be large: make sure this make sense to you. So if the model is &ldquo;real&rdquo; then we expect $F$ to be large. If the null hypothesis is true then we expect $F$ to be small. So we reject the null for large values of $F$.</li>
+</ul>
 <p>Multiple vs. adjusted $R^2$
-Different page for estimating $\sigma^2$
 More on t-tests
 F-test for whole model
 Stundentized residuals ($t$ vs. standardized $N(0,1)$)
@@ -688,14 +743,14 @@ ncV test</p>
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/courses/qsci483/linear-regression/diagnostics/" rel="next">Using Model Diagnostics</a>
+    <a href="/courses/qsci483/linear-regression/confidence-intervals/" rel="next">Linear Regression Confidence Intervals</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/courses/qsci483/linear-regression/confidence-intervals/" rel="prev">Linear Regression Confidence Intervals</a>
+    <a href="/courses/qsci483/linear-regression/diagnostics/" rel="prev">Using Model Diagnostics</a>
   </div>
   
 </div>
@@ -705,7 +760,7 @@ ncV test</p>
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Mar 31, 2020</p>
+          <p>Last updated on Apr 1, 2020</p>
 
           
 
