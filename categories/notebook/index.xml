@@ -5,12 +5,47 @@
     <link>/categories/notebook/</link>
       <atom:link href="/categories/notebook/index.xml" rel="self" type="application/rss+xml" />
     <description>Notebook</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 31 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon.png</url>
       <title>Notebook</title>
       <link>/categories/notebook/</link>
     </image>
+    
+    <item>
+      <title>Lab Notebook: 4/1</title>
+      <link>/post/notebook/2020/spring/week2/wedn/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Take notes from Visible Learning Chapter 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attend class and continue looking at QSCI HW 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Wrote up some 
+&lt;a href=&#34;/courses/gaussian-processes&#34;&gt;resources&lt;/a&gt;
+ so that I can stop rederiving/looking up common GP/MVN properties that I need to use. Also included on there the math for Dirichlet BCs. Now that the derivation is there I can more effectively write the code for the implementation, rather than writing stuff down on paper every time I try to do this.&lt;/p&gt;
+&lt;p&gt;Forgot to account in my scheduling today for time to edit and submit my dissertation proposal. Did that.&lt;/p&gt;
+&lt;p&gt;Wrote up notes for VL Ch 2, and continued to expand on my own 
+&lt;a href=&#34;/courses/qsci-483&#34;&gt;notes&lt;/a&gt;
+ for QSCI, reminding myself how all the 
+&lt;a href=&#34;/courses/qsci-483/linear-regression/diagnostics&#34;&gt;model diagnostics&lt;/a&gt;
+ work.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lab Notebook: 3/31</title>
@@ -37,6 +72,7 @@
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Didn&amp;rsquo;t make it through the whole thing, had to look up some of the model diagnostics Tim is using, but did get through VL Ch 1 and 2. Struggled with website formatting in the afternoon.&lt;/p&gt;
 </description>
     </item>
     

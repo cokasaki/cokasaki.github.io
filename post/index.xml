@@ -13,6 +13,65 @@
     </image>
     
     <item>
+      <title>Is Knowledge an Obstacle to Teaching?</title>
+      <link>/post/teaching/visible-learning/ch-02/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/teaching/visible-learning/ch-02/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Experts in a subject matter area seem to have worse intuition for teaching that subject matter, compared to novices
+&lt;ul&gt;
+&lt;li&gt;In theory this is because they have learned to think about it in a structured and organized way that is not the most effective way to &lt;em&gt;learn&lt;/em&gt; that material&lt;/li&gt;
+&lt;li&gt;Experts consistently underestimated how difficult a task is. Novices, having just learned it, know how difficult it is to learn and teach a more basic level&lt;/li&gt;
+&lt;li&gt;Although students rated novices higher and performed better on a post-teaching assessment, the expert-taught students performed better on transferring their learning to a related task&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Students appreciate being taught by knowledgeable, motivated, passionate individuals
+&lt;ul&gt;
+&lt;li&gt;Students will rate their best teachers highly on competency, credibility, and fariness&lt;/li&gt;
+&lt;li&gt;More closely related to student motivation than actual learning. However children learn less from adults they view as ignorant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Knowledge about subject matter may make it harder to teach in a group setting, but on an individual level enables you to provide helpful feedback, and contextualize a student&amp;rsquo;s ideas and progress against your own knowledge base.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/1</title>
+      <link>/post/notebook/2020/spring/week2/wedn/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Take notes from Visible Learning Chapter 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attend class and continue looking at QSCI HW 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Wrote up some 
+&lt;a href=&#34;/courses/gaussian-processes&#34;&gt;resources&lt;/a&gt;
+ so that I can stop rederiving/looking up common GP/MVN properties that I need to use. Also included on there the math for Dirichlet BCs. Now that the derivation is there I can more effectively write the code for the implementation, rather than writing stuff down on paper every time I try to do this.&lt;/p&gt;
+&lt;p&gt;Forgot to account in my scheduling today for time to edit and submit my dissertation proposal. Did that.&lt;/p&gt;
+&lt;p&gt;Wrote up notes for VL Ch 2, and continued to expand on my own 
+&lt;a href=&#34;/courses/qsci-483&#34;&gt;notes&lt;/a&gt;
+ for QSCI, reminding myself how all the 
+&lt;a href=&#34;/courses/qsci-483/linear-regression/diagnostics&#34;&gt;model diagnostics&lt;/a&gt;
+ work.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Lab Notebook: 3/31</title>
       <link>/post/notebook/2020/spring/week2/tues/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
@@ -37,15 +96,8 @@
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Didn&amp;rsquo;t make it through the whole thing, had to look up some of the model diagnostics Tim is using, but did get through VL Ch 1 and 2. Struggled with website formatting in the afternoon.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/teaching/visible-learning/ch-02/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/post/teaching/visible-learning/ch-02/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -285,7 +337,7 @@
       <link>/post/teaching/visible-learning/core-takeaways/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/visible-learning/core-takeaways/</guid>
-      <description>&lt;p&gt;Nine basic principles:&lt;/p&gt;
+      <description>&lt;h2 id=&#34;nine-basic-principles-&#34;&gt;Nine basic principles&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Explanations of human learning in terms of innate talent are consistently undermined by research which states that substantial amounts of time, energy, instruction, and effort are required to develop mastery of any subject area.&lt;/li&gt;
 &lt;li&gt;We can naturally learn from any information, but to learn effectively that information has to be organized in a way that matches how our minds are organized. Minds are organized differently for different people, and even change as we age.&lt;/li&gt;
@@ -297,19 +349,35 @@
 &lt;li&gt;Humans are fundamentally social, down to the neurological level. This sociality can be used as a tool (social brain hypothesis)&lt;/li&gt;
 &lt;li&gt;Ideas about learning that are contradicted by scientific evidence abound. Many of these ideas can be harmful.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Section 1&lt;/p&gt;
+&lt;h2 id=&#34;section-1-&#34;&gt;Section 1&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;The mind may not be &amp;ldquo;designed for thinking&amp;rdquo; and requires time and effort to think&lt;/li&gt;
 &lt;li&gt;Teachers need to recognize how difficult tasks are for beginners. Focus should be not on material but on the actual process of moving from not knowing to knowing. To do this students need a safe environment to acknowledge they don&#39;t understand. We can only holld so much in our cognitive centers, so it is important to ``overlearn&amp;rsquo;&amp;rsquo; basic concepts until it is ingrained and automatic&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Section 2&lt;/p&gt;
+&lt;h3 id=&#34;chapter-1-&#34;&gt;Chapter 1&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Students do not dislike school, but tolerate it.&lt;/li&gt;
+&lt;li&gt;The brain may not be &amp;ldquo;designed&amp;rdquo; for abstract thinking and as a result school is a taxing process.&lt;/li&gt;
+&lt;li&gt;Thinking requires a large investment of resources for an uncertain outcome (understanding) and risk-averse humans prefer to invest these resources in crossing seemingly achievable &amp;ldquo;knowledge gaps&amp;rdquo; rather than &amp;ldquo;knowledge chasms&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;chapter-2-&#34;&gt;Chapter 2&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Experts may be &amp;ldquo;worse&amp;rdquo; at teaching than novices. The &amp;ldquo;expert blind spot effect&amp;rdquo; explains this:
+&lt;ul&gt;
+&lt;li&gt;experts forget how difficult it was to learn something in the first place&lt;/li&gt;
+&lt;li&gt;there is a gap between the advanced level on which experts conceptualize of a topic and the short-term learning needs of students&lt;/li&gt;
+&lt;li&gt;however, this abstract thinking may help students transfer their learning to related areas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;section-2-&#34;&gt;Section 2&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Major ideas about acquisition, memory retention, mental storage, and overload&lt;/li&gt;
 &lt;li&gt;Learning need not be conscious, we can only think about so much at once&lt;/li&gt;
 &lt;li&gt;We need to develop a vocabulary for learning, and need multiple strategies for learning&lt;/li&gt;
 &lt;li&gt;Challenges: learning styles (i.e. spatial, verbal, kinaesthetic), Mozart effects, multitasking, digital natives, and whether the Internet is really changing how we think&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Section 3&lt;/p&gt;
+&lt;h2 id=&#34;section-3-&#34;&gt;Section 3&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Self-esteem follows success more often than predicting it&lt;/li&gt;
 &lt;li&gt;Building confidence is still important though: in order to maintain positive views of ourselves we build explanations (I cannot; rather than I did not work hard enough) that help our self esteem but hurt our learning&lt;/li&gt;

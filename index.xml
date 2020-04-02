@@ -13,12 +13,56 @@
     </image>
     
     <item>
-      <title>Simple Linear Regression</title>
-      <link>/courses/qsci483/math/linear-regression/simple-linear-regression/</link>
+      <title>Notation</title>
+      <link>/courses/qsci483/notation/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci483/math/linear-regression/simple-linear-regression/</guid>
+      <guid>/courses/qsci483/notation/</guid>
+      <description>&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
+&lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
+&lt;h3 id=&#34;advanced-notation-matrix-calculus-&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
+&lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
+ or in the more extensive 
+&lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
+.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Notation and Terminology</title>
+      <link>/courses/gaussian-processes/notation/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/notation/</guid>
+      <description>&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
+&lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
+&lt;h2 id=&#34;matrix-calculus-&#34;&gt;Matrix Calculus&lt;/h2&gt;
+&lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
+ or in the more extensive 
+&lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id=&#34;gaussian-process-notation-&#34;&gt;Gaussian Process Notation&lt;/h2&gt;
+&lt;p&gt;I will write $f \sim GP(\mu(x),k(x,x&amp;rsquo;))$ to denote a Gaussian process with mean function $\mu$ and covariance function (kernel) $k(x,x&amp;rsquo;)$. I will in general &lt;em&gt;not&lt;/em&gt; assume that $k$ is stationary (see 
+&lt;a href=&#34;#terminology&#34;&gt;terminology&lt;/a&gt;
+). Under this definition $f$ is a stochastic process with the defining property that for any set of points ${x_i}$ (in whatever space $\Omega$ we choose), the vector $f(x)_i = f(x_i)$ is distributed as a multivariate normal (MVN) random vector with mean $\mu_i = \mu(x_i)$ and covariance matrix $\Sigma_{ij} = k(x_i,x_j)$. Many of the properties I will discuss on this page are actually properties of the MVN distribution.&lt;/p&gt;
+&lt;h2 id=&#34;terminology-&#34;&gt;Terminology&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A Gaussian process is called &lt;em&gt;stationary&lt;/em&gt; (or &lt;em&gt;homogeneous&lt;/em&gt;) if $k(x,x&amp;rsquo;) = k(x-x&amp;rsquo;)$&lt;/li&gt;
+&lt;li&gt;A Gaussian Process is called &lt;em&gt;isotropic&lt;/em&gt; if $k(x,x&amp;rsquo;) = k(|x-x&#39;|)$&lt;/li&gt;
+&lt;li&gt;A matrix $M$ is said to be &lt;em&gt;positive semidefinite&lt;/em&gt; if it has the property that $v&amp;rsquo;Mv \geq 0$ for any vector $v$. Covariance matrices are positive semidefinite.&lt;/li&gt;
+&lt;li&gt;A kernel is said to be positive semidefinite (psd) if $$\int_\Omega k(x,x&amp;rsquo;)f(x)f(x&amp;rsquo;)dxdx&amp;rsquo; \geq 0$$ for all $L_2$ functions $f$. Gram matrices (i.e. covariance matrices) from psd kernels are psd matrices.&lt;/li&gt;
+&lt;li&gt;The inverse of the covariance matrix in a MVN distribution is $Q = \Sigma^{-1}$ and is called the &lt;em&gt;precision matrix&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simple Linear Regression</title>
+      <link>/courses/qsci483/linear-regression/simple-linear-regression/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/linear-regression/simple-linear-regression/</guid>
       <description>&lt;p&gt;In this document I will outline the math used in the analysis of a simple linear regression model. Make sure to check out my 
-&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
  document to clarify any confusing notation.&lt;/p&gt;
 &lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Simple Linear Regression is based upon the equation
@@ -34,7 +78,7 @@ where the $\epsilon_i$ are iid. It is important to remember that the expectation
 &lt;h3 id=&#34;fitting-&#34;&gt;Fitting&lt;/h3&gt;
 &lt;h4 id=&#34;objective-function-&#34;&gt;Objective Function&lt;/h4&gt;
 &lt;p&gt;To fit a simple linear regression we first must choose a measure of fit. Here we will choose least squares, since this corresponds to 
-&lt;a href=&#34;/courses/qsci483/math/linear-regression/properties&#34;&gt;maximum likelihood esitmation&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/linear-regression/properties&#34;&gt;maximum likelihood esitmation&lt;/a&gt;
  in this model. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using our predictor $x_i$ for data point $i$ along with estimated coefficients $\hat{\beta}_0$ and $\hat{\beta}_1$:
 $$
 \hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x.
@@ -106,14 +150,29 @@ I encourage you to try doing the same calculation with $S_{xx}$: you will find t
     </item>
     
     <item>
+      <title>General Linear Algebraic Properties</title>
+      <link>/courses/gaussian-processes/linear-algebra/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/linear-algebra/</guid>
+      <description>&lt;p&gt;The Woodbury matrix identity is $$(A+UCV)^{-1}=A^{-1} - A^{-1}U(C^{-1}+VA^{-1}U)^{-1}VA^{-1}.$$ Simpler versions of this identity are
+\begin{align*}
+(I+UV)^{-1} &amp;amp; = I-U(I+VU)^{-1}V, \\&lt;br&gt;
+(I+P)^{-1} &amp;amp; = I-(I+P)^{-1}P \\&lt;br&gt;
+(I+P)^{-1} &amp;amp; = I-P(I+P)^{-1}
+\end{align*}
+In the special case that $u$ and $v$ are vectors and $C = I$ we get the Sherman-Morrison formula: $$(A+uv^T)^{-1} = A^{-1} - \frac{A^{-1}uv^TA^{-1}}{1+v^TA^{-1}u}.$$ A similar formula is the matrix determinant lemma $$\mbox{det}(A+uv^T) = (1+v^TA^{-1}u)\mbox{det}(A).$$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Linear Regression</title>
-      <link>/courses/qsci483/math/linear-regression/linear-regression/</link>
+      <link>/courses/qsci483/linear-regression/linear-regression/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci483/math/linear-regression/linear-regression/</guid>
+      <guid>/courses/qsci483/linear-regression/linear-regression/</guid>
       <description>&lt;p&gt;In this document I will outline the math used in the analysis of a more general linear regression model, with more than one predictor variable. Make sure to check out my 
-&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
  document to clarify any confusing notation, and check out my 
-&lt;a href=&#34;/courses/qsci483/math/linear-regressoin/simple-linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/linear-regression/simple-linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
  document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.&lt;/p&gt;
 &lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Linear regression is based upon the equation
@@ -193,14 +252,50 @@ We can derive this same equation in fewer steps using the more complex matrix ca
     </item>
     
     <item>
+      <title>Block Matrices</title>
+      <link>/courses/gaussian-processes/block-matrices/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/block-matrices/</guid>
+      <description>&lt;p&gt;Block matrices have some nice linear algebraic properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$\begin{bmatrix}
+A &amp;amp; B \\&lt;br&gt;
+C &amp;amp; D
+\end{bmatrix}
+=
+\begin{bmatrix}
+A^{-1} + A^{-1}B(D-CA^{-1}B)^{-1}CA^{-1} &amp;amp; -A^{-1}B(D-CA^{-1}B)^{-1} \\&lt;br&gt;
+-(D-CA^{-1}B)^{-1}CA^{-1} &amp;amp; (D-CA^{-1}B)^{-1}
+\end{bmatrix}$$&lt;/li&gt;
+&lt;li&gt;$$\begin{bmatrix}
+A &amp;amp; B \\&lt;br&gt;
+C &amp;amp; D
+\end{bmatrix}
+=
+\begin{bmatrix}
+(A-BD^{-1}C)^{-1} &amp;amp; -(A-BD^{-1}C)^{-1}BD^{-1} \\&lt;br&gt;
+-D^{-1}C(A-BD^{-1}C)^{-1} &amp;amp; D^{-1} + D^{-1}C(A-BD^{-1}C)^{-1}BD^{-1}
+\end{bmatrix}$$&lt;/li&gt;
+&lt;li&gt;$$\mbox{det}
+\begin{pmatrix}
+A &amp;amp; B \&lt;br&gt;
+C &amp;amp; D
+\end{pmatrix}
+=
+\mbox{det}(A)\times \mbox{det}(D-CA^{-1}B) = \mbox{det}(D)\times\mbox{det}(A-BD^{-1}C)$$&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Properties of Linear Regression</title>
-      <link>/courses/qsci483/math/linear-regression/properties/</link>
+      <link>/courses/qsci483/linear-regression/properties/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci483/math/linear-regression/properties/</guid>
+      <guid>/courses/qsci483/linear-regression/properties/</guid>
       <description>&lt;p&gt;In this document I will outline the math used to analyze our previous results for linear regression analysis. Make sure to check out my previous posts on 
-&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
  and 
-&lt;a href=&#34;/courses/qsci483/math/linear-regression/linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
  before diving in.&lt;/p&gt;
 &lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Recall that linear regression is based upon the equation:
@@ -323,17 +418,105 @@ This is the covariance matrix of $\hat{\beta}$! Notably, this has two important 
     </item>
     
     <item>
-      <title>Linear Regression Model Diagnostics</title>
-      <link>/courses/qsci483/math/linear-regression/diagnostics/</link>
-      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci483/math/linear-regression/diagnostics/</guid>
+      <title>Dirichlet BCs</title>
+      <link>/courses/gaussian-processes/dirichlet/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/dirichlet/</guid>
+      <description>&lt;p&gt;The simplest version of the finite element method is said to have &amp;ldquo;natural&amp;rdquo; Neumann boundary conditions, meaning that Neumann boundary conditions are naturally satisfied without imposing any additional structure. Dirichlet boundary conditions then are said to be &amp;ldquo;essential,&amp;rdquo; meaning they must be explicitly imposed after the fact. Certain FEM formulations change up this Neumann=natural, Dirichlet=essential default but for our purposes we will treat these terms as interchangeable.&lt;/p&gt;
+&lt;p&gt;Now, suppose that we are confronted with the FEM equation $$\begin{bmatrix} K_{11} &amp;amp; K_{12} \\ K_{21} &amp;amp; K_{22} \end{bmatrix}\begin{bmatrix} u_1 \\ u_2\end{bmatrix} = \begin{bmatrix} L_{11} &amp;amp; L_{12} \\ L_{21} &amp;amp; L_{22} \end{bmatrix} \begin{bmatrix} f_1 \\ f_2 \end{bmatrix},$$
+with the Dirichlet BC $u_2 = u^*$. We can modify our FEM equation to enforce this, to $$\begin{bmatrix} K_{11} &amp;amp; K_{12} \\ 0 &amp;amp; I \end{bmatrix}\begin{bmatrix} u_1 \\ u_2\end{bmatrix} = \begin{bmatrix} L_{11}f_1 + L_{12}f_2 \\ u^* \end{bmatrix}.$$ We can simplify this to an equation for $u$ by inverting the matrix on the left: $$\begin{bmatrix} u_1 \\ u_2 \end{bmatrix} = \begin{bmatrix} K_{11}^{-1} &amp;amp; -K_{11}^{-1}K_{12} \\ 0 &amp;amp; I \end{bmatrix} \begin{bmatrix} L_{11}f_1 + L_{12}f_2 \\ u^* \end{bmatrix}$$
+Now, assuming that $f\sim N(\mu_f,Q_f)$ and $u^*$ is given (often $u^* = 0$) we obtain the following distribution for $u_1$:
+\begin{align*}
+u_1 &amp;amp; = K_{11}^{-1}L_1f - K_{11}^{-1}K_{12}u^* \\&lt;br&gt;
+u_1 &amp;amp; \sim N\left(K_{11}^{-1}(L_1\mu_f - K_{12}u^*), K_{11}^{-1}L_1\Sigma_fL_1^TK_{11}^{-T}\right).
+\end{align*}&lt;/p&gt;
+&lt;p&gt;Now often we are interested in the posterior distribution for $u$ and/or $f$. Since we have assumed that $u^*$ is given the two are deterministically related. However, $u$ is of lower dimension than $f$. So, we will calculate the posterior distribution of $f$ since this can be used to calculate the posterior of $u$ but not vice versa. We will assume that we have made some observations $y = y_1 + y_2 = A_1u_1 + A_2u_2 + \epsilon$ of $u$ from which we wish to make inference. Since $u^*$ is known we essentially have observations:
+\begin{align*}
+y &amp;amp; = A_1K_{11}^{-1}(L_1f - K_{12}u^*) + A_2u^* + \epsilon \\&lt;br&gt;
+&amp;amp; = A_1K_{11}^{-1}L_1f + (A_2 - A_1K_{11}^{-1}K_{12})u^* + \epsilon \\&lt;br&gt;
+&amp;amp; = y_f + y^* + \epsilon
+\end{align*}
+Using the 
+&lt;a href=&#34;../posteriors/#linear-observations&#34;&gt;results&lt;/a&gt;
+ for a posterior from a linearly-observed MVN distribution we see that:
+\begin{align*}
+[f|y=a] &amp;amp; = N\left(\mu_f + Q_{f|y}^{-1}B^TQ_{\epsilon}(y - y^* - B^T\mu_f), Q_{f|y}^{-1}\right) \\&lt;br&gt;
+Q_{f|y} &amp;amp; = Q_f + B^TQ_{\epsilon}B \\&lt;br&gt;
+B &amp;amp; = A_1K_{11}^{-1}L_1
+\end{align*}&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Posteriors</title>
+      <link>/courses/gaussian-processes/posteriors/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/posteriors/</guid>
+      <description>&lt;p&gt;The multivariate normal distribution has nicely behaved posterior distributions. In particular, the posterior given an observation of the vector is also multivariate normal.&lt;/p&gt;
+&lt;h2 id=&#34;basic-posterior-&#34;&gt;Basic Posterior&lt;/h2&gt;
+&lt;p&gt;Let $x$ be an $n\times 1$ vector partitioned into $x = (x_1,x_2)$, with $x_1$ having dimension $k$ and $x_2$ having dimension $n-k$. Partition the mean $\mu = (\mu_1,\mu_2)$ and covariance matrix $$\Sigma = \begin{bmatrix} \Sigma_{11} &amp;amp; \Sigma_{12} \\ \Sigma_{21} &amp;amp; \Sigma_{22} \end{bmatrix}.$$ Then the posterior distribution for $x_1$ given $x_2=a$ is given by
+\begin{align*}
+[x_1|x_2=a]
+&amp;amp; = N\left(\mu_1 + \Sigma_{12}\Sigma_{22}^{-1}(a-\mu_2), \Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}\right).
+\end{align*}&lt;/p&gt;
+&lt;h2 id=&#34;precision-formulation&#34;&gt;Precision Formulation&lt;/h2&gt;
+&lt;p&gt;Often in my research we are interested in analyzing a MVN distribution with known sparse &lt;em&gt;precision&lt;/em&gt; matrix. It is expensive to invert matrices and cheap to work with sparse matrices so we wish to work directly with this precision matrix. Furthermore, we want to calculate the precision matrix for our posterior because it is likely to also be computational advantageous. Let the precision matrix be partitioned
+$$Q = \begin{bmatrix} Q_{11} &amp;amp; Q_{12} \\ Q_{21} &amp;amp; Q_{22} \end{bmatrix}.$$
+Then the equivalent posterior distribution is
+\begin{align*}
+[x_1|x_2=a]
+&amp;amp; = N\left(\mu_1 + Q_{11}^{-1}Q_{12}(a-\mu_2),Q_{11}\right).
+\end{align*}
+Furthermore, let $RR^T = Q$ be the Cholesky decomposition of $Q$ also be partitioned into blocks. If $Q$ is sparse then under mild conditions, $R$ is also sparse and we can work with it to do quick computation. The posterior distribution now is $$[x_1|x_2=a] = N\left(\mu_1 - R_{11}^{-1}(R_{11}^{-T}(Q_{12}(a-\mu_2))), Q_{11}\right).$$&lt;/p&gt;
+&lt;h2 id=&#34;linear-observations&#34;&gt;Linear Observations&lt;/h2&gt;
+&lt;p&gt;Often we are also interested in analyzing a MVN distribution where we observe not the individual components, but a linear combination thereof $y = Ax + \epsilon$ with some mean-zero MVN noise vector $\epsilon$. Then the observations are distributed $y|x \sim N( Ax , Q_\epsilon^{-1} )$. The posterior $x|y$ is given by:
+\begin{align*}
+[x|y=a] &amp;amp; = N\left(\mu_x + Q_{x|y}^{-1}A^TQ_{\epsilon}(y-A\mu_x), Q_{x|y}\right) \\&lt;br&gt;
+Q_{x|y} &amp;amp; = (Q + A^TQ_{\epsilon}A)^{-1}
+\end{align*}&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Using Model Diagnostics</title>
+      <link>/courses/qsci483/linear-regression/diagnostics/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/linear-regression/diagnostics/</guid>
       <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
-&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
  and 
-&lt;a href=&#34;/courses/qsci483/math/linear-regression/linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;linear regression&lt;/a&gt;
+ before diving in.&lt;/p&gt;
+&lt;p&gt;Plotting fitted vs residuals&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;should see no trend/pattern&lt;/li&gt;
+&lt;li&gt;centered on zero&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Plot histogram of residuals&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;basically centered on zero?&lt;/li&gt;
+&lt;li&gt;skewed/kurtosis?&lt;/li&gt;
+&lt;li&gt;Shapiro-Wilks test (can be very sensitive to small deviations with large datasets)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;QQ plot&lt;/p&gt;
+&lt;p&gt;DFFITS
+Deleted residuals
+Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression Model Diagnostics</title>
+      <link>/courses/qsci483/linear-regression/math-diagnostics/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/linear-regression/math-diagnostics/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
+ and 
+&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;linear regression&lt;/a&gt;
  before diving in.&lt;/p&gt;
 &lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
-&lt;p&gt;Recall that Simple Linear Regression is based upon the equation:
+&lt;p&gt;Recall that linear regression is based upon the equation:
 $$
 y_i \sim N(X\beta,\sigma^2)
 $$
@@ -342,7 +525,95 @@ or equivalently
 y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
 \epsilon_i &amp;amp; \sim N(0,\sigma^2)
 \end{align*}
-where the $\epsilon_i$ are iid. We have previously derived the estimates for&lt;/p&gt;
+where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&amp;rsquo;X)^{-1}$.&lt;/p&gt;
+&lt;p&gt;The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\sqrt{\mbox{var}(\hat{\beta}_i)}$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).&lt;/p&gt;
+&lt;p&gt;Multiple vs. adjusted $R^2$
+Different page for estimating $\sigma^2$
+More on t-tests
+F-test for whole model
+Stundentized residuals ($t$ vs. standardized $N(0,1)$)
+DFFITS
+Cook&amp;rsquo;s distance ($F$-distribution)
+Skewness
+Kurtosis
+Leverage
+ANOVA
+Shapiro-wilks test
+ncV test&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression Confidence Intervals</title>
+      <link>/courses/qsci483/linear-regression/confidence-intervals/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/linear-regression/confidence-intervals/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
+ and 
+&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;linear regression&lt;/a&gt;
+ before diving in.&lt;/p&gt;
+&lt;p&gt;Confidence intervals
+Simultaneous confidence intervals&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Is Knowledge an Obstacle to Teaching?</title>
+      <link>/post/teaching/visible-learning/ch-02/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/teaching/visible-learning/ch-02/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;Experts in a subject matter area seem to have worse intuition for teaching that subject matter, compared to novices
+&lt;ul&gt;
+&lt;li&gt;In theory this is because they have learned to think about it in a structured and organized way that is not the most effective way to &lt;em&gt;learn&lt;/em&gt; that material&lt;/li&gt;
+&lt;li&gt;Experts consistently underestimated how difficult a task is. Novices, having just learned it, know how difficult it is to learn and teach a more basic level&lt;/li&gt;
+&lt;li&gt;Although students rated novices higher and performed better on a post-teaching assessment, the expert-taught students performed better on transferring their learning to a related task&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Students appreciate being taught by knowledgeable, motivated, passionate individuals
+&lt;ul&gt;
+&lt;li&gt;Students will rate their best teachers highly on competency, credibility, and fariness&lt;/li&gt;
+&lt;li&gt;More closely related to student motivation than actual learning. However children learn less from adults they view as ignorant&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Knowledge about subject matter may make it harder to teach in a group setting, but on an individual level enables you to provide helpful feedback, and contextualize a student&amp;rsquo;s ideas and progress against your own knowledge base.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/1</title>
+      <link>/post/notebook/2020/spring/week2/wedn/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Take notes from Visible Learning Chapter 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attend class and continue looking at QSCI HW 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Wrote up some 
+&lt;a href=&#34;/courses/gaussian-processes&#34;&gt;resources&lt;/a&gt;
+ so that I can stop rederiving/looking up common GP/MVN properties that I need to use. Also included on there the math for Dirichlet BCs. Now that the derivation is there I can more effectively write the code for the implementation, rather than writing stuff down on paper every time I try to do this.&lt;/p&gt;
+&lt;p&gt;Forgot to account in my scheduling today for time to edit and submit my dissertation proposal. Did that.&lt;/p&gt;
+&lt;p&gt;Wrote up notes for VL Ch 2, and continued to expand on my own 
+&lt;a href=&#34;/courses/qsci-483&#34;&gt;notes&lt;/a&gt;
+ for QSCI, reminding myself how all the 
+&lt;a href=&#34;/courses/qsci-483/linear-regression/diagnostics&#34;&gt;model diagnostics&lt;/a&gt;
+ work.&lt;/p&gt;
 </description>
     </item>
     
@@ -371,15 +642,8 @@ where the $\epsilon_i$ are iid. We have previously derived the estimates for&lt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Didn&amp;rsquo;t make it through the whole thing, had to look up some of the model diagnostics Tim is using, but did get through VL Ch 1 and 2. Struggled with website formatting in the afternoon.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/teaching/visible-learning/ch-02/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/post/teaching/visible-learning/ch-02/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -619,7 +883,7 @@ where the $\epsilon_i$ are iid. We have previously derived the estimates for&lt;
       <link>/post/teaching/visible-learning/core-takeaways/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/visible-learning/core-takeaways/</guid>
-      <description>&lt;p&gt;Nine basic principles:&lt;/p&gt;
+      <description>&lt;h2 id=&#34;nine-basic-principles-&#34;&gt;Nine basic principles&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Explanations of human learning in terms of innate talent are consistently undermined by research which states that substantial amounts of time, energy, instruction, and effort are required to develop mastery of any subject area.&lt;/li&gt;
 &lt;li&gt;We can naturally learn from any information, but to learn effectively that information has to be organized in a way that matches how our minds are organized. Minds are organized differently for different people, and even change as we age.&lt;/li&gt;
@@ -631,19 +895,35 @@ where the $\epsilon_i$ are iid. We have previously derived the estimates for&lt;
 &lt;li&gt;Humans are fundamentally social, down to the neurological level. This sociality can be used as a tool (social brain hypothesis)&lt;/li&gt;
 &lt;li&gt;Ideas about learning that are contradicted by scientific evidence abound. Many of these ideas can be harmful.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;Section 1&lt;/p&gt;
+&lt;h2 id=&#34;section-1-&#34;&gt;Section 1&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;The mind may not be &amp;ldquo;designed for thinking&amp;rdquo; and requires time and effort to think&lt;/li&gt;
 &lt;li&gt;Teachers need to recognize how difficult tasks are for beginners. Focus should be not on material but on the actual process of moving from not knowing to knowing. To do this students need a safe environment to acknowledge they don&#39;t understand. We can only holld so much in our cognitive centers, so it is important to ``overlearn&amp;rsquo;&amp;rsquo; basic concepts until it is ingrained and automatic&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Section 2&lt;/p&gt;
+&lt;h3 id=&#34;chapter-1-&#34;&gt;Chapter 1&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Students do not dislike school, but tolerate it.&lt;/li&gt;
+&lt;li&gt;The brain may not be &amp;ldquo;designed&amp;rdquo; for abstract thinking and as a result school is a taxing process.&lt;/li&gt;
+&lt;li&gt;Thinking requires a large investment of resources for an uncertain outcome (understanding) and risk-averse humans prefer to invest these resources in crossing seemingly achievable &amp;ldquo;knowledge gaps&amp;rdquo; rather than &amp;ldquo;knowledge chasms&amp;rdquo;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;chapter-2-&#34;&gt;Chapter 2&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Experts may be &amp;ldquo;worse&amp;rdquo; at teaching than novices. The &amp;ldquo;expert blind spot effect&amp;rdquo; explains this:
+&lt;ul&gt;
+&lt;li&gt;experts forget how difficult it was to learn something in the first place&lt;/li&gt;
+&lt;li&gt;there is a gap between the advanced level on which experts conceptualize of a topic and the short-term learning needs of students&lt;/li&gt;
+&lt;li&gt;however, this abstract thinking may help students transfer their learning to related areas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;section-2-&#34;&gt;Section 2&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Major ideas about acquisition, memory retention, mental storage, and overload&lt;/li&gt;
 &lt;li&gt;Learning need not be conscious, we can only think about so much at once&lt;/li&gt;
 &lt;li&gt;We need to develop a vocabulary for learning, and need multiple strategies for learning&lt;/li&gt;
 &lt;li&gt;Challenges: learning styles (i.e. spatial, verbal, kinaesthetic), Mozart effects, multitasking, digital natives, and whether the Internet is really changing how we think&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Section 3&lt;/p&gt;
+&lt;h2 id=&#34;section-3-&#34;&gt;Section 3&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Self-esteem follows success more often than predicting it&lt;/li&gt;
 &lt;li&gt;Building confidence is still important though: in order to maintain positive views of ourselves we build explanations (I cannot; rather than I did not work hard enough) that help our self esteem but hurt our learning&lt;/li&gt;
@@ -1624,34 +1904,6 @@ Three
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/project/source/</guid>
       <description>&lt;p&gt;In this project I investigate the use of stochastic PDEs to conduct inference on the source term of a linear PDE.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/courses/qsci483/math/notation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/courses/qsci483/math/notation/</guid>
-      <description>&lt;h2 id=&#34;weight-1&#34;&gt;ls&amp;mdash;
-date: &amp;ldquo;2020-03-31T00:00:00+01:00&amp;rdquo;
-draft: false
-linktitle: Notation
-menu:
-qsci483:
-parent: QSCI 483
-weight: 1
-title: Notation
-toc: true
-type: docs
-weight: 1&lt;/h2&gt;
-&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
-&lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
-&lt;h3 id=&#34;advanced-notation-matrix-calculus-&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
-&lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
- or in the more extensive 
-&lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
-.&lt;/p&gt;
 </description>
     </item>
     

@@ -13,12 +13,28 @@
     </image>
     
     <item>
-      <title>Simple Linear Regression</title>
-      <link>/courses/qsci483/math/linear-regression/simple-linear-regression/</link>
+      <title>Notation</title>
+      <link>/courses/qsci483/notation/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci483/math/linear-regression/simple-linear-regression/</guid>
+      <guid>/courses/qsci483/notation/</guid>
+      <description>&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
+&lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
+&lt;h3 id=&#34;advanced-notation-matrix-calculus-&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
+&lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
+ or in the more extensive 
+&lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
+.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simple Linear Regression</title>
+      <link>/courses/qsci483/linear-regression/simple-linear-regression/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/linear-regression/simple-linear-regression/</guid>
       <description>&lt;p&gt;In this document I will outline the math used in the analysis of a simple linear regression model. Make sure to check out my 
-&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
  document to clarify any confusing notation.&lt;/p&gt;
 &lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Simple Linear Regression is based upon the equation
@@ -34,7 +50,7 @@ where the $\epsilon_i$ are iid. It is important to remember that the expectation
 &lt;h3 id=&#34;fitting-&#34;&gt;Fitting&lt;/h3&gt;
 &lt;h4 id=&#34;objective-function-&#34;&gt;Objective Function&lt;/h4&gt;
 &lt;p&gt;To fit a simple linear regression we first must choose a measure of fit. Here we will choose least squares, since this corresponds to 
-&lt;a href=&#34;/courses/qsci483/math/linear-regression/properties&#34;&gt;maximum likelihood esitmation&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/linear-regression/properties&#34;&gt;maximum likelihood esitmation&lt;/a&gt;
  in this model. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using our predictor $x_i$ for data point $i$ along with estimated coefficients $\hat{\beta}_0$ and $\hat{\beta}_1$:
 $$
 \hat{y}_i = \hat{\beta}_0 + \hat{\beta}_1 x.
@@ -107,13 +123,13 @@ I encourage you to try doing the same calculation with $S_{xx}$: you will find t
     
     <item>
       <title>Linear Regression</title>
-      <link>/courses/qsci483/math/linear-regression/linear-regression/</link>
+      <link>/courses/qsci483/linear-regression/linear-regression/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci483/math/linear-regression/linear-regression/</guid>
+      <guid>/courses/qsci483/linear-regression/linear-regression/</guid>
       <description>&lt;p&gt;In this document I will outline the math used in the analysis of a more general linear regression model, with more than one predictor variable. Make sure to check out my 
-&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
  document to clarify any confusing notation, and check out my 
-&lt;a href=&#34;/courses/qsci483/math/linear-regressoin/simple-linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/linear-regression/simple-linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
  document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.&lt;/p&gt;
 &lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Linear regression is based upon the equation
@@ -194,13 +210,13 @@ We can derive this same equation in fewer steps using the more complex matrix ca
     
     <item>
       <title>Properties of Linear Regression</title>
-      <link>/courses/qsci483/math/linear-regression/properties/</link>
+      <link>/courses/qsci483/linear-regression/properties/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci483/math/linear-regression/properties/</guid>
+      <guid>/courses/qsci483/linear-regression/properties/</guid>
       <description>&lt;p&gt;In this document I will outline the math used to analyze our previous results for linear regression analysis. Make sure to check out my previous posts on 
-&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
  and 
-&lt;a href=&#34;/courses/qsci483/math/linear-regression/linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
  before diving in.&lt;/p&gt;
 &lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Recall that linear regression is based upon the equation:
@@ -323,17 +339,45 @@ This is the covariance matrix of $\hat{\beta}$! Notably, this has two important 
     </item>
     
     <item>
-      <title>Linear Regression Model Diagnostics</title>
-      <link>/courses/qsci483/math/linear-regression/diagnostics/</link>
-      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
-      <guid>/courses/qsci483/math/linear-regression/diagnostics/</guid>
+      <title>Using Model Diagnostics</title>
+      <link>/courses/qsci483/linear-regression/diagnostics/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/linear-regression/diagnostics/</guid>
       <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
-&lt;a href=&#34;/courses/qsci483/math/notation&#34;&gt;notation&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
  and 
-&lt;a href=&#34;/courses/qsci483/math/linear-regression/linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
+&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;linear regression&lt;/a&gt;
+ before diving in.&lt;/p&gt;
+&lt;p&gt;Plotting fitted vs residuals&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;should see no trend/pattern&lt;/li&gt;
+&lt;li&gt;centered on zero&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Plot histogram of residuals&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;basically centered on zero?&lt;/li&gt;
+&lt;li&gt;skewed/kurtosis?&lt;/li&gt;
+&lt;li&gt;Shapiro-Wilks test (can be very sensitive to small deviations with large datasets)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;QQ plot&lt;/p&gt;
+&lt;p&gt;DFFITS
+Deleted residuals
+Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression Model Diagnostics</title>
+      <link>/courses/qsci483/linear-regression/math-diagnostics/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/linear-regression/math-diagnostics/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
+ and 
+&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;linear regression&lt;/a&gt;
  before diving in.&lt;/p&gt;
 &lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
-&lt;p&gt;Recall that Simple Linear Regression is based upon the equation:
+&lt;p&gt;Recall that linear regression is based upon the equation:
 $$
 y_i \sim N(X\beta,\sigma^2)
 $$
@@ -342,35 +386,36 @@ or equivalently
 y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
 \epsilon_i &amp;amp; \sim N(0,\sigma^2)
 \end{align*}
-where the $\epsilon_i$ are iid. We have previously derived the estimates for&lt;/p&gt;
+where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&amp;rsquo;X)^{-1}$.&lt;/p&gt;
+&lt;p&gt;The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\sqrt{\mbox{var}(\hat{\beta}_i)}$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).&lt;/p&gt;
+&lt;p&gt;Multiple vs. adjusted $R^2$
+Different page for estimating $\sigma^2$
+More on t-tests
+F-test for whole model
+Stundentized residuals ($t$ vs. standardized $N(0,1)$)
+DFFITS
+Cook&amp;rsquo;s distance ($F$-distribution)
+Skewness
+Kurtosis
+Leverage
+ANOVA
+Shapiro-wilks test
+ncV test&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title></title>
-      <link>/courses/qsci483/math/notation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/courses/qsci483/math/notation/</guid>
-      <description>&lt;h2 id=&#34;weight-1&#34;&gt;ls&amp;mdash;
-date: &amp;ldquo;2020-03-31T00:00:00+01:00&amp;rdquo;
-draft: false
-linktitle: Notation
-menu:
-qsci483:
-parent: QSCI 483
-weight: 1
-title: Notation
-toc: true
-type: docs
-weight: 1&lt;/h2&gt;
-&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
-&lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
-&lt;h3 id=&#34;advanced-notation-matrix-calculus-&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
-&lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
- or in the more extensive 
-&lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
-.&lt;/p&gt;
+      <title>Linear Regression Confidence Intervals</title>
+      <link>/courses/qsci483/linear-regression/confidence-intervals/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/linear-regression/confidence-intervals/</guid>
+      <description>&lt;p&gt;In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
+&lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
+ and 
+&lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;linear regression&lt;/a&gt;
+ before diving in.&lt;/p&gt;
+&lt;p&gt;Confidence intervals
+Simultaneous confidence intervals&lt;/p&gt;
 </description>
     </item>
     

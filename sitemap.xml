@@ -3,63 +3,143 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/qsci483/</loc>
+    <loc>/courses/gaussian-processes/</loc>
     <lastmod>2020-03-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/qsci483/math/linear-regression/simple-linear-regression/</loc>
+    <loc>/courses/qsci483/</loc>
+    <lastmod>2020-03-31T16:39:04-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/qsci483/notation/</loc>
     <lastmod>2020-03-31T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/qsci483/math/linear-regression/linear-regression/</loc>
+    <loc>/courses/gaussian-processes/notation/</loc>
     <lastmod>2020-03-31T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/qsci483/math/linear-regression/properties/</loc>
+    <loc>/courses/qsci483/linear-regression/simple-linear-regression/</loc>
     <lastmod>2020-03-31T00:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/courses/qsci483/math/linear-regression/diagnostics/</loc>
+    <loc>/courses/gaussian-processes/linear-algebra/</loc>
+    <lastmod>2020-04-01T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/qsci483/linear-regression/linear-regression/</loc>
     <lastmod>2020-03-31T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/gaussian-processes/block-matrices/</loc>
+    <lastmod>2020-04-01T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/qsci483/linear-regression/properties/</loc>
+    <lastmod>2020-03-31T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/gaussian-processes/dirichlet/</loc>
+    <lastmod>2020-04-01T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/gaussian-processes/posteriors/</loc>
+    <lastmod>2020-04-01T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/qsci483/linear-regression/diagnostics/</loc>
+    <lastmod>2020-04-01T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/qsci483/linear-regression/math-diagnostics/</loc>
+    <lastmod>2020-03-31T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/courses/qsci483/linear-regression/confidence-intervals/</loc>
+    <lastmod>2020-04-01T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-03-31T12:49:06-07:00</lastmod>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/books/</loc>
+    <lastmod>2020-03-30T10:56:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/books/</loc>
+    <lastmod>2020-03-30T10:56:37-07:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/teaching/visible-learning/ch-02/</loc>
+    <lastmod>2020-03-30T10:56:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/notebook/2020/spring/week2/wedn/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/notebook/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/notebook/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-01T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/teaching/</loc>
+    <lastmod>2020-03-31T12:49:06-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/teaching/</loc>
+    <lastmod>2020-03-31T12:49:06-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/visible-learning/</loc>
+    <lastmod>2020-03-31T12:49:06-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/visible-learning/</loc>
     <lastmod>2020-03-31T12:49:06-07:00</lastmod>
   </url>
   
   <url>
     <loc>/post/notebook/2020/spring/week2/tues/</loc>
     <lastmod>2020-03-31T08:49:56-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/notebook/</loc>
-    <lastmod>2020-03-31T08:49:56-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/notebook/</loc>
-    <lastmod>2020-03-31T08:49:56-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-03-31T12:49:06-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/teaching/visible-learning/ch-02/</loc>
-    <lastmod>2020-03-30T10:56:37-07:00</lastmod>
   </url>
   
   <url>
@@ -208,16 +288,6 @@
   </url>
   
   <url>
-    <loc>/tags/books/</loc>
-    <lastmod>2020-03-30T10:56:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/books/</loc>
-    <lastmod>2020-03-30T10:56:37-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/teaching/visible-learning/core-takeaways/</loc>
     <lastmod>2020-03-31T08:49:56-07:00</lastmod>
   </url>
@@ -234,26 +304,6 @@
   
   <url>
     <loc>/categories/notes/</loc>
-    <lastmod>2020-03-31T12:49:06-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/teaching/</loc>
-    <lastmod>2020-03-31T12:49:06-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/teaching/</loc>
-    <lastmod>2020-03-31T12:49:06-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/visible-learning/</loc>
-    <lastmod>2020-03-31T12:49:06-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/visible-learning/</loc>
     <lastmod>2020-03-31T12:49:06-07:00</lastmod>
   </url>
   
@@ -465,10 +515,6 @@
   <url>
     <loc>/authors/admin/</loc>
     <lastmod>2020-02-07T13:52:36-08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/qsci483/math/notation/</loc>
   </url>
   
   <url>

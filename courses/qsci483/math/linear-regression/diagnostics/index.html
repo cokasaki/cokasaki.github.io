@@ -28,8 +28,8 @@
   
     
   
-  <meta name="description" content="In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on notation and simple linear regression before diving in.
-The Model Recall that Simple Linear Regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
+  <meta name="description" content="In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on notation and linear regression before diving in.
+The Model Recall that linear regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
 \epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid.">
 
   
@@ -235,15 +235,15 @@ The Model Recall that Simple Linear Regression is based upon the equation: $$ y_
   <meta property="og:site_name" content="Colin Okasaki">
   <meta property="og:url" content="/courses/qsci483/math/linear-regression/diagnostics/">
   <meta property="og:title" content="Linear Regression Model Diagnostics | Colin Okasaki">
-  <meta property="og:description" content="In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on notation and simple linear regression before diving in.
-The Model Recall that Simple Linear Regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
+  <meta property="og:description" content="In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on notation and linear regression before diving in.
+The Model Recall that linear regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
 \epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid."><meta property="og:image" content="/img/icon.png">
   <meta property="twitter:image" content="/img/icon.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-03-31T00:00:00&#43;01:00">
     
-    <meta property="article:modified_time" content="2020-03-31T00:00:00&#43;01:00">
+    <meta property="article:modified_time" content="2020-03-31T16:39:04-07:00">
   
 
   
@@ -569,6 +569,14 @@ The Model Recall that Simple Linear Regression is based upon the equation: $$ y_
   
   <div class="docs-toc-item">
     <a class="docs-toc-link" href="/courses/qsci483/">QSCI 483</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/qsci483/math/notation/">Notation</a>
+      </li>
+      
+    </ul>
+    
 
   </div>
   
@@ -629,10 +637,10 @@ The Model Recall that Simple Linear Regression is based upon the equation: $$ y_
             <p>In this document I will outline the math used to derive and analyze the model diagnostics for a simple linear regression model. Make sure to check out my previous posts on 
 <a href="/courses/qsci483/math/notation">notation</a>
  and 
-<a href="/courses/qsci483/math/linear-regression/linear-regression">simple linear regression</a>
+<a href="/courses/qsci483/math/linear-regression/linear-regression">linear regression</a>
  before diving in.</p>
 <h2 id="the-model-">The Model</h2>
-<p>Recall that Simple Linear Regression is based upon the equation:
+<p>Recall that linear regression is based upon the equation:
 $$
 y_i \sim N(X\beta,\sigma^2)
 $$
@@ -641,7 +649,18 @@ or equivalently
 y_i &amp; \sim X\beta + \epsilon_i \\<br>
 \epsilon_i &amp; \sim N(0,\sigma^2)
 \end{align*}
-where the $\epsilon_i$ are iid. We have previously derived the estimates for</p>
+where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&rsquo;X)^{-1}$.</p>
+<p>The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\sqrt{\mbox{var}(\hat{\beta}_i)}$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).</p>
+<p>Multiple vs. adjusted $R^2$
+Different page for estimating $\sigma^2$
+More on t-tests
+F-test for whole model
+Stundentized residuals
+DFFITS
+Skewness
+Kurtosis</p>
+<p>Shapiro-wilks test
+ncV test</p>
 
           </div>
 
@@ -661,12 +680,6 @@ where the $\epsilon_i$ are iid. We have previously derived the estimates for</p>
     <a href="/courses/qsci483/math/linear-regression/properties/" rel="next">Properties of Linear Regression</a>
   </div>
   
-  
-  
-  <div class="post-nav-item">
-    <div class="meta-nav">Next</div>
-    <a href="/courses/qsci483/math/notation/" rel="prev"></a>
-  </div>
   
 </div>
 
@@ -702,6 +715,16 @@ where the $\epsilon_i$ are iid. We have previously derived the estimates for</p>
       </article>
 
       <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
   
 
   <p class="powered-by">

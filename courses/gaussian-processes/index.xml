@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Gaussian Processes | Colin Okasaki</title>
+    <link>/courses/gaussian-processes/</link>
+      <atom:link href="/courses/gaussian-processes/index.xml" rel="self" type="application/rss+xml" />
+    <description>Gaussian Processes</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 31 Mar 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon.png</url>
+      <title>Gaussian Processes</title>
+      <link>/courses/gaussian-processes/</link>
+    </image>
+    
+    <item>
+      <title>Notation and Terminology</title>
+      <link>/courses/gaussian-processes/notation/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/notation/</guid>
+      <description>&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
+&lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
+&lt;h2 id=&#34;matrix-calculus-&#34;&gt;Matrix Calculus&lt;/h2&gt;
+&lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
+ or in the more extensive 
+&lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id=&#34;gaussian-process-notation-&#34;&gt;Gaussian Process Notation&lt;/h2&gt;
+&lt;p&gt;I will write $f \sim GP(\mu(x),k(x,x&amp;rsquo;))$ to denote a Gaussian process with mean function $\mu$ and covariance function (kernel) $k(x,x&amp;rsquo;)$. I will in general &lt;em&gt;not&lt;/em&gt; assume that $k$ is stationary (see 
+&lt;a href=&#34;#terminology&#34;&gt;terminology&lt;/a&gt;
+). Under this definition $f$ is a stochastic process with the defining property that for any set of points ${x_i}$ (in whatever space $\Omega$ we choose), the vector $f(x)_i = f(x_i)$ is distributed as a multivariate normal (MVN) random vector with mean $\mu_i = \mu(x_i)$ and covariance matrix $\Sigma_{ij} = k(x_i,x_j)$. Many of the properties I will discuss on this page are actually properties of the MVN distribution.&lt;/p&gt;
+&lt;h2 id=&#34;terminology-&#34;&gt;Terminology&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A Gaussian process is called &lt;em&gt;stationary&lt;/em&gt; (or &lt;em&gt;homogeneous&lt;/em&gt;) if $k(x,x&amp;rsquo;) = k(x-x&amp;rsquo;)$&lt;/li&gt;
+&lt;li&gt;A Gaussian Process is called &lt;em&gt;isotropic&lt;/em&gt; if $k(x,x&amp;rsquo;) = k(|x-x&#39;|)$&lt;/li&gt;
+&lt;li&gt;A matrix $M$ is said to be &lt;em&gt;positive semidefinite&lt;/em&gt; if it has the property that $v&amp;rsquo;Mv \geq 0$ for any vector $v$. Covariance matrices are positive semidefinite.&lt;/li&gt;
+&lt;li&gt;A kernel is said to be positive semidefinite (psd) if $$\int_\Omega k(x,x&amp;rsquo;)f(x)f(x&amp;rsquo;)dxdx&amp;rsquo; \geq 0$$ for all $L_2$ functions $f$. Gram matrices (i.e. covariance matrices) from psd kernels are psd matrices.&lt;/li&gt;
+&lt;li&gt;The inverse of the covariance matrix in a MVN distribution is $Q = \Sigma^{-1}$ and is called the &lt;em&gt;precision matrix&lt;/em&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>General Linear Algebraic Properties</title>
+      <link>/courses/gaussian-processes/linear-algebra/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/linear-algebra/</guid>
+      <description>&lt;p&gt;The Woodbury matrix identity is $$(A+UCV)^{-1}=A^{-1} - A^{-1}U(C^{-1}+VA^{-1}U)^{-1}VA^{-1}.$$ Simpler versions of this identity are
+\begin{align*}
+(I+UV)^{-1} &amp;amp; = I-U(I+VU)^{-1}V, \\&lt;br&gt;
+(I+P)^{-1} &amp;amp; = I-(I+P)^{-1}P \\&lt;br&gt;
+(I+P)^{-1} &amp;amp; = I-P(I+P)^{-1}
+\end{align*}
+In the special case that $u$ and $v$ are vectors and $C = I$ we get the Sherman-Morrison formula: $$(A+uv^T)^{-1} = A^{-1} - \frac{A^{-1}uv^TA^{-1}}{1+v^TA^{-1}u}.$$ A similar formula is the matrix determinant lemma $$\mbox{det}(A+uv^T) = (1+v^TA^{-1}u)\mbox{det}(A).$$&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Block Matrices</title>
+      <link>/courses/gaussian-processes/block-matrices/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/block-matrices/</guid>
+      <description>&lt;p&gt;Block matrices have some nice linear algebraic properties:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$$\begin{bmatrix}
+A &amp;amp; B \\&lt;br&gt;
+C &amp;amp; D
+\end{bmatrix}
+=
+\begin{bmatrix}
+A^{-1} + A^{-1}B(D-CA^{-1}B)^{-1}CA^{-1} &amp;amp; -A^{-1}B(D-CA^{-1}B)^{-1} \\&lt;br&gt;
+-(D-CA^{-1}B)^{-1}CA^{-1} &amp;amp; (D-CA^{-1}B)^{-1}
+\end{bmatrix}$$&lt;/li&gt;
+&lt;li&gt;$$\begin{bmatrix}
+A &amp;amp; B \\&lt;br&gt;
+C &amp;amp; D
+\end{bmatrix}
+=
+\begin{bmatrix}
+(A-BD^{-1}C)^{-1} &amp;amp; -(A-BD^{-1}C)^{-1}BD^{-1} \\&lt;br&gt;
+-D^{-1}C(A-BD^{-1}C)^{-1} &amp;amp; D^{-1} + D^{-1}C(A-BD^{-1}C)^{-1}BD^{-1}
+\end{bmatrix}$$&lt;/li&gt;
+&lt;li&gt;$$\mbox{det}
+\begin{pmatrix}
+A &amp;amp; B \&lt;br&gt;
+C &amp;amp; D
+\end{pmatrix}
+=
+\mbox{det}(A)\times \mbox{det}(D-CA^{-1}B) = \mbox{det}(D)\times\mbox{det}(A-BD^{-1}C)$$&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Dirichlet BCs</title>
+      <link>/courses/gaussian-processes/dirichlet/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/dirichlet/</guid>
+      <description>&lt;p&gt;The simplest version of the finite element method is said to have &amp;ldquo;natural&amp;rdquo; Neumann boundary conditions, meaning that Neumann boundary conditions are naturally satisfied without imposing any additional structure. Dirichlet boundary conditions then are said to be &amp;ldquo;essential,&amp;rdquo; meaning they must be explicitly imposed after the fact. Certain FEM formulations change up this Neumann=natural, Dirichlet=essential default but for our purposes we will treat these terms as interchangeable.&lt;/p&gt;
+&lt;p&gt;Now, suppose that we are confronted with the FEM equation $$\begin{bmatrix} K_{11} &amp;amp; K_{12} \\ K_{21} &amp;amp; K_{22} \end{bmatrix}\begin{bmatrix} u_1 \\ u_2\end{bmatrix} = \begin{bmatrix} L_{11} &amp;amp; L_{12} \\ L_{21} &amp;amp; L_{22} \end{bmatrix} \begin{bmatrix} f_1 \\ f_2 \end{bmatrix},$$
+with the Dirichlet BC $u_2 = u^*$. We can modify our FEM equation to enforce this, to $$\begin{bmatrix} K_{11} &amp;amp; K_{12} \\ 0 &amp;amp; I \end{bmatrix}\begin{bmatrix} u_1 \\ u_2\end{bmatrix} = \begin{bmatrix} L_{11}f_1 + L_{12}f_2 \\ u^* \end{bmatrix}.$$ We can simplify this to an equation for $u$ by inverting the matrix on the left: $$\begin{bmatrix} u_1 \\ u_2 \end{bmatrix} = \begin{bmatrix} K_{11}^{-1} &amp;amp; -K_{11}^{-1}K_{12} \\ 0 &amp;amp; I \end{bmatrix} \begin{bmatrix} L_{11}f_1 + L_{12}f_2 \\ u^* \end{bmatrix}$$
+Now, assuming that $f\sim N(\mu_f,Q_f)$ and $u^*$ is given (often $u^* = 0$) we obtain the following distribution for $u_1$:
+\begin{align*}
+u_1 &amp;amp; = K_{11}^{-1}L_1f - K_{11}^{-1}K_{12}u^* \\&lt;br&gt;
+u_1 &amp;amp; \sim N\left(K_{11}^{-1}(L_1\mu_f - K_{12}u^*), K_{11}^{-1}L_1\Sigma_fL_1^TK_{11}^{-T}\right).
+\end{align*}&lt;/p&gt;
+&lt;p&gt;Now often we are interested in the posterior distribution for $u$ and/or $f$. Since we have assumed that $u^*$ is given the two are deterministically related. However, $u$ is of lower dimension than $f$. So, we will calculate the posterior distribution of $f$ since this can be used to calculate the posterior of $u$ but not vice versa. We will assume that we have made some observations $y = y_1 + y_2 = A_1u_1 + A_2u_2 + \epsilon$ of $u$ from which we wish to make inference. Since $u^*$ is known we essentially have observations:
+\begin{align*}
+y &amp;amp; = A_1K_{11}^{-1}(L_1f - K_{12}u^*) + A_2u^* + \epsilon \\&lt;br&gt;
+&amp;amp; = A_1K_{11}^{-1}L_1f + (A_2 - A_1K_{11}^{-1}K_{12})u^* + \epsilon \\&lt;br&gt;
+&amp;amp; = y_f + y^* + \epsilon
+\end{align*}
+Using the 
+&lt;a href=&#34;../posteriors/#linear-observations&#34;&gt;results&lt;/a&gt;
+ for a posterior from a linearly-observed MVN distribution we see that:
+\begin{align*}
+[f|y=a] &amp;amp; = N\left(\mu_f + Q_{f|y}^{-1}B^TQ_{\epsilon}(y - y^* - B^T\mu_f), Q_{f|y}^{-1}\right) \\&lt;br&gt;
+Q_{f|y} &amp;amp; = Q_f + B^TQ_{\epsilon}B \\&lt;br&gt;
+B &amp;amp; = A_1K_{11}^{-1}L_1
+\end{align*}&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Posteriors</title>
+      <link>/courses/gaussian-processes/posteriors/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/gaussian-processes/posteriors/</guid>
+      <description>&lt;p&gt;The multivariate normal distribution has nicely behaved posterior distributions. In particular, the posterior given an observation of the vector is also multivariate normal.&lt;/p&gt;
+&lt;h2 id=&#34;basic-posterior-&#34;&gt;Basic Posterior&lt;/h2&gt;
+&lt;p&gt;Let $x$ be an $n\times 1$ vector partitioned into $x = (x_1,x_2)$, with $x_1$ having dimension $k$ and $x_2$ having dimension $n-k$. Partition the mean $\mu = (\mu_1,\mu_2)$ and covariance matrix $$\Sigma = \begin{bmatrix} \Sigma_{11} &amp;amp; \Sigma_{12} \\ \Sigma_{21} &amp;amp; \Sigma_{22} \end{bmatrix}.$$ Then the posterior distribution for $x_1$ given $x_2=a$ is given by
+\begin{align*}
+[x_1|x_2=a]
+&amp;amp; = N\left(\mu_1 + \Sigma_{12}\Sigma_{22}^{-1}(a-\mu_2), \Sigma_{11}-\Sigma_{12}\Sigma_{22}^{-1}\Sigma_{21}\right).
+\end{align*}&lt;/p&gt;
+&lt;h2 id=&#34;precision-formulation&#34;&gt;Precision Formulation&lt;/h2&gt;
+&lt;p&gt;Often in my research we are interested in analyzing a MVN distribution with known sparse &lt;em&gt;precision&lt;/em&gt; matrix. It is expensive to invert matrices and cheap to work with sparse matrices so we wish to work directly with this precision matrix. Furthermore, we want to calculate the precision matrix for our posterior because it is likely to also be computational advantageous. Let the precision matrix be partitioned
+$$Q = \begin{bmatrix} Q_{11} &amp;amp; Q_{12} \\ Q_{21} &amp;amp; Q_{22} \end{bmatrix}.$$
+Then the equivalent posterior distribution is
+\begin{align*}
+[x_1|x_2=a]
+&amp;amp; = N\left(\mu_1 + Q_{11}^{-1}Q_{12}(a-\mu_2),Q_{11}\right).
+\end{align*}
+Furthermore, let $RR^T = Q$ be the Cholesky decomposition of $Q$ also be partitioned into blocks. If $Q$ is sparse then under mild conditions, $R$ is also sparse and we can work with it to do quick computation. The posterior distribution now is $$[x_1|x_2=a] = N\left(\mu_1 - R_{11}^{-1}(R_{11}^{-T}(Q_{12}(a-\mu_2))), Q_{11}\right).$$&lt;/p&gt;
+&lt;h2 id=&#34;linear-observations&#34;&gt;Linear Observations&lt;/h2&gt;
+&lt;p&gt;Often we are also interested in analyzing a MVN distribution where we observe not the individual components, but a linear combination thereof $y = Ax + \epsilon$ with some mean-zero MVN noise vector $\epsilon$. Then the observations are distributed $y|x \sim N( Ax , Q_\epsilon^{-1} )$. The posterior $x|y$ is given by:
+\begin{align*}
+[x|y=a] &amp;amp; = N\left(\mu_x + Q_{x|y}^{-1}A^TQ_{\epsilon}(y-A\mu_x), Q_{x|y}\right) \\&lt;br&gt;
+Q_{x|y} &amp;amp; = (Q + A^TQ_{\epsilon}A)^{-1}
+\end{align*}&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
