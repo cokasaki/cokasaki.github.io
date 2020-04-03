@@ -594,6 +594,10 @@ Basic Posterior Let $x$ be an $n\times 1$ vector partitioned into $x = (x_1,x_2)
         <a href="/courses/gaussian-processes/posteriors/">Posteriors</a>
       </li>
       
+      <li >
+        <a href="/courses/gaussian-processes/pseudoinverse/">Pseudoinverse</a>
+      </li>
+      
     </ul>
     
 
@@ -663,7 +667,7 @@ Furthermore, let $RR^T = Q$ be the Cholesky decomposition of $Q$ also be partiti
 <p>Often we are also interested in analyzing a MVN distribution where we observe not the individual components, but a linear combination thereof $y = Ax + \epsilon$ with some mean-zero MVN noise vector $\epsilon$. Then the observations are distributed $y|x \sim N( Ax , Q_\epsilon^{-1} )$. The posterior $x|y$ is given by:
 \begin{align*}
 [x|y=a] &amp; = N\left(\mu_x + Q_{x|y}^{-1}A^TQ_{\epsilon}(y-A\mu_x), Q_{x|y}\right) \\<br>
-Q_{x|y} &amp; = (Q + A^TQ_{\epsilon}A)^{-1}
+Q_{x|y} &amp; = Q + A^TQ_{\epsilon}A
 \end{align*}</p>
 
           </div>
@@ -684,6 +688,12 @@ Q_{x|y} &amp; = (Q + A^TQ_{\epsilon}A)^{-1}
     <a href="/courses/gaussian-processes/dirichlet/" rel="next">Dirichlet BCs</a>
   </div>
   
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/gaussian-processes/pseudoinverse/" rel="prev">Moore-Penrose Pseudoinverse</a>
+  </div>
   
 </div>
 

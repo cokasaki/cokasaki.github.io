@@ -5,7 +5,7 @@
     <link>/tags/notebook/</link>
       <atom:link href="/tags/notebook/index.xml" rel="self" type="application/rss+xml" />
     <description>Notebook</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 03 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon.png</url>
       <title>Notebook</title>
@@ -13,9 +13,31 @@
     </image>
     
     <item>
-      <title>Lab Notebook: 4/1</title>
+      <title>Lab Notebook: 4/3</title>
+      <link>/post/notebook/2020/spring/week2/fri/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC stuff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on QSCI483 stuff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC stuff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/2</title>
       <link>/post/notebook/2020/spring/week2/thurs/</link>
-      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/thurs/</guid>
       <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
@@ -31,6 +53,11 @@
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Made some good progress on remembering how all the 
+&lt;a href=&#34;/courses/qsci-483/linear-algebra/math-diagnostics&#34;&gt;model diagnostics&lt;/a&gt;
+ work. Taking this as an opportunity to go beyond what the course really calls for and cement my understanding of these things because they&amp;rsquo;re important to know.&lt;/p&gt;
+&lt;p&gt;Lab went well.&lt;/p&gt;
+&lt;p&gt;Dirichlet BC stuff is chugging along. I definitely did something wrong last time, I think, because I&amp;rsquo;m running into new challenges. Good that I&amp;rsquo;m reimplementing it. I think I have figured out how to deal with these challenges (i.e. get sparse posterior $Q_u$ and then sample from $f$ as a degenerate MVN conditional on $u$.&lt;/p&gt;
 </description>
     </item>
     
