@@ -5,12 +5,40 @@
     <link>/categories/notebook/</link>
       <atom:link href="/categories/notebook/index.xml" rel="self" type="application/rss+xml" />
     <description>Notebook</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon.png</url>
       <title>Notebook</title>
       <link>/categories/notebook/</link>
     </image>
+    
+    <item>
+      <title>Lab Notebook: 4/7</title>
+      <link>/post/notebook/2020/spring/week3/tues/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week3/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read Visible Learning Chapter 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hold office hours&lt;/li&gt;
+&lt;li&gt;Take notes on VL Ch 3 and read VL Ch 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Email Sándor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Got side tracked with adminstrative stuff again. Evidently I have to formally apply to the concurrent MS program in the stats department so that will take up much of my week. I did get the Dirichlet code up and running although there are probably a few lingering bugs. MCMC run is going now. Did not get to VL or emailing Sándor, although I actually looked at his email and there is not too much to respond to directly. I do owe him an update soon though.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lab Notebook: 4/6</title>
@@ -35,6 +63,8 @@
 &lt;ul&gt;
 &lt;li&gt;Look at bypass responses&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Morning stuff went well but I fell into administrative tasks and did not get the code done. I did email my committee, email with Erica about my TAing position, and email with the stats department about the concurrent master&amp;rsquo;s program. I took a brief look at Mevin&amp;rsquo;s response in the afternoon.&lt;/p&gt;
 </description>
     </item>
     
