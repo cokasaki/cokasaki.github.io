@@ -5,12 +5,88 @@
     <link>/categories/notebook/</link>
       <atom:link href="/categories/notebook/index.xml" rel="self" type="application/rss+xml" />
     <description>Notebook</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 07 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon.png</url>
       <title>Notebook</title>
       <link>/categories/notebook/</link>
     </image>
+    
+    <item>
+      <title>Lab Notebook: 4/10</title>
+      <link>/post/notebook/2020/spring/week3/fri/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week3/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on animal movement case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make notes on VL Ch 3 and 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 2-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Email Mevin and Sándor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on pollen case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/9</title>
+      <link>/post/notebook/2020/spring/week3/thurs/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week3/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make edits to animal movement modeling section&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-4:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Tyler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did these things! Was hoping to finish the animal movement section but it didn&amp;rsquo;t quite happen. Gotta make some decisions about presenting IOU vs OUF results.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/8</title>
+      <link>/post/notebook/2020/spring/week3/wedn/</link>
+      <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week3/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write personal statement and finish all my portion of the concurrent MS application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attend class and read VL Ch 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read Mevin&amp;rsquo;s sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Finished application by 11:30. Got Dirichlet BC code up and running and am not seeing any obvious bugs right away. Looking good! Skimmed VL Ch 3 and Ch 4, will take notes tomorrow.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lab Notebook: 4/7</title>
