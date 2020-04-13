@@ -79,42 +79,92 @@
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-04-07T16:31:33-07:00</lastmod>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-04-07T16:31:33-07:00</lastmod>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/notebook/2020/spring/week3/fri/</loc>
-    <lastmod>2020-04-06T11:17:55-07:00</lastmod>
+    <loc>/post/notebook/2020/spring/week4/mon/</loc>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/notebook/2020/spring/week4/post-1/</loc>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/notebook/</loc>
-    <lastmod>2020-04-07T16:31:33-07:00</lastmod>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/notebook/</loc>
-    <lastmod>2020-04-07T16:31:33-07:00</lastmod>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/</loc>
-    <lastmod>2020-04-07T16:31:33-07:00</lastmod>
+    <lastmod>2020-04-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/books/</loc>
+    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/books/</loc>
+    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/notebook/2020/spring/week3/fri/</loc>
+    <lastmod>2020-04-10T09:52:25-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/teaching/</loc>
+    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/teaching/</loc>
+    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/teaching/visible-learning/ch-03/</loc>
+    <lastmod>2020-03-30T10:56:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/visible-learning/</loc>
+    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/visible-learning/</loc>
+    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/teaching/visible-learning/ch-04/</loc>
+    <lastmod>2020-03-30T10:56:37-07:00</lastmod>
   </url>
   
   <url>
     <loc>/post/notebook/2020/spring/week3/thurs/</loc>
-    <lastmod>2020-04-06T11:17:55-07:00</lastmod>
+    <lastmod>2020-04-10T09:52:25-07:00</lastmod>
   </url>
   
   <url>
     <loc>/post/notebook/2020/spring/week3/wedn/</loc>
-    <lastmod>2020-04-06T11:17:55-07:00</lastmod>
+    <lastmod>2020-04-10T09:52:25-07:00</lastmod>
   </url>
   
   <url>
@@ -143,16 +193,6 @@
   </url>
   
   <url>
-    <loc>/tags/books/</loc>
-    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/books/</loc>
-    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/teaching/visible-learning/ch-02/</loc>
     <lastmod>2020-04-01T17:52:23-07:00</lastmod>
   </url>
@@ -163,38 +203,8 @@
   </url>
   
   <url>
-    <loc>/tags/teaching/</loc>
-    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/teaching/</loc>
-    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/visible-learning/</loc>
-    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/visible-learning/</loc>
-    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/post/notebook/2020/spring/week2/tues/</loc>
     <lastmod>2020-04-01T17:52:23-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/teaching/visible-learning/ch-03/</loc>
-    <lastmod>2020-03-30T10:56:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/teaching/visible-learning/ch-04/</loc>
-    <lastmod>2020-03-30T10:56:37-07:00</lastmod>
   </url>
   
   <url>

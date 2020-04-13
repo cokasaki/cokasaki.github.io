@@ -5,12 +5,59 @@
     <link>/categories/notebook/</link>
       <atom:link href="/categories/notebook/index.xml" rel="self" type="application/rss+xml" />
     <description>Notebook</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Fri, 10 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon.png</url>
       <title>Notebook</title>
       <link>/categories/notebook/</link>
     </image>
+    
+    <item>
+      <title>Lab Notebook: 4/13</title>
+      <link>/post/notebook/2020/spring/week4/mon/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-9:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lab checkins and set up for the week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 9:30-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debug animal movement code&lt;/li&gt;
+&lt;li&gt;While animal movement code is running, work on VL, then SNN math&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TAing&lt;/li&gt;
+&lt;li&gt;Work on TAing notes when possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on NSF progress report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 4</title>
+      <link>/post/notebook/2020/spring/week4/post-1/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Need to debug and write up the animal movement case study, as I have fallen behind on my goal for that&lt;/li&gt;
+&lt;li&gt;Need to import pollen data and set up a preliminary model for it&lt;/li&gt;
+&lt;li&gt;Keep working a little bit on the SNN modeling math to get it into shape&lt;/li&gt;
+&lt;li&gt;Finish up notes on VL Ch 3 and 4&lt;/li&gt;
+&lt;li&gt;Read and take notes on VL Ch 5 and 6&lt;/li&gt;
+&lt;li&gt;Find large spatial dataset for optimal sampling design&lt;/li&gt;
+&lt;li&gt;Need to write up NSF GRF progress report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
     
     <item>
       <title>Lab Notebook: 4/10</title>
@@ -35,6 +82,7 @@
 &lt;li&gt;Work on pollen case study&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Mostly worked on the case study. Made some notes on VL Ch 3 but the movement stuff was very buggy.&lt;/p&gt;
 </description>
     </item>
     
@@ -158,6 +206,13 @@
 &lt;li&gt;Debug animal movement code and get it run at least once by Thursday&lt;/li&gt;
 &lt;li&gt;Respond to Sándor&amp;rsquo;s email by Tuesday&lt;/li&gt;
 &lt;li&gt;Read two of Mevin&amp;rsquo;s suggested papers by Wednesday, the rest by Friday&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished up the Dirichlet BC code&lt;/li&gt;
+&lt;li&gt;Read but have not yet taken notes on VL Chs 3 and 4&lt;/li&gt;
+&lt;li&gt;Ran the animal movement code many times, but still debugging&lt;/li&gt;
+&lt;li&gt;Still need to get back to Mevin and Sándor with updates.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

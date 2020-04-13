@@ -13,6 +13,53 @@
     </image>
     
     <item>
+      <title>Lab Notebook: 4/13</title>
+      <link>/post/notebook/2020/spring/week4/mon/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-9:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lab checkins and set up for the week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 9:30-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debug animal movement code&lt;/li&gt;
+&lt;li&gt;While animal movement code is running, work on VL, then SNN math&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TAing&lt;/li&gt;
+&lt;li&gt;Work on TAing notes when possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on NSF progress report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 4</title>
+      <link>/post/notebook/2020/spring/week4/post-1/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Need to debug and write up the animal movement case study, as I have fallen behind on my goal for that&lt;/li&gt;
+&lt;li&gt;Need to import pollen data and set up a preliminary model for it&lt;/li&gt;
+&lt;li&gt;Keep working a little bit on the SNN modeling math to get it into shape&lt;/li&gt;
+&lt;li&gt;Finish up notes on VL Ch 3 and 4&lt;/li&gt;
+&lt;li&gt;Read and take notes on VL Ch 5 and 6&lt;/li&gt;
+&lt;li&gt;Find large spatial dataset for optimal sampling design&lt;/li&gt;
+&lt;li&gt;Need to write up NSF GRF progress report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Lab Notebook: 4/10</title>
       <link>/post/notebook/2020/spring/week3/fri/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
@@ -35,6 +82,32 @@
 &lt;li&gt;Work on pollen case study&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Mostly worked on the case study. Made some notes on VL Ch 3 but the movement stuff was very buggy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The teacher-student relationship</title>
+      <link>/post/teaching/visible-learning/ch-03/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/teaching/visible-learning/ch-03/</guid>
+      <description>&lt;p&gt;An &lt;em&gt;empathy gap&lt;/em&gt; occurs when people are relatively unable to put themselves in the place of another person. Deep levels of empathy are difficult if you have never had the same experience as another person, or if you are not currently experiencing anything similar. It is easiest to empathize with people whose experiences you are currently mirroring, harder if you have mirrored them in the past, and hardest if you have never experienced them at all. Children in particular do not develop the ability to deeply understand others&amp;rsquo; viewpoints until late adolescence or early adulthood.&lt;/p&gt;
+&lt;p&gt;Inability to empathize with each other results in &lt;em&gt;negative escalations&lt;/em&gt;. When one person wrongs or hurts another, the other person retaliates. The first underestimates the harm they incurred and so views the retaliation as out of proportion, which justifies further retaliation, leading to a &lt;em&gt;snowball effect&lt;/em&gt; or &lt;em&gt;negative cascade&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;On the other hand establishing positive relationships cascades and results in lasting benefits. Marked improvements have been observed to occur the year &lt;em&gt;following&lt;/em&gt; relationship-based interventions. Longitudinal studies have found persistent and profound benefits to positive teacher student relationships on a decadal scale. These positive relationships may help because they build trust that allows students to make mistakes and ask for help, and builds the confidence in students to try again.&lt;/p&gt;
+&lt;p&gt;Developing positive relationships can be difficult if the focus is on responding to uncooperative students. Social psychology shows that &lt;em&gt;emotional leakage&lt;/em&gt; is common. Hiding emotions is difficult, and when a teacher has negative emotions towards a student the student may realize this. No major theory of learning recommends punitive action in response to difficult students. For example, high school students tend to attribute disciplinary action to the teacher (&amp;ldquo;teacher hats me&amp;rdquo;) rather than accept personal responsibility.&lt;/p&gt;
+&lt;p&gt;When a child has an unsupportive home environment, school can become a major source of social and cultural learning. Positive teacher-student relationships can be very influential in personal development in this stage and can mitigate the risk of negastive outcomes for children. On the other hand, positive at-home relationships can buffer negative relationships at school.&lt;/p&gt;
+&lt;p&gt;Can these positive relationships be manufactured? A study found that just spending a few minute devoted to non-directive non-coercive friendly and child-centered activities positively influences teacher&amp;rsquo;s views for at-risk students.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Your personality as a teacher</title>
+      <link>/post/teaching/visible-learning/ch-04/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/teaching/visible-learning/ch-04/</guid>
+      <description>&lt;p&gt;Nearly a century of research has shown that there is &lt;em&gt;NOT&lt;/em&gt; a &amp;ldquo;best&amp;rdquo; personality for a teacher to have. Students value being treated with fairness, dignity, and respect much more than they value a particular personality type.&lt;/p&gt;
+&lt;p&gt;It has been found that children lose respect for adults who violate basic social rules, exhibit cruelty, or otherwise break social conventions. Studies show that very young children possess a strong sense of what is right and wrong and have a deep sense of fairness. They may not behave in this manner, since social judgment and risk assessment develop much later. Almost universally though, basic misdeeds such as being caught lying incur significant degradation of trust and positive relationships.&lt;/p&gt;
+&lt;p&gt;Studies show that students evaluate teachers after exposure for as little as 10 seconds. This is an example of the &lt;em&gt;blink effect&lt;/em&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -158,6 +231,13 @@
 &lt;li&gt;Debug animal movement code and get it run at least once by Thursday&lt;/li&gt;
 &lt;li&gt;Respond to Sándor&amp;rsquo;s email by Tuesday&lt;/li&gt;
 &lt;li&gt;Read two of Mevin&amp;rsquo;s suggested papers by Wednesday, the rest by Friday&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished up the Dirichlet BC code&lt;/li&gt;
+&lt;li&gt;Read but have not yet taken notes on VL Chs 3 and 4&lt;/li&gt;
+&lt;li&gt;Ran the animal movement code many times, but still debugging&lt;/li&gt;
+&lt;li&gt;Still need to get back to Mevin and Sándor with updates.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -298,22 +378,6 @@
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Didn&amp;rsquo;t make it through the whole thing, had to look up some of the model diagnostics Tim is using, but did get through VL Ch 1 and 2. Struggled with website formatting in the afternoon.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/teaching/visible-learning/ch-03/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/post/teaching/visible-learning/ch-03/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/teaching/visible-learning/ch-04/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/post/teaching/visible-learning/ch-04/</guid>
-      <description></description>
     </item>
     
     <item>
