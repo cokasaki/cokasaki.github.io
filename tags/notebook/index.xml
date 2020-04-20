@@ -5,12 +5,170 @@
     <link>/tags/notebook/</link>
       <atom:link href="/tags/notebook/index.xml" rel="self" type="application/rss+xml" />
     <description>Notebook</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 13 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon.png</url>
       <title>Notebook</title>
       <link>/tags/notebook/</link>
     </image>
+    
+    <item>
+      <title>Lab Notebook: 4/20</title>
+      <link>/post/notebook/2020/spring/week5/mon/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-9:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lab checkins and set up for the week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 9:30-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TAing&lt;/li&gt;
+&lt;li&gt;Work on TAing notes when possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on optimal design synthetic experiment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 5</title>
+      <link>/post/notebook/2020/spring/week5/post-1/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Email Mevin about animal movement and pollen&lt;/li&gt;
+&lt;li&gt;Keep working on write-up and looking for datasets&lt;/li&gt;
+&lt;li&gt;Select and simulate a pilot study procedure for optimal sampling design&lt;/li&gt;
+&lt;li&gt;Read and take notes on VL Ch 7 and 8&lt;/li&gt;
+&lt;li&gt;Grade for QSCI 483&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/17</title>
+      <link>/post/notebook/2020/spring/week4/fri/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-10&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Respond to emails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 10-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lab meeting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write up animal movement case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read and take notes on VL Ch 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 2-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look for wind speed data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-4&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on sampling design case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 4-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on SSN modeling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did all these things although I did not finish writing up the animal movement case study &amp;ndash; there&amp;rsquo;s a lot more background to include. Read and took notes on both VL Ch 5 and 6. Turns out the pollen dataset that I thought was from AAAAI/NAB was actually not. It is more paleoecological than really pollen counts that we&amp;rsquo;re looking for. Only real pollen counts I&amp;rsquo;ve been able to find so far are AAAAI and EAN (Europe) both of which are closely guarded and cannot be made public. I&amp;rsquo;d really like to use a public dataset so I&amp;rsquo;m not sure what to do about this&amp;hellip;however I did find a wind speed dataset that seems to be pretty decent although right now it only seems to be marine measurements so I&amp;rsquo;m trying to see if there&amp;rsquo;s a land-based sister dataset.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/16</title>
+      <link>/post/notebook/2020/spring/week4/thurs/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on animal movement and synthetic data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-4:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Tyler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Found the bug in my animal movement code!!! Finally I can move on to other parts of this case study. Ran MCMC and it is giving me good and reasonable answers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/15</title>
+      <link>/post/notebook/2020/spring/week4/wedn/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Respond to Sándor and find spatial dataset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attend class&lt;/li&gt;
+&lt;li&gt;Take notes on VL Ch 4&lt;/li&gt;
+&lt;li&gt;Work on SNN modeling math&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did most of these things. Started working on the synthetic data case study for the optimization project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/14</title>
+      <link>/post/notebook/2020/spring/week4/tues/</link>
+      <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Continue work on animal movement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TAing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NSF Activity Report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Finished the activity report, held office hours, worked on movement. Still stumped by my movement bugs. I&amp;rsquo;m getting not-PSD errors from a function that should not possibly be able to produce a non-PSD matrix.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lab Notebook: 4/13</title>
@@ -37,25 +195,7 @@
 &lt;li&gt;Work on NSF progress report&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Lab Notebook: Sp20 Week 4</title>
-      <link>/post/notebook/2020/spring/week4/post-1/</link>
-      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
-      <guid>/post/notebook/2020/spring/week4/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;Need to debug and write up the animal movement case study, as I have fallen behind on my goal for that&lt;/li&gt;
-&lt;li&gt;Need to import pollen data and set up a preliminary model for it&lt;/li&gt;
-&lt;li&gt;Keep working a little bit on the SNN modeling math to get it into shape&lt;/li&gt;
-&lt;li&gt;Finish up notes on VL Ch 3 and 4&lt;/li&gt;
-&lt;li&gt;Read and take notes on VL Ch 5 and 6&lt;/li&gt;
-&lt;li&gt;Find large spatial dataset for optimal sampling design&lt;/li&gt;
-&lt;li&gt;Need to write up NSF GRF progress report&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Worked on animal movement code. It seems as though my bug is the &amp;ldquo;wiggles&amp;rdquo; common to FEM advection-type equations so I am attempting to implement FD. It wasn&amp;rsquo;t too hard for this simple example and is slightly better practice anyways. Spent pretty much all day on that however.&lt;/p&gt;
 </description>
     </item>
     
