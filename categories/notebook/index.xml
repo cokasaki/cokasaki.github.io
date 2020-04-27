@@ -5,12 +5,170 @@
     <link>/categories/notebook/</link>
       <atom:link href="/categories/notebook/index.xml" rel="self" type="application/rss+xml" />
     <description>Notebook</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 20 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Mon, 27 Apr 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon.png</url>
       <title>Notebook</title>
       <link>/categories/notebook/</link>
     </image>
+    
+    <item>
+      <title>Lab Notebook: 4/27</title>
+      <link>/post/notebook/2020/spring/week6/mon/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-9:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up for the week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 9:30-10:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Respond to emails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning 10:30-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integrate pilot study and optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TAing&lt;/li&gt;
+&lt;li&gt;Work on TAing notes when possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find Neotoma dataset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 6</title>
+      <link>/post/notebook/2020/spring/week6/post-1/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Select a pollen dataset to use&lt;/li&gt;
+&lt;li&gt;Find a trade winds dataset to use&lt;/li&gt;
+&lt;li&gt;Run the end-to-end pilot study/optimization procedure (and compare to spatially balanced)&lt;/li&gt;
+&lt;li&gt;Complete VL Ch 7-10&lt;/li&gt;
+&lt;li&gt;Look ahead to QSCI HW 3&lt;/li&gt;
+&lt;li&gt;Write up the SSN scratch paper before I forget it all&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/24</title>
+      <link>/post/notebook/2020/spring/week5/fri/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-10&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debug sampling design code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 10-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look into paleopollen and email Mevin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write on SSN paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read and take notes on VL Ch 7/8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 2-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write on Mevin paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-4&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debug sampling design code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 4-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read fun papers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Lots of scattered goals today so not all of them actually happened. I did look into the paleopollen stuff but there&amp;rsquo;s a lot there so still need to sift through what may be most applicable. I took some notes on Ch 7 but not Ch 8, and I did read some fun papers. Spent much more than 1 hour debugging the sampling design code but I did finally get it working!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/23</title>
+      <link>/post/notebook/2020/spring/week5/thurs/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finish grading and respond to TAing emails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debug covariance parameter estimation for optimal sampling design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-4:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Tyler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Meetings and lab went well! Implemented profile likelihood method for parameter estimation in the sampling design case study but it still doesn&amp;rsquo;t seem to be working. Not sure what could be going on.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/22</title>
+      <link>/post/notebook/2020/spring/week5/wedn/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Just grade all day!&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;I did that! I got almost everything finished just one or two more assignments to go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/21</title>
+      <link>/post/notebook/2020/spring/week5/tues/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read Vecchia-Laplace paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Space-time reading group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look for applications of Vecchia-Laplace paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attend lecture, grading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;I did these things! I think the Vecchia-Laplace paper could potentially be useful for the SSN stuff if it turns out that calculating the covariance matrix isn&amp;rsquo;t so so hard, or it could at least be useful for the existing SSN framework. Only got a few assignments done.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Lab Notebook: 4/20</title>
@@ -53,6 +211,7 @@
 &lt;li&gt;Grade for QSCI 483&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did email Mevin and got pointed to a really cool paleo dataset to use for that. Selected a cluster sampling pilot study procedure for the optimal sampling design project. Read and took (some) notes for VL Ch 7. Did a lot of gradnig for QSCI.&lt;/p&gt;
 </description>
     </item>
     
