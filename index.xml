@@ -150,6 +150,27 @@ I encourage you to try doing the same calculation with $S_{xx}$: you will find t
     </item>
     
     <item>
+      <title>Descriptive Statistics</title>
+      <link>/courses/qsci483/space-time/diagnostics/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0100</pubDate>
+      <guid>/courses/qsci483/space-time/diagnostics/</guid>
+      <description>&lt;p&gt;In this section I will outline the descriptive statistics that are used to diagnose point process deviations from homogeneity. A standard assumption in the analysis of point processes is that equal areas should have equal densities of points. However, this assumption is often violated. We can diagnose such violations using descriptive statistics such as Ripley&amp;rsquo;s $K$ and $L$ functions.&lt;/p&gt;
+&lt;h3 id=&#34;ripleys-k-function-&#34;&gt;Ripley&amp;rsquo;s $K$ function&lt;/h3&gt;
+&lt;p&gt;This function is defined as
+$$
+\hat{K}(t) = \lambda^{-1}\sum_{i\neq j} \frac{I(d_{ij} &amp;lt; t)}{n}.
+$$&lt;/p&gt;
+&lt;p&gt;Here $\lambda$ is the averasge intensity of the point process, which we will usually estimate as $n/A$ where $n$ is the ttoal number of points and $A$ is the area in question. $I$ is the indicator function which is 1 if the argument is true and 0 if it is false. The summation can be thought of as calculating the fraction of all pairs which are within $t$ units of distance from each other. If points are homogeneous in two dimensions then, ignoring boundary effects, we can expect that each point will contain approximately $\lambda \pi t^2$ points within $t$ distance units of it. So we should expect $\hat{K}(t) \approx \pi t^2$.&lt;/p&gt;
+&lt;h3 id=&#34;ripleys-l-function-&#34;&gt;Ripley&amp;rsquo;s $L$ function&lt;/h3&gt;
+&lt;p&gt;The $K$ function suffers from non-constant variance, which can make analyses difficult. Instead, we often use Ripley&amp;rsquo;s $L$ function, defined to be&lt;/p&gt;
+&lt;p&gt;$$
+\hat{L}(t) = \sqrt{\frac{\hat{K}(t)}{\pi}}.
+$$&lt;/p&gt;
+&lt;p&gt;This function has mean $t$ and variance approximately constant for all $t$. We can interpret plots of Ripley&amp;rsquo;s $L$ function as follows. First, we expect that the $L$ function should follow a straight line through the origin with slope 1. If the $L$ function deviates too much we conclude that there is clustering or overdispersion at that relevant length scale. If the $L$ function deviates to the left of the line, then $\hat{K}(t)$ is larger than expected, meaning more points fall within distance $t$ than expected. Thus leftward deviations denote clustered processes. Conversely, if the $L$ function is to the right of the line then the points are overdispersed.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>General Linear Algebraic Properties</title>
       <link>/courses/gaussian-processes/linear-algebra/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
@@ -874,6 +895,207 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
     </item>
     
     <item>
+      <title>Lab Notebook: 5/7</title>
+      <link>/post/notebook/2020/spring/week7/thurs/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week7/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-10:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Respond to TAing emails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plug away on either SQL or optimization or both.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-4:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Tyler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;I did these things! My optimization finally ran without bugs, I managed to do a little tiny bit of SQL.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 5/6</title>
+      <link>/post/notebook/2020/spring/week7/wedn/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week7/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Finish prepping for committee meeting. Start to grade and read VL.&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Feel food about committee meeting. Graded a few homeworks and read a few chapters.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Teaching for automaticity in basic academic skill</title>
+      <link>/post/teaching/visible-learning/ch-07/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/teaching/visible-learning/ch-07/</guid>
+      <description>&lt;p&gt;After large amounts of time spent practicing and recalling information, that information becames automatic. It is quickly and subconsciously accessible and does not impose upon expensive higher-level thought processes. When information is not automatic, these thought processes require are extremely tiring.&lt;/p&gt;
+&lt;p&gt;Reading is a natural example: when we read our eyes &lt;em&gt;saccade&lt;/em&gt; or quickly refixate about every quarter-second. The eye focuses on the next word in sequence and we process each word individually for meaning at that pace. Missing the meaning of even a single word can threaten the understanding of the whole sentence, and so the mind automatizes this process after months or years of practice. Moreover, in order to synthesize and comprehend longer sentences and arguments, words must be processes fast enough for the whole argument to be held in working memory. Slow reading due to lack of automaticity threatens this process.&lt;/p&gt;
+&lt;p&gt;The theory that certain students struggle with reading comprehension because they are slow to process individual words is known as the &lt;em&gt;simple theory of reading&lt;/em&gt;. Even though a child may understand each word individually, they cannot comprehend the whole sentence unless they can process words fast enough to intake the whole sentence more or less at once. This automatic processing is not possible without many many hours of intensive self-directed practice.&lt;/p&gt;
+&lt;p&gt;Number facts follow a similar pattern. Although mathematics instruction often focuses on &amp;ldquo;surface learning&amp;rdquo; vs &amp;ldquo;deep understanding,&amp;rdquo; there is almost no meaningful distinction between these, particularly in early education. The importance of automaticity and reducing cogniftive load is such that basic drilling of sums and products is necessary to develop future math skills. Furthermore speed of access of these number facts (among others) is associated with higher confidence and positive feelings.&lt;/p&gt;
+&lt;p&gt;Ultimately these important automatic skills can only be developed through large amounts of invested time, over the course of years. No one teacher can be responsible for these processes, but all must contribute for successful education to occur.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The role of feedback</title>
+      <link>/post/teaching/visible-learning/ch-08/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/teaching/visible-learning/ch-08/</guid>
+      <description>&lt;p&gt;Teachers have long lists of reasons why feedback is important. Students overwhelmingly look to feedback for only one thing: how to improve their work to succeed next time. Students tend to focus on the future over the past, and often interpret even constructive feedback on past work as personal attacks and can react defensively.&lt;/p&gt;
+&lt;p&gt;The impact of negative events is stronger than the impact of positive events, but despite this teachers consistently give more negative feedback than positive.&lt;/p&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 5/05</title>
+      <link>/post/notebook/2020/spring/week7/tues/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week7/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finish prepping for STRG&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Space-time reading group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Office hours&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prep for committee meeting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;STRG went really well! People seemed to like my talk and we had a lot of good discussion. Continuing to prep for committee meeting.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 5/4</title>
+      <link>/post/notebook/2020/spring/week7/mon/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week7/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Finish prepping for STRG tomorrow. Continue work on committee meeting presentation.&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did that!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 7</title>
+      <link>/post/notebook/2020/spring/week7/post-1/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week7/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Give presentation to STRG&lt;/li&gt;
+&lt;li&gt;Give presentation to committee meeting and get useful feedback&lt;/li&gt;
+&lt;li&gt;Complete VL Ch 7-12?&lt;/li&gt;
+&lt;li&gt;Continue to learn SQL&lt;/li&gt;
+&lt;li&gt;Need a lot of bandwidth to tackle revisions, so we will do this next week&lt;/li&gt;
+&lt;li&gt;Grade HW 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Presentation went well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 5/1</title>
+      <link>/post/notebook/2020/spring/week6/fri/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Choose and prep paper for STRG next week. Prepare for committee meeting.&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did these things. STRG is going to take longer than I had hoped. Long week ahead of me.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/30</title>
+      <link>/post/notebook/2020/spring/week6/thurs/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-10:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Respond to TAing emails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plug away on either SQL or optimization or both.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-4:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Tyler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;I did these things! My optimization finally ran without bugs, I managed to do a little tiny bit of SQL.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/29</title>
+      <link>/post/notebook/2020/spring/week6/wedn/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Find a dataset on Neotoma and debug the optimization case study.&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Spent a lot of time on both tasks. Neotoma is remarkably difficult to use. I&amp;rsquo;m trying to learn a tiny bit of SQL to access it because I don&amp;rsquo;t think there is a better dataset out there for this project, but it has been frustrating. The optimization still is not solving. I think it is either an issue with the bounds or an issue with the size of the problem.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/28</title>
+      <link>/post/notebook/2020/spring/week6/tues/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read Vecchia paper for STRG&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Space-time reading group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 12-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Andrew&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Office hours&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5
+Neotoma&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Got a decent amount of reading done, but did not find a satisfactory dataset on Neotoma. More on this tomorrow I suppose.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Lab Notebook: 4/27</title>
       <link>/post/notebook/2020/spring/week6/mon/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
@@ -901,6 +1123,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;li&gt;Find Neotoma dataset&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Responded to all my emails. Got the code running for the pilot study/optimization integration, but it&amp;rsquo;s been a while since I looked at the optimization code. It runs but slowly and I don&amp;rsquo;t entirely remember how to fix it. Did not end up finding Neotoma dataset, instead I ended up working on SSN stuff that I didn&amp;rsquo;t finish yesterday, and in particular I learned how Cholesky sparse up-looking updates work.&lt;/p&gt;
 </description>
     </item>
     
@@ -919,6 +1142,12 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;li&gt;Write up the SSN scratch paper before I forget it all&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Got access to Neotoma although it is much more complex than I feared&lt;/li&gt;
+&lt;li&gt;No progress on trade winds&lt;/li&gt;
+&lt;li&gt;End-to-end pilot study procedure is working, but haven&amp;rsquo;t incorporated spatially balanced yet&lt;/li&gt;
+&lt;li&gt;Keeping up to speed on QSCI&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -1605,22 +1834,6 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Didn&amp;rsquo;t make it through the whole thing, had to look up some of the model diagnostics Tim is using, but did get through VL Ch 1 and 2. Struggled with website formatting in the afternoon.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/teaching/visible-learning/ch-07/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/post/teaching/visible-learning/ch-07/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/teaching/visible-learning/ch-08/</link>
-      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
-      <guid>/post/teaching/visible-learning/ch-08/</guid>
-      <description></description>
     </item>
     
     <item>
@@ -2876,6 +3089,15 @@ title: &amp;lsquo;Lab Notebook: Sp20 Week 4&amp;rsquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did debug and partially write up the animal movement case study but there is still more writing/background to do there. Found a problem with the pollen data so that also will take longer than expected. Worked a little bit on the SSN modeling and found a matrix formulation for it (another DT lyapunov equation) although in the end it&amp;rsquo;ll probably all be finite difference anyways. Took notes on VL Ch 3-6, and decided with Sándor that we will just do a purely synthetic dataset to start for the sampling design. Wrote up NSF progress report, although still waiting on Andrew to sign off.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/recipes/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/recipes/readme/</guid>
+      <description>&lt;h1 id=&#34;recipes&#34;&gt;recipes&lt;/h1&gt;
 </description>
     </item>
     
