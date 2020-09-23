@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Colin Okasaki">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In this document I will outline the math used to analyze our previous results for linear regression analysis. Make sure to check out my previous posts on notation and simple linear regression before diving in.
+The Model Recall that linear regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
+\epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/qsci483/math/linear-regression/properties/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hub75627969bdd01989db8aea0c9cc39c4_9892_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hub75627969bdd01989db8aea0c9cc39c4_9892_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/qsci483/math/linear-regression/properties/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Colin Okasaki">
+  <meta property="og:url" content="/courses/qsci483/math/linear-regression/properties/">
+  <meta property="og:title" content="Properties of Linear Regression | Colin Okasaki">
+  <meta property="og:description" content="In this document I will outline the math used to analyze our previous results for linear regression analysis. Make sure to check out my previous posts on notation and simple linear regression before diving in.
+The Model Recall that linear regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
+\epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid."><meta property="og:image" content="/img/icon.png">
+  <meta property="twitter:image" content="/img/icon.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-03-31T00:00:00&#43;01:00">
+    
+    <meta property="article:modified_time" content="2020-03-31T16:39:04-07:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Properties of Linear Regression | Colin Okasaki</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Colin Okasaki</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Colin Okasaki</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/qsci483/">QSCI 483</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/qsci483/math/notation/">Notation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/qsci483/math/linear-regression/simple-linear-regression/">Linear Regression</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/qsci483/math/linear-regression/simple-linear-regression/">Simple Model</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/math/linear-regression/linear-regression/">General Model</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/qsci483/math/linear-regression/properties/">Properties</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/math/linear-regression/diagnostics/">Model Diagnostics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#the-model-">The Model</a>
+      <ul>
+        <li><a href="#maximum-likelihood-">Maximum Likelihood</a></li>
+        <li><a href="#unbiasedness-">Unbiasedness</a></li>
+        <li><a href="#covariance-of-hatbeta-">Covariance of $\hat{\beta}$</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Properties of Linear Regression</h1>
+
+          <div class="article-style">
+            <p>In this document I will outline the math used to analyze our previous results for linear regression analysis. Make sure to check out my previous posts on 
+<a href="/courses/qsci483/math/notation">notation</a>
+ and 
+<a href="/courses/qsci483/math/linear-regression/linear-regression">simple linear regression</a>
+ before diving in.</p>
+<h2 id="the-model-">The Model</h2>
+<p>Recall that linear regression is based upon the equation:
+$$
+y_i \sim N(X\beta,\sigma^2)
+$$
+or equivalently
+\begin{align*}
+y_i &amp; \sim X\beta + \epsilon_i \\<br>
+\epsilon_i &amp; \sim N(0,\sigma^2)
+\end{align*}
+where the $\epsilon_i$ are iid. We have previously found that the estimate $\hat{\beta} = (X&rsquo;X)^{-1}Xy$ minimizes the sum of squares. In this document we will show: (1) that $\hat{\beta}$ is also the maximum likelihood estimator, (2) that $\hat{\beta}$ is unbiased, and (3) the covariance matrix for the estimator $\hat{\beta}$.</p>
+<h3 id="maximum-likelihood-">Maximum Likelihood</h3>
+<p>Our probability model has that $y_i$ are normally distributed, and are independent of each other given the predictors $X$ and the coefficients $\beta$. The <em>likelihood function</em> is given by the probability (density) of the data given the parameters ($\beta$), expressed as a function of the parameter estimate ($\hat{\beta}$). This function in our case can be written as a product of Gaussian (normal) probability density functions (pdfs):
+\begin{align*}
+\ell(\hat{\beta}) &amp; = \prod_{i=1}^n N(y_i|X\hat{\beta},\sigma^2) \\<br>
+&amp; = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(y_i - X\hat{\beta})}{2\sigma^2}\right) \\<br>
+&amp; = \frac{1}{(2\pi\sigma^2)^{n/2}}\exp\left(-\sum_{i=1}^n \frac{(y_i - X\hat{\beta})}{2\sigma^2}\right).
+\end{align*}
+We will now make use of a common trick in statistics: we will calculate the log-likelihood function $\lambda(\hat{\beta}) = \log(\ell(\hat{\beta}))$. Since the probability density function is always non-negative, and therefore the likelihood is always non-negative, the log-likelihood can be defined. Furthermore, the log is a convex function, and because of this it has the property that $\ell$ and $\lambda$ are minimized at the same value $\hat{\beta}$. Why this is is not important for this class.</p>
+<p>So taking the log we obtain
+\begin{align*}
+\lambda(\hat{\beta})
+&amp; = \log\left(\frac{1}{(2\pi\sigma^2)^{n/2}}\exp\left(-\sum_{i=1}^n \frac{(y_i - X\hat{\beta})}{2\sigma^2}\right)\right) \\<br>
+&amp; = \log\left(\frac{1}{(2\pi\sigma^2)^{n/2}}\right) + \log\left(\exp\left(-\sum_{i=1}^n \frac{(y_i - X\hat{\beta})}{2\sigma^2}\right)\right) \\<br>
+&amp; = -\frac{n}{2}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2}\sum_{i=1}^n (y_i-X\hat{\beta})^2.
+\end{align*}
+Now remember that we are looking for the _maximum likelihood estimator_. So we want to find the value of $\hat{\beta}$ which maximizes the likelihood (i.e. maximizes the probability of that data, given the parameters). Viewing this as a function of $\hat{\beta}$ we see that maximizing $\lambda$ is equivalent to minimizing
+$$
+\sum_{i=1}^n (y_i-X\hat{\beta})^2.
+$$
+Therefore the maximum likelihood estimator (MLE) of $\hat{\beta}$ is exactly the least-squares estimator $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$. Importantly, we are at this point omitting the parameter $\sigma^2$. In fact, the MLE for $\hat{\beta}$ is unchanged if we estimate this parameter as well. The MLE for $\hat{\sigma^2}$ is given by
+\begin{align*}
+\hat{\sigma^2}
+&amp; = \frac{1}{n}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\<br>
+&amp; = \frac{1}{n}y&rsquo;(I-X(X&rsquo;X)^{-1}X&rsquo;)y.
+\end{align*}</p>
+<h3 id="unbiasedness-">Unbiasedness</h3>
+<p>It is important to remember that estimators (such as $\hat{\beta}) are themselves <em>random</em>. If we were to simulate from our model, holding $\beta$ fixed, we would fit a different estimator $\hat{\beta}$ to every simulation. Thus an important quality that an estimator can have is <em>unbiasedness</em>. This means that, if the model is correct, the estimator will neither tend to overestimate nor underestimate the true parameter. In mathematical terms, its expectation (or mean) is correct: $E[\hat{\beta}] = \beta$.</p>
+<p>Using our matrix math this property can be derived fairly quickly. We know that $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$. We also know that $y = X\beta + \epsilon$. Putting these together we see:
+\begin{align*}
+\hat{\beta}
+&amp; = (X&rsquo;X)^{-1}X&rsquo;(X\beta + \epsilon) \\<br>
+&amp; = (X&rsquo;X)^{-1}X&rsquo;X\beta + (X&rsquo;X)^{-1}X&rsquo;\epsilon \\<br>
+&amp; = \beta + (X&rsquo;X)^{-1}X&rsquo;\epsilon.
+\end{align*}
+Therefore the mean is
+\begin{align*}
+E[\hat{\beta}]
+&amp; = E\left[\beta + (X&rsquo;X)^{-1}X&rsquo;\epsilon\right].
+\end{align*}
+The mean has a useful property which we will use here, which is that it is _linear_. This means that the expectation of a sum is the sum of the expectations. In math we write this as $E[A+B] = E[A] + E[B]$. Since matrix operations are essentially just a bunch of sums, we can also write $E[Mv] = ME[v]$, if $v$ is random and $M$ is constant. Using this property we get
+\begin{align*}
+E[\hat{\beta}]
+&amp; = E\left[\beta + (X&rsquo;X)^{-1}X&rsquo;\epsilon\right] \\<br>
+&amp; = \beta + E\left[(X&rsquo;X)^{-1}X&rsquo;\epsilon\right] \\<br>
+&amp; = \beta + (X&rsquo;X)^{-1}X&rsquo;E[\epsilon] \\<br>
+&amp; = \beta
+\end{align*}
+since we have assumed that $\epsilon$ is zero-mean noise. So, in fact, our estimator is unbiased!</p>
+<h3 id="covariance-of-hatbeta-">Covariance of $\hat{\beta}$</h3>
+<p>Remember that $\hat{\beta}$ is fundamentally a <em>random</em> quantity. It is different in every realization (or simulation) of the statistical model we have written down. It is sensitive to the addition of random noise ($\epsilon_{i}$) to the data. Luckily, since we have written down a statistical model for our data $y$ we are able to do a statistical analysis for the estimator $\hat{\beta}$ to determine its random properties.</p>
+<p>We showed in the previous section that $\hat{\beta}$ was unbiased, that is, it has its mean $E[\hat{\beta}] = \beta$ at the correct place. We will now calculate the variance-covariance (or just covariance) matrix of $\hat{\beta}$. This tells us how much we can expect $\hat{\beta}$ to vary for different datasets. The <em>diagonal</em> of this covariance matrix tells us the variances of $\hat{\beta}_{i}$, which are important quantities that get used, for example, in calculating Rs model summaries.</p>
+<p>The covariance of two random variables is given by $E[(A-E[A])(B-E[B])]$. In our case $A = \hat{\beta}_{i}$ and $B = \hat{\beta}_{j}$. This will give us the entry $\Sigma_{ij}$ in the covariance matrix. We already know that $E[\hat{\beta}_{i}] = \beta_{i}$ since the estimators are unbiased. Therefore the covariance is
+$$
+\Sigma_{ij} = E\left[(\hat{\beta}_{i} - \beta_{i})(\hat{\beta}_{j} - \beta_{j})\right].
+$$
+Expanding the quadratic in the middle, and remembering that expectations are linear, we get that
+\begin{align*}
+\Sigma_{ij}
+&amp; = E[\hat{\beta}_i\hat{\beta}_j] - E[\beta_i\hat{\beta}_j] - E[\hat{\beta}_i\beta_j] + E[\beta_i\beta_j] \\<br>
+&amp; = E[\hat{\beta}_i\hat{\beta}_j] - \beta_iE[\hat{\beta}_j] - E[\hat{\beta}_i]\beta_j + \beta_i\beta_j \\<br>
+&amp; = E[\hat{\beta}_i\hat{\beta}_j] - \beta_i\beta_j.
+\end{align*}</p>
+<p>This is a useful formula, but it would be far more effective to analyze this problem in terms of matrix notation. Let&rsquo;s go ahead and make that switch. Using matrix notation, the single entry
+$$
+\Sigma_{ij} = E\left[(\hat{\beta}_i - \beta_i)(\hat{\beta}_j - \beta_j)\right].
+$$
+can be written as a whole matrix
+$$
+\Sigma = E\left[(\hat{\beta} - E[\hat{\beta}])(\hat{\beta} - E[\hat{\beta}])'\right].
+$$
+Since we know that the estimator is unbiased we can plug this into the matrix equation to get
+\begin{align*}
+\Sigma
+&amp; = E\left[(\hat{\beta} - \beta)(\hat{\beta}-\beta)'\right] \\<br>
+&amp; = E\left[\hat{\beta}\hat{\beta}'\right] - \beta\beta&rsquo;.
+\end{align*}
+This is exactly the same formula we have above, just written in matrix notation. Now, we already have a formula for $\hat{\beta}$ in matrix notation, $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$, so let&rsquo;s plug this in here. We get
+\begin{align*}
+\Sigma
+&amp; = E\left[(X&rsquo;X)^{-1}X&rsquo;yy&rsquo;X(X&rsquo;X)^{-1}\right] - \beta\beta&rsquo; \\<br>
+&amp; = (X&rsquo;X)^{-1}X&rsquo; E[yy&rsquo;] X(X&rsquo;X)^{-1} - \beta\beta&rsquo;.
+\end{align*}
+Now we can plug in our formula for $y = X\beta + \epsilon$. Remembering that expectations are linear (i.e. can be split up over summations), we get
+\begin{align*}
+E[yy&rsquo;]
+&amp; = E\left[(X\beta + \epsilon)(X\beta+\epsilon)'\right] \\<br>
+&amp; = E\left[X\beta\beta&rsquo;X&rsquo; + \epsilon X\beta + \beta&rsquo;X&rsquo;\epsilon + \epsilon\epsilon&rsquo;\right] \\<br>
+&amp; = X\beta\beta&rsquo;X&rsquo; + E[\epsilon]X\beta + \beta&rsquo;X&rsquo;E[\epsilon] + E[\epsilon\epsilon&rsquo;]
+\end{align*}
+Now we already know that $E[\epsilon] = 0$. What about $E[\epsilon\epsilon&rsquo;]$? Well,
+$$
+\mbox{cov}(\epsilon_i,\epsilon_j) = E[\epsilon_i\epsilon_j] - E[\epsilon_i]E[\epsilon_j] = E[\epsilon_i\epsilon_j].
+$$
+Since independent variables are uncorrelated (and we know that the $\epsilon_i$ are iid) we see that this matrix is diagonal with entries equal to $\sigma^2$, the variance of $\epsilon_i$. Thus:
+$$
+E[yy&rsquo;] = X\beta\beta&rsquo;X&rsquo; + \sigma^2I.
+$$
+Finally, plugging this in, we can find that
+\begin{align*}
+\Sigma &amp; = (X&rsquo;X)^{-1}X&rsquo; E[yy&rsquo;] X(X&rsquo;X)^{-1} - \beta\beta&rsquo; \\<br>
+&amp; = (X&rsquo;X)^{-1}X&rsquo;(X\beta\beta&rsquo;X&rsquo; + \sigma^2I)X(X&rsquo;X)^{-1} - \beta\beta&rsquo; \\<br>
+&amp; = (X&rsquo;X)^{-1}(X&rsquo;X)\beta\beta&rsquo;(X&rsquo;X)(X&rsquo;X)^{-1} + (X&rsquo;X)^{-1}X&rsquo;(\sigma^2I)X(X&rsquo;X)^{-1} - \beta\beta&rsquo; \\<br>
+&amp; = \beta\beta&rsquo; + \sigma^2(X&rsquo;X)^{-1} - \beta\beta&rsquo; \\<br>
+&amp; = \sigma^2(X&rsquo;X)^{-1}.
+\end{align*}
+This is the covariance matrix of $\hat{\beta}$! Notably, this has two important properties. One, it depends on $\sigma^2$, so if we want to use this we had better estimate $\sigma^2$ somehow. More on this in the next section. Two, it depends on the _inverse_ of $X&rsquo;X$. There&rsquo;s no guarantee that this matrix is invertible. For example, if we have more predictors than we have data points (i.e. $k &gt; n$) this matrix will certainly _not_ be invertible. You may have been warned about this scenario in the past. However, even if you have many data points, other situations can crop up where $X&rsquo;X$ is either numerically difficult to invert (i.e. difficult to calculate on a computer), or produces very large variances. One such case is where two of the predictor variables are very highly correlated. More on this later.</p>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/qsci483/math/linear-regression/linear-regression/" rel="next">Linear Regression</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/qsci483/math/linear-regression/diagnostics/" rel="prev">Linear Regression Model Diagnostics</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Mar 31, 2020</p>
+
+          
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/qsci483/math/linear-regression/properties.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+  <p class="powered-by">
+    
+      <a href="/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/terms/">Terms</a>
+    
+  </p>
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
