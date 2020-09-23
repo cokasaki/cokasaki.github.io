@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Spatial Statistics | Academic</title>
+    <title>Spatial Statistics | Connie Okasaki</title>
     <link>/tags/spatial-statistics/</link>
       <atom:link href="/tags/spatial-statistics/index.xml" rel="self" type="application/rss+xml" />
     <description>Spatial Statistics</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Feb 2019 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>/img/icon.png</url>
       <title>Spatial Statistics</title>
       <link>/tags/spatial-statistics/</link>
     </image>
@@ -117,18 +117,18 @@
     
     <item>
       <title>Logistically-Constrained Optimal Spatial Sampling Design</title>
-      <link>/project/opt-design-project/</link>
+      <link>/project/opt-design/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/opt-design-project/</guid>
+      <guid>/project/opt-design/</guid>
       <description>&lt;p&gt;In this project I investigate the use of sparse precision matrices and mixed integer/linear programs to efficient conduct logistically-constrained optimal spatial sampling design.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Source Inference</title>
-      <link>/project/source-project/</link>
+      <link>/project/source/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/source-project/</guid>
+      <guid>/project/source/</guid>
       <description>&lt;p&gt;In this project I investigate the use of stochastic PDEs to conduct inference on the source term of a linear PDE.&lt;/p&gt;
 </description>
     </item>

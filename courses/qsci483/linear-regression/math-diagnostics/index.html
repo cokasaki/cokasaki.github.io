@@ -1,0 +1,1069 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Connie Okasaki">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In this document I will outline the math used to derive and analyze the statistics (calculated quantities) for a linear regression model. Make sure to check out my previous posts before diving in. Recall that linear regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
+\epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&rsquo;X)^{-1}$.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/qsci483/linear-regression/math-diagnostics/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hub75627969bdd01989db8aea0c9cc39c4_9892_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hub75627969bdd01989db8aea0c9cc39c4_9892_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/qsci483/linear-regression/math-diagnostics/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Connie Okasaki">
+  <meta property="og:url" content="/courses/qsci483/linear-regression/math-diagnostics/">
+  <meta property="og:title" content="Linear Regression Model Diagnostics | Connie Okasaki">
+  <meta property="og:description" content="In this document I will outline the math used to derive and analyze the statistics (calculated quantities) for a linear regression model. Make sure to check out my previous posts before diving in. Recall that linear regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
+\epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&rsquo;X)^{-1}$."><meta property="og:image" content="/img/icon.png">
+  <meta property="twitter:image" content="/img/icon.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-03-31T00:00:00&#43;01:00">
+    
+    <meta property="article:modified_time" content="2020-04-06T11:17:55-07:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>Linear Regression Model Diagnostics | Connie Okasaki</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Connie Okasaki</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Connie Okasaki</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/qsci483/">QSCI 483</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/qsci483/notation/">Notation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/qsci483/linear-regression/simple-linear-regression/">Linear Regression</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/simple-linear-regression/">Simple Model</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/linear-regression/">General Model</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/properties/">Properties</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/standard-error/">Standard Error</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/qsci483/linear-regression/math-diagnostics/">Model Diagnostics</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/diagnostics/">Using Diagnostics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/qsci483/space-time/diagnostics/">Point Processes</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/qsci483/space-time/diagnostics/">Descriptive Statistics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#measures-of-fit">Measures of Fit</a>
+      <ul>
+        <li><a href="#the-t-statistic-">The $t$ statistic</a></li>
+        <li><a href="#the-f-statistic-">The $F$ statistic</a></li>
+        <li><a href="#the-r2-">The $R^2$</a></li>
+      </ul>
+    </li>
+    <li><a href="#residuals-">Residuals</a>
+      <ul>
+        <li><a href="#standardizing-">Standardizing</a></li>
+        <li><a href="#studentizing-">Studentizing</a></li>
+        <li><a href="#deleting-">Deleting</a></li>
+      </ul>
+    </li>
+    <li><a href="#measures-of-influence-">Measures of Influence</a>
+      <ul>
+        <li><a href="#leverage-">Leverage</a></li>
+        <li><a href="#cooks-distance-">Cook&rsquo;s Distance</a></li>
+        <li><a href="#dffits-">DFFITS</a></li>
+      </ul>
+    </li>
+    <li><a href="#normality-">Normality</a>
+      <ul>
+        <li><a href="#moments-">Moments</a></li>
+        <li><a href="#shapiro-wilk-">Shapiro-Wilk</a></li>
+      </ul>
+    </li>
+    <li><a href="#heteroskedasticity-">Heteroskedasticity</a></li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>Linear Regression Model Diagnostics</h1>
+
+          <div class="article-style">
+            <p>In this document I will outline the math used to derive and analyze the statistics (calculated quantities) for a linear regression model. Make sure to check out my previous posts before diving in. Recall that linear regression is based upon the equation:
+$$
+y_i \sim N(X\beta,\sigma^2)
+$$
+or equivalently
+\begin{align*}
+y_i &amp; \sim X\beta + \epsilon_i \\<br>
+\epsilon_i &amp; \sim N(0,\sigma^2)
+\end{align*}
+where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&rsquo;X)^{-1}$.</p>
+<h2 id="measures-of-fit">Measures of Fit</h2>
+<h3 id="the-t-statistic-">The $t$ statistic</h3>
+<p>The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\hat{\sigma}(\hat{\beta}_i)$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Furthermore, $\hat{\sigma}(\hat{\beta}_i)$, the standard error for this estimate, is a product of the standard error $\hat{\sigma}(\epsilon)$ and the analytical standard deviation of $\beta_i$ (for $\sigma = 1$) which is just the $\sqrt{(X&rsquo;X)^{-1}_{ii}}$. The important thing is we have a normal variable and its standard error, and therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).</p>
+<h3 id="the-f-statistic-">The $F$ statistic</h3>
+<p>The $F$ test for the overall model is a formal test with hypothesis:
+\begin{align*}
+H_0: &amp; ~~~\beta_i = 0 \mbox{ for all } i \\<br>
+H_1: &amp; ~~~\beta_i \neq 0 \mbox{ for some }i.
+\end{align*}
+Notably we will be assuming that there _is_ still a non-zero constant mean term even under $H_0$. If we do not assume this then we can basically set all the $\overline{y}$ terms equal to zero and remove the 1 degree of freedom from the null hypothesis terms. To test this we need to calculate a few important quantities, all of which are sums of squares:</p>
+<ul>
+<li>SSE (sum of squares: error)
+<ul>
+<li>This is basically just the sum of squares for all the residuals</li>
+<li>SSE~$ = \sum_{i=1}^n (y_i - \hat{y}_i)^2 = \sum_{i=1}^n \epsilon_i^2$</li>
+<li>We showed 
+<a href="../standard-error">previously</a>
+ that SSE$\sim \chi^2_{n-k}$</li>
+<li>If you look back at the derivation you will see that this is true <em>regardless</em> of $\beta$</li>
+</ul>
+</li>
+<li>SSM (sum of squares: model)
+<ul>
+<li>This is basically how much extra variation from the mean the model explains</li>
+<li>SSM~$ = \sum_{i=1}^n (\hat{y}_i - \overline{y})^2$</li>
+<li>This turns out to <em>also</em> be a $\chi^2$ random variable</li>
+<li>We can prove this using the same basic argument. Let $J = 11^T$ be a matrix of all 1s. Then: $$\mbox{SSM} = y&rsquo;(H-\frac{1}{n} J)'(H-\frac{1}{n} J)y.$$ However $H - \frac{1}{n}J$ is symmetric and idempotent, with rank $k-1$. Thus SSM$\sim \chi^2_{k-1}$ following the same logic from 
+<a href="../standard-error">before</a>
+.</li>
+</ul>
+</li>
+<li>SST (sum of squares: total)
+<ul>
+<li>This is how much total variation this is around the mean</li>
+<li>SST~$ = \sum_{i=1}^n (y_i-\overline{y})^2$</li>
+<li>This is also $\chi^2_{n-1}$ (prove this yourself?)
+Remarkably SSE+SSM=SST, which can be used as an elementary proof that SST is $\chi^2_{n-1}$ (though there are other ways). This is the famous variance decomposition for ANOVA models. Why is this true?</li>
+</ul>
+</li>
+</ul>
+<p>TODO: what is an ANOVA?</p>
+<h4 id="variance-decomposition-">Variance Decomposition</h4>
+<p>We can think about the variance decomposition several ways. The simplest proof is geometric in nature but requires jumping through some linear-subspace hoops. We can think about three points in $\mathbb{R}^n$, $n$-dimensional space where our datapoints $y$ live. One point is just the data vector $y$. Another point is $\hat{y}_i = \hat{y}_i$ a third point is $\overline{y}_i = \overline{y}$. We can also define $k$ vectors in this space, corresponding to the values of our predictors $x^{(j)}_i = X_{ij}$. These $k$ vectors define a $k$-dimensional linear subspace of $\mathbb{R}^n$ (which you can think of as $X\beta$ for all of the possible $k$-dimensional values of $\beta$. The prediction vector $\hat{y}$ is nothing but the projection of $y$ onto the closest point of this subspace. Since one of the predictors is the mean (i.e. $X_{i1} = 1$) the mean point $\hat{y}$ falls <em>inside</em> this linear subspace. This gives us the following geometric intuition:</p>
+<ul>
+<li>The mean is in the subspace</li>
+<li>The projection is in the subspace</li>
+<li>The projection is the <em>closest</em> point in the subspace to the data. This is because the projection minimizes the sum of squares, or the squared distance between the subspace and the data.</li>
+<li>Therefore the vector leading from the data to the projection is <em>orthogonal</em> or perpendicular to the subspace</li>
+<li>In particular the vector leading from the data to the projection is orthogonal to the vector leading from the projection to the mean
+Therefore we can apply the Pythagorean theorem, to find that the squared distance between the data and the projection (prediction) plus the squared distance between the projection and the mean is equal to the squared distance between the data and the mean. If you sit down and think about what these &ldquo;squared distance&rdquo; mean in mathematical terms you will find that this is a geometric proof of SSE+SSM=SST.</li>
+</ul>
+<p>We can also think about the variance decomposition in terms of raw linear algebra and matrices: TODO</p>
+<p>A common <em>mistake</em> made in deriving the variance decomposition is noting that $$(y_i - \hat{y}_i) + (\hat{y}_i - \overline{y}) = (y_i-\overline{y}).$$ The <em>false</em> argument then goes: square the terms and sum and the equality holds. However, as you likely know $A+B=C$ does <em>not</em> imply that $A^2+B^2=C^2$. We require the additional structure of linear algebra and/or geometry to obtain this result</p>
+<h4 id="back-to-the-f-test-">Back to the $F$ test</h4>
+<p>We can now adjust SSE and SSM to get the &ldquo;mean sum of squares,&rdquo; by dividing by the degrees of freedom:</p>
+<ul>
+<li>MSE = SSE$/(n-k)$</li>
+<li>MSM = SSM$/(n-1)$
+Finally, our test statistic is $F = \mbox{MSM}/\mbox{MSE}$. In order for this to be a valid $F$ statistic, SSM and SSE must be independent. This turns out to be true but I will not prove it here (TODO).</li>
+</ul>
+<p>Note that if the model explains a lot more variation than just the mean we expect for MSE to be small and MSM to be large: make sure this make sense to you. So if the model is &ldquo;real&rdquo; then we expect $F$ to be large. If the null hypothesis is true then we expect $F$ to be small. So we reject the null for large values of $F$.</p>
+<h3 id="the-r2-">The $R^2$</h3>
+<p>There are numerous ways to calculate different versions of $R^2$ but at the end of the day they all boil down to correlation coefficients: the correlation $R$ between the predictors and the response variable. We square it because this gives us a measure of the proportion of variance explained by the predictors.</p>
+<h4 id="basic-r2-">Basic $R^2$</h4>
+<p>The most basic version of this statistic is just the correlation coefficient between the the predictors and the response. It is also known as the coefficient of determination. It is calculated as $SSM/SST$. This gives it the nice interpretation of being the ratio of &ldquo;variance explained by the model&rdquo; to &ldquo;total variance around the mean.&rdquo; It can also be defined mathematically as the square of the Pearson correlation coefficient between $y$ and $\hat{y}$:
+\begin{align*}
+R^2 &amp; = \left(\frac{\sum_{i=1}^n (y_i-\overline{y})(\hat{y}_i - \overline{y})}{\sqrt{\sum_{i=1}^n (y_i-\overline{y})^2}\sqrt{\sum_{i=1}^n (\hat{y}_i - \overline{y})^2}}\right)^2
+\end{align*}</p>
+<p>However, the raw $R^2$ calculation has some problems as a measure of model fit. For one thing, $R^2$ <em>always</em> increases whenever you add a new predictor. This is because $\hat{y}$ will always get closer to $y$ as our minimization procedure gains degrees of freedom to find the &ldquo;best fit.&rdquo; Basically this means that $R^2$ does not penalize overfitting. As we add more and more predictors to our model $R^2$ will just keep getting better and better and will fit coefficients that are highly dependent on the random noise. So we need something better.</p>
+<h4 id="adjusted-r2-">Adjusted $R^2$</h4>
+<p>The adjusted $R^2$ tries to account for overfitting by decreasing the original $R^2$ statistic. There are two formulas we can use for the adjusted $R^2$ (which we will denote $\overline{R}^2$):
+\begin{align*}
+\overline{R}^2
+&amp; = 1-(1-R^2)\frac{n-1}{n-k-1} \\<br>
+&amp; = 1-\frac{\mbox{SSE}/(n-k-1)}{\mbox{SST}/(n-1)}.
+\end{align*}
+There are two thiings we can note from this. One is we can see how this adjustment works by comparing it to the original formula for $R^2$:
+\begin{align*}
+R^2 &amp; = \frac{\mbox{SSM}}{\mbox{SST}} \\<br>
+&amp; = 1 - \frac{\mbox{SSE}}{\mbox{SST}} \\<br>
+&amp; = 1 - \frac{\mbox{SSE}/n}{\mbox{SST}/n}.
+\end{align*}
+One way of thinking about $\overline{R}^2$ is that the original (un-adjusted) $R^2$ was using biased estimates $\frac{\mbox{SSE}}{n}$ and $\frac{\mbox{SST}}{n}$ which need to be adjusted for their degrees of freedom $n-k-1$ and $n-1$. TODO(what is SST/n an estimate of).</p>
+<h2 id="residuals-">Residuals</h2>
+<h3 id="standardizing-">Standardizing</h3>
+<p>Frequently when evaluating a model we will plot residuals against other things. Often when we do this we will standardize the residuals by dividing $\hat{\epsilon}_i$ by the residual standard error $\hat{\sigma}$. However, this is not necessarily the best way to achieve our goal of truly standardizing the residuals. The issue is that the <em>residuals</em> are different from the <em>errors</em>. Although the errors have equal variance, the residuals actually do not. This can be seen by remembering that: $\hat{\epsilon} = M\epsilon$. Thus, in reality the residuals are correlated and have different variances from one another.</p>
+<h3 id="studentizing-">Studentizing</h3>
+<p>Luckily we can account for this. The way we do this is by &ldquo;studentizing&rdquo; the residuals. There are several formulas we can use to represent this, but basically it boils down to the fact that $\hat{\epsilon} \sim N(0,\sigma^2M)$. Thus the true variance of $\hat{\epsilon}_i$ is not $\sigma^2$ but $\sigma^2M_{ii}$. Thus we can studentize by calculating
+$$t_i = \frac{\hat{\epsilon}_i}{\hat{\sigma}(\epsilon)\sqrt{M_{ii}}}.$$
+We can equivalently express this in terms of the 
+<a href="#leverage">leverage</a>
+ as
+$$t_i = \frac{\hat{\epsilon}_i}{\hat{\sigma}(\epsilon)\sqrt{1-h_{ii}}}.$$
+TODO: some more on this</p>
+<h3 id="deleting-">Deleting</h3>
+<p>Since outliers may have outsized influence on the model fit (see the 
+<a href="#measures-of-influence">next section</a>
+ we may want a more robust statistic for estimating the residuals. We can generate this by considering the <em>deleted residuals</em>, or the residuals when comparing a data point to the model fitted <em>without that data point</em>. We denote the vector of these as residuals $\hat{y}_{(i)}$ and a particular residual as $\hat{y}_{j(i)}$. The deleted residuals are expressed as:
+$$d_i = y_i - \hat{y}_{i(i)}.$$
+How can we express these mathematically?</p>
+<p>We will start by considering the whole vector $\hat{y}_{(i)}$. This is the vector of all $n$ predictions, generated using all the data <em>except</em> the $i$-th point. We can re-express $\hat{y}_{(i)}$ in terms of matrices, although it takes a little thought. Recall that $\hat{y} = Hy = X(X&rsquo;X)X&rsquo;y = X\hat{\beta}$. To calculate $\hat{y}_{(i)}$ we essentially need to first calculate $\hat{\beta}_{(i)}$, the coefficient estimates without data point $i$. To do this we remove one entry from $y$ and therefore also one row from $X$. However the <em>dimension</em> of $\hat{\beta}$ does not change. We can actually write this as:
+$$\hat{\beta}_{(i)} = (X&rsquo;X - x_i&rsquo;x_i)^{-1}(X&rsquo;y - x_i&rsquo;y_i).$$
+Then to calculate the predictions $\hat{y}_{(i)}$ we still just multiply by $X$, since we wish to predict all data points, including $y_i$. Thus:
+$$\hat{y}_{(i)} = X(X&rsquo;X - x_i&rsquo;x_i)^{-1}(X&rsquo;y - x_i&rsquo;y_i).$$
+Now we can do a little more algebra to make this nicer, using the very nice 
+<a href="/courses/gaussian-processes/linear-algebra">Sherman-Morrison formula</a>
+ to calculate
+$$(X&rsquo;X - x_i&rsquo;x_i)^{-1} = (X&rsquo;X)^{-1} + \frac{(X&rsquo;X)^{-1}x_i&rsquo;x_i(X&rsquo;X)^{-1}}{1 - x_i(X&rsquo;X)^{-1}x_i}.$$
+The denominator here involves $x_i(X&rsquo;X)^{-1}x_i$. This is just the leverage $h_{ii}$. We will denote the $n\times 1$ vector representing a column of $H$ as $h_i$. Using this notation, our adjusted predictions become:
+\begin{align*}
+\hat{y}_{(i)}
+&amp; = X\left((X&rsquo;X)^{-1} + \frac{(X&rsquo;X)^{-1}x_i&rsquo;x_i(X&rsquo;X)^{-1}}{1 - h_{ii}}\right)(X&rsquo;y - x_i&rsquo;y_i) \\<br>
+&amp; = X(X&rsquo;X)^{-1}X&rsquo;y - X(X&rsquo;X)^{-1}x_i&rsquo;y_i + \frac{1}{1-h_{ii}}X(X&rsquo;X)^{-1}x_i&rsquo;x_i(X&rsquo;X)^{-1}X&rsquo;y - \frac{1}{1-h_{ii}}X(X&rsquo;X)^{-1}x_i&rsquo;x_i(X&rsquo;X)^{-1}x_i&rsquo;y_i \\<br>
+&amp; = Hy - h_iy_i + \frac{1}{1-h_{ii}}h_ih_i&rsquo;y - \frac{1}{1-h_{ii}}h_ih_{ii}y_i \\<br>
+&amp; = \hat{y} - \left(1 + \frac{h_{ii}}{1-h_{ii}}\right)h_iy_i + \frac{h_ih_i&rsquo;y}{1-h_{ii}} \\<br>
+&amp; = \hat{y} - \frac{h_i(y_i-h_i&rsquo;y)}{1-h_{ii}} \\<br>
+&amp; = \hat{y} - \frac{y_i-\hat{y}_i}{1-h_{ii}}h_i \\<br>
+&amp; = \hat{y} - \frac{\hat{\epsilon}_i}{1-h_{ii}}h_i
+\end{align*}
+So the $i$th entry of the vector, $\hat{y}_{i(i)} = \hat{y}_i - \frac{\hat{\epsilon}_ih_{ii}}{1-h_{ii}}$. So the deleted residuals become
+\begin{align*}
+d_i &amp; = y_i - \hat{y}_{i(i)} \\<br>
+&amp; = y_i - \hat{y}_i - \frac{\hat{\epsilon}_ih_{ii}}{1-h_{ii}} \<br>
+&amp; = \hat{\epsilon_i}\left(1 - \frac{h_{ii}}{1-h_{ii}}\right) \<br>
+&amp; = \frac{1-2h_{ii}}{1-h_{ii}}\hat{\epsilon}_i
+\end{align*}</p>
+<h2 id="measures-of-influence-">Measures of Influence</h2>
+<p>One other way of evaluating a regression fit is by considering the influence of each point. An unfortunate side effect of the least squares criterion is that it punishes point that are <em>very far</em> away from the fit more than it punishes points that are <em>kinda far</em> away from the fit. Basically this means that outliers are very influential. We can assess precisely how influential in a variety of ways.</p>
+<h3 id="leverage-">Leverage</h3>
+<p>One of the most popular ways of assessing this infuence is with the <em>leverage</em>. The leverage is defined as a measure of &ldquo;observation self-sensitivity.&rdquo; It is defined as the partial derivative: $h_{ii} = \dfrac{\partial \hat{y}_i}{\partial y_i}$. That is, how quickly does the predicted value change as the data point changes. This can be easily calculated from our equation for the predicted values: $\hat{y} = Hy$ so that we can see that $h_{ii}$ is in fact just the $ii$-th entry of the hat matrix.</p>
+<p>Moreover we can show (TODO) that the leverage is bounded: $0\leq h_{ii}\leq 1$. So the predicted value will always increase when the datapoint increases, but will never increase quite as fast. That fits our intuition that predictions should be consistent with the data, but that no one data point should completely determine the fit.</p>
+<p>Because least-squares is so sensitive to outliers, observations with leverages close to 1, or much larger than all the other leverages, should be suspect and might be considered outliers.</p>
+<h3 id="cooks-distance-">Cook&rsquo;s Distance</h3>
+<p>Another way of assessing influence is with the Cook&rsquo;s distance. This estimates the effect of deleting a particular observation. It is defined to be $D_i$: the squared distance between the predictions $\hat{y}$ and the predictions $\hat{y}_{(i)}$ when observation $i$ is removed from the sample, divided by $k$ times the mean squared error. In math: $$D_i = \frac{\sum_{j= 1}^n (\hat{y}_j - \hat{y}_{j(i)})^2}{k\hat{\sigma^2}}.$$</p>
+<p>Therefore the Cook&rsquo;s distance can also be expressed as
+\begin{align*}
+D_i &amp; = \frac{\sum_{j= 1}^n (\hat{y}_j - \hat{y}_{j(i)})^2}{k\hat{\sigma^2}} \\<br>
+&amp; = \frac{\left(\frac{\hat{\epsilon}_i}{1-h_{ii}}\right)^2h_i&rsquo;h_i}{k\hat{\sigma}^2} \\<br>
+&amp; = \frac{\hat{\epsilon}_i}{k\hat{\sigma}^2}\frac{h_{ii}}{(1-h_{ii})^2}
+\end{align*}</p>
+<h3 id="dffits-">DFFITS</h3>
+<p>A third measure of influence is DFFITS (which may stand for Difference of Fits). It is sort of like a cross between leverage and Cook&rsquo;s distance. Like leverage, it is a measure of self-sensitivity, but like Cook&rsquo;s distance it uses the predictions when a point is left out. The actual mathematical definition is:
+$$\mbox{DFFITS}_i = \frac{\hat{y}_i - \hat{y}_{i(i)}}{s_{(i)}\sqrt{h_{ii}}},$$
+where $\hat{y}_{i(i)}$ is the predicted value for $y_i$ when $y_i$ is removed from the dataset and $s_{(i)}$ is the standard error estimated without $y_i$.</p>
+<p>Although the formulas for DFFITS and Cook&rsquo;s distance are different, it turns out to be possible to convert from one to another. We will not show this here (TODO) but the general relationship is
+$$D_i = \frac{\mbox{DFFITS}^2_i\hat{\sigma^2}_{(i)}}{k\hat{\sigma^2}}.$$
+In particular except for very small datasets the mean squared error should not change too much when data point $i$ is remove, so the approximate relationship
+$$D_i \approx \frac{\mbox{DFFITS}_i^2}{k}$$
+holds.</p>
+<h2 id="normality-">Normality</h2>
+<h3 id="moments-">Moments</h3>
+<p>A common way of quantifying a statistical distribution is with its <em>moments</em>. These are defined to be the expectations $E[X], E[X^2], E[X^3], $ and so on ($E[X^i]$ in general). The central moments are defined to be $E[(X-\mu)^i]$ and the standardized moments are $E\left[\left(\frac{X-\mu}{\sigma}\right)^i\right]$. The normal distribution is entirely defined by its first and second moments. In particular its third standardized moment (its <em>skewness</em>) is 0 and its fourth standardized moment (its <em>kurtosis</em>) is 3. By calculating the sample skewness and sample kurtosis we can heuristically evaluate whether the residuals from our model seem to follow a normal distribution.</p>
+<h3 id="shapiro-wilk-">Shapiro-Wilk</h3>
+<p>We can apply a more formal test of normality using the Shapiro-Wilk test. This test statistic is defined by considering the <em>order statistics</em> $x_{(i)}$ from a sample and calculating:
+$$W = \frac{\left(\sum_{i=1}^n a_ix_{(i)}\right)^2}{\sum_{i=1}^n (x_i-\overline{x})^2}.$$
+The coefficients $a_i$ are obtained as the vector $\frac{V^{-1}m}{C}$ where $m$ is the expected values of the order statistics for iid standard normal random variables, and $V$ is the covariance matrix for those order statistics. $C$ is the length of the vector $V^{-1}m$. There is no classical distribution that fits $W$, so testing is usually done using simulation methods.</p>
+<h2 id="heteroskedasticity-">Heteroskedasticity</h2>
+<p>The most common way of testing for heteroskedaticity is the Breusch-Pagan test (implemented in R as ncv.test). This tests whether the variance of the residuals is dependent on the values of the predictors. This tests works by conducting regression as ordinary and calculating the residuals $\hat{\epsilon}$. Then we consider the possibility that the square of the residuals $\hat{\epsilon}^2$ depends upon the predictors. We test this by fitting a new linear model: $$\hat{\epsilon}^2 = X\gamma + \eta.$$
+The test statistic is $nR^2$ where $R^2$ is the coefficient of determination for the second model. Under the null hypothesis that the predictors have no effect. this test statistic is distributed $\chi^2_{k-1}$. (TODO: why?)</p>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/qsci483/linear-regression/properties/" rel="next">Properties of Linear Regression</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/qsci483/linear-regression/diagnostics/" rel="prev">Using Model Diagnostics</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Apr 6, 2020</p>
+
+          
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/qsci483/linear-regression/math-diagnostics.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

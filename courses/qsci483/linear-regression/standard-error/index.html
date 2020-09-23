@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.7.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Connie Okasaki">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="A standard error is the estimated standard deviation $\hat{\sigma}$ for some variable. The residual standard error for linear regression is our estimate of the standard deviation of the noise $\epsilon$. Recall that we assume the noise is independent and heteroskedastic. This is important since it means we only need to estimate one single parameter for all of the noise variables.
+We estimate the residual variance using the equation $$\hat{\sigma}^2 = \frac{1}{n-k}\sum \hat{\epsilon}_i^2.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/courses/qsci483/linear-regression/standard-error/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="hsl(339, 90%, 68%)">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hub75627969bdd01989db8aea0c9cc39c4_9892_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hub75627969bdd01989db8aea0c9cc39c4_9892_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="/courses/qsci483/linear-regression/standard-error/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="og:site_name" content="Connie Okasaki">
+  <meta property="og:url" content="/courses/qsci483/linear-regression/standard-error/">
+  <meta property="og:title" content="The Residual Standard Error | Connie Okasaki">
+  <meta property="og:description" content="A standard error is the estimated standard deviation $\hat{\sigma}$ for some variable. The residual standard error for linear regression is our estimate of the standard deviation of the noise $\epsilon$. Recall that we assume the noise is independent and heteroskedastic. This is important since it means we only need to estimate one single parameter for all of the noise variables.
+We estimate the residual variance using the equation $$\hat{\sigma}^2 = \frac{1}{n-k}\sum \hat{\epsilon}_i^2."><meta property="og:image" content="/img/icon.png">
+  <meta property="twitter:image" content="/img/icon.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2020-04-02T00:00:00&#43;01:00">
+    
+    <meta property="article:modified_time" content="2020-04-02T15:36:49-07:00">
+  
+
+  
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>The Residual Standard Error | Connie Okasaki</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Connie Okasaki</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Connie Okasaki</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link  active" href="/courses"><span>Courses</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      <li class="nav-item">
+        <a class="nav-link js-dark-toggle" href="#"><i class="fas fa-moon" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  
+
+<div class="container-fluid docs">
+  <div class="row flex-xl-nowrap">
+    <div class="col-12 col-md-3 col-xl-2 docs-sidebar">
+      
+
+
+
+
+
+  
+    
+  
+
+
+
+
+<form class="docs-search d-flex align-items-center">
+  <button class="btn docs-toggle d-md-none p-0 mr-3" type="button" data-toggle="collapse" data-target="#docs-nav" aria-controls="docs-nav" aria-expanded="false" aria-label="Toggle section navigation">
+    <span><i class="fas fa-bars"></i></span>
+  </button>
+
+  
+  <input name="q" type="search" class="form-control" placeholder="Search..." autocomplete="off">
+  
+</form>
+
+<nav class="collapse docs-links" id="docs-nav">
+  
+
+  
+  
+  
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/qsci483/">QSCI 483</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/qsci483/notation/">Notation</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/qsci483/linear-regression/simple-linear-regression/">Linear Regression</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/simple-linear-regression/">Simple Model</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/linear-regression/">General Model</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/properties/">Properties</a>
+      </li>
+      
+      <li class="active">
+        <a href="/courses/qsci483/linear-regression/standard-error/">Standard Error</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/math-diagnostics/">Model Diagnostics</a>
+      </li>
+      
+      <li >
+        <a href="/courses/qsci483/linear-regression/diagnostics/">Using Diagnostics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  <div class="docs-toc-item">
+    <a class="docs-toc-link" href="/courses/qsci483/space-time/diagnostics/">Point Processes</a>
+    <ul class="nav docs-sidenav">
+      
+      <li >
+        <a href="/courses/qsci483/space-time/diagnostics/">Descriptive Statistics</a>
+      </li>
+      
+    </ul>
+    
+
+  </div>
+  
+  
+</nav>
+
+    </div>
+
+    
+    <div class="d-none d-xl-block col-xl-2 docs-toc">
+      <ul class="nav toc-top">
+        <li><a href="#" id="back_to_top" class="docs-toc-title">Contents</a></li>
+      </ul>
+
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#unbiasedness-">Unbiasedness</a></li>
+        <li><a href="#distribution-">Distribution</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+
+      
+    </div>
+    
+
+    <main class="col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 docs-content" role="main">
+
+      <article class="article">
+
+        <div class="docs-article-container">
+          <h1>The Residual Standard Error</h1>
+
+          <div class="article-style">
+            <p>A standard error is the estimated standard deviation $\hat{\sigma}$ for some variable. The residual standard error for linear regression is our estimate of the standard deviation of the noise $\epsilon$. Recall that we assume the noise is independent and heteroskedastic. This is important since it means we only need to estimate one single parameter for all of the noise variables.</p>
+<p>We estimate the residual variance using the equation $$\hat{\sigma}^2 = \frac{1}{n-k}\sum \hat{\epsilon}_i^2.$$ You can think of the $n-k$ term as accounting for the fact that we have estimated $k$ parameters before making this estimate. Recall that we fit our model by minimizing the sum of squared residuals. So we&rsquo;ve actually optimized this model to minimize exactly $\sum \hat{\epsilon}_i^2$. The more parameters we have to work with the better that optimization will be. So we would probably get an answer that was too small if we just calculated the mean $$\frac{1}{n}\sum \hat{\epsilon}_i^2.$$ Dividing by a smaller number $n-k$ accounts for this, making $\hat{\sigma}^2$ an unbiased estimator of the residual variance.</p>
+<h3 id="unbiasedness-">Unbiasedness</h3>
+<p>We can see why this is by calculating the expectation of $\hat{\sigma}^2$. We won&rsquo;t even both trying to avoid matrices in this derivation:
+\begin{align*}
+E[\hat{\sigma}^2]
+&amp; = E\left[\frac{1}{n-k}\hat{\epsilon}'\hat{\epsilon}\right] \\<br>
+&amp; = \frac{1}{n-k} E[y&rsquo;M&rsquo;My] \\<br>
+&amp; = \frac{1}{n-k} E[y&rsquo;My] \\<br>
+&amp; = \frac{1}{n-k} E[(X\beta + \epsilon)&lsquo;M(X\beta+\epsilon)] \\<br>
+&amp; = \frac{1}{n-k} \left( E[\beta&rsquo;X&rsquo;MX\beta] + E[\epsilon&rsquo;M\epsilon] \right)
+\end{align*}
+where we have eliminated the cross terms since $E[\epsilon]=0$. Now we can calculate
+\begin{align*}
+X&rsquo;MX
+&amp; = X&rsquo;(I-H)X \\<br>
+&amp; = X&rsquo;X - X&rsquo;(X(X&rsquo;X)^{-1}X&rsquo;)X \\<br>
+&amp; = X&rsquo;X - X&rsquo;X \\<br>
+&amp; = 0
+\end{align*}
+so that the first term drops out. At this point we could either do a lot of algebra or we could make use of a convenient statistical property (we will do the latter). The expectation of a _quadratic form_ (i.e. $v&rsquo;Mv$ for some random vector $v$ and constant matrix $M$) can be written as $$E[v&rsquo;Mv] = \mbox{tr}[M\Sigma] + \mu^TM\mu$$ where $\mu$ is the mean of $v$ and $\Sigma$ the covariance of $v$. Using this property we find that
+\begin{align*}
+E[\hat{\sigma}^2]
+&amp; = \frac{1}{n-k}E[\epsilon&rsquo;M\epsilon] \\<br>
+&amp; = \frac{1}{n-k}\mbox{tr}[M\Sigma(\epsilon)] \\<br>
+&amp; = \frac{1}{n-k}\mbox{tr}[\sigma^2M] \\<br>
+&amp; = \frac{\sigma^2}{n-k}\mbox{tr}[I-H].
+\end{align*}
+Now, so long as $X$ is full rank (i.e. there are no redundant predictors) the hat matrix has trace $k$. This can be shown using complicated eigenvalue proofs that you can find on Google. Thus $\mbox{tr}[I-H] = \mbox{tr}[I]-\mbox{tr}[H] = n-k$. Thus indeed the $n-k$ term drops out and we find that $\hat{\sigma}^2$ is an unbiased estimator of the true residual variance.</p>
+<h3 id="distribution-">Distribution</h3>
+<p>In fact, we have done more than show it is unbiased. Much of the algebra that we did actually did not depend on the outer expectation. We actually showed more generally that $$\hat{\sigma}^2 = \frac{1}{n-k}\epsilon&rsquo;M\epsilon.$$ This is useful because it is a <em>quadratic form</em>, as we described above. Quadratic forms over multivariate normal random vectors have nice properties which we will now derive. Specifically we will show that: $$\hat{\sigma}^2 \sim \frac{\sigma^2}{n-k}\chi^2_{n-k}.$$</p>
+<p>This proof will involve some additional use of linear algebraic terms and assumptions. Specifically, we will use the fact that a symmetric matrix $A$ can be decomposed into $A = PDP^T$ for an <em>orthogonal</em> (i.e. $P^2 = I$) matrix $P$ and a diagonal matrix $D$. Orthogonal matrices are nice because $\tilde{z} = Pz$, the product of an orthogonal matrix with a standard normal vector, is still a standard normal vector.</p>
+<p>We will also use the fact that if $A$ is symmetric <em>and</em> idempotent then all the diagonal entries are either 0 or 1. We will further use the fact that the number of entries that are 1 is equal to the trace of $A$. Since $M$ is symmetric and idempotent we will use all these properties to show:
+\begin{align*}
+\epsilon&rsquo;M\epsilon
+&amp; = \epsilon&rsquo;PDP^T\epsilon \\<br>
+&amp; = \sigma^2 z&rsquo;PDP^Tz \\<br>
+&amp; = \sigma^2 \tilde{z}&lsquo;D\tilde{z} \\<br>
+&amp; = \sigma^2 \sum_{i=1}^n D_{ii}\tilde{z}_i^2 \\<br>
+&amp; = \sigma^2 \sum_{i=1}^{n-k} \tilde{z}_i^2 \\<br>
+&amp; \sim \sigma^2 \chi^2_{n-k}.
+\end{align*}</p>
+
+          </div>
+
+          
+
+
+
+          
+          <div class="article-widget">
+            
+<div class="post-nav">
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Previous</div>
+    <a href="/courses/qsci483/linear-regression/linear-regression/" rel="next">Linear Regression</a>
+  </div>
+  
+  
+  
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="/courses/qsci483/linear-regression/properties/" rel="prev">Properties of Linear Regression</a>
+  </div>
+  
+</div>
+
+          </div>
+          
+        </div>
+
+        <div class="body-footer">
+          <p>Last updated on Apr 2, 2020</p>
+
+          
+
+
+
+
+
+  
+  
+
+<p class="edit-page">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/qsci483/linear-regression/standard-error.md">
+    <i class="fas fa-pen pr-2"></i>Edit this page
+  </a>
+</p>
+
+
+
+
+          
+
+        </div>
+
+      </article>
+
+      <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+  </p>
+</footer>
+
+
+    </main>
+  </div>
+</div>
+
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js" integrity="sha256-1zu+3BnLYV9LdiY85uXMzii3bdrkelyp37e0ZyTAQh0=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/r.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js" integrity="sha256-pB/deHc9CGfFpJRjC43imB29Rse8tak+5eXqntO94ck=" crossorigin="anonymous"></script>
+    <script>
+      anchors.add();
+    </script>
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

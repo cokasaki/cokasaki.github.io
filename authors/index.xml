@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors | Academic</title>
+    <title>Authors | Connie Okasaki</title>
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 12 Feb 2020 13:30:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>/img/icon.png</url>
       <title>Authors</title>
       <link>/authors/</link>
     </image>
@@ -15,16 +15,16 @@
     <item>
       <title></title>
       <link>/authors/admin/</link>
-      <pubDate>Wed, 12 Feb 2020 13:30:00 +0000</pubDate>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
-      <description>&lt;p&gt;Colin Okasaki is a graduate student in Quantitative Ecology and Resource Management at the University of Washington. He is advised by Andrew Berdahl in the School of Aquatic and Fishery Sciences. His research interests include bridging the gaps between mechanistic modeling, spatial statistics, and constrained optimization.&lt;/p&gt;
+      <description>&lt;p&gt;I am a fourth-year PhD student in Quantitative Ecology and Resource Management at the University of Washington. I am advised by Andrew Berdahl in the School of Aquatic and Fishery Sciences. I am collaborating with Sándor Toth from the School of Environmental and Forestry Sciences on a project looking at optimal spatial sampling design under logistical constraints. I am also collaborating with Mevin Hooten from Colorado State University on a project looking at physics-based spatiotemporal statistics. My general research interests include bridging the gaps between mechanistic modeling, spatial statistics, and constrained optimization. I am particularly interested in taking mathematically complex methods and ideas and making them more accessible and useful to ecologists.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Andre Archer</title>
       <link>/authors/andre-archer/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
       <guid>/authors/andre-archer/</guid>
       <description></description>
     </item>
@@ -32,7 +32,7 @@
     <item>
       <title>Eliza W. Matt</title>
       <link>/authors/eliza-w.-matt/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
       <guid>/authors/eliza-w.-matt/</guid>
       <description></description>
     </item>
@@ -40,7 +40,7 @@
     <item>
       <title>Elizabeth Sherman</title>
       <link>/authors/elizabeth-sherman/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
       <guid>/authors/elizabeth-sherman/</guid>
       <description></description>
     </item>
@@ -48,7 +48,7 @@
     <item>
       <title>Julie C. Blackwood</title>
       <link>/authors/julie-c.-blackwood/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
       <guid>/authors/julie-c.-blackwood/</guid>
       <description></description>
     </item>
@@ -56,16 +56,8 @@
     <item>
       <title>Kathryn Montovan</title>
       <link>/authors/kathryn-montovan/</link>
-      <pubDate>Tue, 01 Sep 2015 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
       <guid>/authors/kathryn-montovan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Robert Ford</title>
-      <link>/authors/robert-ford/</link>
-      <pubDate>Mon, 01 Jul 2013 00:00:00 +0000</pubDate>
-      <guid>/authors/robert-ford/</guid>
       <description></description>
     </item>
     

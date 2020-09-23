@@ -1,48 +1,40 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Projects | Academic</title>
+    <title>Projects | Connie Okasaki</title>
     <link>/project/</link>
       <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     <description>Projects</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>/img/icon.png</url>
       <title>Projects</title>
       <link>/project/</link>
     </image>
     
     <item>
       <title>Collective Behavior During Dam Passage</title>
-      <link>/project/dam-passage-project/</link>
+      <link>/project/dam-passage/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/dam-passage-project/</guid>
+      <guid>/project/dam-passage/</guid>
       <description>&lt;p&gt;In this project I use a bootstrap method to test a radio-telemetry dataset of Chinook and sockeye salmon for evidence of collective navigation while using fish ladders to pass dams.&lt;/p&gt;
 </description>
     </item>
     
     <item>
-      <title>External Project</title>
-      <link>/project/external-project/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/external-project/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Logistically-Constrained Optimal Spatial Sampling Design</title>
-      <link>/project/opt-design-project/</link>
+      <link>/project/opt-design/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/opt-design-project/</guid>
+      <guid>/project/opt-design/</guid>
       <description>&lt;p&gt;In this project I investigate the use of sparse precision matrices and mixed integer/linear programs to efficient conduct logistically-constrained optimal spatial sampling design.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Source Inference</title>
-      <link>/project/source-project/</link>
+      <link>/project/source/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/source-project/</guid>
+      <guid>/project/source/</guid>
       <description>&lt;p&gt;In this project I investigate the use of stochastic PDEs to conduct inference on the source term of a linear PDE.&lt;/p&gt;
 </description>
     </item>

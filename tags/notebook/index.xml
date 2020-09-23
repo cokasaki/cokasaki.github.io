@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Notebook | Connie Okasaki</title>
+    <link>/tags/notebook/</link>
+      <atom:link href="/tags/notebook/index.xml" rel="self" type="application/rss+xml" />
+    <description>Notebook</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon.png</url>
+      <title>Notebook</title>
+      <link>/tags/notebook/</link>
+    </image>
+    
+    <item>
+      <title>Lab Notebook: 8/5</title>
+      <link>/post/notebook/2020/summer/week1/wedn/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/summer/week1/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Spent most of yesterday working on the air pollution data. Plan to work today on the GP code and the paper, and maybe spend a little time cleaning the air pollution data and getting all the spatial info sorted out.&lt;/p&gt;
+&lt;p&gt;Morning: 10-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Code the optimization GPs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on the paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 4-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Get spatial data sorted out&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Spent most of the day coding the GPs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 8/3</title>
+      <link>/post/notebook/2020/summer/week1/mon/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/summer/week1/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Afternoon: 12-2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Code the optimization GPs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 2-4&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Download and import air pollution data, wind data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 4-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read VL chapter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Spent most of the day coding the GPs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Su20 Week 1</title>
+      <link>/post/notebook/2020/summer/week1/post-1/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/summer/week1/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Fell off the horse here with goal setting, what with everything going on but we&amp;rsquo;re starting up again now so here we go&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finish response to reviewers document for Editor/R1&lt;/li&gt;
+&lt;li&gt;Code GP simulation for optimizing under a misspecified model&lt;/li&gt;
+&lt;li&gt;Begin analyzing air pollution data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Summer 2020</title>
+      <link>/post/notebook/2020/summer/spring-post-1/</link>
+      <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/summer/spring-post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Set date for general exam, do all the paperwork things&lt;/li&gt;
+&lt;li&gt;Resubmit paper&lt;/li&gt;
+&lt;li&gt;Make progress on source inference
+&lt;ul&gt;
+&lt;li&gt;Sub goal: Set up model and begin data analysis for air pollution case study&lt;/li&gt;
+&lt;li&gt;Sub goal: Find a new pollen dataset/third case study?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Make progress on optimal survey design
+&lt;ul&gt;
+&lt;li&gt;Sub goal: Figure out how to run my sims on hyak?&lt;/li&gt;
+&lt;li&gt;Sub goal: Code up sims for non-Matern field&lt;/li&gt;
+&lt;li&gt;Sub goal: Add sims to write-up&lt;/li&gt;
+&lt;li&gt;Sub goal: Figure out where we&amp;rsquo;re targeting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Read
+&lt;ul&gt;
+&lt;li&gt;Do some reading from Pukelsheim&lt;/li&gt;
+&lt;li&gt;Do some reading from Bootstrap&lt;/li&gt;
+&lt;li&gt;Do some reading from VL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 5/7</title>
+      <link>/post/notebook/2020/spring/week7/thurs/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week7/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-10:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Respond to TAing emails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plug away on either SQL or optimization or both.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-4:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Tyler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;I did these things! My optimization finally ran without bugs, I managed to do a little tiny bit of SQL.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 5/6</title>
+      <link>/post/notebook/2020/spring/week7/wedn/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week7/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Finish prepping for committee meeting. Start to grade and read VL.&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Feel food about committee meeting. Graded a few homeworks and read a few chapters.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 5/05</title>
+      <link>/post/notebook/2020/spring/week7/tues/</link>
+      <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week7/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finish prepping for STRG&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Space-time reading group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Office hours&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prep for committee meeting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;STRG went really well! People seemed to like my talk and we had a lot of good discussion. Continuing to prep for committee meeting.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 5/4</title>
+      <link>/post/notebook/2020/spring/week7/mon/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week7/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Finish prepping for STRG tomorrow. Continue work on committee meeting presentation.&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did that!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 7</title>
+      <link>/post/notebook/2020/spring/week7/post-1/</link>
+      <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week7/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Give presentation to STRG&lt;/li&gt;
+&lt;li&gt;Give presentation to committee meeting and get useful feedback&lt;/li&gt;
+&lt;li&gt;Complete VL Ch 7-12?&lt;/li&gt;
+&lt;li&gt;Continue to learn SQL&lt;/li&gt;
+&lt;li&gt;Need a lot of bandwidth to tackle revisions, so we will do this next week&lt;/li&gt;
+&lt;li&gt;Grade HW 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Presentation went well.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 5/1</title>
+      <link>/post/notebook/2020/spring/week6/fri/</link>
+      <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Choose and prep paper for STRG next week. Prepare for committee meeting.&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did these things. STRG is going to take longer than I had hoped. Long week ahead of me.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/30</title>
+      <link>/post/notebook/2020/spring/week6/thurs/</link>
+      <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-10:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Respond to TAing emails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Plug away on either SQL or optimization or both.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-4:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Tyler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;I did these things! My optimization finally ran without bugs, I managed to do a little tiny bit of SQL.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/29</title>
+      <link>/post/notebook/2020/spring/week6/wedn/</link>
+      <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Find a dataset on Neotoma and debug the optimization case study.&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Spent a lot of time on both tasks. Neotoma is remarkably difficult to use. I&amp;rsquo;m trying to learn a tiny bit of SQL to access it because I don&amp;rsquo;t think there is a better dataset out there for this project, but it has been frustrating. The optimization still is not solving. I think it is either an issue with the bounds or an issue with the size of the problem.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/28</title>
+      <link>/post/notebook/2020/spring/week6/tues/</link>
+      <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read Vecchia paper for STRG&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Space-time reading group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 12-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Andrew&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Office hours&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5
+Neotoma&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Got a decent amount of reading done, but did not find a satisfactory dataset on Neotoma. More on this tomorrow I suppose.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/27</title>
+      <link>/post/notebook/2020/spring/week6/mon/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-9:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up for the week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 9:30-10:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Respond to emails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning 10:30-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Integrate pilot study and optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TAing&lt;/li&gt;
+&lt;li&gt;Work on TAing notes when possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Find Neotoma dataset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Responded to all my emails. Got the code running for the pilot study/optimization integration, but it&amp;rsquo;s been a while since I looked at the optimization code. It runs but slowly and I don&amp;rsquo;t entirely remember how to fix it. Did not end up finding Neotoma dataset, instead I ended up working on SSN stuff that I didn&amp;rsquo;t finish yesterday, and in particular I learned how Cholesky sparse up-looking updates work.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 6</title>
+      <link>/post/notebook/2020/spring/week6/post-1/</link>
+      <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week6/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Select a pollen dataset to use&lt;/li&gt;
+&lt;li&gt;Find a trade winds dataset to use&lt;/li&gt;
+&lt;li&gt;Run the end-to-end pilot study/optimization procedure (and compare to spatially balanced)&lt;/li&gt;
+&lt;li&gt;Complete VL Ch 7-10&lt;/li&gt;
+&lt;li&gt;Look ahead to QSCI HW 3&lt;/li&gt;
+&lt;li&gt;Write up the SSN scratch paper before I forget it all&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Got access to Neotoma although it is much more complex than I feared&lt;/li&gt;
+&lt;li&gt;No progress on trade winds&lt;/li&gt;
+&lt;li&gt;End-to-end pilot study procedure is working, but haven&amp;rsquo;t incorporated spatially balanced yet&lt;/li&gt;
+&lt;li&gt;Keeping up to speed on QSCI&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/24</title>
+      <link>/post/notebook/2020/spring/week5/fri/</link>
+      <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-10&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debug sampling design code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 10-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look into paleopollen and email Mevin&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write on SSN paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read and take notes on VL Ch 7/8&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 2-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write on Mevin paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-4&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debug sampling design code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 4-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read fun papers&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Lots of scattered goals today so not all of them actually happened. I did look into the paleopollen stuff but there&amp;rsquo;s a lot there so still need to sift through what may be most applicable. I took some notes on Ch 7 but not Ch 8, and I did read some fun papers. Spent much more than 1 hour debugging the sampling design code but I did finally get it working!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/23</title>
+      <link>/post/notebook/2020/spring/week5/thurs/</link>
+      <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finish grading and respond to TAing emails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debug covariance parameter estimation for optimal sampling design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-4:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Tyler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Meetings and lab went well! Implemented profile likelihood method for parameter estimation in the sampling design case study but it still doesn&amp;rsquo;t seem to be working. Not sure what could be going on.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/22</title>
+      <link>/post/notebook/2020/spring/week5/wedn/</link>
+      <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Just grade all day!&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;I did that! I got almost everything finished just one or two more assignments to go.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/21</title>
+      <link>/post/notebook/2020/spring/week5/tues/</link>
+      <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read Vecchia-Laplace paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Space-time reading group&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look for applications of Vecchia-Laplace paper&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attend lecture, grading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grading&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;I did these things! I think the Vecchia-Laplace paper could potentially be useful for the SSN stuff if it turns out that calculating the covariance matrix isn&amp;rsquo;t so so hard, or it could at least be useful for the existing SSN framework. Only got a few assignments done.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/20</title>
+      <link>/post/notebook/2020/spring/week5/mon/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-9:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lab checkins and set up for the week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 9:30-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Grade&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TAing&lt;/li&gt;
+&lt;li&gt;Work on TAing notes when possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on optimal design synthetic experiment&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 5</title>
+      <link>/post/notebook/2020/spring/week5/post-1/</link>
+      <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week5/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Email Mevin about animal movement and pollen&lt;/li&gt;
+&lt;li&gt;Keep working on write-up and looking for datasets&lt;/li&gt;
+&lt;li&gt;Select and simulate a pilot study procedure for optimal sampling design&lt;/li&gt;
+&lt;li&gt;Read and take notes on VL Ch 7 and 8&lt;/li&gt;
+&lt;li&gt;Grade for QSCI 483&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did email Mevin and got pointed to a really cool paleo dataset to use for that. Selected a cluster sampling pilot study procedure for the optimal sampling design project. Read and took (some) notes for VL Ch 7. Did a lot of gradnig for QSCI.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/17</title>
+      <link>/post/notebook/2020/spring/week4/fri/</link>
+      <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-10&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Respond to emails&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 10-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lab meeting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Morning: 11-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write up animal movement case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read and take notes on VL Ch 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 2-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look for wind speed data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-4&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on sampling design case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 4-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on SSN modeling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did all these things although I did not finish writing up the animal movement case study &amp;ndash; there&amp;rsquo;s a lot more background to include. Read and took notes on both VL Ch 5 and 6. Turns out the pollen dataset that I thought was from AAAAI/NAB was actually not. It is more paleoecological than really pollen counts that we&amp;rsquo;re looking for. Only real pollen counts I&amp;rsquo;ve been able to find so far are AAAAI and EAN (Europe) both of which are closely guarded and cannot be made public. I&amp;rsquo;d really like to use a public dataset so I&amp;rsquo;m not sure what to do about this&amp;hellip;however I did find a wind speed dataset that seems to be pretty decent although right now it only seems to be marine measurements so I&amp;rsquo;m trying to see if there&amp;rsquo;s a land-based sister dataset.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/16</title>
+      <link>/post/notebook/2020/spring/week4/thurs/</link>
+      <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on animal movement and synthetic data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-4:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Tyler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Found the bug in my animal movement code!!! Finally I can move on to other parts of this case study. Ran MCMC and it is giving me good and reasonable answers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/15</title>
+      <link>/post/notebook/2020/spring/week4/wedn/</link>
+      <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Respond to Sándor and find spatial dataset&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attend class&lt;/li&gt;
+&lt;li&gt;Take notes on VL Ch 4&lt;/li&gt;
+&lt;li&gt;Work on SNN modeling math&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did most of these things. Started working on the synthetic data case study for the optimization project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/14</title>
+      <link>/post/notebook/2020/spring/week4/tues/</link>
+      <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9:30-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Continue work on animal movement&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TAing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;NSF Activity Report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Finished the activity report, held office hours, worked on movement. Still stumped by my movement bugs. I&amp;rsquo;m getting not-PSD errors from a function that should not possibly be able to produce a non-PSD matrix.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/13</title>
+      <link>/post/notebook/2020/spring/week4/mon/</link>
+      <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week4/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-9:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lab checkins and set up for the week&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 9:30-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Debug animal movement code&lt;/li&gt;
+&lt;li&gt;While animal movement code is running, work on VL, then SNN math&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TAing&lt;/li&gt;
+&lt;li&gt;Work on TAing notes when possible&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on NSF progress report&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Worked on animal movement code. It seems as though my bug is the &amp;ldquo;wiggles&amp;rdquo; common to FEM advection-type equations so I am attempting to implement FD. It wasn&amp;rsquo;t too hard for this simple example and is slightly better practice anyways. Spent pretty much all day on that however.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/10</title>
+      <link>/post/notebook/2020/spring/week3/fri/</link>
+      <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week3/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on animal movement case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-2&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make notes on VL Ch 3 and 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 2-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Email Mevin and Sándor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on pollen case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Mostly worked on the case study. Made some notes on VL Ch 3 but the movement stuff was very buggy.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/9</title>
+      <link>/post/notebook/2020/spring/week3/thurs/</link>
+      <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week3/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make edits to animal movement modeling section&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-4:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Meet with Tyler&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did these things! Was hoping to finish the animal movement section but it didn&amp;rsquo;t quite happen. Gotta make some decisions about presenting IOU vs OUF results.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/8</title>
+      <link>/post/notebook/2020/spring/week3/wedn/</link>
+      <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week3/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write personal statement and finish all my portion of the concurrent MS application&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attend class and read VL Ch 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read Mevin&amp;rsquo;s sources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Finished application by 11:30. Got Dirichlet BC code up and running and am not seeing any obvious bugs right away. Looking good! Skimmed VL Ch 3 and Ch 4, will take notes tomorrow.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/7</title>
+      <link>/post/notebook/2020/spring/week3/tues/</link>
+      <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week3/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read Visible Learning Chapter 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hold office hours&lt;/li&gt;
+&lt;li&gt;Take notes on VL Ch 3 and read VL Ch 4&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Email Sándor&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Got side tracked with adminstrative stuff again. Evidently I have to formally apply to the concurrent MS program in the stats department so that will take up much of my week. I did get the Dirichlet code up and running although there are probably a few lingering bugs. MCMC run is going now. Did not get to VL or emailing Sándor, although I actually looked at his email and there is not too much to respond to directly. I do owe him an update soon though.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/6</title>
+      <link>/post/notebook/2020/spring/week3/mon/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week3/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-11&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Prep for the week and finish up my preliminary analysis for the spatial stream network model&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 11-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;li&gt;Try to run it at least once&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;TAing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look at bypass responses&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Morning stuff went well but I fell into administrative tasks and did not get the code done. I did email my committee, email with Erica about my TAing position, and email with the stats department about the concurrent master&amp;rsquo;s program. I took a brief look at Mevin&amp;rsquo;s response in the afternoon.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 3</title>
+      <link>/post/notebook/2020/spring/week3/post-1/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week3/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Still need to finish up my Dirichlet BC code from last week but I got a lot off my plate! I am done with the bypass and the dam passage paper and can get back to research more-or-less full time (less my new TAing position). My next few goals for spring quarter are all focused on my source project, but I would like to make some more progress on the optimal design front to keep some forward momentum on that front.&lt;/p&gt;
+&lt;p&gt;I would like to spend this week doing a mix of: finishing up the Dirichlet code and hopefully the animal movement case study, TAing, and responding to feedback from my bypass proposal. So my goals are&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Finish up Dirichlet BC code by Tuesday&lt;/li&gt;
+&lt;li&gt;Read Visible Learning Chapters 3 and 4 by Wednesday/Friday&lt;/li&gt;
+&lt;li&gt;Debug animal movement code and get it run at least once by Thursday&lt;/li&gt;
+&lt;li&gt;Respond to Sándor&amp;rsquo;s email by Tuesday&lt;/li&gt;
+&lt;li&gt;Read two of Mevin&amp;rsquo;s suggested papers by Wednesday, the rest by Friday&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Finished up the Dirichlet BC code&lt;/li&gt;
+&lt;li&gt;Read but have not yet taken notes on VL Chs 3 and 4&lt;/li&gt;
+&lt;li&gt;Ran the animal movement code many times, but still debugging&lt;/li&gt;
+&lt;li&gt;Still need to get back to Mevin and Sándor with updates.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/3</title>
+      <link>/post/notebook/2020/spring/week2/fri/</link>
+      <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC stuff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on QSCI483 stuff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC stuff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Made some really good progress on Dirichlet BC stuff, but did not manage to get the code to a working point. I feel like I have a good handle on QSCI for this week, and I made some good progress on stream network analysis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/2</title>
+      <link>/post/notebook/2020/spring/week2/thurs/</link>
+      <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look at QSCI stuff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Computer lab&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Made some good progress on remembering how all the 
+&lt;a href=&#34;/courses/qsci-483/linear-algebra/math-diagnostics&#34;&gt;model diagnostics&lt;/a&gt;
+ work. Taking this as an opportunity to go beyond what the course really calls for and cement my understanding of these things because they&amp;rsquo;re important to know.&lt;/p&gt;
+&lt;p&gt;Lab went well.&lt;/p&gt;
+&lt;p&gt;Dirichlet BC stuff is chugging along. I definitely did something wrong last time, I think, because I&amp;rsquo;m running into new challenges. Good that I&amp;rsquo;m reimplementing it. I think I have figured out how to deal with these challenges (i.e. get sparse posterior $Q_u$ and then sample from $f$ as a degenerate MVN conditional on $u$.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 4/1</title>
+      <link>/post/notebook/2020/spring/week2/wedn/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Take notes from Visible Learning Chapter 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Attend class and continue looking at QSCI HW 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Wrote up some 
+&lt;a href=&#34;/courses/gaussian-processes&#34;&gt;resources&lt;/a&gt;
+ so that I can stop rederiving/looking up common GP/MVN properties that I need to use. Also included on there the math for Dirichlet BCs. Now that the derivation is there I can more effectively write the code for the implementation, rather than writing stuff down on paper every time I try to do this.&lt;/p&gt;
+&lt;p&gt;Forgot to account in my scheduling today for time to edit and submit my dissertation proposal. Did that.&lt;/p&gt;
+&lt;p&gt;Wrote up notes for VL Ch 2, and continued to expand on my own 
+&lt;a href=&#34;/courses/qsci-483&#34;&gt;notes&lt;/a&gt;
+ for QSCI, reminding myself how all the 
+&lt;a href=&#34;/courses/qsci-483/linear-regression/diagnostics&#34;&gt;model diagnostics&lt;/a&gt;
+ work.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 3/31</title>
+      <link>/post/notebook/2020/spring/week2/tues/</link>
+      <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Look over the rest of QSCI HW 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Take notes from Visible Learning Chapter 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1:30-3:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Hold office hours&lt;/li&gt;
+&lt;li&gt;When no one shows up finish up looking at QSCI HW 1&lt;/li&gt;
+&lt;li&gt;Then read Visible Learning Chapter 2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Didn&amp;rsquo;t make it through the whole thing, had to look up some of the model diagnostics Tim is using, but did get through VL Ch 1 and 2. Struggled with website formatting in the afternoon.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 3/30</title>
+      <link>/post/notebook/2020/spring/week2/mon/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/mon/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-11:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Do QSCI HW and prep for TAing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 12:30-1:30&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Read Visible Learning Chapter 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3:30-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did the first half of the QSCI HW, read Ch 1, but did not end up having time to work on the BC code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 2</title>
+      <link>/post/notebook/2020/spring/week2/post-1/</link>
+      <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week2/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;First real week of the quarter and I am surprise TAing! I also found some frustrating uncommitted code from my Colorado trip which I need to reimplement, but rewriting code is often a way to make it better anyways&amp;hellip;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make all suggested changes to bypass proposal by Wednesday and send to committee&lt;/li&gt;
+&lt;li&gt;Read chapters 1 and 2 of Visible Learning by Wednesday/Friday&lt;/li&gt;
+&lt;li&gt;Do the QSCI hw ahead of time to make sure I&amp;rsquo;ve got it down by Tuesday&lt;/li&gt;
+&lt;li&gt;Rewrite Dirichlet BC code by Friday&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Spent a lot of time on TAing this week, getting back up to speed on the basics of linear regression and model diagnostics. Mostly for myself, I made up a bunch of notes on the 
+&lt;a href=&#34;/courses/qsci-483&#34;&gt;math&lt;/a&gt;
+ behind these topics, to cement my own understanding, although the students certainly won&amp;rsquo;t need to know much of that. I made it through the first two chapters of Visible Learning, although I still feel like I need to discuss it with someone to really digest it properly.&lt;/p&gt;
+&lt;p&gt;I didn&amp;rsquo;t finish off the Dirichlet code but I&amp;rsquo;m close: I got the theory worked out again, and I think I actually had it wrong the first time. I also got my bypass submitted and approved which is awesome and a big relief!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 3/27</title>
+      <link>/post/notebook/2020/spring/week1/fri/</link>
+      <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week1/fri/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;I might be surprise-TAing next quarter, so I&amp;rsquo;m focusing all my energy on TA prep today. I&amp;rsquo;m going to try to get through the whole UW TA resources page and will be adding notes in 
+&lt;a href=&#34;/post/teaching&#34;&gt;posts&lt;/a&gt;
+.&lt;/p&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;I did that! I also met with Tim the course instructor to outline my responsibilities as a TA and did some editing on the Dirichlet BC code.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 3/26</title>
+      <link>/post/notebook/2020/spring/week1/thurs/</link>
+      <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week1/thurs/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Fix Anaconda errors and start animal movement MCMC running overnight&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Start reading UW TA resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Think more about second-order inclusion probabilities&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Fixed Anaconda error, then discovered issue where some code was not pushed to GitHub. Unable to find the original code (mostly my implementation of Dirichlet BCs), but re-writing it should be a useful (if annyoing) exercise.&lt;/p&gt;
+&lt;p&gt;Started reading UW resources and made several 
+&lt;a href=&#34;/post/teaching&#34;&gt;posts&lt;/a&gt;
+. Not all of it is relevant just yet, but I&amp;rsquo;d like to get through all of it and start thinking about everything together.&lt;/p&gt;
+&lt;p&gt;Found 
+&lt;a href=&#34;https://www.jstor.org/stable/23357227&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this paper&lt;/a&gt;
+ about random sampling with given second-order inclusion probabilities. It gives results about which inclusion probability matrices (IPMs) are valid (the answer is complicated) and constructed a maximum-entropy distribution for fixed-size sampling with fixed IPM.&lt;/p&gt;
+&lt;p&gt;Thoughts on IPMs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Want to incorporate logistics somehow&lt;/li&gt;
+&lt;li&gt;Can we estimate IPMs after filtering for feasible designs?&lt;/li&gt;
+&lt;li&gt;Can we calculate IPMs after filtering for feasible designs?&lt;/li&gt;
+&lt;li&gt;Can we calculate probability of infeasibility for CP(2) designs?&lt;/li&gt;
+&lt;li&gt;How do CP(2) designs work in space-time?&lt;/li&gt;
+&lt;li&gt;I feel like there&amp;rsquo;s something in here somewhere but it&amp;rsquo;s buried deep&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 3/25</title>
+      <link>/post/notebook/2020/spring/week1/wedn/</link>
+      <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week1/wedn/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make schedule for reading about teaching, and begin browsing UW resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Make edits from yesterdays read-through of bypass proposal and look for last couple references&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Refamiliarize myself with animal movement case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Schedule:
+The UW resource page has 20 sections. The CMU page has 16 sections, and the Visual Learning book has 31 chapters. I plan on reading roughly 1 section, 1 section, and 2 chapters each week, starting next week.&lt;/p&gt;
+&lt;p&gt;Proposal:
+Completed and sent to Andrew for feedback.&lt;/p&gt;
+&lt;p&gt;Animal Movement:
+Looked over the code, tried to re-run it. Got an Anaconda version conflict that I don&amp;rsquo;t remember. Will plan on dealing with that tomorrow.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook Structure</title>
+      <link>/post/notebook/outline/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/outline/</guid>
+      <description>&lt;p&gt;In this post I will outline the structure of my virtual lab notebook, for use during this time of woe. This is necessitated by the current COVID-19 work-from-home crisis, but will be helpful in general as a tool for accountability and productivity.&lt;/p&gt;
+&lt;h2 id=&#34;post-frequency-&#34;&gt;Post Frequency&lt;/h2&gt;
+&lt;p&gt;I will post to the lab notebook at the beginning and end of each year, quarter, and week. I will also post to the lab notebook once per day.&lt;/p&gt;
+&lt;h2 id=&#34;post-content-&#34;&gt;Post Content&lt;/h2&gt;
+&lt;p&gt;In each multi-day post I will outline my goals for the current time period, along with a self-imposed due date, and (particularly for yearly and quarterly posts) a rough outline of intermediate steps. Then at the end of the period I will summarize my progress toward those goals as well as any major progress in addition to those goals that I undertook in that time.&lt;/p&gt;
+&lt;p&gt;In each daily post I will outline what my goals were for the day, along with what I actually spent my time on. I will post mathematical and scientific outputs such as documents and plots that I produced that day, and reflect on my productivity and time management.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 2020</title>
+      <link>/post/notebook/2020/annualpost-1/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/annualpost-1/</guid>
+      <description>&lt;p&gt;I am just starting this lab notebook now in March 2020, so almost a third of the year is behind me already. That said, one of my big goals for the year, submitting my 
+&lt;a href=&#34;content/project/dam-passage-time&#34;&gt;dam passage&lt;/a&gt;
+ paper to Proc B, I have already accomplished! Hooray! Hopefully I can continue the momentum now that COVID-19 has well and truly set in.&lt;/p&gt;
+&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;I have a tendency to be overly ambitious with my goal timelines. I think I&amp;rsquo;m okay with that for now, but I&amp;rsquo;m trying to temper my expectations a little bit. I&amp;rsquo;m hopeful that with my dam passage project behind me I can focus my time and make more steady progress on my other projects.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complete my bypass to the PhD track by April 1
+&lt;ul&gt;
+&lt;li&gt;This is a pretty near-term goal but has been a long time coming&lt;/li&gt;
+&lt;li&gt;At this point most of what I need is just to do a bunch of lit reviewing and write up a beefier dissertation proposal than I had the first time round&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Submit my source inference paper by August 1 2020
+&lt;ul&gt;
+&lt;li&gt;Hopefully the timeline on this is not too ambitious. I have a lot of the theory and code done already, but case studies, editting, and background reading take forever.&lt;/li&gt;
+&lt;li&gt;Sub goal: Write up animal movement case study by April 10&lt;/li&gt;
+&lt;li&gt;Sub goal: Set up model and begin data analysis for pollen case study by April 17&lt;/li&gt;
+&lt;li&gt;Sub goal: Write up pollen case study by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete third case study by June 5&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete all background reading by June 5&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete final editing by July 3&lt;/li&gt;
+&lt;li&gt;This leaves one month of wiggle room for things to take longer than I hope&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Prepare to TA by September 15
+&lt;ul&gt;
+&lt;li&gt;This fall will be my first time TAing in any capacity since I was an undergrad. I will have more responsibility now than I did then and I want to make sure I am prepared. To do this I plan on doing background reading on teaching and TAing ahead of time. I know the best experience comes from doing but this is all I can do for now.&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse UW TAing 
+&lt;a href=&#34;https://www.washington.edu/teaching/topics/just-for-tas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resources&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse CMU CollectedWisdom TAing 
+&lt;a href=&#34;https://www.cmu.edu/teaching/resources/PublicationsArchives/CollectedWisdom/collectwisdom-teachingstrategies.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resource&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Read some of the evidence-based 
+&lt;a href=&#34;https://visible-learning.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visible Learning&lt;/a&gt;
+ resources&lt;/li&gt;
+&lt;li&gt;I haven&amp;rsquo;t assigned sub-goal deadlines because these are resources I intend to digest slowly over the period. Instead my goal is to do a little of this every week.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Submit my spatial survey design paper by Jan 1
+&lt;ul&gt;
+&lt;li&gt;I feel pretty good about getting the other goals done, if not on time, at least this year. This one is the stretch-iest of all of them. But I certainly won&amp;rsquo;t do it if I give up on it now!&lt;/li&gt;
+&lt;li&gt;Sub goal: Find good spatial dataset by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete background reading by July 3&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete simulated case study by September 18&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete final edits by December 1&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: 3/24</title>
+      <link>/post/notebook/2020/spring/week1/tues/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week1/tues/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-3&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add references for optimal design chapter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 3-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Refamiliarize myself with animal movement case study&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Morning: 9-12&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 1-4&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Add references for optimal design chapter
+&lt;ul&gt;
+&lt;li&gt;including major reference to Lee 1998, which actually does do logistically constrained optimal design but with a different objective function&lt;/li&gt;
+&lt;li&gt;propose to compare performance of my method with his, as well as to speed up his method with sparse matrices&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Afternoon: 4-5&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Work on new idea for logistically-constrained design
+&lt;ul&gt;
+&lt;li&gt;logistically-constrained random sampling?&lt;/li&gt;
+&lt;li&gt;a number of possibilities for how to achieve it&lt;/li&gt;
+&lt;li&gt;all rely upon being able to calculate or estimate $\pi_i$ and $\pi_{ij}$ the first- and second-order inclusion probabilities&lt;/li&gt;
+&lt;li&gt;if we want to estimate them, can we define a Gaussian-like spatial process over second-order inclusion probabilities&lt;/li&gt;
+&lt;li&gt;how can we do that? what is the domain of valid second-order inclusion probability matrices?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Sp20 Week 1</title>
+      <link>/post/notebook/2020/spring/week1/post-1/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/week1/post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Part of the week has already gone by, but I&amp;rsquo;ll go ahead and fill in some meta goals anyway&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure by Tuesday&lt;/li&gt;
+&lt;li&gt;Make schedule for reading about teaching and browse UW 
+&lt;a href=&#34;https://www.washington.edu/teaching/topics/just-for-tas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resources&lt;/a&gt;
+ by Wednesday&lt;/li&gt;
+&lt;li&gt;Refamiliarize myself with animal movement case study By Thursday&lt;/li&gt;
+&lt;li&gt;Complete all references for optimal design chapter in bypass proposal by Friday&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;p&gt;Did all these things! Hooray!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Lab Notebook: Spring 2020</title>
+      <link>/post/notebook/2020/spring/spring-post-1/</link>
+      <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
+      <guid>/post/notebook/2020/spring/spring-post-1/</guid>
+      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;p&gt;Much of this is copied and pasted from my goals for the year:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Complete my bypass to the PhD track by April 1&lt;/li&gt;
+&lt;li&gt;Make progress on source inference
+&lt;ul&gt;
+&lt;li&gt;Sub goal: Write up animal movement case study by April 10&lt;/li&gt;
+&lt;li&gt;Sub goal: Set up model and begin data analysis for pollen case study by April 17&lt;/li&gt;
+&lt;li&gt;Sub goal: Write up pollen case study by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete third case study by June 5&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete all background reading by June 5&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Prepare to TA
+&lt;ul&gt;
+&lt;li&gt;My real goal here is to do just a little bit of reading, every single week&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse UW TAing 
+&lt;a href=&#34;https://www.washington.edu/teaching/topics/just-for-tas&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resources&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Browse CMU CollectedWisdom TAing 
+&lt;a href=&#34;https://www.cmu.edu/teaching/resources/PublicationsArchives/CollectedWisdom/collectwisdom-teachingstrategies.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;resource&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;Sub goal: Read some of the evidence-based 
+&lt;a href=&#34;https://visible-learning.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visible Learning&lt;/a&gt;
+ resources&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Make progress on optimal survey design
+&lt;ul&gt;
+&lt;li&gt;Sub goal: Find good spatial dataset by May 1&lt;/li&gt;
+&lt;li&gt;Sub goal: Complete half of background reading by June 15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

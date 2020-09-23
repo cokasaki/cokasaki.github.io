@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ecology | Connie Okasaki</title>
+    <link>/tags/ecology/</link>
+      <atom:link href="/tags/ecology/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ecology</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon.png</url>
+      <title>Ecology</title>
+      <link>/tags/ecology/</link>
+    </image>
+    
+    <item>
+      <title>Collective Behavior During Dam Passage</title>
+      <link>/project/dam-passage/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/dam-passage/</guid>
+      <description>&lt;p&gt;In this project I use a bootstrap method to test a radio-telemetry dataset of Chinook and sockeye salmon for evidence of collective navigation while using fish ladders to pass dams.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

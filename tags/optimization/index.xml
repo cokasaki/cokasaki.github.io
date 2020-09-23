@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Optimization | Connie Okasaki</title>
+    <link>/tags/optimization/</link>
+      <atom:link href="/tags/optimization/index.xml" rel="self" type="application/rss+xml" />
+    <description>Optimization</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon.png</url>
+      <title>Optimization</title>
+      <link>/tags/optimization/</link>
+    </image>
+    
+    <item>
+      <title>Logistically-Constrained Optimal Spatial Sampling Design</title>
+      <link>/project/opt-design/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/opt-design/</guid>
+      <description>&lt;p&gt;In this project I investigate the use of sparse precision matrices and mixed integer/linear programs to efficient conduct logistically-constrained optimal spatial sampling design.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

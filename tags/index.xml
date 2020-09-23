@@ -1,22 +1,54 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags | Academic</title>
+    <title>Tags | Connie Okasaki</title>
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sun, 07 Apr 2019 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 05 Aug 2020 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>img/map[gravatar:%!s(bool=false) shape:circle]</url>
+      <url>/img/icon.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
     
     <item>
-      <title>Source Themes</title>
-      <link>/tags/source-themes/</link>
-      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/source-themes/</guid>
+      <title>Notebook</title>
+      <link>/tags/notebook/</link>
+      <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/notebook/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Books</title>
+      <link>/tags/books/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/books/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teaching</title>
+      <link>/tags/teaching/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/teaching/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Visible Learning</title>
+      <link>/tags/visible-learning/</link>
+      <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
+      <guid>/tags/visible-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spacetime</title>
+      <link>/tags/spacetime/</link>
+      <pubDate>Wed, 12 Feb 2020 13:30:00 +0000</pubDate>
+      <guid>/tags/spacetime/</guid>
       <description></description>
     </item>
     
@@ -29,14 +61,6 @@
     </item>
     
     <item>
-      <title>spacetime</title>
-      <link>/tags/spacetime/</link>
-      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
-      <guid>/tags/spacetime/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Spatial Statistics</title>
       <link>/tags/spatial-statistics/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
@@ -45,50 +69,34 @@
     </item>
     
     <item>
-      <title>Bootstrap</title>
-      <link>/tags/bootstrap/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/bootstrap/</guid>
+      <title>Source Themes</title>
+      <link>/tags/source-themes/</link>
+      <pubDate>Wed, 07 Feb 2018 00:00:00 +0000</pubDate>
+      <guid>/tags/source-themes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Demo</title>
-      <link>/tags/demo/</link>
+      <title>Ecology</title>
+      <link>/tags/ecology/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/demo/</guid>
+      <guid>/tags/ecology/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Inverse Problems</title>
-      <link>/tags/inverse-problems/</link>
+      <title>Optimization</title>
+      <link>/tags/optimization/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/inverse-problems/</guid>
+      <guid>/tags/optimization/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Operations Research</title>
-      <link>/tags/operations-research/</link>
+      <title>Statistics</title>
+      <link>/tags/statistics/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/operations-research/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Optimal Sampling Design</title>
-      <link>/tags/optimal-sampling-design/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/optimal-sampling-design/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reverse Causation</title>
-      <link>/tags/reverse-causation/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/reverse-causation/</guid>
+      <guid>/tags/statistics/</guid>
       <description></description>
     </item>
     
@@ -97,46 +105,6 @@
       <link>/tags/stochastic-pde/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/tags/stochastic-pde/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Survival Modeling</title>
-      <link>/tags/survival-modeling/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/survival-modeling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Academic</title>
-      <link>/tags/academic/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/academic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>plot</title>
-      <link>/tags/plot/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/tags/plot/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>R Markdown</title>
-      <link>/tags/r-markdown/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/tags/r-markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
-      <guid>/tags/regression/</guid>
       <description></description>
     </item>
     
