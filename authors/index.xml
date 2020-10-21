@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Sat, 26 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon.png</url>
       <title>Authors</title>
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>/authors/admin/</link>
-      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
       <description>&lt;p&gt;I am a fourth-year PhD student in Quantitative Ecology and Resource Management at the University of Washington. I am advised by Andrew Berdahl in the School of Aquatic and Fishery Sciences. I am collaborating with Sándor Toth from the School of Environmental and Forestry Sciences on a project looking at optimal spatial sampling design under logistical constraints. I am also collaborating with Mevin Hooten from Colorado State University on a project looking at physics-based spatiotemporal statistics. My general research interests include bridging the gaps between mechanistic modeling, spatial statistics, and constrained optimization. I am particularly interested in taking mathematically complex methods and ideas and making them more accessible and useful to ecologists.&lt;/p&gt;
 </description>
@@ -24,7 +24,7 @@
     <item>
       <title>Andrew M. Berdahl</title>
       <link>/authors/andrew-m.-berdahl/</link>
-      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       <guid>/authors/andrew-m.-berdahl/</guid>
       <description></description>
     </item>
@@ -32,7 +32,7 @@
     <item>
       <title>Matthew L. Keefer</title>
       <link>/authors/matthew-l.-keefer/</link>
-      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       <guid>/authors/matthew-l.-keefer/</guid>
       <description></description>
     </item>
@@ -40,7 +40,7 @@
     <item>
       <title>Peter A. H. Westley</title>
       <link>/authors/peter-a.-h.-westley/</link>
-      <pubDate>Sat, 26 Sep 2020 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
       <guid>/authors/peter-a.-h.-westley/</guid>
       <description></description>
     </item>
