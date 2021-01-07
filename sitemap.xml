@@ -84,62 +84,92 @@
   
   <url>
     <loc>/authors/admin/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/andrew-m.-berdahl/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication/dam-passage/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/matthew-l.-keefer/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/peter-a.-h.-westley/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/source-themes/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-10-21T08:40:46-07:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2020-09-23T10:49:20-07:00</lastmod>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/teaching/syllabus/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/teaching/example-syllabus/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/teaching/grading/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/notes/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/teaching/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/teaching/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2020-10-21T08:52:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/andrew-m.-berdahl/</loc>
+    <lastmod>2020-10-21T08:52:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication/dam-passage/</loc>
+    <lastmod>2020-10-21T08:52:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/matthew-l.-keefer/</loc>
+    <lastmod>2020-10-21T08:52:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/peter-a.-h.-westley/</loc>
+    <lastmod>2020-10-21T08:52:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-10-21T08:52:02-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/source-themes/</loc>
+    <lastmod>2020-10-21T08:52:02-07:00</lastmod>
   </url>
   
   <url>
@@ -148,12 +178,12 @@
   </url>
   
   <url>
-    <loc>/tags/notebook/</loc>
+    <loc>/categories/notebook/</loc>
     <lastmod>2020-09-23T10:49:20-07:00</lastmod>
   </url>
   
   <url>
-    <loc>/categories/notebook/</loc>
+    <loc>/tags/notebook/</loc>
     <lastmod>2020-09-23T10:49:20-07:00</lastmod>
   </url>
   
@@ -178,27 +208,17 @@
   </url>
   
   <url>
-    <loc>/tags/books/</loc>
-    <lastmod>2020-08-30T11:17:37-07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/categories/books/</loc>
     <lastmod>2020-08-30T11:17:37-07:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/books/</loc>
+    <lastmod>2020-08-30T11:17:37-07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/notebook/2020/spring/week7/wedn/</loc>
-    <lastmod>2020-08-30T11:17:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/teaching/</loc>
-    <lastmod>2020-08-30T11:17:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/teaching/</loc>
     <lastmod>2020-08-30T11:17:37-07:00</lastmod>
   </url>
   
@@ -525,11 +545,6 @@
   <url>
     <loc>/post/notebook/2020/spring/week2/post-1/</loc>
     <lastmod>2020-04-06T11:17:55-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/categories/notes/</loc>
-    <lastmod>2020-04-01T17:52:23-07:00</lastmod>
   </url>
   
   <url>

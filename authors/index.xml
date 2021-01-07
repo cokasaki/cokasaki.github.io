@@ -5,7 +5,7 @@
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 21 Oct 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon.png</url>
       <title>Authors</title>
@@ -15,7 +15,7 @@
     <item>
       <title></title>
       <link>/authors/admin/</link>
-      <pubDate>Wed, 21 Oct 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
       <description>&lt;p&gt;I am a fourth-year PhD student in Quantitative Ecology and Resource Management at the University of Washington. I am advised by Andrew Berdahl in the School of Aquatic and Fishery Sciences. I am collaborating with Sándor Toth from the School of Environmental and Forestry Sciences on a project looking at optimal spatial sampling design under logistical constraints. I am also collaborating with Mevin Hooten from Colorado State University on a project looking at physics-based spatiotemporal statistics. My general research interests include bridging the gaps between mechanistic modeling, spatial statistics, and constrained optimization. I am particularly interested in taking mathematically complex methods and ideas and making them more accessible and useful to ecologists.&lt;/p&gt;
 </description>
