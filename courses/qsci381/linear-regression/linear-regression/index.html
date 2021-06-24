@@ -28,12 +28,11 @@
   
     
   
-  <meta name="description" content="In this document I will outline the math used to analyze our previous results for linear regression analysis. Make sure to check out my previous posts on notation and simple linear regression before diving in.
-The Model Recall that linear regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
-\epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid.">
+  <meta name="description" content="In this document I will outline the math used in the analysis of a more general linear regression model, with more than one predictor variable. Make sure to check out my notation document to clarify any confusing notation, and check out my simple linear regression document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.
+The Model Linear regression is based upon the equation $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\">
 
   
-  <link rel="alternate" hreflang="en-us" href="/courses/qsci483/linear-regression/properties/">
+  <link rel="alternate" hreflang="en-us" href="/courses/qsci381/linear-regression/linear-regression/">
 
   
 
@@ -220,7 +219,7 @@ The Model Recall that linear regression is based upon the equation: $$ y_i \sim 
   <link rel="icon" type="image/png" href="/images/icon_hub75627969bdd01989db8aea0c9cc39c4_9892_32x32_fill_lanczos_center_2.png">
   <link rel="apple-touch-icon" type="image/png" href="/images/icon_hub75627969bdd01989db8aea0c9cc39c4_9892_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="/courses/qsci483/linear-regression/properties/">
+  <link rel="canonical" href="/courses/qsci381/linear-regression/linear-regression/">
 
   
   
@@ -233,17 +232,16 @@ The Model Recall that linear regression is based upon the equation: $$ y_i \sim 
   <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Connie Okasaki">
-  <meta property="og:url" content="/courses/qsci483/linear-regression/properties/">
-  <meta property="og:title" content="Properties of Linear Regression | Connie Okasaki">
-  <meta property="og:description" content="In this document I will outline the math used to analyze our previous results for linear regression analysis. Make sure to check out my previous posts on notation and simple linear regression before diving in.
-The Model Recall that linear regression is based upon the equation: $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\
-\epsilon_i &amp; \sim N(0,\sigma^2) \end{align*} where the $\epsilon_i$ are iid."><meta property="og:image" content="/img/icon.png">
+  <meta property="og:url" content="/courses/qsci381/linear-regression/linear-regression/">
+  <meta property="og:title" content="Linear Regression | Connie Okasaki">
+  <meta property="og:description" content="In this document I will outline the math used in the analysis of a more general linear regression model, with more than one predictor variable. Make sure to check out my notation document to clarify any confusing notation, and check out my simple linear regression document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.
+The Model Linear regression is based upon the equation $$ y_i \sim N(X\beta,\sigma^2) $$ or equivalently \begin{align*} y_i &amp; \sim X\beta &#43; \epsilon_i \\"><meta property="og:image" content="/img/icon.png">
   <meta property="twitter:image" content="/img/icon.png"><meta property="og:locale" content="en-us">
   
     
       <meta property="article:published_time" content="2020-03-31T00:00:00&#43;01:00">
     
-    <meta property="article:modified_time" content="2020-04-02T15:36:49-07:00">
+    <meta property="article:modified_time" content="2020-03-31T00:00:00&#43;01:00">
   
 
   
@@ -262,7 +260,7 @@ The Model Recall that linear regression is based upon the equation: $$ y_i \sim 
 
 
 
-  <title>Properties of Linear Regression | Connie Okasaki</title>
+  <title>Linear Regression | Connie Okasaki</title>
 
 </head>
 
@@ -593,7 +591,7 @@ The Model Recall that linear regression is based upon the equation: $$ y_i \sim 
         <a href="/courses/qsci381/linear-regression/simple-linear-regression/">Simple Model</a>
       </li>
       
-      <li >
+      <li class="active">
         <a href="/courses/qsci381/linear-regression/linear-regression/">General Model</a>
       </li>
       
@@ -646,10 +644,8 @@ The Model Recall that linear regression is based upon the equation: $$ y_i \sim 
   <ul>
     <li><a href="#the-model">The Model</a>
       <ul>
-        <li><a href="#maximum-likelihood">Maximum Likelihood</a></li>
-        <li><a href="#unbiasedness">Unbiasedness</a></li>
-        <li><a href="#covariance-of-hatbeta">Covariance of $\hat{\beta}$</a></li>
-        <li><a href="#other-quantities">Other Quantities</a></li>
+        <li><a href="#fitting">Fitting</a></li>
+        <li><a href="#important-quantities">Important Quantities</a></li>
       </ul>
     </li>
   </ul>
@@ -664,16 +660,16 @@ The Model Recall that linear regression is based upon the equation: $$ y_i \sim 
       <article class="article">
 
         <div class="docs-article-container">
-          <h1>Properties of Linear Regression</h1>
+          <h1>Linear Regression</h1>
 
           <div class="article-style">
-            <p>In this document I will outline the math used to analyze our previous results for linear regression analysis. Make sure to check out my previous posts on 
+            <p>In this document I will outline the math used in the analysis of a more general linear regression model, with more than one predictor variable. Make sure to check out my 
 <a href="/courses/qsci483/notation">notation</a>
- and 
-<a href="/courses/qsci483/linear-regression/linear-regression">simple linear regression</a>
- before diving in.</p>
+ document to clarify any confusing notation, and check out my 
+<a href="/courses/qsci483/linear-regression/simple-linear-regression">simple linear regression</a>
+ document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.</p>
 <h2 id="the-model">The Model</h2>
-<p>Recall that linear regression is based upon the equation:
+<p>Linear regression is based upon the equation
 $$
 y_i \sim N(X\beta,\sigma^2)
 $$
@@ -682,133 +678,112 @@ or equivalently
 y_i &amp; \sim X\beta + \epsilon_i \\<br>
 \epsilon_i &amp; \sim N(0,\sigma^2)
 \end{align*}
-where the $\epsilon_i$ are iid. We have previously found that the estimate $\hat{\beta} = (X&rsquo;X)^{-1}Xy$ minimizes the sum of squares. In this document we will show: (1) that $\hat{\beta}$ is also the maximum likelihood estimator, (2) that $\hat{\beta}$ is unbiased, and (3) the covariance matrix for the estimator $\hat{\beta}$.</p>
-<h3 id="maximum-likelihood">Maximum Likelihood</h3>
-<p>Our probability model has that $y_i$ are normally distributed, and are independent of each other given the predictors $X$ and the coefficients $\beta$. The <em>likelihood function</em> is given by the probability (density) of the data given the parameters ($\beta$), expressed as a function of the parameter estimate ($\hat{\beta}$). This function in our case can be written as a product of Gaussian (normal) probability density functions (pdfs):
-\begin{align*}
-\ell(\hat{\beta}) &amp; = \prod_{i=1}^n N(y_i|X\hat{\beta},\sigma^2) \\<br>
-&amp; = \prod_{i=1}^n \frac{1}{\sqrt{2\pi\sigma^2}}\exp\left(-\frac{(y_i - X\hat{\beta})}{2\sigma^2}\right) \\<br>
-&amp; = \frac{1}{(2\pi\sigma^2)^{n/2}}\exp\left(-\sum_{i=1}^n \frac{(y_i - X\hat{\beta})}{2\sigma^2}\right).
-\end{align*}
-We will now make use of a common trick in statistics: we will calculate the log-likelihood function $\lambda(\hat{\beta}) = \log(\ell(\hat{\beta}))$. Since the probability density function is always non-negative, and therefore the likelihood is always non-negative, the log-likelihood can be defined. Furthermore, the log is a convex function, and because of this it has the property that $\ell$ and $\lambda$ are minimized at the same value $\hat{\beta}$. Why this is is not important for this class.</p>
-<p>So taking the log we obtain
-\begin{align*}
-\lambda(\hat{\beta})
-&amp; = \log\left(\frac{1}{(2\pi\sigma^2)^{n/2}}\exp\left(-\sum_{i=1}^n \frac{(y_i - X\hat{\beta})}{2\sigma^2}\right)\right) \\<br>
-&amp; = \log\left(\frac{1}{(2\pi\sigma^2)^{n/2}}\right) + \log\left(\exp\left(-\sum_{i=1}^n \frac{(y_i - X\hat{\beta})}{2\sigma^2}\right)\right) \\<br>
-&amp; = -\frac{n}{2}\log(2\pi\sigma^2) - \frac{1}{2\sigma^2}\sum_{i=1}^n (y_i-X\hat{\beta})^2.
-\end{align*}
-Now remember that we are looking for the _maximum likelihood estimator_. So we want to find the value of $\hat{\beta}$ which maximizes the likelihood (i.e. maximizes the probability of that data, given the parameters). Viewing this as a function of $\hat{\beta}$ we see that maximizing $\lambda$ is equivalent to minimizing
+where the $\epsilon_i$ are iid. In the context of regression, it is important to remember that: $E[y_i] = X\beta$ and $E[\epsilon_i] = 0$. We will assume that there are $n$ data points and $k$ predictors. This $\beta$ is a $k\times 1$ vector, $X$ is a $n\times k$ matrix and $y$ and $\epsilon$ are $n\times 1$ vectors.</p>
+<h3 id="fitting">Fitting</h3>
+<h4 id="objective-function">Objective Function</h4>
+<p>To fit a simple linear regression we choose a measure of fit: least squares. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using the $1\times k$ vector $x_i$ of predictors for data point $i$:
 $$
-\sum_{i=1}^n (y_i-X\hat{\beta})^2.
+\hat{y}_i = x_i\hat{\beta}.
 $$
-Therefore the maximum likelihood estimator (MLE) of $\hat{\beta}$ is exactly the least-squares estimator $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$. Importantly, we are at this point omitting the parameter $\sigma^2$. In fact, the MLE for $\hat{\beta}$ is unchanged if we estimate this parameter as well. The MLE for $\hat{\sigma^2}$ is given by
+Alternatively we can find the whole vector $\hat{y} = X\beta$. To find a single squared residuals we calculate $r_i^2 = (y_i - x_i\hat{\beta})^2$. We will define the function $f(\hat{\beta})$ to be the sum of squared residuals, as a function of the fitted coefficients. We want to find the coefficients which minimize this function. We can calculate this as:
 \begin{align*}
-\hat{\sigma^2}
-&amp; = \frac{1}{n}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\<br>
-&amp; = \frac{1}{n}y'(I-X(X&rsquo;X)^{-1}X')y.
+f(\hat{\beta})
+&amp; = \sum_{i=1}^n (\mbox{residual})^2 \\<br>
+&amp; = \sum_{i=1}^n (y_i - x_i\hat{\beta})^2 \\<br>
+&amp; = \sum_{i=1}^n \left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2
+\end{align*}
+In matrix notation we can rewrite this, however. The residual _vector_ can be written as the $n\times 1$ vector
+$$
+r = y - X\hat{\beta}.
+$$
+The sum of squares can then be written as $r&rsquo;r$. So then
+\begin{align*}
+f(\hat{\beta})
+&amp; = r&rsquo;r \\<br>
+&amp; = (y-X\hat{\beta})'(y-X\hat{\beta}).
+\end{align*}
+We can expand this quadratic equation as
+\begin{align*}
+f(\hat{\beta})
+&amp; = y&rsquo;y - y&rsquo;X\hat{\beta} - \hat{\beta}&lsquo;X&rsquo;y + \hat{\beta}&lsquo;X&rsquo;X\hat{\beta}.
 \end{align*}</p>
-<h3 id="unbiasedness">Unbiasedness</h3>
-<p>It is important to remember that estimators (such as $\hat{\beta}) are themselves <em>random</em>. If we were to simulate from our model, holding $\beta$ fixed, we would fit a different estimator $\hat{\beta}$ to every simulation. Thus an important quality that an estimator can have is <em>unbiasedness</em>. This means that, if the model is correct, the estimator will neither tend to overestimate nor underestimate the true parameter. In mathematical terms, its expectation (or mean) is correct: $E[\hat{\beta}] = \beta$.</p>
-<p>Using our matrix math this property can be derived fairly quickly. We know that $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$. We also know that $y = X\beta + \epsilon$. Putting these together we see:
+<h4 id="optimization">Optimization</h4>
+<p>From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to each $\beta_i$, to find the minimum sum of squared residuals (the <em>least squares</em>). So let us take the partial derivative with respect to a particular coefficient:
 \begin{align*}
-\hat{\beta}
-&amp; = (X&rsquo;X)^{-1}X'(X\beta + \epsilon) \\<br>
-&amp; = (X&rsquo;X)^{-1}X&rsquo;X\beta + (X&rsquo;X)^{-1}X'\epsilon \\<br>
-&amp; = \beta + (X&rsquo;X)^{-1}X'\epsilon.
-\end{align*}
-Therefore the mean is
+\dfrac{\partial f}{ \partial \hat{\beta}_j}
+&amp; = \dfrac{\partial }{ \partial \hat{\beta}_j} \sum_{i=1}^n \left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2 \\<br>
+&amp; = \sum_{i=1}^n \dfrac{\partial }{ \partial \hat{\beta}_j}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)^2 \\<br>
+&amp; = \sum_{i=1}^n 2\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\dfrac{\partial }{ \partial \hat{\beta}_j}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right) \\<br>
+&amp; = \sum_{i=1}^n 2\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\left(-x_{ij}\right) \\<br>
+&amp; = -\sum_{i=1}^n 2x_{ij}\left(y_i - \sum_{j=1}^k x_{ij}\hat{\beta}_j\right)\end{align*}
+Verify that this can be written in matrix notation as
 \begin{align*}
-E[\hat{\beta}]
-&amp; = E\left[\beta + (X&rsquo;X)^{-1}X'\epsilon\right].
+\dfrac{\partial f}{ \partial \hat{\beta}_j}
+&amp; = -2\left(X&rsquo;y - X&rsquo;X\hat{\beta}\right)_j,
 \end{align*}
-The mean has a useful property which we will use here, which is that it is _linear_. This means that the expectation of a sum is the sum of the expectations. In math we write this as $E[A+B] = E[A] + E[B]$. Since matrix operations are essentially just a bunch of sums, we can also write $E[Mv] = ME[v]$, if $v$ is random and $M$ is constant. Using this property we get
+or in matrix calculus notation
 \begin{align*}
-E[\hat{\beta}]
-&amp; = E\left[\beta + (X&rsquo;X)^{-1}X'\epsilon\right] \\<br>
-&amp; = \beta + E\left[(X&rsquo;X)^{-1}X'\epsilon\right] \\<br>
-&amp; = \beta + (X&rsquo;X)^{-1}X&rsquo;E[\epsilon] \\<br>
-&amp; = \beta
+\dfrac{\partial f}{ \partial \hat{\beta}} &amp; = -2\left(X&rsquo;y - X&rsquo;X\hat{\beta}\right).
 \end{align*}
-since we have assumed that $\epsilon$ is zero-mean noise. So, in fact, our estimator is unbiased!</p>
-<h3 id="covariance-of-hatbeta">Covariance of $\hat{\beta}$</h3>
-<p>Remember that $\hat{\beta}$ is fundamentally a <em>random</em> quantity. It is different in every realization (or simulation) of the statistical model we have written down. It is sensitive to the addition of random noise ($\epsilon_{i}$) to the data. Luckily, since we have written down a statistical model for our data $y$ we are able to do a statistical analysis for the estimator $\hat{\beta}$ to determine its random properties.</p>
-<p>We showed in the previous section that $\hat{\beta}$ was unbiased, that is, it has its mean $E[\hat{\beta}] = \beta$ at the correct place. We will now calculate the variance-covariance (or just covariance) matrix of $\hat{\beta}$. This tells us how much we can expect $\hat{\beta}$ to vary for different datasets. The <em>diagonal</em> of this covariance matrix tells us the variances of $\hat{\beta}_{i}$, which are important quantities that get used, for example, in calculating Rs model summaries.</p>
-<p>The covariance of two random variables is given by $E[(A-E[A])(B-E[B])]$. In our case $A = \hat{\beta}_{i}$ and $B = \hat{\beta}_{j}$. This will give us the entry $\Sigma_{ij}$ in the covariance matrix. We already know that $E[\hat{\beta}_{i}] = \beta_{i}$ since the estimators are unbiased. Therefore the covariance is
+Remember that according to calculus, every single entry $\dfrac{\partial f}{ \partial \beta_j}$ must be equal to zero at any extremum (and in particular at the minimum). Thus we can set this whole matrix equation equal to zero, and we get
 $$
-\Sigma_{ij} = E\left[(\hat{\beta}_{i} - \beta_{i})(\hat{\beta}_{j} - \beta_{j})\right].
+X&rsquo;y = X&rsquo;X\hat{\beta}.
 $$
-Expanding the quadratic in the middle, and remembering that expectations are linear, we get that
+Since we are trying to derive an equation for $\hat{\beta}$ we move the matrix over to the other side and we get
+$$
+\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y.
+$$
+We can derive this same equation in fewer steps using the more complex matrix calculus notation, which for example allows us to take the derivative of matrix products and use the matrix chain rule:
 \begin{align*}
-\Sigma_{ij}
-&amp; = E[\hat{\beta}_i\hat{\beta}_j] - E[\beta_i\hat{\beta}_j] - E[\hat{\beta}_i\beta_j] + E[\beta_i\beta_j] \\<br>
-&amp; = E[\hat{\beta}_i\hat{\beta}_j] - \beta_iE[\hat{\beta}_j] - E[\hat{\beta}_i]\beta_j + \beta_i\beta_j \\<br>
-&amp; = E[\hat{\beta}_i\hat{\beta}_j] - \beta_i\beta_j.
+\dfrac{\partial f}{ \partial \hat{\beta}}
+&amp; = \dfrac{\partial }{ \partial \hat{\beta}}\left(y&rsquo;y - y&rsquo;X\hat{\beta} - \hat{\beta}&lsquo;X&rsquo;y + \hat{\beta}&lsquo;X&rsquo;X\hat{\beta}\right) \\<br>
+&amp; = - \dfrac{\partial }{ \partial \hat{\beta}}\left(y&rsquo;X\hat{\beta}\right) - \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&lsquo;X&rsquo;y\right) + \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&lsquo;X&rsquo;X\hat{\beta}\right) \\<br>
+&amp; = -y&rsquo;X-(X&rsquo;y)'+\hat{\beta}&lsquo;X&rsquo;X + (X&rsquo;X\hat{\beta})&rsquo; \\<br>
+&amp; = -2(X&rsquo;y - X&rsquo;X\hat{\beta})&rsquo; \\<br>
+&amp; = 0.
 \end{align*}</p>
-<p>This is a useful formula, but it would be far more effective to analyze this problem in terms of matrix notation. Let&rsquo;s go ahead and make that switch. Using matrix notation, the single entry
-$$
-\Sigma_{ij} = E\left[(\hat{\beta}_i - \beta_i)(\hat{\beta}_j - \beta_j)\right].
-$$
-can be written as a whole matrix
-$$
-\Sigma = E\left[(\hat{\beta} - E[\hat{\beta}])(\hat{\beta} - E[\hat{\beta}])'\right].
-$$
-Since we know that the estimator is unbiased we can plug this into the matrix equation to get
+<h3 id="important-quantities">Important Quantities</h3>
+<p>Now we have shown that the ordinary least squares estimator for $\beta$ is $(X&rsquo;X)^{-1}X&rsquo;y$. Using this we may calculate all sorts of other things.</p>
+<h4 id="predicted-values">Predicted Values</h4>
+<p>The predicted values are
 \begin{align*}
-\Sigma
-&amp; = E\left[(\hat{\beta} - \beta)(\hat{\beta}-\beta)'\right] \\<br>
-&amp; = E\left[\hat{\beta}\hat{\beta}'\right] - \beta\beta'.
+\hat{y}
+&amp; = X\hat{\beta} \\<br>
+&amp; = X(X&rsquo;X)^{-1}X&rsquo;y \\<br>
+&amp; = Hy.
 \end{align*}
-This is exactly the same formula we have above, just written in matrix notation. Now, we already have a formula for $\hat{\beta}$ in matrix notation, $\hat{\beta} = (X&rsquo;X)^{-1}X&rsquo;y$, so let&rsquo;s plug this in here. We get
+Here we have defined the &ldquo;hat matrix,&rdquo; $H = X(X&rsquo;X)^{-1}X&rsquo;$. This is a useful matrix in linear regression, which maps the data to its predicted values. This is sometimes also called the projection matrix $P$, since it projects the data onto a lower-dimensional linear space. It is sometimes also called the influence matrix. It has two nice properties which we will use in a moment: it is symmetric and idempotent. This means $H&rsquo;=H$ and $H^2 = H&rsquo;H = H$. We can see this by calculating:
 \begin{align*}
-\Sigma
-&amp; = E\left[(X&rsquo;X)^{-1}X&rsquo;yy&rsquo;X(X&rsquo;X)^{-1}\right] - \beta\beta' \\<br>
-&amp; = (X&rsquo;X)^{-1}X' E[yy'] X(X&rsquo;X)^{-1} - \beta\beta'.
-\end{align*}
-Now we can plug in our formula for $y = X\beta + \epsilon$. Remembering that expectations are linear (i.e. can be split up over summations), we get
-\begin{align*}
-E[yy']
-&amp; = E\left[(X\beta + \epsilon)(X\beta+\epsilon)'\right] \\<br>
-&amp; = E\left[X\beta\beta&rsquo;X' + \epsilon X\beta + \beta&rsquo;X'\epsilon + \epsilon\epsilon'\right] \\<br>
-&amp; = X\beta\beta&rsquo;X' + E[\epsilon]X\beta + \beta&rsquo;X&rsquo;E[\epsilon] + E[\epsilon\epsilon']
-\end{align*}
-Now we already know that $E[\epsilon] = 0$. What about $E[\epsilon\epsilon']$? Well,
-$$
-\mbox{cov}(\epsilon_i,\epsilon_j) = E[\epsilon_i\epsilon_j] - E[\epsilon_i]E[\epsilon_j] = E[\epsilon_i\epsilon_j].
-$$
-Since independent variables are uncorrelated (and we know that the $\epsilon_i$ are iid) we see that this matrix is diagonal with entries equal to $\sigma^2$, the variance of $\epsilon_i$. Thus:
-$$
-E[yy'] = X\beta\beta&rsquo;X' + \sigma^2I.
-$$
-Finally, plugging this in, we can find that
-\begin{align*}
-\Sigma &amp; = (X&rsquo;X)^{-1}X' E[yy'] X(X&rsquo;X)^{-1} - \beta\beta' \\<br>
-&amp; = (X&rsquo;X)^{-1}X'(X\beta\beta&rsquo;X' + \sigma^2I)X(X&rsquo;X)^{-1} - \beta\beta' \\<br>
-&amp; = (X&rsquo;X)^{-1}(X&rsquo;X)\beta\beta'(X&rsquo;X)(X&rsquo;X)^{-1} + (X&rsquo;X)^{-1}X'(\sigma^2I)X(X&rsquo;X)^{-1} - \beta\beta' \\<br>
-&amp; = \beta\beta' + \sigma^2(X&rsquo;X)^{-1} - \beta\beta' \\<br>
-&amp; = \sigma^2(X&rsquo;X)^{-1}.
-\end{align*}
-This is the covariance matrix of $\hat{\beta}$! Notably, this has two important properties. One, it depends on $\sigma^2$, so if we want to use this we had better estimate $\sigma^2$ somehow. More on this in the next section. Two, it depends on the _inverse_ of $X&rsquo;X$. There&rsquo;s no guarantee that this matrix is invertible. For example, if we have more predictors than we have data points (i.e. $k &gt; n$) this matrix will certainly _not_ be invertible. You may have been warned about this scenario in the past. However, even if you have many data points, other situations can crop up where $X&rsquo;X$ is either numerically difficult to invert (i.e. difficult to calculate on a computer), or produces very large variances. One such case is where two of the predictor variables are very highly correlated. More on this later.</p>
-<h3 id="other-quantities">Other Quantities</h3>
-<p>Here we will show briefly that $\hat{y}$ is also unbiased (assuming the model is correct). This can be seen by some matrix calculations:
-\begin{align*}
-E[\hat{y}]
-&amp; = E[Hy] \\<br>
-&amp; = E[X(X&rsquo;X)^{-1}X'(X\beta+\epsilon)] \\<br>
-&amp; = E[X\beta + H\epsilon] \\<br>
-&amp; = X\beta + HE[\epsilon] \\<br>
-&amp; = X\beta.
-\end{align*}
-Meanwhile, $\hat{\epsilon}$ is:
+H&rsquo; &amp; = (X(X&rsquo;X)^{-1}X&rsquo;)&rsquo; \\<br>
+&amp; = X(X&rsquo;X)^{-1}X' \\<br>
+&amp; = H \\<br>
+H^2 &amp; = (X(X&rsquo;X)^{-1}X')(X(X&rsquo;X)^{-1}X') \\<br>
+&amp; = X(X&rsquo;X)^{-1}(X&rsquo;X)(X&rsquo;X)^{-1}X' \\<br>
+&amp; = X(X&rsquo;X)^{-1}X' \\<br>
+&amp; = H
+\end{align*}</p>
+<h4 id="residuals">Residuals</h4>
+<p>The residuals are
 \begin{align*}
 \hat{\epsilon}
-&amp; = My \\<br>
+&amp; = y-\hat{y} \\<br>
+&amp; = y-Hy \\<br>
 &amp; = (I-H)y \\<br>
-&amp; = y - (X\beta + H\epsilon) \\<br>
-&amp; = (I-H)\epsilon \\<br>
-&amp; = M\epsilon
+&amp; = (I-X(X&rsquo;X)^{-1}X')y \\<br>
+&amp; = My
 \end{align*}
-This is unbiased in the sense that it has the same mean as $\epsilon$. Unfortunately, although it might seem we can simply calculate $\epsilon = M^{-1}\hat{\epsilon}$, this matrix may not be invertible (TODO: I&rsquo;m like 99% certain it is always uninvertible)</p>
+Here we have defined the &ldquo;residual maker&rdquo; matrix, which can also be called the residual operator. This matrix takes the data and gives you the residuals of the model. It also inherits symmetry and idempotency from the hat matrix, since:
+\begin{align*}
+M' &amp; = (I-H)' \\<br>
+&amp; = I-H \\<br>
+M^2 &amp; = (I-H)(I-H) \\<br>
+&amp; = I - 2H + H^2 \\<br>
+&amp; = I - 2H + H \\<br>
+&amp; = I-H
+\end{align*}
+With all of this put together we now have the tools to analyze the 
+<a href="../standard-error">residual standard error</a>
+. First, however, we will analyze the properties of $\hat{\beta}$.</p>
 
           </div>
 
@@ -825,14 +800,14 @@ This is unbiased in the sense that it has the same mean as $\epsilon$. Unfortuna
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="/courses/qsci483/linear-regression/standard-error/" rel="next">The Residual Standard Error</a>
+    <a href="/courses/qsci381/space-time/diagnostics/" rel="next">Descriptive Statistics</a>
   </div>
   
   
   
   <div class="post-nav-item">
     <div class="meta-nav">Next</div>
-    <a href="/courses/qsci483/linear-regression/math-diagnostics/" rel="prev">Linear Regression Model Diagnostics</a>
+    <a href="/courses/qsci381/linear-regression/standard-error/" rel="prev">The Residual Standard Error</a>
   </div>
   
 </div>
@@ -842,7 +817,7 @@ This is unbiased in the sense that it has the same mean as $\epsilon$. Unfortuna
         </div>
 
         <div class="body-footer">
-          <p>Last updated on Apr 2, 2020</p>
+          <p>Last updated on Mar 31, 2020</p>
 
           
 
@@ -854,7 +829,7 @@ This is unbiased in the sense that it has the same mean as $\epsilon$. Unfortuna
   
 
 <p class="edit-page">
-  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/qsci483/linear-regression/properties.md">
+  <a href="https://github.com/gcushen/hugo-academic/edit/master/content/courses/qsci381/linear-regression/linear-regression.md">
     <i class="fas fa-pen pr-2"></i>Edit this page
   </a>
 </p>
