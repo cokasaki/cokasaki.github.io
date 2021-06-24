@@ -61,7 +61,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-are-my-learning-goals-&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
+&lt;h2 id=&#34;what-are-my-learning-goals&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/GoalsAndObjectives/Bloom.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bloom&amp;rsquo;s Taxonomy&lt;/a&gt;
 :&lt;/p&gt;
@@ -79,7 +79,7 @@
 &lt;p&gt;Both during the course and at the end of the course. Designing 
 &lt;a href=&#34;/post/teaching/assessment&#34;&gt;assessments&lt;/a&gt;
  is a whole separate can of worms.&lt;/p&gt;
-&lt;h2 id=&#34;how-will-i-achieve-those-goals-&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
+&lt;h2 id=&#34;how-will-i-achieve-those-goals&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
 &lt;p&gt;Before I get into the nitty-gritty of lesson planning, etc, now is also a good time to write a 
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/preparing-to-teach/designing-your-course-and-syllabus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;syllabus&lt;/a&gt;
 . Once I&amp;rsquo;ve done that I think I personally will benefit from calendaring. This will help me remember little things like: two weeks from today is the exam, I need to write it so I can tell students about format, etc.&lt;/p&gt;
@@ -91,13 +91,13 @@
       <link>/post/teaching/example-syllabus/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       <guid>/post/teaching/example-syllabus/</guid>
-      <description>&lt;h1 id=&#34;general-information-&#34;&gt;General information&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;general-information&#34;&gt;General information&lt;/h1&gt;
 &lt;p&gt;Instructor: Connie Okasaki (&lt;a href=&#34;mailto:cokasaki@uw.edu&#34;&gt;cokasaki@uw.edu&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;TAs: Someone (&lt;a href=&#34;mailto:someone@uw.edu&#34;&gt;someone@uw.edu&lt;/a&gt;) and Someone Else (&lt;a href=&#34;mailto:esomeone@uw.edu&#34;&gt;esomeone@uw.edu&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;Lecture Times: Tues &amp;amp; Thurs 10:00-11:20&lt;/p&gt;
 &lt;p&gt;Lab Time: W 11:00-12:50&lt;/p&gt;
 &lt;p&gt;Course Website: here&lt;/p&gt;
-&lt;h1 id=&#34;objective-&#34;&gt;Objective&lt;/h1&gt;
+&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
 &lt;p&gt;The objective of this course is to provide students with an introductory understanding of the probability and statistics. Both play an important role in nearly all aspects of society, and your ability to understand, interpret, and critique data and the statistics used to analyze these data will provide you with an important foundation, regardless of career choice. After completing this course you will:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Understand different types of data and how they are collected&lt;/li&gt;
@@ -120,7 +120,7 @@
 &lt;li&gt;Feel more comfortable using equations to model reality&lt;/li&gt;
 &lt;li&gt;Feel more comfortable using code to analyze data&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;assessment-&#34;&gt;Assessment&lt;/h1&gt;
+&lt;h1 id=&#34;assessment&#34;&gt;Assessment&lt;/h1&gt;
 &lt;p&gt;I believe that grading is detrimental to both teaching and learning. While feedback is a valuable part of learning, numerical grades have been shown to distract from feedback. Furthermore, assigning numerical grades takes up time that I might otherwise spend improving my teaching. I have therefore designed this course to maximize feedback and minimize grading. Since I am required to assign numerical grades I have attempted to split your numerical grade between effort-based and accuracy-based grading approximately evenly. Notably this course is NOT graded on a curve. Your grade will be based on the effort you apply and the mastery you demonstrate, but never on the performance of other students. The following events will be graded:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -160,7 +160,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;final-grades-&#34;&gt;Final Grades&lt;/h1&gt;
+&lt;h1 id=&#34;final-grades&#34;&gt;Final Grades&lt;/h1&gt;
 &lt;p&gt;The grading scale will be as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;95% = 4.0&lt;/li&gt;
@@ -174,21 +174,21 @@
 &lt;li&gt;&amp;lt;62% = 0.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Intermediate grades will be calculated according to a straightforward extension of this scale (i.e. 0.1 for every 1% in your final grade). To reiterate, I do believe that grading is detrimental to your learning as students. Therefore note that your grades on the quizzes (which you can make-up in office hours), labs (which you will receive substantial assistance with in lab section), the final project (which you can seek substantial guidance with over the second half of the course), and the extra credit (which is easily attainable be completing the readings) are all essentially effort-based. With full marks in these areas and only half marks in the accuracy-based homeworks and midterm you all have a straightforward path to earning an exemplary 91% or 3.6 grade. I therefore encourage you to focus on effort rather than grades.&lt;/p&gt;
-&lt;h1 id=&#34;teaching-&#34;&gt;Teaching&lt;/h1&gt;
+&lt;h1 id=&#34;teaching&#34;&gt;Teaching&lt;/h1&gt;
 &lt;p&gt;I will provide you my slides and lecture notes prior to the start of class. I require you all to obtain a copy of 
 &lt;a href=&#34;https://www.openintro.org/book/os&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OpenIntro Statistics&lt;/a&gt;
  which is available as a free pdf online. Each class I will post a set of readings you should complete for the following class. Completing these readings will give you the information you need to answer the extra credit questions.&lt;/p&gt;
-&lt;h1 id=&#34;software-&#34;&gt;Software&lt;/h1&gt;
+&lt;h1 id=&#34;software&#34;&gt;Software&lt;/h1&gt;
 &lt;p&gt;You will be required to use R in the JupyterHub environment hosted by UW-IT on the cloud. This allows all of you to work in a standardized environment and ensures that everyones code runs in exactly the same way. We will show you how to access and interact with JupyterHub in lab sessions.&lt;/p&gt;
-&lt;h1 id=&#34;inclusivity-and-course-conduct-&#34;&gt;Inclusivity and Course Conduct&lt;/h1&gt;
+&lt;h1 id=&#34;inclusivity-and-course-conduct&#34;&gt;Inclusivity and Course Conduct&lt;/h1&gt;
 &lt;p&gt;I hope to make all students feel welcome in this class, regardless of your background, beliefs, identity, or learning needs. I also hope to help all students learn effectively and thrive in this class. I welcome feedback and suggestions as to how I may improve both my teaching and my classroom environment at any point in the course. I also think the syllabus is a poor place to make such a statement, so I hope that my actions in the classroom also make this clear to you. I hope in particular that I have explained my reasoning behind the two policies which I will strictly enforce &amp;ndash; the late policy and the extensions policy. I plan to release answer keys almost immediately upon submission of homework assignments, to allow for extremely fast feedback, since you can check your answers right away. I cannot do this if I allow late submissions and extensions. I hope that my drop policy is sufficiently generous to offset this, but if you feel that this policy has affected or will affect you unfairly, please reach out and I will do my best to find an accommodation for you &amp;ndash; likely this will involve an alternative assignment. Two specific cases where this may be called for are outlined below.&lt;/p&gt;
-&lt;h1 id=&#34;disability-accommodations-&#34;&gt;Disability Accommodations&lt;/h1&gt;
+&lt;h1 id=&#34;disability-accommodations&#34;&gt;Disability Accommodations&lt;/h1&gt;
 &lt;p&gt;It is crucial that all students in this class have access to the full range of learning experiences. At the University of Washington, it is the policy and practice to create inclusive and accessible learning environments. To request academic accommodations due to a disability, please contact Disability Resources for Students (DRS), 011 Mary Gates Hall, (206) 543-8924, or &lt;a href=&#34;mailto:uwdrs@uw.edu&#34;&gt;uwdrs@uw.edu&lt;/a&gt;. If you have a letter from DRS indicating that you have a disability which requires academic accommodations, please present the letter to the instructor so we can discuss the accommodations needed for this class. If you have, or think you have, a temporary or permanent disability that impacts your participation in any course, please also contact Disability Resources for Students (DRS) at: 206-543-8924 V / 206-543-8925 TDD / &lt;a href=&#34;mailto:uwdrs@uw.edu&#34;&gt;uwdrs@uw.edu&lt;/a&gt; e-mail. More information can be found at &lt;a href=&#34;http://depts.washington.edu/uwdrs/&#34;&gt;http://depts.washington.edu/uwdrs/&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;religious-accommodations-&#34;&gt;Religious Accommodations&lt;/h1&gt;
+&lt;h1 id=&#34;religious-accommodations&#34;&gt;Religious Accommodations&lt;/h1&gt;
 &lt;p&gt;Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW&amp;rsquo;s policy, including more information about how to request an accommodation, is a vailable at Religious Accommodations Policy (&lt;a href=&#34;https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/)&#34;&gt;https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/)&lt;/a&gt;. Accommodations must be requested within the first two weeks of this course using the Religious Accommodations Request form (&lt;a href=&#34;https://registrar.washington.edu/students/religious-accommodations-request/)&#34;&gt;https://registrar.washington.edu/students/religious-accommodations-request/)&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;tutoring-resources-&#34;&gt;Tutoring Resources&lt;/h1&gt;
+&lt;h1 id=&#34;tutoring-resources&#34;&gt;Tutoring Resources&lt;/h1&gt;
 &lt;p&gt;Something something&lt;/p&gt;
-&lt;h1 id=&#34;academic-conduct-&#34;&gt;Academic Conduct&lt;/h1&gt;
+&lt;h1 id=&#34;academic-conduct&#34;&gt;Academic Conduct&lt;/h1&gt;
 &lt;p&gt;Something somethingB&lt;/p&gt;
 </description>
     </item>
@@ -200,7 +200,7 @@
       <guid>/post/teaching/grading/</guid>
       <description>&lt;p&gt;Notes from &amp;ldquo;
 &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/arrticles/PMC4041495&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Teaching More by Grading Less&lt;/a&gt;
-&amp;quot;.&lt;/p&gt;
+&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Grading is a ubiquitious but surprisingly recent phenomenon. The current A-D+F system only gained popularity in the 1940s. Grades are intended as feedback on performance, motivators of student effort, tools for comparing students, and objective evaluations of student knowledge. However, these goals are rarely achieved.&lt;/p&gt;
 &lt;p&gt;On the contrary, more qualitative feedback describing how work could be improved is more effective, and grades often distract from this feedback. Grades dampen intrinsic motivation, enhance fear of failure, reduce interest, decrease enjoyment, increase anxiety, stimulate aviodance, heighten competitiveness, and even hamper performance. Grading systems that reward effort seem to have better reception.&lt;/p&gt;
 &lt;p&gt;Grades are further unhelpful as a tool for comparing students. Curve-grading might be thought to be the fairest approach but in reality this mostly stimulates competition, while divorcing grades from actual mastery.&lt;/p&gt;
@@ -214,7 +214,7 @@
       <link>/post/notebook/2020/summer/week1/wedn/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/summer/week1/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Spent most of yesterday working on the air pollution data. Plan to work today on the GP code and the paper, and maybe spend a little time cleaning the air pollution data and getting all the spatial info sorted out.&lt;/p&gt;
 &lt;p&gt;Morning: 10-12&lt;/p&gt;
 &lt;ul&gt;
@@ -228,7 +228,7 @@
 &lt;ul&gt;
 &lt;li&gt;Get spatial data sorted out&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Spent most of the day coding the GPs.&lt;/p&gt;
 </description>
     </item>
@@ -238,7 +238,7 @@
       <link>/post/notebook/2020/summer/week1/mon/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/summer/week1/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Afternoon: 12-2&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Code the optimization GPs&lt;/li&gt;
@@ -251,7 +251,7 @@
 &lt;ul&gt;
 &lt;li&gt;Read VL chapter&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Spent most of the day coding the GPs.&lt;/p&gt;
 </description>
     </item>
@@ -261,14 +261,14 @@
       <link>/post/notebook/2020/summer/week1/post-1/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/summer/week1/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Fell off the horse here with goal setting, what with everything going on but we&amp;rsquo;re starting up again now so here we go&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Finish response to reviewers document for Editor/R1&lt;/li&gt;
 &lt;li&gt;Code GP simulation for optimizing under a misspecified model&lt;/li&gt;
 &lt;li&gt;Begin analyzing air pollution data&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 </description>
     </item>
     
@@ -277,7 +277,7 @@
       <link>/post/notebook/2020/summer/spring-post-1/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/summer/spring-post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Set date for general exam, do all the paperwork things&lt;/li&gt;
 &lt;li&gt;Resubmit paper&lt;/li&gt;
@@ -311,7 +311,7 @@
       <link>/post/notebook/2020/spring/week7/thurs/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week7/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-10:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Respond to TAing emails&lt;/li&gt;
@@ -328,7 +328,7 @@
 &lt;ul&gt;
 &lt;li&gt;Meet with Tyler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;I did these things! My optimization finally ran without bugs, I managed to do a little tiny bit of SQL.&lt;/p&gt;
 </description>
     </item>
@@ -338,9 +338,9 @@
       <link>/post/notebook/2020/spring/week7/wedn/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week7/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Finish prepping for committee meeting. Start to grade and read VL.&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Feel food about committee meeting. Graded a few homeworks and read a few chapters.&lt;/p&gt;
 </description>
     </item>
@@ -374,7 +374,7 @@
       <link>/post/notebook/2020/spring/week7/tues/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week7/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-11&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Finish prepping for STRG&lt;/li&gt;
@@ -391,7 +391,7 @@
 &lt;ul&gt;
 &lt;li&gt;Prep for committee meeting&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;STRG went really well! People seemed to like my talk and we had a lot of good discussion. Continuing to prep for committee meeting.&lt;/p&gt;
 </description>
     </item>
@@ -401,9 +401,9 @@
       <link>/post/notebook/2020/spring/week7/mon/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week7/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Finish prepping for STRG tomorrow. Continue work on committee meeting presentation.&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did that!&lt;/p&gt;
 </description>
     </item>
@@ -413,7 +413,7 @@
       <link>/post/notebook/2020/spring/week7/post-1/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week7/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Give presentation to STRG&lt;/li&gt;
 &lt;li&gt;Give presentation to committee meeting and get useful feedback&lt;/li&gt;
@@ -422,7 +422,7 @@
 &lt;li&gt;Need a lot of bandwidth to tackle revisions, so we will do this next week&lt;/li&gt;
 &lt;li&gt;Grade HW 2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Presentation went well.&lt;/p&gt;
 </description>
     </item>
@@ -432,9 +432,9 @@
       <link>/post/notebook/2020/spring/week6/fri/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Choose and prep paper for STRG next week. Prepare for committee meeting.&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did these things. STRG is going to take longer than I had hoped. Long week ahead of me.&lt;/p&gt;
 </description>
     </item>
@@ -444,7 +444,7 @@
       <link>/post/notebook/2020/spring/week6/thurs/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-10:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Respond to TAing emails&lt;/li&gt;
@@ -461,7 +461,7 @@
 &lt;ul&gt;
 &lt;li&gt;Meet with Tyler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;I did these things! My optimization finally ran without bugs, I managed to do a little tiny bit of SQL.&lt;/p&gt;
 </description>
     </item>
@@ -471,9 +471,9 @@
       <link>/post/notebook/2020/spring/week6/wedn/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Find a dataset on Neotoma and debug the optimization case study.&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Spent a lot of time on both tasks. Neotoma is remarkably difficult to use. I&amp;rsquo;m trying to learn a tiny bit of SQL to access it because I don&amp;rsquo;t think there is a better dataset out there for this project, but it has been frustrating. The optimization still is not solving. I think it is either an issue with the bounds or an issue with the size of the problem.&lt;/p&gt;
 </description>
     </item>
@@ -483,7 +483,7 @@
       <link>/post/notebook/2020/spring/week6/tues/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-11&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Read Vecchia paper for STRG&lt;/li&gt;
@@ -502,7 +502,7 @@
 &lt;/ul&gt;
 &lt;p&gt;Afternoon: 3:30-5
 Neotoma&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Got a decent amount of reading done, but did not find a satisfactory dataset on Neotoma. More on this tomorrow I suppose.&lt;/p&gt;
 </description>
     </item>
@@ -512,7 +512,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week6/mon/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-9:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Set up for the week&lt;/li&gt;
@@ -534,7 +534,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Find Neotoma dataset&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Responded to all my emails. Got the code running for the pilot study/optimization integration, but it&amp;rsquo;s been a while since I looked at the optimization code. It runs but slowly and I don&amp;rsquo;t entirely remember how to fix it. Did not end up finding Neotoma dataset, instead I ended up working on SSN stuff that I didn&amp;rsquo;t finish yesterday, and in particular I learned how Cholesky sparse up-looking updates work.&lt;/p&gt;
 </description>
     </item>
@@ -544,7 +544,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week6/post-1/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Select a pollen dataset to use&lt;/li&gt;
 &lt;li&gt;Find a trade winds dataset to use&lt;/li&gt;
@@ -553,7 +553,7 @@ Neotoma&lt;/p&gt;
 &lt;li&gt;Look ahead to QSCI HW 3&lt;/li&gt;
 &lt;li&gt;Write up the SSN scratch paper before I forget it all&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Got access to Neotoma although it is much more complex than I feared&lt;/li&gt;
 &lt;li&gt;No progress on trade winds&lt;/li&gt;
@@ -568,7 +568,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/fri/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-10&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Debug sampling design code&lt;/li&gt;
@@ -597,7 +597,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Read fun papers&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Lots of scattered goals today so not all of them actually happened. I did look into the paleopollen stuff but there&amp;rsquo;s a lot there so still need to sift through what may be most applicable. I took some notes on Ch 7 but not Ch 8, and I did read some fun papers. Spent much more than 1 hour debugging the sampling design code but I did finally get it working!&lt;/p&gt;
 </description>
     </item>
@@ -607,7 +607,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/thurs/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-11&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Finish grading and respond to TAing emails&lt;/li&gt;
@@ -624,7 +624,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Meet with Tyler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Meetings and lab went well! Implemented profile likelihood method for parameter estimation in the sampling design case study but it still doesn&amp;rsquo;t seem to be working. Not sure what could be going on.&lt;/p&gt;
 </description>
     </item>
@@ -634,9 +634,9 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/wedn/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Just grade all day!&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;I did that! I got almost everything finished just one or two more assignments to go.&lt;/p&gt;
 </description>
     </item>
@@ -646,7 +646,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/tues/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-11&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Read Vecchia-Laplace paper&lt;/li&gt;
@@ -667,7 +667,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Grading&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;I did these things! I think the Vecchia-Laplace paper could potentially be useful for the SSN stuff if it turns out that calculating the covariance matrix isn&amp;rsquo;t so so hard, or it could at least be useful for the existing SSN framework. Only got a few assignments done.&lt;/p&gt;
 </description>
     </item>
@@ -677,7 +677,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/mon/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-9:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Lab checkins and set up for the week&lt;/li&gt;
@@ -695,7 +695,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on optimal design synthetic experiment&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 </description>
     </item>
     
@@ -704,7 +704,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/post-1/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Email Mevin about animal movement and pollen&lt;/li&gt;
 &lt;li&gt;Keep working on write-up and looking for datasets&lt;/li&gt;
@@ -712,7 +712,7 @@ Neotoma&lt;/p&gt;
 &lt;li&gt;Read and take notes on VL Ch 7 and 8&lt;/li&gt;
 &lt;li&gt;Grade for QSCI 483&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did email Mevin and got pointed to a really cool paleo dataset to use for that. Selected a cluster sampling pilot study procedure for the optimal sampling design project. Read and took (some) notes for VL Ch 7. Did a lot of gradnig for QSCI.&lt;/p&gt;
 </description>
     </item>
@@ -722,7 +722,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week4/fri/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week4/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-10&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Respond to emails&lt;/li&gt;
@@ -751,7 +751,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on SSN modeling&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did all these things although I did not finish writing up the animal movement case study &amp;ndash; there&amp;rsquo;s a lot more background to include. Read and took notes on both VL Ch 5 and 6. Turns out the pollen dataset that I thought was from AAAAI/NAB was actually not. It is more paleoecological than really pollen counts that we&amp;rsquo;re looking for. Only real pollen counts I&amp;rsquo;ve been able to find so far are AAAAI and EAN (Europe) both of which are closely guarded and cannot be made public. I&amp;rsquo;d really like to use a public dataset so I&amp;rsquo;m not sure what to do about this&amp;hellip;however I did find a wind speed dataset that seems to be pretty decent although right now it only seems to be marine measurements so I&amp;rsquo;m trying to see if there&amp;rsquo;s a land-based sister dataset.&lt;/p&gt;
 </description>
     </item>
@@ -783,7 +783,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week4/thurs/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week4/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on animal movement and synthetic data&lt;/li&gt;
@@ -796,7 +796,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Meet with Tyler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Found the bug in my animal movement code!!! Finally I can move on to other parts of this case study. Ran MCMC and it is giving me good and reasonable answers.&lt;/p&gt;
 </description>
     </item>
@@ -848,7 +848,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week4/wedn/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week4/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Respond to Sándor and find spatial dataset&lt;/li&gt;
@@ -867,7 +867,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did most of these things. Started working on the synthetic data case study for the optimization project.&lt;/p&gt;
 </description>
     </item>
@@ -877,7 +877,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week4/tues/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week4/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Continue work on animal movement&lt;/li&gt;
@@ -890,7 +890,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;NSF Activity Report&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Finished the activity report, held office hours, worked on movement. Still stumped by my movement bugs. I&amp;rsquo;m getting not-PSD errors from a function that should not possibly be able to produce a non-PSD matrix.&lt;/p&gt;
 </description>
     </item>
@@ -900,7 +900,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week4/mon/</link>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week4/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-9:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Lab checkins and set up for the week&lt;/li&gt;
@@ -919,7 +919,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on NSF progress report&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Worked on animal movement code. It seems as though my bug is the &amp;ldquo;wiggles&amp;rdquo; common to FEM advection-type equations so I am attempting to implement FD. It wasn&amp;rsquo;t too hard for this simple example and is slightly better practice anyways. Spent pretty much all day on that however.&lt;/p&gt;
 </description>
     </item>
@@ -929,7 +929,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/fri/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on animal movement case study&lt;/li&gt;
@@ -946,7 +946,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on pollen case study&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Mostly worked on the case study. Made some notes on VL Ch 3 but the movement stuff was very buggy.&lt;/p&gt;
 </description>
     </item>
@@ -956,7 +956,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/teaching/visible-learning/ch-03/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/visible-learning/ch-03/</guid>
-      <description>&lt;p&gt;An &lt;em&gt;empathy gap&lt;/em&gt; occurs when people are relatively unable to put themselves in the place of another person. Deep levels of empathy are difficult if you have never had the same experience as another person, or if you are not currently experiencing anything similar. It is easiest to empathize with people whose experiences you are currently mirroring, harder if you have mirrored them in the past, and hardest if you have never experienced them at all. Children in particular do not develop the ability to deeply understand others&amp;rsquo; viewpoints until late adolescence or early adulthood.&lt;/p&gt;
+      <description>&lt;p&gt;An &lt;em&gt;empathy gap&lt;/em&gt; occurs when people are relatively unable to put themselves in the place of another person. Deep levels of empathy are difficult if you have never had the same experience as another person, or if you are not currently experiencing anything similar. It is easiest to empathize with people whose experiences you are currently mirroring, harder if you have mirrored them in the past, and hardest if you have never experienced them at all. Children in particular do not develop the ability to deeply understand others&#39; viewpoints until late adolescence or early adulthood.&lt;/p&gt;
 &lt;p&gt;Inability to empathize with each other results in &lt;em&gt;negative escalations&lt;/em&gt;. When one person wrongs or hurts another, the other person retaliates. The first underestimates the harm they incurred and so views the retaliation as out of proportion, which justifies further retaliation, leading to a &lt;em&gt;snowball effect&lt;/em&gt; or &lt;em&gt;negative cascade&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;On the other hand establishing positive relationships cascades and results in lasting benefits. Marked improvements have been observed to occur the year &lt;em&gt;following&lt;/em&gt; relationship-based interventions. Longitudinal studies have found persistent and profound benefits to positive teacher student relationships on a decadal scale. These positive relationships may help because they build trust that allows students to make mistakes and ask for help, and builds the confidence in students to try again.&lt;/p&gt;
 &lt;p&gt;Developing positive relationships can be difficult if the focus is on responding to uncooperative students. Social psychology shows that &lt;em&gt;emotional leakage&lt;/em&gt; is common. Hiding emotions is difficult, and when a teacher has negative emotions towards a student the student may realize this. No major theory of learning recommends punitive action in response to difficult students. For example, high school students tend to attribute disciplinary action to the teacher (&amp;ldquo;teacher hats me&amp;rdquo;) rather than accept personal responsibility.&lt;/p&gt;
@@ -984,7 +984,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/thurs/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make edits to animal movement modeling section&lt;/li&gt;
@@ -997,7 +997,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Meet with Tyler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did these things! Was hoping to finish the animal movement section but it didn&amp;rsquo;t quite happen. Gotta make some decisions about presenting IOU vs OUF results.&lt;/p&gt;
 </description>
     </item>
@@ -1007,7 +1007,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/wedn/</link>
       <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Write personal statement and finish all my portion of the concurrent MS application&lt;/li&gt;
@@ -1024,7 +1024,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Read Mevin&amp;rsquo;s sources&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Finished application by 11:30. Got Dirichlet BC code up and running and am not seeing any obvious bugs right away. Looking good! Skimmed VL Ch 3 and Ch 4, will take notes tomorrow.&lt;/p&gt;
 </description>
     </item>
@@ -1034,7 +1034,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/tues/</link>
       <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
@@ -1052,7 +1052,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Email Sándor&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Got side tracked with adminstrative stuff again. Evidently I have to formally apply to the concurrent MS program in the stats department so that will take up much of my week. I did get the Dirichlet code up and running although there are probably a few lingering bugs. MCMC run is going now. Did not get to VL or emailing Sándor, although I actually looked at his email and there is not too much to respond to directly. I do owe him an update soon though.&lt;/p&gt;
 </description>
     </item>
@@ -1062,7 +1062,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/mon/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-11&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Prep for the week and finish up my preliminary analysis for the spatial stream network model&lt;/li&gt;
@@ -1080,7 +1080,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Look at bypass responses&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Morning stuff went well but I fell into administrative tasks and did not get the code done. I did email my committee, email with Erica about my TAing position, and email with the stats department about the concurrent master&amp;rsquo;s program. I took a brief look at Mevin&amp;rsquo;s response in the afternoon.&lt;/p&gt;
 </description>
     </item>
@@ -1090,7 +1090,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/post-1/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Still need to finish up my Dirichlet BC code from last week but I got a lot off my plate! I am done with the bypass and the dam passage paper and can get back to research more-or-less full time (less my new TAing position). My next few goals for spring quarter are all focused on my source project, but I would like to make some more progress on the optimal design front to keep some forward momentum on that front.&lt;/p&gt;
 &lt;p&gt;I would like to spend this week doing a mix of: finishing up the Dirichlet code and hopefully the animal movement case study, TAing, and responding to feedback from my bypass proposal. So my goals are&lt;/p&gt;
 &lt;ul&gt;
@@ -1100,7 +1100,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;Respond to Sándor&amp;rsquo;s email by Tuesday&lt;/li&gt;
 &lt;li&gt;Read two of Mevin&amp;rsquo;s suggested papers by Wednesday, the rest by Friday&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Finished up the Dirichlet BC code&lt;/li&gt;
 &lt;li&gt;Read but have not yet taken notes on VL Chs 3 and 4&lt;/li&gt;
@@ -1115,7 +1115,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/fri/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC stuff&lt;/li&gt;
@@ -1128,7 +1128,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC stuff&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Made some really good progress on Dirichlet BC stuff, but did not manage to get the code to a working point. I feel like I have a good handle on QSCI for this week, and I made some good progress on stream network analysis.&lt;/p&gt;
 </description>
     </item>
@@ -1138,7 +1138,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/thurs/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Look at QSCI stuff&lt;/li&gt;
@@ -1151,7 +1151,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Made some good progress on remembering how all the 
 &lt;a href=&#34;/courses/qsci-483/linear-algebra/math-diagnostics&#34;&gt;model diagnostics&lt;/a&gt;
  work. Taking this as an opportunity to go beyond what the course really calls for and cement my understanding of these things because they&amp;rsquo;re important to know.&lt;/p&gt;
@@ -1189,7 +1189,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/wedn/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
@@ -1206,7 +1206,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Wrote up some 
 &lt;a href=&#34;/courses/gaussian-processes&#34;&gt;resources&lt;/a&gt;
  so that I can stop rederiving/looking up common GP/MVN properties that I need to use. Also included on there the math for Dirichlet BCs. Now that the derivation is there I can more effectively write the code for the implementation, rather than writing stuff down on paper every time I try to do this.&lt;/p&gt;
@@ -1224,7 +1224,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/tues/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Look over the rest of QSCI HW 1&lt;/li&gt;
@@ -1243,7 +1243,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Didn&amp;rsquo;t make it through the whole thing, had to look up some of the model diagnostics Tim is using, but did get through VL Ch 1 and 2. Struggled with website formatting in the afternoon.&lt;/p&gt;
 </description>
     </item>
@@ -1437,7 +1437,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/teaching/visible-learning/core-takeaways/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/visible-learning/core-takeaways/</guid>
-      <description>&lt;h2 id=&#34;nine-basic-principles-&#34;&gt;Nine basic principles&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;nine-basic-principles&#34;&gt;Nine basic principles&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Explanations of human learning in terms of innate talent are consistently undermined by research which states that substantial amounts of time, energy, instruction, and effort are required to develop mastery of any subject area.&lt;/li&gt;
 &lt;li&gt;We can naturally learn from any information, but to learn effectively that information has to be organized in a way that matches how our minds are organized. Minds are organized differently for different people, and even change as we age.&lt;/li&gt;
@@ -1449,18 +1449,18 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;Humans are fundamentally social, down to the neurological level. This sociality can be used as a tool (social brain hypothesis)&lt;/li&gt;
 &lt;li&gt;Ideas about learning that are contradicted by scientific evidence abound. Many of these ideas can be harmful.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;section-1-&#34;&gt;Section 1&lt;/h2&gt;
+&lt;h2 id=&#34;section-1&#34;&gt;Section 1&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;The mind may not be &amp;ldquo;designed for thinking&amp;rdquo; and requires time and effort to think&lt;/li&gt;
-&lt;li&gt;Teachers need to recognize how difficult tasks are for beginners. Focus should be not on material but on the actual process of moving from not knowing to knowing. To do this students need a safe environment to acknowledge they don&#39;t understand. We can only holld so much in our cognitive centers, so it is important to ``overlearn&amp;rsquo;&amp;rsquo; basic concepts until it is ingrained and automatic&lt;/li&gt;
+&lt;li&gt;Teachers need to recognize how difficult tasks are for beginners. Focus should be not on material but on the actual process of moving from not knowing to knowing. To do this students need a safe environment to acknowledge they don&#39;t understand. We can only holld so much in our cognitive centers, so it is important to ``overlearn&#39;&#39; basic concepts until it is ingrained and automatic&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;chapter-1-&#34;&gt;Chapter 1&lt;/h3&gt;
+&lt;h3 id=&#34;chapter-1&#34;&gt;Chapter 1&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Students do not dislike school, but tolerate it.&lt;/li&gt;
 &lt;li&gt;The brain may not be &amp;ldquo;designed&amp;rdquo; for abstract thinking and as a result school is a taxing process.&lt;/li&gt;
 &lt;li&gt;Thinking requires a large investment of resources for an uncertain outcome (understanding) and risk-averse humans prefer to invest these resources in crossing seemingly achievable &amp;ldquo;knowledge gaps&amp;rdquo; rather than &amp;ldquo;knowledge chasms&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;chapter-2-&#34;&gt;Chapter 2&lt;/h3&gt;
+&lt;h3 id=&#34;chapter-2&#34;&gt;Chapter 2&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Experts may be &amp;ldquo;worse&amp;rdquo; at teaching than novices. The &amp;ldquo;expert blind spot effect&amp;rdquo; explains this:
 &lt;ul&gt;
@@ -1470,14 +1470,14 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;section-2-&#34;&gt;Section 2&lt;/h2&gt;
+&lt;h2 id=&#34;section-2&#34;&gt;Section 2&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Major ideas about acquisition, memory retention, mental storage, and overload&lt;/li&gt;
 &lt;li&gt;Learning need not be conscious, we can only think about so much at once&lt;/li&gt;
 &lt;li&gt;We need to develop a vocabulary for learning, and need multiple strategies for learning&lt;/li&gt;
 &lt;li&gt;Challenges: learning styles (i.e. spatial, verbal, kinaesthetic), Mozart effects, multitasking, digital natives, and whether the Internet is really changing how we think&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;section-3-&#34;&gt;Section 3&lt;/h2&gt;
+&lt;h2 id=&#34;section-3&#34;&gt;Section 3&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Self-esteem follows success more often than predicting it&lt;/li&gt;
 &lt;li&gt;Building confidence is still important though: in order to maintain positive views of ourselves we build explanations (I cannot; rather than I did not work hard enough) that help our self esteem but hurt our learning&lt;/li&gt;
@@ -1491,7 +1491,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/mon/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-11:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Do QSCI HW and prep for TAing&lt;/li&gt;
@@ -1504,7 +1504,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did the first half of the QSCI HW, read Ch 1, but did not end up having time to work on the BC code.&lt;/p&gt;
 </description>
     </item>
@@ -1514,7 +1514,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/post-1/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;First real week of the quarter and I am surprise TAing! I also found some frustrating uncommitted code from my Colorado trip which I need to reimplement, but rewriting code is often a way to make it better anyways&amp;hellip;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make all suggested changes to bypass proposal by Wednesday and send to committee&lt;/li&gt;
@@ -1522,7 +1522,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;Do the QSCI hw ahead of time to make sure I&amp;rsquo;ve got it down by Tuesday&lt;/li&gt;
 &lt;li&gt;Rewrite Dirichlet BC code by Friday&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Spent a lot of time on TAing this week, getting back up to speed on the basics of linear regression and model diagnostics. Mostly for myself, I made up a bunch of notes on the 
 &lt;a href=&#34;/courses/qsci-483&#34;&gt;math&lt;/a&gt;
  behind these topics, to cement my own understanding, although the students certainly won&amp;rsquo;t need to know much of that. I made it through the first two chapters of Visible Learning, although I still feel like I need to discuss it with someone to really digest it properly.&lt;/p&gt;
@@ -1566,11 +1566,11 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week1/fri/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week1/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;I might be surprise-TAing next quarter, so I&amp;rsquo;m focusing all my energy on TA prep today. I&amp;rsquo;m going to try to get through the whole UW TA resources page and will be adding notes in 
 &lt;a href=&#34;/post/teaching&#34;&gt;posts&lt;/a&gt;
 .&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;I did that! I also met with Tim the course instructor to outline my responsibilities as a TA and did some editing on the Dirichlet BC code.&lt;/p&gt;
 </description>
     </item>
@@ -1593,7 +1593,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/teaching/taing/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/taing/</guid>
-      <description>&lt;h2 id=&#34;expectations-&#34;&gt;Expectations&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;expectations&#34;&gt;Expectations&lt;/h2&gt;
 &lt;p&gt;Understand early on what the professors expectations are, in detail&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Am I expected to attend class?&lt;/li&gt;
@@ -1601,7 +1601,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;Am I grading, writing answer keys, giving guest lectures, holding office hours, holding review sessions, leading discussion sections, responding to online questions, communicating from the instructor to the class, etc?&lt;/li&gt;
 &lt;li&gt;Know what the instructor is emphasizing in class&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;demeanor-&#34;&gt;Demeanor&lt;/h2&gt;
+&lt;h2 id=&#34;demeanor&#34;&gt;Demeanor&lt;/h2&gt;
 </description>
     </item>
     
@@ -1645,7 +1645,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;a href=&#34;https://teachingcommons.stanford.edu/resources/teaching/evaluating-students&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;evaluating students&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;grading-&#34;&gt;Grading&lt;/h2&gt;
+&lt;h2 id=&#34;grading&#34;&gt;Grading&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/preparing-to-teach/grading-2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Grading&lt;/a&gt;
  is really hard. First thing to make clear is that I am using mastery-based (i.e. individual skills) rather than norm-referenced (i.e. relative to each other) grading.&lt;/p&gt;
@@ -1663,7 +1663,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;cheating-&#34;&gt;Cheating&lt;/h2&gt;
+&lt;h2 id=&#34;cheating&#34;&gt;Cheating&lt;/h2&gt;
 &lt;p&gt;How to stop it:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Explain clearly what is and is not allowed&lt;/li&gt;
@@ -1731,7 +1731,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;course schedule&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Quick (ungraded) quiz to gauge background? Self-reported pre-assessment of background knowledge? Resources for filling in gaps? ``Common Sense Inventory:&amp;rsquo;&amp;rsquo; determine whether 15 statements related to course content are true or false?&lt;/li&gt;
+&lt;li&gt;Quick (ungraded) quiz to gauge background? Self-reported pre-assessment of background knowledge? Resources for filling in gaps? ``Common Sense Inventory:&#39;&#39; determine whether 15 statements related to course content are true or false?&lt;/li&gt;
 &lt;li&gt;Homework 0: voluntary/mandatory office hour?&lt;/li&gt;
 &lt;li&gt;If there is time left to teach, model what the rest of the course will be like. Think about whether registration has stabilized and whether to teach foundational material, or just interesting stuff&lt;/li&gt;
 &lt;/ul&gt;
@@ -1744,7 +1744,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/engaging-students-in-learning/promoting-student-engagement-through-active-learning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Active learning&lt;/a&gt;
  is good. Give students a chance to practice that thing they just learned&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;office-hours-&#34;&gt;Office Hours&lt;/h2&gt;
+&lt;h2 id=&#34;office-hours&#34;&gt;Office Hours&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Most important thing is getting people to come in the first place&lt;/li&gt;
 &lt;li&gt;Give feedback on what&amp;rsquo;s been done so far and offer direction and general guidance&lt;/li&gt;
@@ -1792,9 +1792,9 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;/li&gt;
 &lt;li&gt;In this way everything done in the course is intentional and working towards an established goal&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;who-are-my-students-&#34;&gt;Who Are My Students&lt;/h2&gt;
+&lt;h2 id=&#34;who-are-my-students&#34;&gt;Who Are My Students&lt;/h2&gt;
 &lt;p&gt;Before I even get to learning goals, also consider: who are my students? Why are they taking my course? What can I expect that they already know? What range of backgrounds might the have? What do I expect them to struggle with?&lt;/p&gt;
-&lt;h2 id=&#34;what-are-my-learning-goals-&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
+&lt;h2 id=&#34;what-are-my-learning-goals&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/GoalsAndObjectives/Bloom.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blooms Taxonomy&lt;/a&gt;
 :&lt;/p&gt;
@@ -1812,7 +1812,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;p&gt;Both during the course and at the end of the course. Designing 
 &lt;a href=&#34;/post/teaching/assessment&#34;&gt;assessments&lt;/a&gt;
  is a whole separate can of worms.&lt;/p&gt;
-&lt;h2 id=&#34;how-will-i-achieve-those-goals-&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
+&lt;h2 id=&#34;how-will-i-achieve-those-goals&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
 &lt;p&gt;Before I get into the nitty-gritty of lesson planning, etc, now is also a good time to write a 
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/preparing-to-teach/designing-your-course-and-syllabus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;syllabus&lt;/a&gt;
 . Once I&amp;rsquo;ve done that I think I personally will benefit from calendaring. This will help me remember little things like: two weeks from today is the exam, I need to write it so I can tell students about format, etc.&lt;/p&gt;
@@ -1824,7 +1824,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week1/thurs/</link>
       <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week1/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Fix Anaconda errors and start animal movement MCMC running overnight&lt;/li&gt;
@@ -1837,7 +1837,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Think more about second-order inclusion probabilities&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Fixed Anaconda error, then discovered issue where some code was not pushed to GitHub. Unable to find the original code (mostly my implementation of Dirichlet BCs), but re-writing it should be a useful (if annyoing) exercise.&lt;/p&gt;
 &lt;p&gt;Started reading UW resources and made several 
 &lt;a href=&#34;/post/teaching&#34;&gt;posts&lt;/a&gt;
@@ -1929,7 +1929,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week1/wedn/</link>
       <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week1/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make schedule for reading about teaching, and begin browsing UW resources&lt;/li&gt;
@@ -1942,7 +1942,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Refamiliarize myself with animal movement case study&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Schedule:
 The UW resource page has 20 sections. The CMU page has 16 sections, and the Visual Learning book has 31 chapters. I plan on reading roughly 1 section, 1 section, and 2 chapters each week, starting next week.&lt;/p&gt;
 &lt;p&gt;Proposal:
@@ -1958,9 +1958,9 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/outline/</guid>
       <description>&lt;p&gt;In this post I will outline the structure of my virtual lab notebook, for use during this time of woe. This is necessitated by the current COVID-19 work-from-home crisis, but will be helpful in general as a tool for accountability and productivity.&lt;/p&gt;
-&lt;h2 id=&#34;post-frequency-&#34;&gt;Post Frequency&lt;/h2&gt;
+&lt;h2 id=&#34;post-frequency&#34;&gt;Post Frequency&lt;/h2&gt;
 &lt;p&gt;I will post to the lab notebook at the beginning and end of each year, quarter, and week. I will also post to the lab notebook once per day.&lt;/p&gt;
-&lt;h2 id=&#34;post-content-&#34;&gt;Post Content&lt;/h2&gt;
+&lt;h2 id=&#34;post-content&#34;&gt;Post Content&lt;/h2&gt;
 &lt;p&gt;In each multi-day post I will outline my goals for the current time period, along with a self-imposed due date, and (particularly for yearly and quarterly posts) a rough outline of intermediate steps. Then at the end of the period I will summarize my progress toward those goals as well as any major progress in addition to those goals that I undertook in that time.&lt;/p&gt;
 &lt;p&gt;In each daily post I will outline what my goals were for the day, along with what I actually spent my time on. I will post mathematical and scientific outputs such as documents and plots that I produced that day, and reflect on my productivity and time management.&lt;/p&gt;
 </description>
@@ -1974,7 +1974,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
       <description>&lt;p&gt;I am just starting this lab notebook now in March 2020, so almost a third of the year is behind me already. That said, one of my big goals for the year, submitting my 
 &lt;a href=&#34;content/project/dam-passage-time&#34;&gt;dam passage&lt;/a&gt;
  paper to Proc B, I have already accomplished! Hooray! Hopefully I can continue the momentum now that COVID-19 has well and truly set in.&lt;/p&gt;
-&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;I have a tendency to be overly ambitious with my goal timelines. I think I&amp;rsquo;m okay with that for now, but I&amp;rsquo;m trying to temper my expectations a little bit. I&amp;rsquo;m hopeful that with my dam passage project behind me I can focus my time and make more steady progress on my other projects.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Complete my bypass to the PhD track by April 1
@@ -2028,7 +2028,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
       <link>/post/notebook/2020/spring/week1/tues/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week1/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure&lt;/li&gt;
@@ -2041,7 +2041,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
 &lt;ul&gt;
 &lt;li&gt;Refamiliarize myself with animal movement case study&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure&lt;/li&gt;
@@ -2075,7 +2075,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
       <link>/post/notebook/2020/spring/week1/post-1/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week1/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Part of the week has already gone by, but I&amp;rsquo;ll go ahead and fill in some meta goals anyway&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure by Tuesday&lt;/li&gt;
@@ -2085,7 +2085,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
 &lt;li&gt;Refamiliarize myself with animal movement case study By Thursday&lt;/li&gt;
 &lt;li&gt;Complete all references for optimal design chapter in bypass proposal by Friday&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did all these things! Hooray!&lt;/p&gt;
 </description>
     </item>
@@ -2095,7 +2095,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
       <link>/post/notebook/2020/spring/spring-post-1/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/spring-post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Much of this is copied and pasted from my goals for the year:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Complete my bypass to the PhD track by April 1&lt;/li&gt;
@@ -2155,7 +2155,7 @@ tags:&lt;/li&gt;
 title: &amp;lsquo;Lab Notebook: Sp20 Week 4&amp;rsquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Need to debug and write up the animal movement case study, as I have fallen behind on my goal for that&lt;/li&gt;
 &lt;li&gt;Need to import pollen data and set up a preliminary model for it&lt;/li&gt;
@@ -2165,7 +2165,7 @@ title: &amp;lsquo;Lab Notebook: Sp20 Week 4&amp;rsquo;&lt;/li&gt;
 &lt;li&gt;Find large spatial dataset for optimal sampling design&lt;/li&gt;
 &lt;li&gt;Need to write up NSF GRF progress report&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did debug and partially write up the animal movement case study but there is still more writing/background to do there. Found a problem with the pollen data so that also will take longer than expected. Worked a little bit on the SSN modeling and found a matrix formulation for it (another DT lyapunov equation) although in the end it&amp;rsquo;ll probably all be finite difference anyways. Took notes on VL Ch 3-6, and decided with Sándor that we will just do a purely synthetic dataset to start for the sampling design. Wrote up NSF progress report, although still waiting on Andrew to sign off.&lt;/p&gt;
 </description>
     </item>

@@ -61,7 +61,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-are-my-learning-goals-&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
+&lt;h2 id=&#34;what-are-my-learning-goals&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/GoalsAndObjectives/Bloom.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bloom&amp;rsquo;s Taxonomy&lt;/a&gt;
 :&lt;/p&gt;
@@ -79,7 +79,7 @@
 &lt;p&gt;Both during the course and at the end of the course. Designing 
 &lt;a href=&#34;/post/teaching/assessment&#34;&gt;assessments&lt;/a&gt;
  is a whole separate can of worms.&lt;/p&gt;
-&lt;h2 id=&#34;how-will-i-achieve-those-goals-&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
+&lt;h2 id=&#34;how-will-i-achieve-those-goals&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
 &lt;p&gt;Before I get into the nitty-gritty of lesson planning, etc, now is also a good time to write a 
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/preparing-to-teach/designing-your-course-and-syllabus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;syllabus&lt;/a&gt;
 . Once I&amp;rsquo;ve done that I think I personally will benefit from calendaring. This will help me remember little things like: two weeks from today is the exam, I need to write it so I can tell students about format, etc.&lt;/p&gt;
@@ -91,13 +91,13 @@
       <link>/post/teaching/example-syllabus/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       <guid>/post/teaching/example-syllabus/</guid>
-      <description>&lt;h1 id=&#34;general-information-&#34;&gt;General information&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;general-information&#34;&gt;General information&lt;/h1&gt;
 &lt;p&gt;Instructor: Connie Okasaki (&lt;a href=&#34;mailto:cokasaki@uw.edu&#34;&gt;cokasaki@uw.edu&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;TAs: Someone (&lt;a href=&#34;mailto:someone@uw.edu&#34;&gt;someone@uw.edu&lt;/a&gt;) and Someone Else (&lt;a href=&#34;mailto:esomeone@uw.edu&#34;&gt;esomeone@uw.edu&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;Lecture Times: Tues &amp;amp; Thurs 10:00-11:20&lt;/p&gt;
 &lt;p&gt;Lab Time: W 11:00-12:50&lt;/p&gt;
 &lt;p&gt;Course Website: here&lt;/p&gt;
-&lt;h1 id=&#34;objective-&#34;&gt;Objective&lt;/h1&gt;
+&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
 &lt;p&gt;The objective of this course is to provide students with an introductory understanding of the probability and statistics. Both play an important role in nearly all aspects of society, and your ability to understand, interpret, and critique data and the statistics used to analyze these data will provide you with an important foundation, regardless of career choice. After completing this course you will:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Understand different types of data and how they are collected&lt;/li&gt;
@@ -120,7 +120,7 @@
 &lt;li&gt;Feel more comfortable using equations to model reality&lt;/li&gt;
 &lt;li&gt;Feel more comfortable using code to analyze data&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;assessment-&#34;&gt;Assessment&lt;/h1&gt;
+&lt;h1 id=&#34;assessment&#34;&gt;Assessment&lt;/h1&gt;
 &lt;p&gt;I believe that grading is detrimental to both teaching and learning. While feedback is a valuable part of learning, numerical grades have been shown to distract from feedback. Furthermore, assigning numerical grades takes up time that I might otherwise spend improving my teaching. I have therefore designed this course to maximize feedback and minimize grading. Since I am required to assign numerical grades I have attempted to split your numerical grade between effort-based and accuracy-based grading approximately evenly. Notably this course is NOT graded on a curve. Your grade will be based on the effort you apply and the mastery you demonstrate, but never on the performance of other students. The following events will be graded:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -160,7 +160,7 @@
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;final-grades-&#34;&gt;Final Grades&lt;/h1&gt;
+&lt;h1 id=&#34;final-grades&#34;&gt;Final Grades&lt;/h1&gt;
 &lt;p&gt;The grading scale will be as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;95% = 4.0&lt;/li&gt;
@@ -174,21 +174,21 @@
 &lt;li&gt;&amp;lt;62% = 0.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Intermediate grades will be calculated according to a straightforward extension of this scale (i.e. 0.1 for every 1% in your final grade). To reiterate, I do believe that grading is detrimental to your learning as students. Therefore note that your grades on the quizzes (which you can make-up in office hours), labs (which you will receive substantial assistance with in lab section), the final project (which you can seek substantial guidance with over the second half of the course), and the extra credit (which is easily attainable be completing the readings) are all essentially effort-based. With full marks in these areas and only half marks in the accuracy-based homeworks and midterm you all have a straightforward path to earning an exemplary 91% or 3.6 grade. I therefore encourage you to focus on effort rather than grades.&lt;/p&gt;
-&lt;h1 id=&#34;teaching-&#34;&gt;Teaching&lt;/h1&gt;
+&lt;h1 id=&#34;teaching&#34;&gt;Teaching&lt;/h1&gt;
 &lt;p&gt;I will provide you my slides and lecture notes prior to the start of class. I require you all to obtain a copy of 
 &lt;a href=&#34;https://www.openintro.org/book/os&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OpenIntro Statistics&lt;/a&gt;
  which is available as a free pdf online. Each class I will post a set of readings you should complete for the following class. Completing these readings will give you the information you need to answer the extra credit questions.&lt;/p&gt;
-&lt;h1 id=&#34;software-&#34;&gt;Software&lt;/h1&gt;
+&lt;h1 id=&#34;software&#34;&gt;Software&lt;/h1&gt;
 &lt;p&gt;You will be required to use R in the JupyterHub environment hosted by UW-IT on the cloud. This allows all of you to work in a standardized environment and ensures that everyones code runs in exactly the same way. We will show you how to access and interact with JupyterHub in lab sessions.&lt;/p&gt;
-&lt;h1 id=&#34;inclusivity-and-course-conduct-&#34;&gt;Inclusivity and Course Conduct&lt;/h1&gt;
+&lt;h1 id=&#34;inclusivity-and-course-conduct&#34;&gt;Inclusivity and Course Conduct&lt;/h1&gt;
 &lt;p&gt;I hope to make all students feel welcome in this class, regardless of your background, beliefs, identity, or learning needs. I also hope to help all students learn effectively and thrive in this class. I welcome feedback and suggestions as to how I may improve both my teaching and my classroom environment at any point in the course. I also think the syllabus is a poor place to make such a statement, so I hope that my actions in the classroom also make this clear to you. I hope in particular that I have explained my reasoning behind the two policies which I will strictly enforce &amp;ndash; the late policy and the extensions policy. I plan to release answer keys almost immediately upon submission of homework assignments, to allow for extremely fast feedback, since you can check your answers right away. I cannot do this if I allow late submissions and extensions. I hope that my drop policy is sufficiently generous to offset this, but if you feel that this policy has affected or will affect you unfairly, please reach out and I will do my best to find an accommodation for you &amp;ndash; likely this will involve an alternative assignment. Two specific cases where this may be called for are outlined below.&lt;/p&gt;
-&lt;h1 id=&#34;disability-accommodations-&#34;&gt;Disability Accommodations&lt;/h1&gt;
+&lt;h1 id=&#34;disability-accommodations&#34;&gt;Disability Accommodations&lt;/h1&gt;
 &lt;p&gt;It is crucial that all students in this class have access to the full range of learning experiences. At the University of Washington, it is the policy and practice to create inclusive and accessible learning environments. To request academic accommodations due to a disability, please contact Disability Resources for Students (DRS), 011 Mary Gates Hall, (206) 543-8924, or &lt;a href=&#34;mailto:uwdrs@uw.edu&#34;&gt;uwdrs@uw.edu&lt;/a&gt;. If you have a letter from DRS indicating that you have a disability which requires academic accommodations, please present the letter to the instructor so we can discuss the accommodations needed for this class. If you have, or think you have, a temporary or permanent disability that impacts your participation in any course, please also contact Disability Resources for Students (DRS) at: 206-543-8924 V / 206-543-8925 TDD / &lt;a href=&#34;mailto:uwdrs@uw.edu&#34;&gt;uwdrs@uw.edu&lt;/a&gt; e-mail. More information can be found at &lt;a href=&#34;http://depts.washington.edu/uwdrs/&#34;&gt;http://depts.washington.edu/uwdrs/&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;religious-accommodations-&#34;&gt;Religious Accommodations&lt;/h1&gt;
+&lt;h1 id=&#34;religious-accommodations&#34;&gt;Religious Accommodations&lt;/h1&gt;
 &lt;p&gt;Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW&amp;rsquo;s policy, including more information about how to request an accommodation, is a vailable at Religious Accommodations Policy (&lt;a href=&#34;https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/)&#34;&gt;https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/)&lt;/a&gt;. Accommodations must be requested within the first two weeks of this course using the Religious Accommodations Request form (&lt;a href=&#34;https://registrar.washington.edu/students/religious-accommodations-request/)&#34;&gt;https://registrar.washington.edu/students/religious-accommodations-request/)&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;tutoring-resources-&#34;&gt;Tutoring Resources&lt;/h1&gt;
+&lt;h1 id=&#34;tutoring-resources&#34;&gt;Tutoring Resources&lt;/h1&gt;
 &lt;p&gt;Something something&lt;/p&gt;
-&lt;h1 id=&#34;academic-conduct-&#34;&gt;Academic Conduct&lt;/h1&gt;
+&lt;h1 id=&#34;academic-conduct&#34;&gt;Academic Conduct&lt;/h1&gt;
 &lt;p&gt;Something somethingB&lt;/p&gt;
 </description>
     </item>
@@ -200,7 +200,7 @@
       <guid>/post/teaching/grading/</guid>
       <description>&lt;p&gt;Notes from &amp;ldquo;
 &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/arrticles/PMC4041495&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Teaching More by Grading Less&lt;/a&gt;
-&amp;quot;.&lt;/p&gt;
+&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Grading is a ubiquitious but surprisingly recent phenomenon. The current A-D+F system only gained popularity in the 1940s. Grades are intended as feedback on performance, motivators of student effort, tools for comparing students, and objective evaluations of student knowledge. However, these goals are rarely achieved.&lt;/p&gt;
 &lt;p&gt;On the contrary, more qualitative feedback describing how work could be improved is more effective, and grades often distract from this feedback. Grades dampen intrinsic motivation, enhance fear of failure, reduce interest, decrease enjoyment, increase anxiety, stimulate aviodance, heighten competitiveness, and even hamper performance. Grading systems that reward effort seem to have better reception.&lt;/p&gt;
 &lt;p&gt;Grades are further unhelpful as a tool for comparing students. Curve-grading might be thought to be the fairest approach but in reality this mostly stimulates competition, while divorcing grades from actual mastery.&lt;/p&gt;
@@ -302,7 +302,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/teaching/visible-learning/ch-03/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/visible-learning/ch-03/</guid>
-      <description>&lt;p&gt;An &lt;em&gt;empathy gap&lt;/em&gt; occurs when people are relatively unable to put themselves in the place of another person. Deep levels of empathy are difficult if you have never had the same experience as another person, or if you are not currently experiencing anything similar. It is easiest to empathize with people whose experiences you are currently mirroring, harder if you have mirrored them in the past, and hardest if you have never experienced them at all. Children in particular do not develop the ability to deeply understand others&amp;rsquo; viewpoints until late adolescence or early adulthood.&lt;/p&gt;
+      <description>&lt;p&gt;An &lt;em&gt;empathy gap&lt;/em&gt; occurs when people are relatively unable to put themselves in the place of another person. Deep levels of empathy are difficult if you have never had the same experience as another person, or if you are not currently experiencing anything similar. It is easiest to empathize with people whose experiences you are currently mirroring, harder if you have mirrored them in the past, and hardest if you have never experienced them at all. Children in particular do not develop the ability to deeply understand others&#39; viewpoints until late adolescence or early adulthood.&lt;/p&gt;
 &lt;p&gt;Inability to empathize with each other results in &lt;em&gt;negative escalations&lt;/em&gt;. When one person wrongs or hurts another, the other person retaliates. The first underestimates the harm they incurred and so views the retaliation as out of proportion, which justifies further retaliation, leading to a &lt;em&gt;snowball effect&lt;/em&gt; or &lt;em&gt;negative cascade&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;On the other hand establishing positive relationships cascades and results in lasting benefits. Marked improvements have been observed to occur the year &lt;em&gt;following&lt;/em&gt; relationship-based interventions. Longitudinal studies have found persistent and profound benefits to positive teacher student relationships on a decadal scale. These positive relationships may help because they build trust that allows students to make mistakes and ask for help, and builds the confidence in students to try again.&lt;/p&gt;
 &lt;p&gt;Developing positive relationships can be difficult if the focus is on responding to uncooperative students. Social psychology shows that &lt;em&gt;emotional leakage&lt;/em&gt; is common. Hiding emotions is difficult, and when a teacher has negative emotions towards a student the student may realize this. No major theory of learning recommends punitive action in response to difficult students. For example, high school students tend to attribute disciplinary action to the teacher (&amp;ldquo;teacher hats me&amp;rdquo;) rather than accept personal responsibility.&lt;/p&gt;
@@ -538,7 +538,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/teaching/visible-learning/core-takeaways/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/visible-learning/core-takeaways/</guid>
-      <description>&lt;h2 id=&#34;nine-basic-principles-&#34;&gt;Nine basic principles&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;nine-basic-principles&#34;&gt;Nine basic principles&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Explanations of human learning in terms of innate talent are consistently undermined by research which states that substantial amounts of time, energy, instruction, and effort are required to develop mastery of any subject area.&lt;/li&gt;
 &lt;li&gt;We can naturally learn from any information, but to learn effectively that information has to be organized in a way that matches how our minds are organized. Minds are organized differently for different people, and even change as we age.&lt;/li&gt;
@@ -550,18 +550,18 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;Humans are fundamentally social, down to the neurological level. This sociality can be used as a tool (social brain hypothesis)&lt;/li&gt;
 &lt;li&gt;Ideas about learning that are contradicted by scientific evidence abound. Many of these ideas can be harmful.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;section-1-&#34;&gt;Section 1&lt;/h2&gt;
+&lt;h2 id=&#34;section-1&#34;&gt;Section 1&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;The mind may not be &amp;ldquo;designed for thinking&amp;rdquo; and requires time and effort to think&lt;/li&gt;
-&lt;li&gt;Teachers need to recognize how difficult tasks are for beginners. Focus should be not on material but on the actual process of moving from not knowing to knowing. To do this students need a safe environment to acknowledge they don&#39;t understand. We can only holld so much in our cognitive centers, so it is important to ``overlearn&amp;rsquo;&amp;rsquo; basic concepts until it is ingrained and automatic&lt;/li&gt;
+&lt;li&gt;Teachers need to recognize how difficult tasks are for beginners. Focus should be not on material but on the actual process of moving from not knowing to knowing. To do this students need a safe environment to acknowledge they don&#39;t understand. We can only holld so much in our cognitive centers, so it is important to ``overlearn&#39;&#39; basic concepts until it is ingrained and automatic&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;chapter-1-&#34;&gt;Chapter 1&lt;/h3&gt;
+&lt;h3 id=&#34;chapter-1&#34;&gt;Chapter 1&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Students do not dislike school, but tolerate it.&lt;/li&gt;
 &lt;li&gt;The brain may not be &amp;ldquo;designed&amp;rdquo; for abstract thinking and as a result school is a taxing process.&lt;/li&gt;
 &lt;li&gt;Thinking requires a large investment of resources for an uncertain outcome (understanding) and risk-averse humans prefer to invest these resources in crossing seemingly achievable &amp;ldquo;knowledge gaps&amp;rdquo; rather than &amp;ldquo;knowledge chasms&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;chapter-2-&#34;&gt;Chapter 2&lt;/h3&gt;
+&lt;h3 id=&#34;chapter-2&#34;&gt;Chapter 2&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Experts may be &amp;ldquo;worse&amp;rdquo; at teaching than novices. The &amp;ldquo;expert blind spot effect&amp;rdquo; explains this:
 &lt;ul&gt;
@@ -571,14 +571,14 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;section-2-&#34;&gt;Section 2&lt;/h2&gt;
+&lt;h2 id=&#34;section-2&#34;&gt;Section 2&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Major ideas about acquisition, memory retention, mental storage, and overload&lt;/li&gt;
 &lt;li&gt;Learning need not be conscious, we can only think about so much at once&lt;/li&gt;
 &lt;li&gt;We need to develop a vocabulary for learning, and need multiple strategies for learning&lt;/li&gt;
 &lt;li&gt;Challenges: learning styles (i.e. spatial, verbal, kinaesthetic), Mozart effects, multitasking, digital natives, and whether the Internet is really changing how we think&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;section-3-&#34;&gt;Section 3&lt;/h2&gt;
+&lt;h2 id=&#34;section-3&#34;&gt;Section 3&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Self-esteem follows success more often than predicting it&lt;/li&gt;
 &lt;li&gt;Building confidence is still important though: in order to maintain positive views of ourselves we build explanations (I cannot; rather than I did not work hard enough) that help our self esteem but hurt our learning&lt;/li&gt;
@@ -636,7 +636,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/teaching/taing/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/taing/</guid>
-      <description>&lt;h2 id=&#34;expectations-&#34;&gt;Expectations&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;expectations&#34;&gt;Expectations&lt;/h2&gt;
 &lt;p&gt;Understand early on what the professors expectations are, in detail&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Am I expected to attend class?&lt;/li&gt;
@@ -644,7 +644,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;Am I grading, writing answer keys, giving guest lectures, holding office hours, holding review sessions, leading discussion sections, responding to online questions, communicating from the instructor to the class, etc?&lt;/li&gt;
 &lt;li&gt;Know what the instructor is emphasizing in class&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;demeanor-&#34;&gt;Demeanor&lt;/h2&gt;
+&lt;h2 id=&#34;demeanor&#34;&gt;Demeanor&lt;/h2&gt;
 </description>
     </item>
     
@@ -688,7 +688,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;a href=&#34;https://teachingcommons.stanford.edu/resources/teaching/evaluating-students&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;evaluating students&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;grading-&#34;&gt;Grading&lt;/h2&gt;
+&lt;h2 id=&#34;grading&#34;&gt;Grading&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/preparing-to-teach/grading-2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Grading&lt;/a&gt;
  is really hard. First thing to make clear is that I am using mastery-based (i.e. individual skills) rather than norm-referenced (i.e. relative to each other) grading.&lt;/p&gt;
@@ -706,7 +706,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;cheating-&#34;&gt;Cheating&lt;/h2&gt;
+&lt;h2 id=&#34;cheating&#34;&gt;Cheating&lt;/h2&gt;
 &lt;p&gt;How to stop it:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Explain clearly what is and is not allowed&lt;/li&gt;
@@ -774,7 +774,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;course schedule&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Quick (ungraded) quiz to gauge background? Self-reported pre-assessment of background knowledge? Resources for filling in gaps? ``Common Sense Inventory:&amp;rsquo;&amp;rsquo; determine whether 15 statements related to course content are true or false?&lt;/li&gt;
+&lt;li&gt;Quick (ungraded) quiz to gauge background? Self-reported pre-assessment of background knowledge? Resources for filling in gaps? ``Common Sense Inventory:&#39;&#39; determine whether 15 statements related to course content are true or false?&lt;/li&gt;
 &lt;li&gt;Homework 0: voluntary/mandatory office hour?&lt;/li&gt;
 &lt;li&gt;If there is time left to teach, model what the rest of the course will be like. Think about whether registration has stabilized and whether to teach foundational material, or just interesting stuff&lt;/li&gt;
 &lt;/ul&gt;
@@ -787,7 +787,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/engaging-students-in-learning/promoting-student-engagement-through-active-learning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Active learning&lt;/a&gt;
  is good. Give students a chance to practice that thing they just learned&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;office-hours-&#34;&gt;Office Hours&lt;/h2&gt;
+&lt;h2 id=&#34;office-hours&#34;&gt;Office Hours&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Most important thing is getting people to come in the first place&lt;/li&gt;
 &lt;li&gt;Give feedback on what&amp;rsquo;s been done so far and offer direction and general guidance&lt;/li&gt;
@@ -835,9 +835,9 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;/li&gt;
 &lt;li&gt;In this way everything done in the course is intentional and working towards an established goal&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;who-are-my-students-&#34;&gt;Who Are My Students&lt;/h2&gt;
+&lt;h2 id=&#34;who-are-my-students&#34;&gt;Who Are My Students&lt;/h2&gt;
 &lt;p&gt;Before I even get to learning goals, also consider: who are my students? Why are they taking my course? What can I expect that they already know? What range of backgrounds might the have? What do I expect them to struggle with?&lt;/p&gt;
-&lt;h2 id=&#34;what-are-my-learning-goals-&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
+&lt;h2 id=&#34;what-are-my-learning-goals&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/GoalsAndObjectives/Bloom.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blooms Taxonomy&lt;/a&gt;
 :&lt;/p&gt;
@@ -855,7 +855,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;p&gt;Both during the course and at the end of the course. Designing 
 &lt;a href=&#34;/post/teaching/assessment&#34;&gt;assessments&lt;/a&gt;
  is a whole separate can of worms.&lt;/p&gt;
-&lt;h2 id=&#34;how-will-i-achieve-those-goals-&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
+&lt;h2 id=&#34;how-will-i-achieve-those-goals&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
 &lt;p&gt;Before I get into the nitty-gritty of lesson planning, etc, now is also a good time to write a 
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/preparing-to-teach/designing-your-course-and-syllabus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;syllabus&lt;/a&gt;
 . Once I&amp;rsquo;ve done that I think I personally will benefit from calendaring. This will help me remember little things like: two weeks from today is the exam, I need to write it so I can tell students about format, etc.&lt;/p&gt;

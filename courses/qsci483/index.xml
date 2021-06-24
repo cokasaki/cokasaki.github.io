@@ -17,9 +17,9 @@
       <link>/courses/qsci483/notation/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
       <guid>/courses/qsci483/notation/</guid>
-      <description>&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;matrixvector-notation&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
 &lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
-&lt;h3 id=&#34;advanced-notation-matrix-calculus-&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
+&lt;h3 id=&#34;advanced-notation-matrix-calculus&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
 &lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
  or in the more extensive 
@@ -36,7 +36,7 @@
       <description>&lt;p&gt;In this document I will outline the math used in the analysis of a simple linear regression model. Make sure to check out my 
 &lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
  document to clarify any confusing notation.&lt;/p&gt;
-&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;h2 id=&#34;the-model&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Simple Linear Regression is based upon the equation
 $$
 y_i \sim N(\beta_0 + \beta_1 x_i,\sigma^2)
@@ -47,8 +47,8 @@ y_i &amp;amp; \sim \beta_0 + \beta_1 x_i + \epsilon_i \\&lt;br&gt;
 \epsilon_i &amp;amp; \sim N(0,\sigma^2)
 \end{align*}
 where the $\epsilon_i$ are iid. It is important to remember that the expectations, or means, of these variables are: $E[y_i] = \beta_0 + \beta_1 x_i$ and $E[\epsilon_i] = 0$. We will assume that there are $n$ data points and only 1 predictor. This is what makes it _simple_ linear regression. In more general linear regression models you have more than 1 predictor. In multivariate linear regression models you have more than one dependent variable as well. In addition to the predictor variable, we also have an intercept, or mean term, which can be thought of as a second predictor.&lt;/p&gt;
-&lt;h3 id=&#34;fitting-&#34;&gt;Fitting&lt;/h3&gt;
-&lt;h4 id=&#34;objective-function-&#34;&gt;Objective Function&lt;/h4&gt;
+&lt;h3 id=&#34;fitting&#34;&gt;Fitting&lt;/h3&gt;
+&lt;h4 id=&#34;objective-function&#34;&gt;Objective Function&lt;/h4&gt;
 &lt;p&gt;To fit a simple linear regression we first must choose a measure of fit. Here we will choose least squares, since this corresponds to 
 &lt;a href=&#34;/courses/qsci483/linear-regression/properties&#34;&gt;maximum likelihood esitmation&lt;/a&gt;
  in this model. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using our predictor $x_i$ for data point $i$ along with estimated coefficients $\hat{\beta}_0$ and $\hat{\beta}_1$:
@@ -61,7 +61,7 @@ f(\hat{\beta})
 &amp;amp; = \sum_{i=1}^n (\mbox{residual})^2 \\&lt;br&gt;
 &amp;amp; = \sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1)^2 \\&lt;br&gt;
 \end{align*}&lt;/p&gt;
-&lt;h4 id=&#34;optimization-&#34;&gt;Optimization&lt;/h4&gt;
+&lt;h4 id=&#34;optimization&#34;&gt;Optimization&lt;/h4&gt;
 &lt;p&gt;From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to both $\beta_0$ and $\beta_1$, to find the minimum sum of squared residuals (the &lt;em&gt;least squares&lt;/em&gt;). So let us take the partial derivative with respect to $\hat{\beta}_0$:
 \begin{align*}
 \dfrac{\partial f}{ \partial \hat{\beta}_0} }
@@ -127,13 +127,13 @@ I encourage you to try doing the same calculation with $S_{xx}$: you will find t
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0100</pubDate>
       <guid>/courses/qsci483/space-time/diagnostics/</guid>
       <description>&lt;p&gt;In this section I will outline the descriptive statistics that are used to diagnose point process deviations from homogeneity. A standard assumption in the analysis of point processes is that equal areas should have equal densities of points. However, this assumption is often violated. We can diagnose such violations using descriptive statistics such as Ripley&amp;rsquo;s $K$ and $L$ functions.&lt;/p&gt;
-&lt;h3 id=&#34;ripleys-k-function-&#34;&gt;Ripley&amp;rsquo;s $K$ function&lt;/h3&gt;
+&lt;h3 id=&#34;ripleys-k-function&#34;&gt;Ripley&amp;rsquo;s $K$ function&lt;/h3&gt;
 &lt;p&gt;This function is defined as
 $$
 \hat{K}(t) = \lambda^{-1}\sum_{i\neq j} \frac{I(d_{ij} &amp;lt; t)}{n}.
 $$&lt;/p&gt;
 &lt;p&gt;Here $\lambda$ is the averasge intensity of the point process, which we will usually estimate as $n/A$ where $n$ is the ttoal number of points and $A$ is the area in question. $I$ is the indicator function which is 1 if the argument is true and 0 if it is false. The summation can be thought of as calculating the fraction of all pairs which are within $t$ units of distance from each other. If points are homogeneous in two dimensions then, ignoring boundary effects, we can expect that each point will contain approximately $\lambda \pi t^2$ points within $t$ distance units of it. So we should expect $\hat{K}(t) \approx \pi t^2$.&lt;/p&gt;
-&lt;h3 id=&#34;ripleys-l-function-&#34;&gt;Ripley&amp;rsquo;s $L$ function&lt;/h3&gt;
+&lt;h3 id=&#34;ripleys-l-function&#34;&gt;Ripley&amp;rsquo;s $L$ function&lt;/h3&gt;
 &lt;p&gt;The $K$ function suffers from non-constant variance, which can make analyses difficult. Instead, we often use Ripley&amp;rsquo;s $L$ function, defined to be&lt;/p&gt;
 &lt;p&gt;$$
 \hat{L}(t) = \sqrt{\frac{\hat{K}(t)}{\pi}}.
@@ -152,7 +152,7 @@ $$&lt;/p&gt;
  document to clarify any confusing notation, and check out my 
 &lt;a href=&#34;/courses/qsci483/linear-regression/simple-linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
  document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.&lt;/p&gt;
-&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;h2 id=&#34;the-model&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Linear regression is based upon the equation
 $$
 y_i \sim N(X\beta,\sigma^2)
@@ -163,8 +163,8 @@ y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
 \epsilon_i &amp;amp; \sim N(0,\sigma^2)
 \end{align*}
 where the $\epsilon_i$ are iid. In the context of regression, it is important to remember that: $E[y_i] = X\beta$ and $E[\epsilon_i] = 0$. We will assume that there are $n$ data points and $k$ predictors. This $\beta$ is a $k\times 1$ vector, $X$ is a $n\times k$ matrix and $y$ and $\epsilon$ are $n\times 1$ vectors.&lt;/p&gt;
-&lt;h3 id=&#34;fitting-&#34;&gt;Fitting&lt;/h3&gt;
-&lt;h4 id=&#34;objective-function-&#34;&gt;Objective Function&lt;/h4&gt;
+&lt;h3 id=&#34;fitting&#34;&gt;Fitting&lt;/h3&gt;
+&lt;h4 id=&#34;objective-function&#34;&gt;Objective Function&lt;/h4&gt;
 &lt;p&gt;To fit a simple linear regression we choose a measure of fit: least squares. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using the $1\times k$ vector $x_i$ of predictors for data point $i$:
 $$
 \hat{y}_i = x_i\hat{\beta}.
@@ -191,7 +191,7 @@ We can expand this quadratic equation as
 f(\hat{\beta})
 &amp;amp; = y&amp;rsquo;y - y&amp;rsquo;X\hat{\beta} - \hat{\beta}&amp;lsquo;X&amp;rsquo;y + \hat{\beta}&amp;lsquo;X&amp;rsquo;X\hat{\beta}.
 \end{align*}&lt;/p&gt;
-&lt;h4 id=&#34;optimization-&#34;&gt;Optimization&lt;/h4&gt;
+&lt;h4 id=&#34;optimization&#34;&gt;Optimization&lt;/h4&gt;
 &lt;p&gt;From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to each $\beta_i$, to find the minimum sum of squared residuals (the &lt;em&gt;least squares&lt;/em&gt;). So let us take the partial derivative with respect to a particular coefficient:
 \begin{align*}
 \dfrac{\partial f}{ \partial \hat{\beta}_j}
@@ -222,13 +222,13 @@ We can derive this same equation in fewer steps using the more complex matrix ca
 \dfrac{\partial f}{ \partial \hat{\beta}}
 &amp;amp; = \dfrac{\partial }{ \partial \hat{\beta}}\left(y&amp;rsquo;y - y&amp;rsquo;X\hat{\beta} - \hat{\beta}&amp;lsquo;X&amp;rsquo;y + \hat{\beta}&amp;lsquo;X&amp;rsquo;X\hat{\beta}\right) \\&lt;br&gt;
 &amp;amp; = - \dfrac{\partial }{ \partial \hat{\beta}}\left(y&amp;rsquo;X\hat{\beta}\right) - \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&amp;lsquo;X&amp;rsquo;y\right) + \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&amp;lsquo;X&amp;rsquo;X\hat{\beta}\right) \\&lt;br&gt;
-&amp;amp; = -y&amp;rsquo;X-(X&amp;rsquo;y)&amp;lsquo;+\hat{\beta}&amp;lsquo;X&amp;rsquo;X + (X&amp;rsquo;X\hat{\beta})&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = -y&amp;rsquo;X-(X&amp;rsquo;y)&#39;+\hat{\beta}&amp;lsquo;X&amp;rsquo;X + (X&amp;rsquo;X\hat{\beta})&amp;rsquo; \\&lt;br&gt;
 &amp;amp; = -2(X&amp;rsquo;y - X&amp;rsquo;X\hat{\beta})&amp;rsquo; \\&lt;br&gt;
 &amp;amp; = 0.
 \end{align*}&lt;/p&gt;
 &lt;h3 id=&#34;important-quantities&#34;&gt;Important Quantities&lt;/h3&gt;
 &lt;p&gt;Now we have shown that the ordinary least squares estimator for $\beta$ is $(X&amp;rsquo;X)^{-1}X&amp;rsquo;y$. Using this we may calculate all sorts of other things.&lt;/p&gt;
-&lt;h4 id=&#34;predicted-values-&#34;&gt;Predicted Values&lt;/h4&gt;
+&lt;h4 id=&#34;predicted-values&#34;&gt;Predicted Values&lt;/h4&gt;
 &lt;p&gt;The predicted values are
 \begin{align*}
 \hat{y}
@@ -236,29 +236,29 @@ We can derive this same equation in fewer steps using the more complex matrix ca
 &amp;amp; = X(X&amp;rsquo;X)^{-1}X&amp;rsquo;y \\&lt;br&gt;
 &amp;amp; = Hy.
 \end{align*}
-Here we have defined the &amp;ldquo;hat matrix,&amp;rdquo; $H = X(X&amp;rsquo;X)^{-1}X&#39;$. This is a useful matrix in linear regression, which maps the data to its predicted values. This is sometimes also called the projection matrix $P$, since it projects the data onto a lower-dimensional linear space. It is sometimes also called the influence matrix. It has two nice properties which we will use in a moment: it is symmetric and idempotent. This means $H&#39;=H$ and $H^2 = H&amp;rsquo;H = H$. We can see this by calculating:
+Here we have defined the &amp;ldquo;hat matrix,&amp;rdquo; $H = X(X&amp;rsquo;X)^{-1}X&amp;rsquo;$. This is a useful matrix in linear regression, which maps the data to its predicted values. This is sometimes also called the projection matrix $P$, since it projects the data onto a lower-dimensional linear space. It is sometimes also called the influence matrix. It has two nice properties which we will use in a moment: it is symmetric and idempotent. This means $H&amp;rsquo;=H$ and $H^2 = H&amp;rsquo;H = H$. We can see this by calculating:
 \begin{align*}
 H&amp;rsquo; &amp;amp; = (X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = X(X&amp;rsquo;X)^{-1}X&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = X(X&amp;rsquo;X)^{-1}X&#39; \\&lt;br&gt;
 &amp;amp; = H \\&lt;br&gt;
-H^2 &amp;amp; = (X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)(X(X&amp;rsquo;X)^{-1}X&amp;rsquo;) \\&lt;br&gt;
-&amp;amp; = X(X&amp;rsquo;X)^{-1}(X&amp;rsquo;X)(X&amp;rsquo;X)^{-1}X&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = X(X&amp;rsquo;X)^{-1}X&amp;rsquo; \\&lt;br&gt;
+H^2 &amp;amp; = (X(X&amp;rsquo;X)^{-1}X&#39;)(X(X&amp;rsquo;X)^{-1}X&#39;) \\&lt;br&gt;
+&amp;amp; = X(X&amp;rsquo;X)^{-1}(X&amp;rsquo;X)(X&amp;rsquo;X)^{-1}X&#39; \\&lt;br&gt;
+&amp;amp; = X(X&amp;rsquo;X)^{-1}X&#39; \\&lt;br&gt;
 &amp;amp; = H
 \end{align*}&lt;/p&gt;
-&lt;h4 id=&#34;residuals-&#34;&gt;Residuals&lt;/h4&gt;
+&lt;h4 id=&#34;residuals&#34;&gt;Residuals&lt;/h4&gt;
 &lt;p&gt;The residuals are
 \begin{align*}
 \hat{\epsilon}
 &amp;amp; = y-\hat{y} \\&lt;br&gt;
 &amp;amp; = y-Hy \\&lt;br&gt;
 &amp;amp; = (I-H)y \\&lt;br&gt;
-&amp;amp; = (I-X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)y \\&lt;br&gt;
+&amp;amp; = (I-X(X&amp;rsquo;X)^{-1}X&#39;)y \\&lt;br&gt;
 &amp;amp; = My
 \end{align*}
 Here we have defined the &amp;ldquo;residual maker&amp;rdquo; matrix, which can also be called the residual operator. This matrix takes the data and gives you the residuals of the model. It also inherits symmetry and idempotency from the hat matrix, since:
 \begin{align*}
-M&amp;rsquo; &amp;amp; = (I-H)&amp;rsquo; \\&lt;br&gt;
+M&#39; &amp;amp; = (I-H)&#39; \\&lt;br&gt;
 &amp;amp; = I-H \\&lt;br&gt;
 M^2 &amp;amp; = (I-H)(I-H) \\&lt;br&gt;
 &amp;amp; = I - 2H + H^2 \\&lt;br&gt;
@@ -278,7 +278,7 @@ With all of this put together we now have the tools to analyze the
       <guid>/courses/qsci483/linear-regression/standard-error/</guid>
       <description>&lt;p&gt;A standard error is the estimated standard deviation $\hat{\sigma}$ for some variable. The residual standard error for linear regression is our estimate of the standard deviation of the noise $\epsilon$. Recall that we assume the noise is independent and heteroskedastic. This is important since it means we only need to estimate one single parameter for all of the noise variables.&lt;/p&gt;
 &lt;p&gt;We estimate the residual variance using the equation $$\hat{\sigma}^2 = \frac{1}{n-k}\sum \hat{\epsilon}_i^2.$$ You can think of the $n-k$ term as accounting for the fact that we have estimated $k$ parameters before making this estimate. Recall that we fit our model by minimizing the sum of squared residuals. So we&amp;rsquo;ve actually optimized this model to minimize exactly $\sum \hat{\epsilon}_i^2$. The more parameters we have to work with the better that optimization will be. So we would probably get an answer that was too small if we just calculated the mean $$\frac{1}{n}\sum \hat{\epsilon}_i^2.$$ Dividing by a smaller number $n-k$ accounts for this, making $\hat{\sigma}^2$ an unbiased estimator of the residual variance.&lt;/p&gt;
-&lt;h3 id=&#34;unbiasedness-&#34;&gt;Unbiasedness&lt;/h3&gt;
+&lt;h3 id=&#34;unbiasedness&#34;&gt;Unbiasedness&lt;/h3&gt;
 &lt;p&gt;We can see why this is by calculating the expectation of $\hat{\sigma}^2$. We won&amp;rsquo;t even both trying to avoid matrices in this derivation:
 \begin{align*}
 E[\hat{\sigma}^2]
@@ -292,7 +292,7 @@ where we have eliminated the cross terms since $E[\epsilon]=0$. Now we can calcu
 \begin{align*}
 X&amp;rsquo;MX
 &amp;amp; = X&amp;rsquo;(I-H)X \\&lt;br&gt;
-&amp;amp; = X&amp;rsquo;X - X&amp;rsquo;(X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)X \\&lt;br&gt;
+&amp;amp; = X&amp;rsquo;X - X&#39;(X(X&amp;rsquo;X)^{-1}X&#39;)X \\&lt;br&gt;
 &amp;amp; = X&amp;rsquo;X - X&amp;rsquo;X \\&lt;br&gt;
 &amp;amp; = 0
 \end{align*}
@@ -305,7 +305,7 @@ E[\hat{\sigma}^2]
 &amp;amp; = \frac{\sigma^2}{n-k}\mbox{tr}[I-H].
 \end{align*}
 Now, so long as $X$ is full rank (i.e. there are no redundant predictors) the hat matrix has trace $k$. This can be shown using complicated eigenvalue proofs that you can find on Google. Thus $\mbox{tr}[I-H] = \mbox{tr}[I]-\mbox{tr}[H] = n-k$. Thus indeed the $n-k$ term drops out and we find that $\hat{\sigma}^2$ is an unbiased estimator of the true residual variance.&lt;/p&gt;
-&lt;h3 id=&#34;distribution-&#34;&gt;Distribution&lt;/h3&gt;
+&lt;h3 id=&#34;distribution&#34;&gt;Distribution&lt;/h3&gt;
 &lt;p&gt;In fact, we have done more than show it is unbiased. Much of the algebra that we did actually did not depend on the outer expectation. We actually showed more generally that $$\hat{\sigma}^2 = \frac{1}{n-k}\epsilon&amp;rsquo;M\epsilon.$$ This is useful because it is a &lt;em&gt;quadratic form&lt;/em&gt;, as we described above. Quadratic forms over multivariate normal random vectors have nice properties which we will now derive. Specifically we will show that: $$\hat{\sigma}^2 \sim \frac{\sigma^2}{n-k}\chi^2_{n-k}.$$&lt;/p&gt;
 &lt;p&gt;This proof will involve some additional use of linear algebraic terms and assumptions. Specifically, we will use the fact that a symmetric matrix $A$ can be decomposed into $A = PDP^T$ for an &lt;em&gt;orthogonal&lt;/em&gt; (i.e. $P^2 = I$) matrix $P$ and a diagonal matrix $D$. Orthogonal matrices are nice because $\tilde{z} = Pz$, the product of an orthogonal matrix with a standard normal vector, is still a standard normal vector.&lt;/p&gt;
 &lt;p&gt;We will also use the fact that if $A$ is symmetric &lt;em&gt;and&lt;/em&gt; idempotent then all the diagonal entries are either 0 or 1. We will further use the fact that the number of entries that are 1 is equal to the trace of $A$. Since $M$ is symmetric and idempotent we will use all these properties to show:
@@ -331,7 +331,7 @@ Now, so long as $X$ is full rank (i.e. there are no redundant predictors) the ha
  and 
 &lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
  before diving in.&lt;/p&gt;
-&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;h2 id=&#34;the-model&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Recall that linear regression is based upon the equation:
 $$
 y_i \sim N(X\beta,\sigma^2)
@@ -342,7 +342,7 @@ y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
 \epsilon_i &amp;amp; \sim N(0,\sigma^2)
 \end{align*}
 where the $\epsilon_i$ are iid. We have previously found that the estimate $\hat{\beta} = (X&amp;rsquo;X)^{-1}Xy$ minimizes the sum of squares. In this document we will show: (1) that $\hat{\beta}$ is also the maximum likelihood estimator, (2) that $\hat{\beta}$ is unbiased, and (3) the covariance matrix for the estimator $\hat{\beta}$.&lt;/p&gt;
-&lt;h3 id=&#34;maximum-likelihood-&#34;&gt;Maximum Likelihood&lt;/h3&gt;
+&lt;h3 id=&#34;maximum-likelihood&#34;&gt;Maximum Likelihood&lt;/h3&gt;
 &lt;p&gt;Our probability model has that $y_i$ are normally distributed, and are independent of each other given the predictors $X$ and the coefficients $\beta$. The &lt;em&gt;likelihood function&lt;/em&gt; is given by the probability (density) of the data given the parameters ($\beta$), expressed as a function of the parameter estimate ($\hat{\beta}$). This function in our case can be written as a product of Gaussian (normal) probability density functions (pdfs):
 \begin{align*}
 \ell(\hat{\beta}) &amp;amp; = \prod_{i=1}^n N(y_i|X\hat{\beta},\sigma^2) \\&lt;br&gt;
@@ -365,32 +365,32 @@ Therefore the maximum likelihood estimator (MLE) of $\hat{\beta}$ is exactly the
 \begin{align*}
 \hat{\sigma^2}
 &amp;amp; = \frac{1}{n}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\&lt;br&gt;
-&amp;amp; = \frac{1}{n}y&amp;rsquo;(I-X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)y.
+&amp;amp; = \frac{1}{n}y&#39;(I-X(X&amp;rsquo;X)^{-1}X&#39;)y.
 \end{align*}&lt;/p&gt;
-&lt;h3 id=&#34;unbiasedness-&#34;&gt;Unbiasedness&lt;/h3&gt;
+&lt;h3 id=&#34;unbiasedness&#34;&gt;Unbiasedness&lt;/h3&gt;
 &lt;p&gt;It is important to remember that estimators (such as $\hat{\beta}) are themselves &lt;em&gt;random&lt;/em&gt;. If we were to simulate from our model, holding $\beta$ fixed, we would fit a different estimator $\hat{\beta}$ to every simulation. Thus an important quality that an estimator can have is &lt;em&gt;unbiasedness&lt;/em&gt;. This means that, if the model is correct, the estimator will neither tend to overestimate nor underestimate the true parameter. In mathematical terms, its expectation (or mean) is correct: $E[\hat{\beta}] = \beta$.&lt;/p&gt;
 &lt;p&gt;Using our matrix math this property can be derived fairly quickly. We know that $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$. We also know that $y = X\beta + \epsilon$. Putting these together we see:
 \begin{align*}
 \hat{\beta}
-&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;(X\beta + \epsilon) \\&lt;br&gt;
-&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;X\beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon \\&lt;br&gt;
-&amp;amp; = \beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon.
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&#39;(X\beta + \epsilon) \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;X\beta + (X&amp;rsquo;X)^{-1}X&#39;\epsilon \\&lt;br&gt;
+&amp;amp; = \beta + (X&amp;rsquo;X)^{-1}X&#39;\epsilon.
 \end{align*}
 Therefore the mean is
 \begin{align*}
 E[\hat{\beta}]
-&amp;amp; = E\left[\beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon\right].
+&amp;amp; = E\left[\beta + (X&amp;rsquo;X)^{-1}X&#39;\epsilon\right].
 \end{align*}
 The mean has a useful property which we will use here, which is that it is _linear_. This means that the expectation of a sum is the sum of the expectations. In math we write this as $E[A+B] = E[A] + E[B]$. Since matrix operations are essentially just a bunch of sums, we can also write $E[Mv] = ME[v]$, if $v$ is random and $M$ is constant. Using this property we get
 \begin{align*}
 E[\hat{\beta}]
-&amp;amp; = E\left[\beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon\right] \\&lt;br&gt;
-&amp;amp; = \beta + E\left[(X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon\right] \\&lt;br&gt;
+&amp;amp; = E\left[\beta + (X&amp;rsquo;X)^{-1}X&#39;\epsilon\right] \\&lt;br&gt;
+&amp;amp; = \beta + E\left[(X&amp;rsquo;X)^{-1}X&#39;\epsilon\right] \\&lt;br&gt;
 &amp;amp; = \beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;E[\epsilon] \\&lt;br&gt;
 &amp;amp; = \beta
 \end{align*}
 since we have assumed that $\epsilon$ is zero-mean noise. So, in fact, our estimator is unbiased!&lt;/p&gt;
-&lt;h3 id=&#34;covariance-of-hatbeta-&#34;&gt;Covariance of $\hat{\beta}$&lt;/h3&gt;
+&lt;h3 id=&#34;covariance-of-hatbeta&#34;&gt;Covariance of $\hat{\beta}$&lt;/h3&gt;
 &lt;p&gt;Remember that $\hat{\beta}$ is fundamentally a &lt;em&gt;random&lt;/em&gt; quantity. It is different in every realization (or simulation) of the statistical model we have written down. It is sensitive to the addition of random noise ($\epsilon_{i}$) to the data. Luckily, since we have written down a statistical model for our data $y$ we are able to do a statistical analysis for the estimator $\hat{\beta}$ to determine its random properties.&lt;/p&gt;
 &lt;p&gt;We showed in the previous section that $\hat{\beta}$ was unbiased, that is, it has its mean $E[\hat{\beta}] = \beta$ at the correct place. We will now calculate the variance-covariance (or just covariance) matrix of $\hat{\beta}$. This tells us how much we can expect $\hat{\beta}$ to vary for different datasets. The &lt;em&gt;diagonal&lt;/em&gt; of this covariance matrix tells us the variances of $\hat{\beta}_{i}$, which are important quantities that get used, for example, in calculating Rs model summaries.&lt;/p&gt;
 &lt;p&gt;The covariance of two random variables is given by $E[(A-E[A])(B-E[B])]$. In our case $A = \hat{\beta}_{i}$ and $B = \hat{\beta}_{j}$. This will give us the entry $\Sigma_{ij}$ in the covariance matrix. We already know that $E[\hat{\beta}_{i}] = \beta_{i}$ since the estimators are unbiased. Therefore the covariance is
@@ -416,44 +416,44 @@ Since we know that the estimator is unbiased we can plug this into the matrix eq
 \begin{align*}
 \Sigma
 &amp;amp; = E\left[(\hat{\beta} - \beta)(\hat{\beta}-\beta)&#39;\right] \\&lt;br&gt;
-&amp;amp; = E\left[\hat{\beta}\hat{\beta}&#39;\right] - \beta\beta&amp;rsquo;.
+&amp;amp; = E\left[\hat{\beta}\hat{\beta}&#39;\right] - \beta\beta&#39;.
 \end{align*}
 This is exactly the same formula we have above, just written in matrix notation. Now, we already have a formula for $\hat{\beta}$ in matrix notation, $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$, so let&amp;rsquo;s plug this in here. We get
 \begin{align*}
 \Sigma
-&amp;amp; = E\left[(X&amp;rsquo;X)^{-1}X&amp;rsquo;yy&amp;rsquo;X(X&amp;rsquo;X)^{-1}\right] - \beta\beta&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo; E[yy&amp;rsquo;] X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo;.
+&amp;amp; = E\left[(X&amp;rsquo;X)^{-1}X&amp;rsquo;yy&amp;rsquo;X(X&amp;rsquo;X)^{-1}\right] - \beta\beta&#39; \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&#39; E[yy&#39;] X(X&amp;rsquo;X)^{-1} - \beta\beta&#39;.
 \end{align*}
 Now we can plug in our formula for $y = X\beta + \epsilon$. Remembering that expectations are linear (i.e. can be split up over summations), we get
 \begin{align*}
-E[yy&amp;rsquo;]
+E[yy&#39;]
 &amp;amp; = E\left[(X\beta + \epsilon)(X\beta+\epsilon)&#39;\right] \\&lt;br&gt;
-&amp;amp; = E\left[X\beta\beta&amp;rsquo;X&amp;rsquo; + \epsilon X\beta + \beta&amp;rsquo;X&amp;rsquo;\epsilon + \epsilon\epsilon&amp;rsquo;\right] \\&lt;br&gt;
-&amp;amp; = X\beta\beta&amp;rsquo;X&amp;rsquo; + E[\epsilon]X\beta + \beta&amp;rsquo;X&amp;rsquo;E[\epsilon] + E[\epsilon\epsilon&amp;rsquo;]
+&amp;amp; = E\left[X\beta\beta&amp;rsquo;X&#39; + \epsilon X\beta + \beta&amp;rsquo;X&#39;\epsilon + \epsilon\epsilon&#39;\right] \\&lt;br&gt;
+&amp;amp; = X\beta\beta&amp;rsquo;X&#39; + E[\epsilon]X\beta + \beta&amp;rsquo;X&amp;rsquo;E[\epsilon] + E[\epsilon\epsilon&#39;]
 \end{align*}
-Now we already know that $E[\epsilon] = 0$. What about $E[\epsilon\epsilon&amp;rsquo;]$? Well,
+Now we already know that $E[\epsilon] = 0$. What about $E[\epsilon\epsilon&#39;]$? Well,
 $$
 \mbox{cov}(\epsilon_i,\epsilon_j) = E[\epsilon_i\epsilon_j] - E[\epsilon_i]E[\epsilon_j] = E[\epsilon_i\epsilon_j].
 $$
 Since independent variables are uncorrelated (and we know that the $\epsilon_i$ are iid) we see that this matrix is diagonal with entries equal to $\sigma^2$, the variance of $\epsilon_i$. Thus:
 $$
-E[yy&amp;rsquo;] = X\beta\beta&amp;rsquo;X&amp;rsquo; + \sigma^2I.
+E[yy&#39;] = X\beta\beta&amp;rsquo;X&#39; + \sigma^2I.
 $$
 Finally, plugging this in, we can find that
 \begin{align*}
-\Sigma &amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo; E[yy&amp;rsquo;] X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;(X\beta\beta&amp;rsquo;X&amp;rsquo; + \sigma^2I)X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = (X&amp;rsquo;X)^{-1}(X&amp;rsquo;X)\beta\beta&amp;rsquo;(X&amp;rsquo;X)(X&amp;rsquo;X)^{-1} + (X&amp;rsquo;X)^{-1}X&amp;rsquo;(\sigma^2I)X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = \beta\beta&amp;rsquo; + \sigma^2(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
+\Sigma &amp;amp; = (X&amp;rsquo;X)^{-1}X&#39; E[yy&#39;] X(X&amp;rsquo;X)^{-1} - \beta\beta&#39; \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&#39;(X\beta\beta&amp;rsquo;X&#39; + \sigma^2I)X(X&amp;rsquo;X)^{-1} - \beta\beta&#39; \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}(X&amp;rsquo;X)\beta\beta&#39;(X&amp;rsquo;X)(X&amp;rsquo;X)^{-1} + (X&amp;rsquo;X)^{-1}X&#39;(\sigma^2I)X(X&amp;rsquo;X)^{-1} - \beta\beta&#39; \\&lt;br&gt;
+&amp;amp; = \beta\beta&#39; + \sigma^2(X&amp;rsquo;X)^{-1} - \beta\beta&#39; \\&lt;br&gt;
 &amp;amp; = \sigma^2(X&amp;rsquo;X)^{-1}.
 \end{align*}
 This is the covariance matrix of $\hat{\beta}$! Notably, this has two important properties. One, it depends on $\sigma^2$, so if we want to use this we had better estimate $\sigma^2$ somehow. More on this in the next section. Two, it depends on the _inverse_ of $X&amp;rsquo;X$. There&amp;rsquo;s no guarantee that this matrix is invertible. For example, if we have more predictors than we have data points (i.e. $k &amp;gt; n$) this matrix will certainly _not_ be invertible. You may have been warned about this scenario in the past. However, even if you have many data points, other situations can crop up where $X&amp;rsquo;X$ is either numerically difficult to invert (i.e. difficult to calculate on a computer), or produces very large variances. One such case is where two of the predictor variables are very highly correlated. More on this later.&lt;/p&gt;
-&lt;h3 id=&#34;other-quantities-&#34;&gt;Other Quantities&lt;/h3&gt;
+&lt;h3 id=&#34;other-quantities&#34;&gt;Other Quantities&lt;/h3&gt;
 &lt;p&gt;Here we will show briefly that $\hat{y}$ is also unbiased (assuming the model is correct). This can be seen by some matrix calculations:
 \begin{align*}
 E[\hat{y}]
 &amp;amp; = E[Hy] \\&lt;br&gt;
-&amp;amp; = E[X(X&amp;rsquo;X)^{-1}X&amp;rsquo;(X\beta+\epsilon)] \\&lt;br&gt;
+&amp;amp; = E[X(X&amp;rsquo;X)^{-1}X&#39;(X\beta+\epsilon)] \\&lt;br&gt;
 &amp;amp; = E[X\beta + H\epsilon] \\&lt;br&gt;
 &amp;amp; = X\beta + HE[\epsilon] \\&lt;br&gt;
 &amp;amp; = X\beta.
@@ -487,9 +487,9 @@ y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
 \end{align*}
 where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&amp;rsquo;X)^{-1}$.&lt;/p&gt;
 &lt;h2 id=&#34;measures-of-fit&#34;&gt;Measures of Fit&lt;/h2&gt;
-&lt;h3 id=&#34;the-t-statistic-&#34;&gt;The $t$ statistic&lt;/h3&gt;
+&lt;h3 id=&#34;the-t-statistic&#34;&gt;The $t$ statistic&lt;/h3&gt;
 &lt;p&gt;The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\hat{\sigma}(\hat{\beta}_i)$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Furthermore, $\hat{\sigma}(\hat{\beta}_i)$, the standard error for this estimate, is a product of the standard error $\hat{\sigma}(\epsilon)$ and the analytical standard deviation of $\beta_i$ (for $\sigma = 1$) which is just the $\sqrt{(X&amp;rsquo;X)^{-1}_{ii}}$. The important thing is we have a normal variable and its standard error, and therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).&lt;/p&gt;
-&lt;h3 id=&#34;the-f-statistic-&#34;&gt;The $F$ statistic&lt;/h3&gt;
+&lt;h3 id=&#34;the-f-statistic&#34;&gt;The $F$ statistic&lt;/h3&gt;
 &lt;p&gt;The $F$ test for the overall model is a formal test with hypothesis:
 \begin{align*}
 H_0: &amp;amp; ~~~\beta_i = 0 \mbox{ for all } i \\&lt;br&gt;
@@ -512,7 +512,7 @@ Notably we will be assuming that there _is_ still a non-zero constant mean term 
 &lt;li&gt;This is basically how much extra variation from the mean the model explains&lt;/li&gt;
 &lt;li&gt;SSM~$ = \sum_{i=1}^n (\hat{y}_i - \overline{y})^2$&lt;/li&gt;
 &lt;li&gt;This turns out to &lt;em&gt;also&lt;/em&gt; be a $\chi^2$ random variable&lt;/li&gt;
-&lt;li&gt;We can prove this using the same basic argument. Let $J = 11^T$ be a matrix of all 1s. Then: $$\mbox{SSM} = y&amp;rsquo;(H-\frac{1}{n} J)&#39;(H-\frac{1}{n} J)y.$$ However $H - \frac{1}{n}J$ is symmetric and idempotent, with rank $k-1$. Thus SSM$\sim \chi^2_{k-1}$ following the same logic from 
+&lt;li&gt;We can prove this using the same basic argument. Let $J = 11^T$ be a matrix of all 1s. Then: $$\mbox{SSM} = y&#39;(H-\frac{1}{n} J)&#39;(H-\frac{1}{n} J)y.$$ However $H - \frac{1}{n}J$ is symmetric and idempotent, with rank $k-1$. Thus SSM$\sim \chi^2_{k-1}$ following the same logic from 
 &lt;a href=&#34;../standard-error&#34;&gt;before&lt;/a&gt;
 .&lt;/li&gt;
 &lt;/ul&gt;
@@ -527,7 +527,7 @@ Remarkably SSE+SSM=SST, which can be used as an elementary proof that SST is $\c
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;TODO: what is an ANOVA?&lt;/p&gt;
-&lt;h4 id=&#34;variance-decomposition-&#34;&gt;Variance Decomposition&lt;/h4&gt;
+&lt;h4 id=&#34;variance-decomposition&#34;&gt;Variance Decomposition&lt;/h4&gt;
 &lt;p&gt;We can think about the variance decomposition several ways. The simplest proof is geometric in nature but requires jumping through some linear-subspace hoops. We can think about three points in $\mathbb{R}^n$, $n$-dimensional space where our datapoints $y$ live. One point is just the data vector $y$. Another point is $\hat{y}_i = \hat{y}_i$ a third point is $\overline{y}_i = \overline{y}$. We can also define $k$ vectors in this space, corresponding to the values of our predictors $x^{(j)}_i = X_{ij}$. These $k$ vectors define a $k$-dimensional linear subspace of $\mathbb{R}^n$ (which you can think of as $X\beta$ for all of the possible $k$-dimensional values of $\beta$. The prediction vector $\hat{y}$ is nothing but the projection of $y$ onto the closest point of this subspace. Since one of the predictors is the mean (i.e. $X_{i1} = 1$) the mean point $\hat{y}$ falls &lt;em&gt;inside&lt;/em&gt; this linear subspace. This gives us the following geometric intuition:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The mean is in the subspace&lt;/li&gt;
@@ -539,7 +539,7 @@ Therefore we can apply the Pythagorean theorem, to find that the squared distanc
 &lt;/ul&gt;
 &lt;p&gt;We can also think about the variance decomposition in terms of raw linear algebra and matrices: TODO&lt;/p&gt;
 &lt;p&gt;A common &lt;em&gt;mistake&lt;/em&gt; made in deriving the variance decomposition is noting that $$(y_i - \hat{y}_i) + (\hat{y}_i - \overline{y}) = (y_i-\overline{y}).$$ The &lt;em&gt;false&lt;/em&gt; argument then goes: square the terms and sum and the equality holds. However, as you likely know $A+B=C$ does &lt;em&gt;not&lt;/em&gt; imply that $A^2+B^2=C^2$. We require the additional structure of linear algebra and/or geometry to obtain this result&lt;/p&gt;
-&lt;h4 id=&#34;back-to-the-f-test-&#34;&gt;Back to the $F$ test&lt;/h4&gt;
+&lt;h4 id=&#34;back-to-the-f-test&#34;&gt;Back to the $F$ test&lt;/h4&gt;
 &lt;p&gt;We can now adjust SSE and SSM to get the &amp;ldquo;mean sum of squares,&amp;rdquo; by dividing by the degrees of freedom:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;MSE = SSE$/(n-k)$&lt;/li&gt;
@@ -547,15 +547,15 @@ Therefore we can apply the Pythagorean theorem, to find that the squared distanc
 Finally, our test statistic is $F = \mbox{MSM}/\mbox{MSE}$. In order for this to be a valid $F$ statistic, SSM and SSE must be independent. This turns out to be true but I will not prove it here (TODO).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Note that if the model explains a lot more variation than just the mean we expect for MSE to be small and MSM to be large: make sure this make sense to you. So if the model is &amp;ldquo;real&amp;rdquo; then we expect $F$ to be large. If the null hypothesis is true then we expect $F$ to be small. So we reject the null for large values of $F$.&lt;/p&gt;
-&lt;h3 id=&#34;the-r2-&#34;&gt;The $R^2$&lt;/h3&gt;
+&lt;h3 id=&#34;the-r2&#34;&gt;The $R^2$&lt;/h3&gt;
 &lt;p&gt;There are numerous ways to calculate different versions of $R^2$ but at the end of the day they all boil down to correlation coefficients: the correlation $R$ between the predictors and the response variable. We square it because this gives us a measure of the proportion of variance explained by the predictors.&lt;/p&gt;
-&lt;h4 id=&#34;basic-r2-&#34;&gt;Basic $R^2$&lt;/h4&gt;
+&lt;h4 id=&#34;basic-r2&#34;&gt;Basic $R^2$&lt;/h4&gt;
 &lt;p&gt;The most basic version of this statistic is just the correlation coefficient between the the predictors and the response. It is also known as the coefficient of determination. It is calculated as $SSM/SST$. This gives it the nice interpretation of being the ratio of &amp;ldquo;variance explained by the model&amp;rdquo; to &amp;ldquo;total variance around the mean.&amp;rdquo; It can also be defined mathematically as the square of the Pearson correlation coefficient between $y$ and $\hat{y}$:
 \begin{align*}
 R^2 &amp;amp; = \left(\frac{\sum_{i=1}^n (y_i-\overline{y})(\hat{y}_i - \overline{y})}{\sqrt{\sum_{i=1}^n (y_i-\overline{y})^2}\sqrt{\sum_{i=1}^n (\hat{y}_i - \overline{y})^2}}\right)^2
 \end{align*}&lt;/p&gt;
 &lt;p&gt;However, the raw $R^2$ calculation has some problems as a measure of model fit. For one thing, $R^2$ &lt;em&gt;always&lt;/em&gt; increases whenever you add a new predictor. This is because $\hat{y}$ will always get closer to $y$ as our minimization procedure gains degrees of freedom to find the &amp;ldquo;best fit.&amp;rdquo; Basically this means that $R^2$ does not penalize overfitting. As we add more and more predictors to our model $R^2$ will just keep getting better and better and will fit coefficients that are highly dependent on the random noise. So we need something better.&lt;/p&gt;
-&lt;h4 id=&#34;adjusted-r2-&#34;&gt;Adjusted $R^2$&lt;/h4&gt;
+&lt;h4 id=&#34;adjusted-r2&#34;&gt;Adjusted $R^2$&lt;/h4&gt;
 &lt;p&gt;The adjusted $R^2$ tries to account for overfitting by decreasing the original $R^2$ statistic. There are two formulas we can use for the adjusted $R^2$ (which we will denote $\overline{R}^2$):
 \begin{align*}
 \overline{R}^2
@@ -569,10 +569,10 @@ R^2 &amp;amp; = \frac{\mbox{SSM}}{\mbox{SST}} \\&lt;br&gt;
 &amp;amp; = 1 - \frac{\mbox{SSE}/n}{\mbox{SST}/n}.
 \end{align*}
 One way of thinking about $\overline{R}^2$ is that the original (un-adjusted) $R^2$ was using biased estimates $\frac{\mbox{SSE}}{n}$ and $\frac{\mbox{SST}}{n}$ which need to be adjusted for their degrees of freedom $n-k-1$ and $n-1$. TODO(what is SST/n an estimate of).&lt;/p&gt;
-&lt;h2 id=&#34;residuals-&#34;&gt;Residuals&lt;/h2&gt;
-&lt;h3 id=&#34;standardizing-&#34;&gt;Standardizing&lt;/h3&gt;
+&lt;h2 id=&#34;residuals&#34;&gt;Residuals&lt;/h2&gt;
+&lt;h3 id=&#34;standardizing&#34;&gt;Standardizing&lt;/h3&gt;
 &lt;p&gt;Frequently when evaluating a model we will plot residuals against other things. Often when we do this we will standardize the residuals by dividing $\hat{\epsilon}_i$ by the residual standard error $\hat{\sigma}$. However, this is not necessarily the best way to achieve our goal of truly standardizing the residuals. The issue is that the &lt;em&gt;residuals&lt;/em&gt; are different from the &lt;em&gt;errors&lt;/em&gt;. Although the errors have equal variance, the residuals actually do not. This can be seen by remembering that: $\hat{\epsilon} = M\epsilon$. Thus, in reality the residuals are correlated and have different variances from one another.&lt;/p&gt;
-&lt;h3 id=&#34;studentizing-&#34;&gt;Studentizing&lt;/h3&gt;
+&lt;h3 id=&#34;studentizing&#34;&gt;Studentizing&lt;/h3&gt;
 &lt;p&gt;Luckily we can account for this. The way we do this is by &amp;ldquo;studentizing&amp;rdquo; the residuals. There are several formulas we can use to represent this, but basically it boils down to the fact that $\hat{\epsilon} \sim N(0,\sigma^2M)$. Thus the true variance of $\hat{\epsilon}_i$ is not $\sigma^2$ but $\sigma^2M_{ii}$. Thus we can studentize by calculating
 $$t_i = \frac{\hat{\epsilon}_i}{\hat{\sigma}(\epsilon)\sqrt{M_{ii}}}.$$
 We can equivalently express this in terms of the 
@@ -580,7 +580,7 @@ We can equivalently express this in terms of the
  as
 $$t_i = \frac{\hat{\epsilon}_i}{\hat{\sigma}(\epsilon)\sqrt{1-h_{ii}}}.$$
 TODO: some more on this&lt;/p&gt;
-&lt;h3 id=&#34;deleting-&#34;&gt;Deleting&lt;/h3&gt;
+&lt;h3 id=&#34;deleting&#34;&gt;Deleting&lt;/h3&gt;
 &lt;p&gt;Since outliers may have outsized influence on the model fit (see the 
 &lt;a href=&#34;#measures-of-influence&#34;&gt;next section&lt;/a&gt;
  we may want a more robust statistic for estimating the residuals. We can generate this by considering the &lt;em&gt;deleted residuals&lt;/em&gt;, or the residuals when comparing a data point to the model fitted &lt;em&gt;without that data point&lt;/em&gt;. We denote the vector of these as residuals $\hat{y}_{(i)}$ and a particular residual as $\hat{y}_{j(i)}$. The deleted residuals are expressed as:
@@ -612,13 +612,13 @@ d_i &amp;amp; = y_i - \hat{y}_{i(i)} \\&lt;br&gt;
 &amp;amp; = \hat{\epsilon_i}\left(1 - \frac{h_{ii}}{1-h_{ii}}\right) \&lt;br&gt;
 &amp;amp; = \frac{1-2h_{ii}}{1-h_{ii}}\hat{\epsilon}_i
 \end{align*}&lt;/p&gt;
-&lt;h2 id=&#34;measures-of-influence-&#34;&gt;Measures of Influence&lt;/h2&gt;
+&lt;h2 id=&#34;measures-of-influence&#34;&gt;Measures of Influence&lt;/h2&gt;
 &lt;p&gt;One other way of evaluating a regression fit is by considering the influence of each point. An unfortunate side effect of the least squares criterion is that it punishes point that are &lt;em&gt;very far&lt;/em&gt; away from the fit more than it punishes points that are &lt;em&gt;kinda far&lt;/em&gt; away from the fit. Basically this means that outliers are very influential. We can assess precisely how influential in a variety of ways.&lt;/p&gt;
-&lt;h3 id=&#34;leverage-&#34;&gt;Leverage&lt;/h3&gt;
+&lt;h3 id=&#34;leverage&#34;&gt;Leverage&lt;/h3&gt;
 &lt;p&gt;One of the most popular ways of assessing this infuence is with the &lt;em&gt;leverage&lt;/em&gt;. The leverage is defined as a measure of &amp;ldquo;observation self-sensitivity.&amp;rdquo; It is defined as the partial derivative: $h_{ii} = \dfrac{\partial \hat{y}_i}{\partial y_i}$. That is, how quickly does the predicted value change as the data point changes. This can be easily calculated from our equation for the predicted values: $\hat{y} = Hy$ so that we can see that $h_{ii}$ is in fact just the $ii$-th entry of the hat matrix.&lt;/p&gt;
 &lt;p&gt;Moreover we can show (TODO) that the leverage is bounded: $0\leq h_{ii}\leq 1$. So the predicted value will always increase when the datapoint increases, but will never increase quite as fast. That fits our intuition that predictions should be consistent with the data, but that no one data point should completely determine the fit.&lt;/p&gt;
 &lt;p&gt;Because least-squares is so sensitive to outliers, observations with leverages close to 1, or much larger than all the other leverages, should be suspect and might be considered outliers.&lt;/p&gt;
-&lt;h3 id=&#34;cooks-distance-&#34;&gt;Cook&amp;rsquo;s Distance&lt;/h3&gt;
+&lt;h3 id=&#34;cooks-distance&#34;&gt;Cook&amp;rsquo;s Distance&lt;/h3&gt;
 &lt;p&gt;Another way of assessing influence is with the Cook&amp;rsquo;s distance. This estimates the effect of deleting a particular observation. It is defined to be $D_i$: the squared distance between the predictions $\hat{y}$ and the predictions $\hat{y}_{(i)}$ when observation $i$ is removed from the sample, divided by $k$ times the mean squared error. In math: $$D_i = \frac{\sum_{j= 1}^n (\hat{y}_j - \hat{y}_{j(i)})^2}{k\hat{\sigma^2}}.$$&lt;/p&gt;
 &lt;p&gt;Therefore the Cook&amp;rsquo;s distance can also be expressed as
 \begin{align*}
@@ -626,7 +626,7 @@ D_i &amp;amp; = \frac{\sum_{j= 1}^n (\hat{y}_j - \hat{y}_{j(i)})^2}{k\hat{\sigma
 &amp;amp; = \frac{\left(\frac{\hat{\epsilon}_i}{1-h_{ii}}\right)^2h_i&amp;rsquo;h_i}{k\hat{\sigma}^2} \\&lt;br&gt;
 &amp;amp; = \frac{\hat{\epsilon}_i}{k\hat{\sigma}^2}\frac{h_{ii}}{(1-h_{ii})^2}
 \end{align*}&lt;/p&gt;
-&lt;h3 id=&#34;dffits-&#34;&gt;DFFITS&lt;/h3&gt;
+&lt;h3 id=&#34;dffits&#34;&gt;DFFITS&lt;/h3&gt;
 &lt;p&gt;A third measure of influence is DFFITS (which may stand for Difference of Fits). It is sort of like a cross between leverage and Cook&amp;rsquo;s distance. Like leverage, it is a measure of self-sensitivity, but like Cook&amp;rsquo;s distance it uses the predictions when a point is left out. The actual mathematical definition is:
 $$\mbox{DFFITS}_i = \frac{\hat{y}_i - \hat{y}_{i(i)}}{s_{(i)}\sqrt{h_{ii}}},$$
 where $\hat{y}_{i(i)}$ is the predicted value for $y_i$ when $y_i$ is removed from the dataset and $s_{(i)}$ is the standard error estimated without $y_i$.&lt;/p&gt;
@@ -635,14 +635,14 @@ $$D_i = \frac{\mbox{DFFITS}^2_i\hat{\sigma^2}_{(i)}}{k\hat{\sigma^2}}.$$
 In particular except for very small datasets the mean squared error should not change too much when data point $i$ is remove, so the approximate relationship
 $$D_i \approx \frac{\mbox{DFFITS}_i^2}{k}$$
 holds.&lt;/p&gt;
-&lt;h2 id=&#34;normality-&#34;&gt;Normality&lt;/h2&gt;
-&lt;h3 id=&#34;moments-&#34;&gt;Moments&lt;/h3&gt;
+&lt;h2 id=&#34;normality&#34;&gt;Normality&lt;/h2&gt;
+&lt;h3 id=&#34;moments&#34;&gt;Moments&lt;/h3&gt;
 &lt;p&gt;A common way of quantifying a statistical distribution is with its &lt;em&gt;moments&lt;/em&gt;. These are defined to be the expectations $E[X], E[X^2], E[X^3], $ and so on ($E[X^i]$ in general). The central moments are defined to be $E[(X-\mu)^i]$ and the standardized moments are $E\left[\left(\frac{X-\mu}{\sigma}\right)^i\right]$. The normal distribution is entirely defined by its first and second moments. In particular its third standardized moment (its &lt;em&gt;skewness&lt;/em&gt;) is 0 and its fourth standardized moment (its &lt;em&gt;kurtosis&lt;/em&gt;) is 3. By calculating the sample skewness and sample kurtosis we can heuristically evaluate whether the residuals from our model seem to follow a normal distribution.&lt;/p&gt;
-&lt;h3 id=&#34;shapiro-wilk-&#34;&gt;Shapiro-Wilk&lt;/h3&gt;
+&lt;h3 id=&#34;shapiro-wilk&#34;&gt;Shapiro-Wilk&lt;/h3&gt;
 &lt;p&gt;We can apply a more formal test of normality using the Shapiro-Wilk test. This test statistic is defined by considering the &lt;em&gt;order statistics&lt;/em&gt; $x_{(i)}$ from a sample and calculating:
 $$W = \frac{\left(\sum_{i=1}^n a_ix_{(i)}\right)^2}{\sum_{i=1}^n (x_i-\overline{x})^2}.$$
 The coefficients $a_i$ are obtained as the vector $\frac{V^{-1}m}{C}$ where $m$ is the expected values of the order statistics for iid standard normal random variables, and $V$ is the covariance matrix for those order statistics. $C$ is the length of the vector $V^{-1}m$. There is no classical distribution that fits $W$, so testing is usually done using simulation methods.&lt;/p&gt;
-&lt;h2 id=&#34;heteroskedasticity-&#34;&gt;Heteroskedasticity&lt;/h2&gt;
+&lt;h2 id=&#34;heteroskedasticity&#34;&gt;Heteroskedasticity&lt;/h2&gt;
 &lt;p&gt;The most common way of testing for heteroskedaticity is the Breusch-Pagan test (implemented in R as ncv.test). This tests whether the variance of the residuals is dependent on the values of the predictors. This tests works by conducting regression as ordinary and calculating the residuals $\hat{\epsilon}$. Then we consider the possibility that the square of the residuals $\hat{\epsilon}^2$ depends upon the predictors. We test this by fitting a new linear model: $$\hat{\epsilon}^2 = X\gamma + \eta.$$
 The test statistic is $nR^2$ where $R^2$ is the coefficient of determination for the second model. Under the null hypothesis that the predictors have no effect. this test statistic is distributed $\chi^2_{k-1}$. (TODO: why?)&lt;/p&gt;
 </description>

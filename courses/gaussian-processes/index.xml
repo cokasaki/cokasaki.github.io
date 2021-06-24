@@ -17,24 +17,24 @@
       <link>/courses/gaussian-processes/notation/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
       <guid>/courses/gaussian-processes/notation/</guid>
-      <description>&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;matrixvector-notation&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
 &lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
-&lt;h2 id=&#34;matrix-calculus-&#34;&gt;Matrix Calculus&lt;/h2&gt;
+&lt;h2 id=&#34;matrix-calculus&#34;&gt;Matrix Calculus&lt;/h2&gt;
 &lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
  or in the more extensive 
 &lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
 .&lt;/p&gt;
-&lt;h2 id=&#34;gaussian-process-notation-&#34;&gt;Gaussian Process Notation&lt;/h2&gt;
-&lt;p&gt;I will write $f \sim GP(\mu(x),k(x,x&amp;rsquo;))$ to denote a Gaussian process with mean function $\mu$ and covariance function (kernel) $k(x,x&amp;rsquo;)$. I will in general &lt;em&gt;not&lt;/em&gt; assume that $k$ is stationary (see 
+&lt;h2 id=&#34;gaussian-process-notation&#34;&gt;Gaussian Process Notation&lt;/h2&gt;
+&lt;p&gt;I will write $f \sim GP(\mu(x),k(x,x&#39;))$ to denote a Gaussian process with mean function $\mu$ and covariance function (kernel) $k(x,x&#39;)$. I will in general &lt;em&gt;not&lt;/em&gt; assume that $k$ is stationary (see 
 &lt;a href=&#34;#terminology&#34;&gt;terminology&lt;/a&gt;
 ). Under this definition $f$ is a stochastic process with the defining property that for any set of points ${x_i}$ (in whatever space $\Omega$ we choose), the vector $f(x)_i = f(x_i)$ is distributed as a multivariate normal (MVN) random vector with mean $\mu_i = \mu(x_i)$ and covariance matrix $\Sigma_{ij} = k(x_i,x_j)$. Many of the properties I will discuss on this page are actually properties of the MVN distribution.&lt;/p&gt;
-&lt;h2 id=&#34;terminology-&#34;&gt;Terminology&lt;/h2&gt;
+&lt;h2 id=&#34;terminology&#34;&gt;Terminology&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;A Gaussian process is called &lt;em&gt;stationary&lt;/em&gt; (or &lt;em&gt;homogeneous&lt;/em&gt;) if $k(x,x&amp;rsquo;) = k(x-x&amp;rsquo;)$&lt;/li&gt;
-&lt;li&gt;A Gaussian Process is called &lt;em&gt;isotropic&lt;/em&gt; if $k(x,x&amp;rsquo;) = k(|x-x&#39;|)$&lt;/li&gt;
+&lt;li&gt;A Gaussian process is called &lt;em&gt;stationary&lt;/em&gt; (or &lt;em&gt;homogeneous&lt;/em&gt;) if $k(x,x&#39;) = k(x-x&#39;)$&lt;/li&gt;
+&lt;li&gt;A Gaussian Process is called &lt;em&gt;isotropic&lt;/em&gt; if $k(x,x&#39;) = k(|x-x&#39;|)$&lt;/li&gt;
 &lt;li&gt;A matrix $M$ is said to be &lt;em&gt;positive semidefinite&lt;/em&gt; if it has the property that $v&amp;rsquo;Mv \geq 0$ for any vector $v$. Covariance matrices are positive semidefinite.&lt;/li&gt;
-&lt;li&gt;A kernel is said to be positive semidefinite (psd) if $$\int_\Omega k(x,x&amp;rsquo;)f(x)f(x&amp;rsquo;)dxdx&amp;rsquo; \geq 0$$ for all $L_2$ functions $f$. Gram matrices (i.e. covariance matrices) from psd kernels are psd matrices.&lt;/li&gt;
+&lt;li&gt;A kernel is said to be positive semidefinite (psd) if $$\int_\Omega k(x,x&#39;)f(x)f(x&#39;)dxdx&#39; \geq 0$$ for all $L_2$ functions $f$. Gram matrices (i.e. covariance matrices) from psd kernels are psd matrices.&lt;/li&gt;
 &lt;li&gt;The inverse of the covariance matrix in a MVN distribution is $Q = \Sigma^{-1}$ and is called the &lt;em&gt;precision matrix&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -182,7 +182,7 @@ Q_{f_2|u_1}
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
       <guid>/courses/gaussian-processes/posteriors/</guid>
       <description>&lt;p&gt;The multivariate normal distribution has nicely behaved posterior distributions. In particular, the posterior given an observation of the vector is also multivariate normal.&lt;/p&gt;
-&lt;h2 id=&#34;basic-posterior-&#34;&gt;Basic Posterior&lt;/h2&gt;
+&lt;h2 id=&#34;basic-posterior&#34;&gt;Basic Posterior&lt;/h2&gt;
 &lt;p&gt;Let $x$ be an $n\times 1$ vector partitioned into $x = (x_1,x_2)$, with $x_1$ having dimension $k$ and $x_2$ having dimension $n-k$. Partition the mean $\mu = (\mu_1,\mu_2)$ and covariance matrix $$\Sigma = \begin{bmatrix} \Sigma_{11} &amp;amp; \Sigma_{12} \\ \Sigma_{21} &amp;amp; \Sigma_{22} \end{bmatrix}.$$ Then the posterior distribution for $x_1$ given $x_2=a$ is given by
 \begin{align*}
 [x_1|x_2=a]
@@ -218,7 +218,7 @@ Q_{x|y} &amp;amp; = Q + A^TQ_{\epsilon}A
 &lt;li&gt;$(AA^+)^* = AA^+$&lt;/li&gt;
 &lt;li&gt;$(A^+A)^* = A^+A$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If $A$ has linearly independent columns then the pseudoinverse can be calculated as $A^+ = (A^&lt;em&gt;A)^{-1}A^&lt;/em&gt;$ and the pseudoinverse is a &lt;em&gt;left inverse&lt;/em&gt; since $A^+A = I$. If $A$ has linearly independent columns then the pseudoinverse can be calculated as $A^+ = A^*(AA^*)^{-1}$ and the pseudoinverse is a _right inverse_ since $AA^+ = I$.&lt;/p&gt;
+&lt;p&gt;If $A$ has linearly independent columns then the pseudoinverse can be calculated as $A^+ = (A^&lt;em&gt;A)^{-1}A^&lt;/em&gt;$ and the pseudoinverse is a &lt;em&gt;left inverse&lt;/em&gt; since $A^+A = I$. If $A$ has linearly independent columns then the pseudoinverse can be calculated as $A^+ = A^&lt;em&gt;(AA^&lt;/em&gt;)^{-1}$ and the pseudoinverse is a &lt;em&gt;right inverse&lt;/em&gt; since $AA^+ = I$.&lt;/p&gt;
 &lt;p&gt;Finally, consider $(AB)^+$. This is equal to $B^+A^+$ if:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$A$ has orthonormal columns (i.e. $A^*A = I$), or&lt;/li&gt;

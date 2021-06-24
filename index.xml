@@ -17,9 +17,9 @@
       <link>/courses/qsci483/notation/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
       <guid>/courses/qsci483/notation/</guid>
-      <description>&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;matrixvector-notation&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
 &lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
-&lt;h3 id=&#34;advanced-notation-matrix-calculus-&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
+&lt;h3 id=&#34;advanced-notation-matrix-calculus&#34;&gt;Advanced Notation: Matrix Calculus&lt;/h3&gt;
 &lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
  or in the more extensive 
@@ -33,24 +33,24 @@
       <link>/courses/gaussian-processes/notation/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0100</pubDate>
       <guid>/courses/gaussian-processes/notation/</guid>
-      <description>&lt;h2 id=&#34;matrixvector-notation-&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;matrixvector-notation&#34;&gt;Matrix/Vector Notation&lt;/h2&gt;
 &lt;p&gt;In general, I will use an upper case letter for a matrix and a lower case letter for a vector. Vectors such as $v$ will almost always be accompanied by a description of an individual component $v_i$, referring to the $i$-th entry in the vector. If a vector&amp;rsquo;s components are not specified I will bold it such as $\mathbf{v}$. I will write $X&#39;$ to mean the transpose of a matrix $X$ or $v&#39;$ to mean the transpose of a matrix $v$, as is common in regression analysis.&lt;/p&gt;
-&lt;h2 id=&#34;matrix-calculus-&#34;&gt;Matrix Calculus&lt;/h2&gt;
+&lt;h2 id=&#34;matrix-calculus&#34;&gt;Matrix Calculus&lt;/h2&gt;
 &lt;p&gt;For an $n\times 1$ vector $v$ and a scalar $f$ we will write $\dfrac{\partial v}{\partial f}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial v}{\partial f}\right)_i = \dfrac{\partial v_i}{\partial f}$. We will write $\dfrac{\partial f}{\partial v}$ to mean the $n\times 1$ vector with entries $\left(\dfrac{\partial f}{\partial v}\right)_i = \dfrac{\partial f}{\partial v_i}$. A useful resource for matrix calculus can be found on 
 &lt;a href=&#34;https://en.wikipedia.org/wiki/Matrix_calculus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wikipedia&lt;/a&gt;
  or in the more extensive 
 &lt;a href=&#34;https://www.math.uwaterloo.ca/~hwolkowi/matrixcookbook.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Matrix Cookbook&lt;/a&gt;
 .&lt;/p&gt;
-&lt;h2 id=&#34;gaussian-process-notation-&#34;&gt;Gaussian Process Notation&lt;/h2&gt;
-&lt;p&gt;I will write $f \sim GP(\mu(x),k(x,x&amp;rsquo;))$ to denote a Gaussian process with mean function $\mu$ and covariance function (kernel) $k(x,x&amp;rsquo;)$. I will in general &lt;em&gt;not&lt;/em&gt; assume that $k$ is stationary (see 
+&lt;h2 id=&#34;gaussian-process-notation&#34;&gt;Gaussian Process Notation&lt;/h2&gt;
+&lt;p&gt;I will write $f \sim GP(\mu(x),k(x,x&#39;))$ to denote a Gaussian process with mean function $\mu$ and covariance function (kernel) $k(x,x&#39;)$. I will in general &lt;em&gt;not&lt;/em&gt; assume that $k$ is stationary (see 
 &lt;a href=&#34;#terminology&#34;&gt;terminology&lt;/a&gt;
 ). Under this definition $f$ is a stochastic process with the defining property that for any set of points ${x_i}$ (in whatever space $\Omega$ we choose), the vector $f(x)_i = f(x_i)$ is distributed as a multivariate normal (MVN) random vector with mean $\mu_i = \mu(x_i)$ and covariance matrix $\Sigma_{ij} = k(x_i,x_j)$. Many of the properties I will discuss on this page are actually properties of the MVN distribution.&lt;/p&gt;
-&lt;h2 id=&#34;terminology-&#34;&gt;Terminology&lt;/h2&gt;
+&lt;h2 id=&#34;terminology&#34;&gt;Terminology&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;A Gaussian process is called &lt;em&gt;stationary&lt;/em&gt; (or &lt;em&gt;homogeneous&lt;/em&gt;) if $k(x,x&amp;rsquo;) = k(x-x&amp;rsquo;)$&lt;/li&gt;
-&lt;li&gt;A Gaussian Process is called &lt;em&gt;isotropic&lt;/em&gt; if $k(x,x&amp;rsquo;) = k(|x-x&#39;|)$&lt;/li&gt;
+&lt;li&gt;A Gaussian process is called &lt;em&gt;stationary&lt;/em&gt; (or &lt;em&gt;homogeneous&lt;/em&gt;) if $k(x,x&#39;) = k(x-x&#39;)$&lt;/li&gt;
+&lt;li&gt;A Gaussian Process is called &lt;em&gt;isotropic&lt;/em&gt; if $k(x,x&#39;) = k(|x-x&#39;|)$&lt;/li&gt;
 &lt;li&gt;A matrix $M$ is said to be &lt;em&gt;positive semidefinite&lt;/em&gt; if it has the property that $v&amp;rsquo;Mv \geq 0$ for any vector $v$. Covariance matrices are positive semidefinite.&lt;/li&gt;
-&lt;li&gt;A kernel is said to be positive semidefinite (psd) if $$\int_\Omega k(x,x&amp;rsquo;)f(x)f(x&amp;rsquo;)dxdx&amp;rsquo; \geq 0$$ for all $L_2$ functions $f$. Gram matrices (i.e. covariance matrices) from psd kernels are psd matrices.&lt;/li&gt;
+&lt;li&gt;A kernel is said to be positive semidefinite (psd) if $$\int_\Omega k(x,x&#39;)f(x)f(x&#39;)dxdx&#39; \geq 0$$ for all $L_2$ functions $f$. Gram matrices (i.e. covariance matrices) from psd kernels are psd matrices.&lt;/li&gt;
 &lt;li&gt;The inverse of the covariance matrix in a MVN distribution is $Q = \Sigma^{-1}$ and is called the &lt;em&gt;precision matrix&lt;/em&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -64,7 +64,7 @@
       <description>&lt;p&gt;In this document I will outline the math used in the analysis of a simple linear regression model. Make sure to check out my 
 &lt;a href=&#34;/courses/qsci483/notation&#34;&gt;notation&lt;/a&gt;
  document to clarify any confusing notation.&lt;/p&gt;
-&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;h2 id=&#34;the-model&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Simple Linear Regression is based upon the equation
 $$
 y_i \sim N(\beta_0 + \beta_1 x_i,\sigma^2)
@@ -75,8 +75,8 @@ y_i &amp;amp; \sim \beta_0 + \beta_1 x_i + \epsilon_i \\&lt;br&gt;
 \epsilon_i &amp;amp; \sim N(0,\sigma^2)
 \end{align*}
 where the $\epsilon_i$ are iid. It is important to remember that the expectations, or means, of these variables are: $E[y_i] = \beta_0 + \beta_1 x_i$ and $E[\epsilon_i] = 0$. We will assume that there are $n$ data points and only 1 predictor. This is what makes it _simple_ linear regression. In more general linear regression models you have more than 1 predictor. In multivariate linear regression models you have more than one dependent variable as well. In addition to the predictor variable, we also have an intercept, or mean term, which can be thought of as a second predictor.&lt;/p&gt;
-&lt;h3 id=&#34;fitting-&#34;&gt;Fitting&lt;/h3&gt;
-&lt;h4 id=&#34;objective-function-&#34;&gt;Objective Function&lt;/h4&gt;
+&lt;h3 id=&#34;fitting&#34;&gt;Fitting&lt;/h3&gt;
+&lt;h4 id=&#34;objective-function&#34;&gt;Objective Function&lt;/h4&gt;
 &lt;p&gt;To fit a simple linear regression we first must choose a measure of fit. Here we will choose least squares, since this corresponds to 
 &lt;a href=&#34;/courses/qsci483/linear-regression/properties&#34;&gt;maximum likelihood esitmation&lt;/a&gt;
  in this model. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using our predictor $x_i$ for data point $i$ along with estimated coefficients $\hat{\beta}_0$ and $\hat{\beta}_1$:
@@ -89,7 +89,7 @@ f(\hat{\beta})
 &amp;amp; = \sum_{i=1}^n (\mbox{residual})^2 \\&lt;br&gt;
 &amp;amp; = \sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1)^2 \\&lt;br&gt;
 \end{align*}&lt;/p&gt;
-&lt;h4 id=&#34;optimization-&#34;&gt;Optimization&lt;/h4&gt;
+&lt;h4 id=&#34;optimization&#34;&gt;Optimization&lt;/h4&gt;
 &lt;p&gt;From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to both $\beta_0$ and $\beta_1$, to find the minimum sum of squared residuals (the &lt;em&gt;least squares&lt;/em&gt;). So let us take the partial derivative with respect to $\hat{\beta}_0$:
 \begin{align*}
 \dfrac{\partial f}{ \partial \hat{\beta}_0} }
@@ -155,13 +155,13 @@ I encourage you to try doing the same calculation with $S_{xx}$: you will find t
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0100</pubDate>
       <guid>/courses/qsci483/space-time/diagnostics/</guid>
       <description>&lt;p&gt;In this section I will outline the descriptive statistics that are used to diagnose point process deviations from homogeneity. A standard assumption in the analysis of point processes is that equal areas should have equal densities of points. However, this assumption is often violated. We can diagnose such violations using descriptive statistics such as Ripley&amp;rsquo;s $K$ and $L$ functions.&lt;/p&gt;
-&lt;h3 id=&#34;ripleys-k-function-&#34;&gt;Ripley&amp;rsquo;s $K$ function&lt;/h3&gt;
+&lt;h3 id=&#34;ripleys-k-function&#34;&gt;Ripley&amp;rsquo;s $K$ function&lt;/h3&gt;
 &lt;p&gt;This function is defined as
 $$
 \hat{K}(t) = \lambda^{-1}\sum_{i\neq j} \frac{I(d_{ij} &amp;lt; t)}{n}.
 $$&lt;/p&gt;
 &lt;p&gt;Here $\lambda$ is the averasge intensity of the point process, which we will usually estimate as $n/A$ where $n$ is the ttoal number of points and $A$ is the area in question. $I$ is the indicator function which is 1 if the argument is true and 0 if it is false. The summation can be thought of as calculating the fraction of all pairs which are within $t$ units of distance from each other. If points are homogeneous in two dimensions then, ignoring boundary effects, we can expect that each point will contain approximately $\lambda \pi t^2$ points within $t$ distance units of it. So we should expect $\hat{K}(t) \approx \pi t^2$.&lt;/p&gt;
-&lt;h3 id=&#34;ripleys-l-function-&#34;&gt;Ripley&amp;rsquo;s $L$ function&lt;/h3&gt;
+&lt;h3 id=&#34;ripleys-l-function&#34;&gt;Ripley&amp;rsquo;s $L$ function&lt;/h3&gt;
 &lt;p&gt;The $K$ function suffers from non-constant variance, which can make analyses difficult. Instead, we often use Ripley&amp;rsquo;s $L$ function, defined to be&lt;/p&gt;
 &lt;p&gt;$$
 \hat{L}(t) = \sqrt{\frac{\hat{K}(t)}{\pi}}.
@@ -195,7 +195,7 @@ In the special case that $u$ and $v$ are vectors and $C = I$ we get the Sherman-
  document to clarify any confusing notation, and check out my 
 &lt;a href=&#34;/courses/qsci483/linear-regression/simple-linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
  document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.&lt;/p&gt;
-&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;h2 id=&#34;the-model&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Linear regression is based upon the equation
 $$
 y_i \sim N(X\beta,\sigma^2)
@@ -206,8 +206,8 @@ y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
 \epsilon_i &amp;amp; \sim N(0,\sigma^2)
 \end{align*}
 where the $\epsilon_i$ are iid. In the context of regression, it is important to remember that: $E[y_i] = X\beta$ and $E[\epsilon_i] = 0$. We will assume that there are $n$ data points and $k$ predictors. This $\beta$ is a $k\times 1$ vector, $X$ is a $n\times k$ matrix and $y$ and $\epsilon$ are $n\times 1$ vectors.&lt;/p&gt;
-&lt;h3 id=&#34;fitting-&#34;&gt;Fitting&lt;/h3&gt;
-&lt;h4 id=&#34;objective-function-&#34;&gt;Objective Function&lt;/h4&gt;
+&lt;h3 id=&#34;fitting&#34;&gt;Fitting&lt;/h3&gt;
+&lt;h4 id=&#34;objective-function&#34;&gt;Objective Function&lt;/h4&gt;
 &lt;p&gt;To fit a simple linear regression we choose a measure of fit: least squares. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using the $1\times k$ vector $x_i$ of predictors for data point $i$:
 $$
 \hat{y}_i = x_i\hat{\beta}.
@@ -234,7 +234,7 @@ We can expand this quadratic equation as
 f(\hat{\beta})
 &amp;amp; = y&amp;rsquo;y - y&amp;rsquo;X\hat{\beta} - \hat{\beta}&amp;lsquo;X&amp;rsquo;y + \hat{\beta}&amp;lsquo;X&amp;rsquo;X\hat{\beta}.
 \end{align*}&lt;/p&gt;
-&lt;h4 id=&#34;optimization-&#34;&gt;Optimization&lt;/h4&gt;
+&lt;h4 id=&#34;optimization&#34;&gt;Optimization&lt;/h4&gt;
 &lt;p&gt;From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to each $\beta_i$, to find the minimum sum of squared residuals (the &lt;em&gt;least squares&lt;/em&gt;). So let us take the partial derivative with respect to a particular coefficient:
 \begin{align*}
 \dfrac{\partial f}{ \partial \hat{\beta}_j}
@@ -265,13 +265,13 @@ We can derive this same equation in fewer steps using the more complex matrix ca
 \dfrac{\partial f}{ \partial \hat{\beta}}
 &amp;amp; = \dfrac{\partial }{ \partial \hat{\beta}}\left(y&amp;rsquo;y - y&amp;rsquo;X\hat{\beta} - \hat{\beta}&amp;lsquo;X&amp;rsquo;y + \hat{\beta}&amp;lsquo;X&amp;rsquo;X\hat{\beta}\right) \\&lt;br&gt;
 &amp;amp; = - \dfrac{\partial }{ \partial \hat{\beta}}\left(y&amp;rsquo;X\hat{\beta}\right) - \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&amp;lsquo;X&amp;rsquo;y\right) + \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&amp;lsquo;X&amp;rsquo;X\hat{\beta}\right) \\&lt;br&gt;
-&amp;amp; = -y&amp;rsquo;X-(X&amp;rsquo;y)&amp;lsquo;+\hat{\beta}&amp;lsquo;X&amp;rsquo;X + (X&amp;rsquo;X\hat{\beta})&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = -y&amp;rsquo;X-(X&amp;rsquo;y)&#39;+\hat{\beta}&amp;lsquo;X&amp;rsquo;X + (X&amp;rsquo;X\hat{\beta})&amp;rsquo; \\&lt;br&gt;
 &amp;amp; = -2(X&amp;rsquo;y - X&amp;rsquo;X\hat{\beta})&amp;rsquo; \\&lt;br&gt;
 &amp;amp; = 0.
 \end{align*}&lt;/p&gt;
 &lt;h3 id=&#34;important-quantities&#34;&gt;Important Quantities&lt;/h3&gt;
 &lt;p&gt;Now we have shown that the ordinary least squares estimator for $\beta$ is $(X&amp;rsquo;X)^{-1}X&amp;rsquo;y$. Using this we may calculate all sorts of other things.&lt;/p&gt;
-&lt;h4 id=&#34;predicted-values-&#34;&gt;Predicted Values&lt;/h4&gt;
+&lt;h4 id=&#34;predicted-values&#34;&gt;Predicted Values&lt;/h4&gt;
 &lt;p&gt;The predicted values are
 \begin{align*}
 \hat{y}
@@ -279,29 +279,29 @@ We can derive this same equation in fewer steps using the more complex matrix ca
 &amp;amp; = X(X&amp;rsquo;X)^{-1}X&amp;rsquo;y \\&lt;br&gt;
 &amp;amp; = Hy.
 \end{align*}
-Here we have defined the &amp;ldquo;hat matrix,&amp;rdquo; $H = X(X&amp;rsquo;X)^{-1}X&#39;$. This is a useful matrix in linear regression, which maps the data to its predicted values. This is sometimes also called the projection matrix $P$, since it projects the data onto a lower-dimensional linear space. It is sometimes also called the influence matrix. It has two nice properties which we will use in a moment: it is symmetric and idempotent. This means $H&#39;=H$ and $H^2 = H&amp;rsquo;H = H$. We can see this by calculating:
+Here we have defined the &amp;ldquo;hat matrix,&amp;rdquo; $H = X(X&amp;rsquo;X)^{-1}X&amp;rsquo;$. This is a useful matrix in linear regression, which maps the data to its predicted values. This is sometimes also called the projection matrix $P$, since it projects the data onto a lower-dimensional linear space. It is sometimes also called the influence matrix. It has two nice properties which we will use in a moment: it is symmetric and idempotent. This means $H&amp;rsquo;=H$ and $H^2 = H&amp;rsquo;H = H$. We can see this by calculating:
 \begin{align*}
 H&amp;rsquo; &amp;amp; = (X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = X(X&amp;rsquo;X)^{-1}X&amp;rsquo; \\&lt;br&gt;
+&amp;amp; = X(X&amp;rsquo;X)^{-1}X&#39; \\&lt;br&gt;
 &amp;amp; = H \\&lt;br&gt;
-H^2 &amp;amp; = (X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)(X(X&amp;rsquo;X)^{-1}X&amp;rsquo;) \\&lt;br&gt;
-&amp;amp; = X(X&amp;rsquo;X)^{-1}(X&amp;rsquo;X)(X&amp;rsquo;X)^{-1}X&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = X(X&amp;rsquo;X)^{-1}X&amp;rsquo; \\&lt;br&gt;
+H^2 &amp;amp; = (X(X&amp;rsquo;X)^{-1}X&#39;)(X(X&amp;rsquo;X)^{-1}X&#39;) \\&lt;br&gt;
+&amp;amp; = X(X&amp;rsquo;X)^{-1}(X&amp;rsquo;X)(X&amp;rsquo;X)^{-1}X&#39; \\&lt;br&gt;
+&amp;amp; = X(X&amp;rsquo;X)^{-1}X&#39; \\&lt;br&gt;
 &amp;amp; = H
 \end{align*}&lt;/p&gt;
-&lt;h4 id=&#34;residuals-&#34;&gt;Residuals&lt;/h4&gt;
+&lt;h4 id=&#34;residuals&#34;&gt;Residuals&lt;/h4&gt;
 &lt;p&gt;The residuals are
 \begin{align*}
 \hat{\epsilon}
 &amp;amp; = y-\hat{y} \\&lt;br&gt;
 &amp;amp; = y-Hy \\&lt;br&gt;
 &amp;amp; = (I-H)y \\&lt;br&gt;
-&amp;amp; = (I-X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)y \\&lt;br&gt;
+&amp;amp; = (I-X(X&amp;rsquo;X)^{-1}X&#39;)y \\&lt;br&gt;
 &amp;amp; = My
 \end{align*}
 Here we have defined the &amp;ldquo;residual maker&amp;rdquo; matrix, which can also be called the residual operator. This matrix takes the data and gives you the residuals of the model. It also inherits symmetry and idempotency from the hat matrix, since:
 \begin{align*}
-M&amp;rsquo; &amp;amp; = (I-H)&amp;rsquo; \\&lt;br&gt;
+M&#39; &amp;amp; = (I-H)&#39; \\&lt;br&gt;
 &amp;amp; = I-H \\&lt;br&gt;
 M^2 &amp;amp; = (I-H)(I-H) \\&lt;br&gt;
 &amp;amp; = I - 2H + H^2 \\&lt;br&gt;
@@ -357,7 +357,7 @@ C &amp;amp; D
       <guid>/courses/qsci483/linear-regression/standard-error/</guid>
       <description>&lt;p&gt;A standard error is the estimated standard deviation $\hat{\sigma}$ for some variable. The residual standard error for linear regression is our estimate of the standard deviation of the noise $\epsilon$. Recall that we assume the noise is independent and heteroskedastic. This is important since it means we only need to estimate one single parameter for all of the noise variables.&lt;/p&gt;
 &lt;p&gt;We estimate the residual variance using the equation $$\hat{\sigma}^2 = \frac{1}{n-k}\sum \hat{\epsilon}_i^2.$$ You can think of the $n-k$ term as accounting for the fact that we have estimated $k$ parameters before making this estimate. Recall that we fit our model by minimizing the sum of squared residuals. So we&amp;rsquo;ve actually optimized this model to minimize exactly $\sum \hat{\epsilon}_i^2$. The more parameters we have to work with the better that optimization will be. So we would probably get an answer that was too small if we just calculated the mean $$\frac{1}{n}\sum \hat{\epsilon}_i^2.$$ Dividing by a smaller number $n-k$ accounts for this, making $\hat{\sigma}^2$ an unbiased estimator of the residual variance.&lt;/p&gt;
-&lt;h3 id=&#34;unbiasedness-&#34;&gt;Unbiasedness&lt;/h3&gt;
+&lt;h3 id=&#34;unbiasedness&#34;&gt;Unbiasedness&lt;/h3&gt;
 &lt;p&gt;We can see why this is by calculating the expectation of $\hat{\sigma}^2$. We won&amp;rsquo;t even both trying to avoid matrices in this derivation:
 \begin{align*}
 E[\hat{\sigma}^2]
@@ -371,7 +371,7 @@ where we have eliminated the cross terms since $E[\epsilon]=0$. Now we can calcu
 \begin{align*}
 X&amp;rsquo;MX
 &amp;amp; = X&amp;rsquo;(I-H)X \\&lt;br&gt;
-&amp;amp; = X&amp;rsquo;X - X&amp;rsquo;(X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)X \\&lt;br&gt;
+&amp;amp; = X&amp;rsquo;X - X&#39;(X(X&amp;rsquo;X)^{-1}X&#39;)X \\&lt;br&gt;
 &amp;amp; = X&amp;rsquo;X - X&amp;rsquo;X \\&lt;br&gt;
 &amp;amp; = 0
 \end{align*}
@@ -384,7 +384,7 @@ E[\hat{\sigma}^2]
 &amp;amp; = \frac{\sigma^2}{n-k}\mbox{tr}[I-H].
 \end{align*}
 Now, so long as $X$ is full rank (i.e. there are no redundant predictors) the hat matrix has trace $k$. This can be shown using complicated eigenvalue proofs that you can find on Google. Thus $\mbox{tr}[I-H] = \mbox{tr}[I]-\mbox{tr}[H] = n-k$. Thus indeed the $n-k$ term drops out and we find that $\hat{\sigma}^2$ is an unbiased estimator of the true residual variance.&lt;/p&gt;
-&lt;h3 id=&#34;distribution-&#34;&gt;Distribution&lt;/h3&gt;
+&lt;h3 id=&#34;distribution&#34;&gt;Distribution&lt;/h3&gt;
 &lt;p&gt;In fact, we have done more than show it is unbiased. Much of the algebra that we did actually did not depend on the outer expectation. We actually showed more generally that $$\hat{\sigma}^2 = \frac{1}{n-k}\epsilon&amp;rsquo;M\epsilon.$$ This is useful because it is a &lt;em&gt;quadratic form&lt;/em&gt;, as we described above. Quadratic forms over multivariate normal random vectors have nice properties which we will now derive. Specifically we will show that: $$\hat{\sigma}^2 \sim \frac{\sigma^2}{n-k}\chi^2_{n-k}.$$&lt;/p&gt;
 &lt;p&gt;This proof will involve some additional use of linear algebraic terms and assumptions. Specifically, we will use the fact that a symmetric matrix $A$ can be decomposed into $A = PDP^T$ for an &lt;em&gt;orthogonal&lt;/em&gt; (i.e. $P^2 = I$) matrix $P$ and a diagonal matrix $D$. Orthogonal matrices are nice because $\tilde{z} = Pz$, the product of an orthogonal matrix with a standard normal vector, is still a standard normal vector.&lt;/p&gt;
 &lt;p&gt;We will also use the fact that if $A$ is symmetric &lt;em&gt;and&lt;/em&gt; idempotent then all the diagonal entries are either 0 or 1. We will further use the fact that the number of entries that are 1 is equal to the trace of $A$. Since $M$ is symmetric and idempotent we will use all these properties to show:
@@ -491,7 +491,7 @@ Q_{f_2|u_1}
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0100</pubDate>
       <guid>/courses/gaussian-processes/posteriors/</guid>
       <description>&lt;p&gt;The multivariate normal distribution has nicely behaved posterior distributions. In particular, the posterior given an observation of the vector is also multivariate normal.&lt;/p&gt;
-&lt;h2 id=&#34;basic-posterior-&#34;&gt;Basic Posterior&lt;/h2&gt;
+&lt;h2 id=&#34;basic-posterior&#34;&gt;Basic Posterior&lt;/h2&gt;
 &lt;p&gt;Let $x$ be an $n\times 1$ vector partitioned into $x = (x_1,x_2)$, with $x_1$ having dimension $k$ and $x_2$ having dimension $n-k$. Partition the mean $\mu = (\mu_1,\mu_2)$ and covariance matrix $$\Sigma = \begin{bmatrix} \Sigma_{11} &amp;amp; \Sigma_{12} \\ \Sigma_{21} &amp;amp; \Sigma_{22} \end{bmatrix}.$$ Then the posterior distribution for $x_1$ given $x_2=a$ is given by
 \begin{align*}
 [x_1|x_2=a]
@@ -525,7 +525,7 @@ Q_{x|y} &amp;amp; = Q + A^TQ_{\epsilon}A
  and 
 &lt;a href=&#34;/courses/qsci483/linear-regression/linear-regression&#34;&gt;simple linear regression&lt;/a&gt;
  before diving in.&lt;/p&gt;
-&lt;h2 id=&#34;the-model-&#34;&gt;The Model&lt;/h2&gt;
+&lt;h2 id=&#34;the-model&#34;&gt;The Model&lt;/h2&gt;
 &lt;p&gt;Recall that linear regression is based upon the equation:
 $$
 y_i \sim N(X\beta,\sigma^2)
@@ -536,7 +536,7 @@ y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
 \epsilon_i &amp;amp; \sim N(0,\sigma^2)
 \end{align*}
 where the $\epsilon_i$ are iid. We have previously found that the estimate $\hat{\beta} = (X&amp;rsquo;X)^{-1}Xy$ minimizes the sum of squares. In this document we will show: (1) that $\hat{\beta}$ is also the maximum likelihood estimator, (2) that $\hat{\beta}$ is unbiased, and (3) the covariance matrix for the estimator $\hat{\beta}$.&lt;/p&gt;
-&lt;h3 id=&#34;maximum-likelihood-&#34;&gt;Maximum Likelihood&lt;/h3&gt;
+&lt;h3 id=&#34;maximum-likelihood&#34;&gt;Maximum Likelihood&lt;/h3&gt;
 &lt;p&gt;Our probability model has that $y_i$ are normally distributed, and are independent of each other given the predictors $X$ and the coefficients $\beta$. The &lt;em&gt;likelihood function&lt;/em&gt; is given by the probability (density) of the data given the parameters ($\beta$), expressed as a function of the parameter estimate ($\hat{\beta}$). This function in our case can be written as a product of Gaussian (normal) probability density functions (pdfs):
 \begin{align*}
 \ell(\hat{\beta}) &amp;amp; = \prod_{i=1}^n N(y_i|X\hat{\beta},\sigma^2) \\&lt;br&gt;
@@ -559,32 +559,32 @@ Therefore the maximum likelihood estimator (MLE) of $\hat{\beta}$ is exactly the
 \begin{align*}
 \hat{\sigma^2}
 &amp;amp; = \frac{1}{n}\sum_{i=1}^n (y_i - \hat{y}_i)^2 \\&lt;br&gt;
-&amp;amp; = \frac{1}{n}y&amp;rsquo;(I-X(X&amp;rsquo;X)^{-1}X&amp;rsquo;)y.
+&amp;amp; = \frac{1}{n}y&#39;(I-X(X&amp;rsquo;X)^{-1}X&#39;)y.
 \end{align*}&lt;/p&gt;
-&lt;h3 id=&#34;unbiasedness-&#34;&gt;Unbiasedness&lt;/h3&gt;
+&lt;h3 id=&#34;unbiasedness&#34;&gt;Unbiasedness&lt;/h3&gt;
 &lt;p&gt;It is important to remember that estimators (such as $\hat{\beta}) are themselves &lt;em&gt;random&lt;/em&gt;. If we were to simulate from our model, holding $\beta$ fixed, we would fit a different estimator $\hat{\beta}$ to every simulation. Thus an important quality that an estimator can have is &lt;em&gt;unbiasedness&lt;/em&gt;. This means that, if the model is correct, the estimator will neither tend to overestimate nor underestimate the true parameter. In mathematical terms, its expectation (or mean) is correct: $E[\hat{\beta}] = \beta$.&lt;/p&gt;
 &lt;p&gt;Using our matrix math this property can be derived fairly quickly. We know that $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$. We also know that $y = X\beta + \epsilon$. Putting these together we see:
 \begin{align*}
 \hat{\beta}
-&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;(X\beta + \epsilon) \\&lt;br&gt;
-&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;X\beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon \\&lt;br&gt;
-&amp;amp; = \beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon.
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&#39;(X\beta + \epsilon) \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;X\beta + (X&amp;rsquo;X)^{-1}X&#39;\epsilon \\&lt;br&gt;
+&amp;amp; = \beta + (X&amp;rsquo;X)^{-1}X&#39;\epsilon.
 \end{align*}
 Therefore the mean is
 \begin{align*}
 E[\hat{\beta}]
-&amp;amp; = E\left[\beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon\right].
+&amp;amp; = E\left[\beta + (X&amp;rsquo;X)^{-1}X&#39;\epsilon\right].
 \end{align*}
 The mean has a useful property which we will use here, which is that it is _linear_. This means that the expectation of a sum is the sum of the expectations. In math we write this as $E[A+B] = E[A] + E[B]$. Since matrix operations are essentially just a bunch of sums, we can also write $E[Mv] = ME[v]$, if $v$ is random and $M$ is constant. Using this property we get
 \begin{align*}
 E[\hat{\beta}]
-&amp;amp; = E\left[\beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon\right] \\&lt;br&gt;
-&amp;amp; = \beta + E\left[(X&amp;rsquo;X)^{-1}X&amp;rsquo;\epsilon\right] \\&lt;br&gt;
+&amp;amp; = E\left[\beta + (X&amp;rsquo;X)^{-1}X&#39;\epsilon\right] \\&lt;br&gt;
+&amp;amp; = \beta + E\left[(X&amp;rsquo;X)^{-1}X&#39;\epsilon\right] \\&lt;br&gt;
 &amp;amp; = \beta + (X&amp;rsquo;X)^{-1}X&amp;rsquo;E[\epsilon] \\&lt;br&gt;
 &amp;amp; = \beta
 \end{align*}
 since we have assumed that $\epsilon$ is zero-mean noise. So, in fact, our estimator is unbiased!&lt;/p&gt;
-&lt;h3 id=&#34;covariance-of-hatbeta-&#34;&gt;Covariance of $\hat{\beta}$&lt;/h3&gt;
+&lt;h3 id=&#34;covariance-of-hatbeta&#34;&gt;Covariance of $\hat{\beta}$&lt;/h3&gt;
 &lt;p&gt;Remember that $\hat{\beta}$ is fundamentally a &lt;em&gt;random&lt;/em&gt; quantity. It is different in every realization (or simulation) of the statistical model we have written down. It is sensitive to the addition of random noise ($\epsilon_{i}$) to the data. Luckily, since we have written down a statistical model for our data $y$ we are able to do a statistical analysis for the estimator $\hat{\beta}$ to determine its random properties.&lt;/p&gt;
 &lt;p&gt;We showed in the previous section that $\hat{\beta}$ was unbiased, that is, it has its mean $E[\hat{\beta}] = \beta$ at the correct place. We will now calculate the variance-covariance (or just covariance) matrix of $\hat{\beta}$. This tells us how much we can expect $\hat{\beta}$ to vary for different datasets. The &lt;em&gt;diagonal&lt;/em&gt; of this covariance matrix tells us the variances of $\hat{\beta}_{i}$, which are important quantities that get used, for example, in calculating Rs model summaries.&lt;/p&gt;
 &lt;p&gt;The covariance of two random variables is given by $E[(A-E[A])(B-E[B])]$. In our case $A = \hat{\beta}_{i}$ and $B = \hat{\beta}_{j}$. This will give us the entry $\Sigma_{ij}$ in the covariance matrix. We already know that $E[\hat{\beta}_{i}] = \beta_{i}$ since the estimators are unbiased. Therefore the covariance is
@@ -610,44 +610,44 @@ Since we know that the estimator is unbiased we can plug this into the matrix eq
 \begin{align*}
 \Sigma
 &amp;amp; = E\left[(\hat{\beta} - \beta)(\hat{\beta}-\beta)&#39;\right] \\&lt;br&gt;
-&amp;amp; = E\left[\hat{\beta}\hat{\beta}&#39;\right] - \beta\beta&amp;rsquo;.
+&amp;amp; = E\left[\hat{\beta}\hat{\beta}&#39;\right] - \beta\beta&#39;.
 \end{align*}
 This is exactly the same formula we have above, just written in matrix notation. Now, we already have a formula for $\hat{\beta}$ in matrix notation, $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$, so let&amp;rsquo;s plug this in here. We get
 \begin{align*}
 \Sigma
-&amp;amp; = E\left[(X&amp;rsquo;X)^{-1}X&amp;rsquo;yy&amp;rsquo;X(X&amp;rsquo;X)^{-1}\right] - \beta\beta&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo; E[yy&amp;rsquo;] X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo;.
+&amp;amp; = E\left[(X&amp;rsquo;X)^{-1}X&amp;rsquo;yy&amp;rsquo;X(X&amp;rsquo;X)^{-1}\right] - \beta\beta&#39; \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&#39; E[yy&#39;] X(X&amp;rsquo;X)^{-1} - \beta\beta&#39;.
 \end{align*}
 Now we can plug in our formula for $y = X\beta + \epsilon$. Remembering that expectations are linear (i.e. can be split up over summations), we get
 \begin{align*}
-E[yy&amp;rsquo;]
+E[yy&#39;]
 &amp;amp; = E\left[(X\beta + \epsilon)(X\beta+\epsilon)&#39;\right] \\&lt;br&gt;
-&amp;amp; = E\left[X\beta\beta&amp;rsquo;X&amp;rsquo; + \epsilon X\beta + \beta&amp;rsquo;X&amp;rsquo;\epsilon + \epsilon\epsilon&amp;rsquo;\right] \\&lt;br&gt;
-&amp;amp; = X\beta\beta&amp;rsquo;X&amp;rsquo; + E[\epsilon]X\beta + \beta&amp;rsquo;X&amp;rsquo;E[\epsilon] + E[\epsilon\epsilon&amp;rsquo;]
+&amp;amp; = E\left[X\beta\beta&amp;rsquo;X&#39; + \epsilon X\beta + \beta&amp;rsquo;X&#39;\epsilon + \epsilon\epsilon&#39;\right] \\&lt;br&gt;
+&amp;amp; = X\beta\beta&amp;rsquo;X&#39; + E[\epsilon]X\beta + \beta&amp;rsquo;X&amp;rsquo;E[\epsilon] + E[\epsilon\epsilon&#39;]
 \end{align*}
-Now we already know that $E[\epsilon] = 0$. What about $E[\epsilon\epsilon&amp;rsquo;]$? Well,
+Now we already know that $E[\epsilon] = 0$. What about $E[\epsilon\epsilon&#39;]$? Well,
 $$
 \mbox{cov}(\epsilon_i,\epsilon_j) = E[\epsilon_i\epsilon_j] - E[\epsilon_i]E[\epsilon_j] = E[\epsilon_i\epsilon_j].
 $$
 Since independent variables are uncorrelated (and we know that the $\epsilon_i$ are iid) we see that this matrix is diagonal with entries equal to $\sigma^2$, the variance of $\epsilon_i$. Thus:
 $$
-E[yy&amp;rsquo;] = X\beta\beta&amp;rsquo;X&amp;rsquo; + \sigma^2I.
+E[yy&#39;] = X\beta\beta&amp;rsquo;X&#39; + \sigma^2I.
 $$
 Finally, plugging this in, we can find that
 \begin{align*}
-\Sigma &amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo; E[yy&amp;rsquo;] X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = (X&amp;rsquo;X)^{-1}X&amp;rsquo;(X\beta\beta&amp;rsquo;X&amp;rsquo; + \sigma^2I)X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = (X&amp;rsquo;X)^{-1}(X&amp;rsquo;X)\beta\beta&amp;rsquo;(X&amp;rsquo;X)(X&amp;rsquo;X)^{-1} + (X&amp;rsquo;X)^{-1}X&amp;rsquo;(\sigma^2I)X(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
-&amp;amp; = \beta\beta&amp;rsquo; + \sigma^2(X&amp;rsquo;X)^{-1} - \beta\beta&amp;rsquo; \\&lt;br&gt;
+\Sigma &amp;amp; = (X&amp;rsquo;X)^{-1}X&#39; E[yy&#39;] X(X&amp;rsquo;X)^{-1} - \beta\beta&#39; \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}X&#39;(X\beta\beta&amp;rsquo;X&#39; + \sigma^2I)X(X&amp;rsquo;X)^{-1} - \beta\beta&#39; \\&lt;br&gt;
+&amp;amp; = (X&amp;rsquo;X)^{-1}(X&amp;rsquo;X)\beta\beta&#39;(X&amp;rsquo;X)(X&amp;rsquo;X)^{-1} + (X&amp;rsquo;X)^{-1}X&#39;(\sigma^2I)X(X&amp;rsquo;X)^{-1} - \beta\beta&#39; \\&lt;br&gt;
+&amp;amp; = \beta\beta&#39; + \sigma^2(X&amp;rsquo;X)^{-1} - \beta\beta&#39; \\&lt;br&gt;
 &amp;amp; = \sigma^2(X&amp;rsquo;X)^{-1}.
 \end{align*}
 This is the covariance matrix of $\hat{\beta}$! Notably, this has two important properties. One, it depends on $\sigma^2$, so if we want to use this we had better estimate $\sigma^2$ somehow. More on this in the next section. Two, it depends on the _inverse_ of $X&amp;rsquo;X$. There&amp;rsquo;s no guarantee that this matrix is invertible. For example, if we have more predictors than we have data points (i.e. $k &amp;gt; n$) this matrix will certainly _not_ be invertible. You may have been warned about this scenario in the past. However, even if you have many data points, other situations can crop up where $X&amp;rsquo;X$ is either numerically difficult to invert (i.e. difficult to calculate on a computer), or produces very large variances. One such case is where two of the predictor variables are very highly correlated. More on this later.&lt;/p&gt;
-&lt;h3 id=&#34;other-quantities-&#34;&gt;Other Quantities&lt;/h3&gt;
+&lt;h3 id=&#34;other-quantities&#34;&gt;Other Quantities&lt;/h3&gt;
 &lt;p&gt;Here we will show briefly that $\hat{y}$ is also unbiased (assuming the model is correct). This can be seen by some matrix calculations:
 \begin{align*}
 E[\hat{y}]
 &amp;amp; = E[Hy] \\&lt;br&gt;
-&amp;amp; = E[X(X&amp;rsquo;X)^{-1}X&amp;rsquo;(X\beta+\epsilon)] \\&lt;br&gt;
+&amp;amp; = E[X(X&amp;rsquo;X)^{-1}X&#39;(X\beta+\epsilon)] \\&lt;br&gt;
 &amp;amp; = E[X\beta + H\epsilon] \\&lt;br&gt;
 &amp;amp; = X\beta + HE[\epsilon] \\&lt;br&gt;
 &amp;amp; = X\beta.
@@ -677,7 +677,7 @@ This is unbiased in the sense that it has the same mean as $\epsilon$. Unfortuna
 &lt;li&gt;$(AA^+)^* = AA^+$&lt;/li&gt;
 &lt;li&gt;$(A^+A)^* = A^+A$&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;If $A$ has linearly independent columns then the pseudoinverse can be calculated as $A^+ = (A^&lt;em&gt;A)^{-1}A^&lt;/em&gt;$ and the pseudoinverse is a &lt;em&gt;left inverse&lt;/em&gt; since $A^+A = I$. If $A$ has linearly independent columns then the pseudoinverse can be calculated as $A^+ = A^*(AA^*)^{-1}$ and the pseudoinverse is a _right inverse_ since $AA^+ = I$.&lt;/p&gt;
+&lt;p&gt;If $A$ has linearly independent columns then the pseudoinverse can be calculated as $A^+ = (A^&lt;em&gt;A)^{-1}A^&lt;/em&gt;$ and the pseudoinverse is a &lt;em&gt;left inverse&lt;/em&gt; since $A^+A = I$. If $A$ has linearly independent columns then the pseudoinverse can be calculated as $A^+ = A^&lt;em&gt;(AA^&lt;/em&gt;)^{-1}$ and the pseudoinverse is a &lt;em&gt;right inverse&lt;/em&gt; since $AA^+ = I$.&lt;/p&gt;
 &lt;p&gt;Finally, consider $(AB)^+$. This is equal to $B^+A^+$ if:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;$A$ has orthonormal columns (i.e. $A^*A = I$), or&lt;/li&gt;
@@ -705,9 +705,9 @@ y_i &amp;amp; \sim X\beta + \epsilon_i \\&lt;br&gt;
 \end{align*}
 where the $\epsilon_i$ are iid. We have previously derived the estimators $\hat{\beta} = (X&amp;rsquo;X)^{-1}X&amp;rsquo;y$, as well as for $\mbox{cov}(\hat{\beta}) = \sigma^2(X&amp;rsquo;X)^{-1}$.&lt;/p&gt;
 &lt;h2 id=&#34;measures-of-fit&#34;&gt;Measures of Fit&lt;/h2&gt;
-&lt;h3 id=&#34;the-t-statistic-&#34;&gt;The $t$ statistic&lt;/h3&gt;
+&lt;h3 id=&#34;the-t-statistic&#34;&gt;The $t$ statistic&lt;/h3&gt;
 &lt;p&gt;The most popular statistic used for linear regression is $t_i = \hat{\beta}_i/\hat{\sigma}(\hat{\beta}_i)$. Since we have shown that $\hat{\beta}$ is distributed as a multivariate normal random vector, $\hat{\beta}_i$ is distributed as a normal random variable. Furthermore, $\hat{\sigma}(\hat{\beta}_i)$, the standard error for this estimate, is a product of the standard error $\hat{\sigma}(\epsilon)$ and the analytical standard deviation of $\beta_i$ (for $\sigma = 1$) which is just the $\sqrt{(X&amp;rsquo;X)^{-1}_{ii}}$. The important thing is we have a normal variable and its standard error, and therefore this statistic is distributed as a $t$ random variable with $(n-k)$ degrees of freedom (recall $n$ is the number of data points and $k$ is the number of predictors).&lt;/p&gt;
-&lt;h3 id=&#34;the-f-statistic-&#34;&gt;The $F$ statistic&lt;/h3&gt;
+&lt;h3 id=&#34;the-f-statistic&#34;&gt;The $F$ statistic&lt;/h3&gt;
 &lt;p&gt;The $F$ test for the overall model is a formal test with hypothesis:
 \begin{align*}
 H_0: &amp;amp; ~~~\beta_i = 0 \mbox{ for all } i \\&lt;br&gt;
@@ -730,7 +730,7 @@ Notably we will be assuming that there _is_ still a non-zero constant mean term 
 &lt;li&gt;This is basically how much extra variation from the mean the model explains&lt;/li&gt;
 &lt;li&gt;SSM~$ = \sum_{i=1}^n (\hat{y}_i - \overline{y})^2$&lt;/li&gt;
 &lt;li&gt;This turns out to &lt;em&gt;also&lt;/em&gt; be a $\chi^2$ random variable&lt;/li&gt;
-&lt;li&gt;We can prove this using the same basic argument. Let $J = 11^T$ be a matrix of all 1s. Then: $$\mbox{SSM} = y&amp;rsquo;(H-\frac{1}{n} J)&#39;(H-\frac{1}{n} J)y.$$ However $H - \frac{1}{n}J$ is symmetric and idempotent, with rank $k-1$. Thus SSM$\sim \chi^2_{k-1}$ following the same logic from 
+&lt;li&gt;We can prove this using the same basic argument. Let $J = 11^T$ be a matrix of all 1s. Then: $$\mbox{SSM} = y&#39;(H-\frac{1}{n} J)&#39;(H-\frac{1}{n} J)y.$$ However $H - \frac{1}{n}J$ is symmetric and idempotent, with rank $k-1$. Thus SSM$\sim \chi^2_{k-1}$ following the same logic from 
 &lt;a href=&#34;../standard-error&#34;&gt;before&lt;/a&gt;
 .&lt;/li&gt;
 &lt;/ul&gt;
@@ -745,7 +745,7 @@ Remarkably SSE+SSM=SST, which can be used as an elementary proof that SST is $\c
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;TODO: what is an ANOVA?&lt;/p&gt;
-&lt;h4 id=&#34;variance-decomposition-&#34;&gt;Variance Decomposition&lt;/h4&gt;
+&lt;h4 id=&#34;variance-decomposition&#34;&gt;Variance Decomposition&lt;/h4&gt;
 &lt;p&gt;We can think about the variance decomposition several ways. The simplest proof is geometric in nature but requires jumping through some linear-subspace hoops. We can think about three points in $\mathbb{R}^n$, $n$-dimensional space where our datapoints $y$ live. One point is just the data vector $y$. Another point is $\hat{y}_i = \hat{y}_i$ a third point is $\overline{y}_i = \overline{y}$. We can also define $k$ vectors in this space, corresponding to the values of our predictors $x^{(j)}_i = X_{ij}$. These $k$ vectors define a $k$-dimensional linear subspace of $\mathbb{R}^n$ (which you can think of as $X\beta$ for all of the possible $k$-dimensional values of $\beta$. The prediction vector $\hat{y}$ is nothing but the projection of $y$ onto the closest point of this subspace. Since one of the predictors is the mean (i.e. $X_{i1} = 1$) the mean point $\hat{y}$ falls &lt;em&gt;inside&lt;/em&gt; this linear subspace. This gives us the following geometric intuition:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The mean is in the subspace&lt;/li&gt;
@@ -757,7 +757,7 @@ Therefore we can apply the Pythagorean theorem, to find that the squared distanc
 &lt;/ul&gt;
 &lt;p&gt;We can also think about the variance decomposition in terms of raw linear algebra and matrices: TODO&lt;/p&gt;
 &lt;p&gt;A common &lt;em&gt;mistake&lt;/em&gt; made in deriving the variance decomposition is noting that $$(y_i - \hat{y}_i) + (\hat{y}_i - \overline{y}) = (y_i-\overline{y}).$$ The &lt;em&gt;false&lt;/em&gt; argument then goes: square the terms and sum and the equality holds. However, as you likely know $A+B=C$ does &lt;em&gt;not&lt;/em&gt; imply that $A^2+B^2=C^2$. We require the additional structure of linear algebra and/or geometry to obtain this result&lt;/p&gt;
-&lt;h4 id=&#34;back-to-the-f-test-&#34;&gt;Back to the $F$ test&lt;/h4&gt;
+&lt;h4 id=&#34;back-to-the-f-test&#34;&gt;Back to the $F$ test&lt;/h4&gt;
 &lt;p&gt;We can now adjust SSE and SSM to get the &amp;ldquo;mean sum of squares,&amp;rdquo; by dividing by the degrees of freedom:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;MSE = SSE$/(n-k)$&lt;/li&gt;
@@ -765,15 +765,15 @@ Therefore we can apply the Pythagorean theorem, to find that the squared distanc
 Finally, our test statistic is $F = \mbox{MSM}/\mbox{MSE}$. In order for this to be a valid $F$ statistic, SSM and SSE must be independent. This turns out to be true but I will not prove it here (TODO).&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Note that if the model explains a lot more variation than just the mean we expect for MSE to be small and MSM to be large: make sure this make sense to you. So if the model is &amp;ldquo;real&amp;rdquo; then we expect $F$ to be large. If the null hypothesis is true then we expect $F$ to be small. So we reject the null for large values of $F$.&lt;/p&gt;
-&lt;h3 id=&#34;the-r2-&#34;&gt;The $R^2$&lt;/h3&gt;
+&lt;h3 id=&#34;the-r2&#34;&gt;The $R^2$&lt;/h3&gt;
 &lt;p&gt;There are numerous ways to calculate different versions of $R^2$ but at the end of the day they all boil down to correlation coefficients: the correlation $R$ between the predictors and the response variable. We square it because this gives us a measure of the proportion of variance explained by the predictors.&lt;/p&gt;
-&lt;h4 id=&#34;basic-r2-&#34;&gt;Basic $R^2$&lt;/h4&gt;
+&lt;h4 id=&#34;basic-r2&#34;&gt;Basic $R^2$&lt;/h4&gt;
 &lt;p&gt;The most basic version of this statistic is just the correlation coefficient between the the predictors and the response. It is also known as the coefficient of determination. It is calculated as $SSM/SST$. This gives it the nice interpretation of being the ratio of &amp;ldquo;variance explained by the model&amp;rdquo; to &amp;ldquo;total variance around the mean.&amp;rdquo; It can also be defined mathematically as the square of the Pearson correlation coefficient between $y$ and $\hat{y}$:
 \begin{align*}
 R^2 &amp;amp; = \left(\frac{\sum_{i=1}^n (y_i-\overline{y})(\hat{y}_i - \overline{y})}{\sqrt{\sum_{i=1}^n (y_i-\overline{y})^2}\sqrt{\sum_{i=1}^n (\hat{y}_i - \overline{y})^2}}\right)^2
 \end{align*}&lt;/p&gt;
 &lt;p&gt;However, the raw $R^2$ calculation has some problems as a measure of model fit. For one thing, $R^2$ &lt;em&gt;always&lt;/em&gt; increases whenever you add a new predictor. This is because $\hat{y}$ will always get closer to $y$ as our minimization procedure gains degrees of freedom to find the &amp;ldquo;best fit.&amp;rdquo; Basically this means that $R^2$ does not penalize overfitting. As we add more and more predictors to our model $R^2$ will just keep getting better and better and will fit coefficients that are highly dependent on the random noise. So we need something better.&lt;/p&gt;
-&lt;h4 id=&#34;adjusted-r2-&#34;&gt;Adjusted $R^2$&lt;/h4&gt;
+&lt;h4 id=&#34;adjusted-r2&#34;&gt;Adjusted $R^2$&lt;/h4&gt;
 &lt;p&gt;The adjusted $R^2$ tries to account for overfitting by decreasing the original $R^2$ statistic. There are two formulas we can use for the adjusted $R^2$ (which we will denote $\overline{R}^2$):
 \begin{align*}
 \overline{R}^2
@@ -787,10 +787,10 @@ R^2 &amp;amp; = \frac{\mbox{SSM}}{\mbox{SST}} \\&lt;br&gt;
 &amp;amp; = 1 - \frac{\mbox{SSE}/n}{\mbox{SST}/n}.
 \end{align*}
 One way of thinking about $\overline{R}^2$ is that the original (un-adjusted) $R^2$ was using biased estimates $\frac{\mbox{SSE}}{n}$ and $\frac{\mbox{SST}}{n}$ which need to be adjusted for their degrees of freedom $n-k-1$ and $n-1$. TODO(what is SST/n an estimate of).&lt;/p&gt;
-&lt;h2 id=&#34;residuals-&#34;&gt;Residuals&lt;/h2&gt;
-&lt;h3 id=&#34;standardizing-&#34;&gt;Standardizing&lt;/h3&gt;
+&lt;h2 id=&#34;residuals&#34;&gt;Residuals&lt;/h2&gt;
+&lt;h3 id=&#34;standardizing&#34;&gt;Standardizing&lt;/h3&gt;
 &lt;p&gt;Frequently when evaluating a model we will plot residuals against other things. Often when we do this we will standardize the residuals by dividing $\hat{\epsilon}_i$ by the residual standard error $\hat{\sigma}$. However, this is not necessarily the best way to achieve our goal of truly standardizing the residuals. The issue is that the &lt;em&gt;residuals&lt;/em&gt; are different from the &lt;em&gt;errors&lt;/em&gt;. Although the errors have equal variance, the residuals actually do not. This can be seen by remembering that: $\hat{\epsilon} = M\epsilon$. Thus, in reality the residuals are correlated and have different variances from one another.&lt;/p&gt;
-&lt;h3 id=&#34;studentizing-&#34;&gt;Studentizing&lt;/h3&gt;
+&lt;h3 id=&#34;studentizing&#34;&gt;Studentizing&lt;/h3&gt;
 &lt;p&gt;Luckily we can account for this. The way we do this is by &amp;ldquo;studentizing&amp;rdquo; the residuals. There are several formulas we can use to represent this, but basically it boils down to the fact that $\hat{\epsilon} \sim N(0,\sigma^2M)$. Thus the true variance of $\hat{\epsilon}_i$ is not $\sigma^2$ but $\sigma^2M_{ii}$. Thus we can studentize by calculating
 $$t_i = \frac{\hat{\epsilon}_i}{\hat{\sigma}(\epsilon)\sqrt{M_{ii}}}.$$
 We can equivalently express this in terms of the 
@@ -798,7 +798,7 @@ We can equivalently express this in terms of the
  as
 $$t_i = \frac{\hat{\epsilon}_i}{\hat{\sigma}(\epsilon)\sqrt{1-h_{ii}}}.$$
 TODO: some more on this&lt;/p&gt;
-&lt;h3 id=&#34;deleting-&#34;&gt;Deleting&lt;/h3&gt;
+&lt;h3 id=&#34;deleting&#34;&gt;Deleting&lt;/h3&gt;
 &lt;p&gt;Since outliers may have outsized influence on the model fit (see the 
 &lt;a href=&#34;#measures-of-influence&#34;&gt;next section&lt;/a&gt;
  we may want a more robust statistic for estimating the residuals. We can generate this by considering the &lt;em&gt;deleted residuals&lt;/em&gt;, or the residuals when comparing a data point to the model fitted &lt;em&gt;without that data point&lt;/em&gt;. We denote the vector of these as residuals $\hat{y}_{(i)}$ and a particular residual as $\hat{y}_{j(i)}$. The deleted residuals are expressed as:
@@ -830,13 +830,13 @@ d_i &amp;amp; = y_i - \hat{y}_{i(i)} \\&lt;br&gt;
 &amp;amp; = \hat{\epsilon_i}\left(1 - \frac{h_{ii}}{1-h_{ii}}\right) \&lt;br&gt;
 &amp;amp; = \frac{1-2h_{ii}}{1-h_{ii}}\hat{\epsilon}_i
 \end{align*}&lt;/p&gt;
-&lt;h2 id=&#34;measures-of-influence-&#34;&gt;Measures of Influence&lt;/h2&gt;
+&lt;h2 id=&#34;measures-of-influence&#34;&gt;Measures of Influence&lt;/h2&gt;
 &lt;p&gt;One other way of evaluating a regression fit is by considering the influence of each point. An unfortunate side effect of the least squares criterion is that it punishes point that are &lt;em&gt;very far&lt;/em&gt; away from the fit more than it punishes points that are &lt;em&gt;kinda far&lt;/em&gt; away from the fit. Basically this means that outliers are very influential. We can assess precisely how influential in a variety of ways.&lt;/p&gt;
-&lt;h3 id=&#34;leverage-&#34;&gt;Leverage&lt;/h3&gt;
+&lt;h3 id=&#34;leverage&#34;&gt;Leverage&lt;/h3&gt;
 &lt;p&gt;One of the most popular ways of assessing this infuence is with the &lt;em&gt;leverage&lt;/em&gt;. The leverage is defined as a measure of &amp;ldquo;observation self-sensitivity.&amp;rdquo; It is defined as the partial derivative: $h_{ii} = \dfrac{\partial \hat{y}_i}{\partial y_i}$. That is, how quickly does the predicted value change as the data point changes. This can be easily calculated from our equation for the predicted values: $\hat{y} = Hy$ so that we can see that $h_{ii}$ is in fact just the $ii$-th entry of the hat matrix.&lt;/p&gt;
 &lt;p&gt;Moreover we can show (TODO) that the leverage is bounded: $0\leq h_{ii}\leq 1$. So the predicted value will always increase when the datapoint increases, but will never increase quite as fast. That fits our intuition that predictions should be consistent with the data, but that no one data point should completely determine the fit.&lt;/p&gt;
 &lt;p&gt;Because least-squares is so sensitive to outliers, observations with leverages close to 1, or much larger than all the other leverages, should be suspect and might be considered outliers.&lt;/p&gt;
-&lt;h3 id=&#34;cooks-distance-&#34;&gt;Cook&amp;rsquo;s Distance&lt;/h3&gt;
+&lt;h3 id=&#34;cooks-distance&#34;&gt;Cook&amp;rsquo;s Distance&lt;/h3&gt;
 &lt;p&gt;Another way of assessing influence is with the Cook&amp;rsquo;s distance. This estimates the effect of deleting a particular observation. It is defined to be $D_i$: the squared distance between the predictions $\hat{y}$ and the predictions $\hat{y}_{(i)}$ when observation $i$ is removed from the sample, divided by $k$ times the mean squared error. In math: $$D_i = \frac{\sum_{j= 1}^n (\hat{y}_j - \hat{y}_{j(i)})^2}{k\hat{\sigma^2}}.$$&lt;/p&gt;
 &lt;p&gt;Therefore the Cook&amp;rsquo;s distance can also be expressed as
 \begin{align*}
@@ -844,7 +844,7 @@ D_i &amp;amp; = \frac{\sum_{j= 1}^n (\hat{y}_j - \hat{y}_{j(i)})^2}{k\hat{\sigma
 &amp;amp; = \frac{\left(\frac{\hat{\epsilon}_i}{1-h_{ii}}\right)^2h_i&amp;rsquo;h_i}{k\hat{\sigma}^2} \\&lt;br&gt;
 &amp;amp; = \frac{\hat{\epsilon}_i}{k\hat{\sigma}^2}\frac{h_{ii}}{(1-h_{ii})^2}
 \end{align*}&lt;/p&gt;
-&lt;h3 id=&#34;dffits-&#34;&gt;DFFITS&lt;/h3&gt;
+&lt;h3 id=&#34;dffits&#34;&gt;DFFITS&lt;/h3&gt;
 &lt;p&gt;A third measure of influence is DFFITS (which may stand for Difference of Fits). It is sort of like a cross between leverage and Cook&amp;rsquo;s distance. Like leverage, it is a measure of self-sensitivity, but like Cook&amp;rsquo;s distance it uses the predictions when a point is left out. The actual mathematical definition is:
 $$\mbox{DFFITS}_i = \frac{\hat{y}_i - \hat{y}_{i(i)}}{s_{(i)}\sqrt{h_{ii}}},$$
 where $\hat{y}_{i(i)}$ is the predicted value for $y_i$ when $y_i$ is removed from the dataset and $s_{(i)}$ is the standard error estimated without $y_i$.&lt;/p&gt;
@@ -853,14 +853,14 @@ $$D_i = \frac{\mbox{DFFITS}^2_i\hat{\sigma^2}_{(i)}}{k\hat{\sigma^2}}.$$
 In particular except for very small datasets the mean squared error should not change too much when data point $i$ is remove, so the approximate relationship
 $$D_i \approx \frac{\mbox{DFFITS}_i^2}{k}$$
 holds.&lt;/p&gt;
-&lt;h2 id=&#34;normality-&#34;&gt;Normality&lt;/h2&gt;
-&lt;h3 id=&#34;moments-&#34;&gt;Moments&lt;/h3&gt;
+&lt;h2 id=&#34;normality&#34;&gt;Normality&lt;/h2&gt;
+&lt;h3 id=&#34;moments&#34;&gt;Moments&lt;/h3&gt;
 &lt;p&gt;A common way of quantifying a statistical distribution is with its &lt;em&gt;moments&lt;/em&gt;. These are defined to be the expectations $E[X], E[X^2], E[X^3], $ and so on ($E[X^i]$ in general). The central moments are defined to be $E[(X-\mu)^i]$ and the standardized moments are $E\left[\left(\frac{X-\mu}{\sigma}\right)^i\right]$. The normal distribution is entirely defined by its first and second moments. In particular its third standardized moment (its &lt;em&gt;skewness&lt;/em&gt;) is 0 and its fourth standardized moment (its &lt;em&gt;kurtosis&lt;/em&gt;) is 3. By calculating the sample skewness and sample kurtosis we can heuristically evaluate whether the residuals from our model seem to follow a normal distribution.&lt;/p&gt;
-&lt;h3 id=&#34;shapiro-wilk-&#34;&gt;Shapiro-Wilk&lt;/h3&gt;
+&lt;h3 id=&#34;shapiro-wilk&#34;&gt;Shapiro-Wilk&lt;/h3&gt;
 &lt;p&gt;We can apply a more formal test of normality using the Shapiro-Wilk test. This test statistic is defined by considering the &lt;em&gt;order statistics&lt;/em&gt; $x_{(i)}$ from a sample and calculating:
 $$W = \frac{\left(\sum_{i=1}^n a_ix_{(i)}\right)^2}{\sum_{i=1}^n (x_i-\overline{x})^2}.$$
 The coefficients $a_i$ are obtained as the vector $\frac{V^{-1}m}{C}$ where $m$ is the expected values of the order statistics for iid standard normal random variables, and $V$ is the covariance matrix for those order statistics. $C$ is the length of the vector $V^{-1}m$. There is no classical distribution that fits $W$, so testing is usually done using simulation methods.&lt;/p&gt;
-&lt;h2 id=&#34;heteroskedasticity-&#34;&gt;Heteroskedasticity&lt;/h2&gt;
+&lt;h2 id=&#34;heteroskedasticity&#34;&gt;Heteroskedasticity&lt;/h2&gt;
 &lt;p&gt;The most common way of testing for heteroskedaticity is the Breusch-Pagan test (implemented in R as ncv.test). This tests whether the variance of the residuals is dependent on the values of the predictors. This tests works by conducting regression as ordinary and calculating the residuals $\hat{\epsilon}$. Then we consider the possibility that the square of the residuals $\hat{\epsilon}^2$ depends upon the predictors. We test this by fitting a new linear model: $$\hat{\epsilon}^2 = X\gamma + \eta.$$
 The test statistic is $nR^2$ where $R^2$ is the coefficient of determination for the second model. Under the null hypothesis that the predictors have no effect. this test statistic is distributed $\chi^2_{k-1}$. (TODO: why?)&lt;/p&gt;
 </description>
@@ -943,7 +943,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;what-are-my-learning-goals-&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
+&lt;h2 id=&#34;what-are-my-learning-goals&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/GoalsAndObjectives/Bloom.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bloom&amp;rsquo;s Taxonomy&lt;/a&gt;
 :&lt;/p&gt;
@@ -961,7 +961,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;p&gt;Both during the course and at the end of the course. Designing 
 &lt;a href=&#34;/post/teaching/assessment&#34;&gt;assessments&lt;/a&gt;
  is a whole separate can of worms.&lt;/p&gt;
-&lt;h2 id=&#34;how-will-i-achieve-those-goals-&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
+&lt;h2 id=&#34;how-will-i-achieve-those-goals&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
 &lt;p&gt;Before I get into the nitty-gritty of lesson planning, etc, now is also a good time to write a 
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/preparing-to-teach/designing-your-course-and-syllabus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;syllabus&lt;/a&gt;
 . Once I&amp;rsquo;ve done that I think I personally will benefit from calendaring. This will help me remember little things like: two weeks from today is the exam, I need to write it so I can tell students about format, etc.&lt;/p&gt;
@@ -973,13 +973,13 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/teaching/example-syllabus/</link>
       <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       <guid>/post/teaching/example-syllabus/</guid>
-      <description>&lt;h1 id=&#34;general-information-&#34;&gt;General information&lt;/h1&gt;
+      <description>&lt;h1 id=&#34;general-information&#34;&gt;General information&lt;/h1&gt;
 &lt;p&gt;Instructor: Connie Okasaki (&lt;a href=&#34;mailto:cokasaki@uw.edu&#34;&gt;cokasaki@uw.edu&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;TAs: Someone (&lt;a href=&#34;mailto:someone@uw.edu&#34;&gt;someone@uw.edu&lt;/a&gt;) and Someone Else (&lt;a href=&#34;mailto:esomeone@uw.edu&#34;&gt;esomeone@uw.edu&lt;/a&gt;)&lt;/p&gt;
 &lt;p&gt;Lecture Times: Tues &amp;amp; Thurs 10:00-11:20&lt;/p&gt;
 &lt;p&gt;Lab Time: W 11:00-12:50&lt;/p&gt;
 &lt;p&gt;Course Website: here&lt;/p&gt;
-&lt;h1 id=&#34;objective-&#34;&gt;Objective&lt;/h1&gt;
+&lt;h1 id=&#34;objective&#34;&gt;Objective&lt;/h1&gt;
 &lt;p&gt;The objective of this course is to provide students with an introductory understanding of the probability and statistics. Both play an important role in nearly all aspects of society, and your ability to understand, interpret, and critique data and the statistics used to analyze these data will provide you with an important foundation, regardless of career choice. After completing this course you will:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Understand different types of data and how they are collected&lt;/li&gt;
@@ -1002,7 +1002,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;li&gt;Feel more comfortable using equations to model reality&lt;/li&gt;
 &lt;li&gt;Feel more comfortable using code to analyze data&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;assessment-&#34;&gt;Assessment&lt;/h1&gt;
+&lt;h1 id=&#34;assessment&#34;&gt;Assessment&lt;/h1&gt;
 &lt;p&gt;I believe that grading is detrimental to both teaching and learning. While feedback is a valuable part of learning, numerical grades have been shown to distract from feedback. Furthermore, assigning numerical grades takes up time that I might otherwise spend improving my teaching. I have therefore designed this course to maximize feedback and minimize grading. Since I am required to assign numerical grades I have attempted to split your numerical grade between effort-based and accuracy-based grading approximately evenly. Notably this course is NOT graded on a curve. Your grade will be based on the effort you apply and the mastery you demonstrate, but never on the performance of other students. The following events will be graded:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -1042,7 +1042,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h1 id=&#34;final-grades-&#34;&gt;Final Grades&lt;/h1&gt;
+&lt;h1 id=&#34;final-grades&#34;&gt;Final Grades&lt;/h1&gt;
 &lt;p&gt;The grading scale will be as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;95% = 4.0&lt;/li&gt;
@@ -1056,21 +1056,21 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;li&gt;&amp;lt;62% = 0.0&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Intermediate grades will be calculated according to a straightforward extension of this scale (i.e. 0.1 for every 1% in your final grade). To reiterate, I do believe that grading is detrimental to your learning as students. Therefore note that your grades on the quizzes (which you can make-up in office hours), labs (which you will receive substantial assistance with in lab section), the final project (which you can seek substantial guidance with over the second half of the course), and the extra credit (which is easily attainable be completing the readings) are all essentially effort-based. With full marks in these areas and only half marks in the accuracy-based homeworks and midterm you all have a straightforward path to earning an exemplary 91% or 3.6 grade. I therefore encourage you to focus on effort rather than grades.&lt;/p&gt;
-&lt;h1 id=&#34;teaching-&#34;&gt;Teaching&lt;/h1&gt;
+&lt;h1 id=&#34;teaching&#34;&gt;Teaching&lt;/h1&gt;
 &lt;p&gt;I will provide you my slides and lecture notes prior to the start of class. I require you all to obtain a copy of 
 &lt;a href=&#34;https://www.openintro.org/book/os&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OpenIntro Statistics&lt;/a&gt;
  which is available as a free pdf online. Each class I will post a set of readings you should complete for the following class. Completing these readings will give you the information you need to answer the extra credit questions.&lt;/p&gt;
-&lt;h1 id=&#34;software-&#34;&gt;Software&lt;/h1&gt;
+&lt;h1 id=&#34;software&#34;&gt;Software&lt;/h1&gt;
 &lt;p&gt;You will be required to use R in the JupyterHub environment hosted by UW-IT on the cloud. This allows all of you to work in a standardized environment and ensures that everyones code runs in exactly the same way. We will show you how to access and interact with JupyterHub in lab sessions.&lt;/p&gt;
-&lt;h1 id=&#34;inclusivity-and-course-conduct-&#34;&gt;Inclusivity and Course Conduct&lt;/h1&gt;
+&lt;h1 id=&#34;inclusivity-and-course-conduct&#34;&gt;Inclusivity and Course Conduct&lt;/h1&gt;
 &lt;p&gt;I hope to make all students feel welcome in this class, regardless of your background, beliefs, identity, or learning needs. I also hope to help all students learn effectively and thrive in this class. I welcome feedback and suggestions as to how I may improve both my teaching and my classroom environment at any point in the course. I also think the syllabus is a poor place to make such a statement, so I hope that my actions in the classroom also make this clear to you. I hope in particular that I have explained my reasoning behind the two policies which I will strictly enforce &amp;ndash; the late policy and the extensions policy. I plan to release answer keys almost immediately upon submission of homework assignments, to allow for extremely fast feedback, since you can check your answers right away. I cannot do this if I allow late submissions and extensions. I hope that my drop policy is sufficiently generous to offset this, but if you feel that this policy has affected or will affect you unfairly, please reach out and I will do my best to find an accommodation for you &amp;ndash; likely this will involve an alternative assignment. Two specific cases where this may be called for are outlined below.&lt;/p&gt;
-&lt;h1 id=&#34;disability-accommodations-&#34;&gt;Disability Accommodations&lt;/h1&gt;
+&lt;h1 id=&#34;disability-accommodations&#34;&gt;Disability Accommodations&lt;/h1&gt;
 &lt;p&gt;It is crucial that all students in this class have access to the full range of learning experiences. At the University of Washington, it is the policy and practice to create inclusive and accessible learning environments. To request academic accommodations due to a disability, please contact Disability Resources for Students (DRS), 011 Mary Gates Hall, (206) 543-8924, or &lt;a href=&#34;mailto:uwdrs@uw.edu&#34;&gt;uwdrs@uw.edu&lt;/a&gt;. If you have a letter from DRS indicating that you have a disability which requires academic accommodations, please present the letter to the instructor so we can discuss the accommodations needed for this class. If you have, or think you have, a temporary or permanent disability that impacts your participation in any course, please also contact Disability Resources for Students (DRS) at: 206-543-8924 V / 206-543-8925 TDD / &lt;a href=&#34;mailto:uwdrs@uw.edu&#34;&gt;uwdrs@uw.edu&lt;/a&gt; e-mail. More information can be found at &lt;a href=&#34;http://depts.washington.edu/uwdrs/&#34;&gt;http://depts.washington.edu/uwdrs/&lt;/a&gt;&lt;/p&gt;
-&lt;h1 id=&#34;religious-accommodations-&#34;&gt;Religious Accommodations&lt;/h1&gt;
+&lt;h1 id=&#34;religious-accommodations&#34;&gt;Religious Accommodations&lt;/h1&gt;
 &lt;p&gt;Washington state law requires that UW develop a policy for accommodation of student absences or significant hardship due to reasons of faith or conscience, or for organized religious activities. The UW&amp;rsquo;s policy, including more information about how to request an accommodation, is a vailable at Religious Accommodations Policy (&lt;a href=&#34;https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/)&#34;&gt;https://registrar.washington.edu/staffandfaculty/religious-accommodations-policy/)&lt;/a&gt;. Accommodations must be requested within the first two weeks of this course using the Religious Accommodations Request form (&lt;a href=&#34;https://registrar.washington.edu/students/religious-accommodations-request/)&#34;&gt;https://registrar.washington.edu/students/religious-accommodations-request/)&lt;/a&gt;.&lt;/p&gt;
-&lt;h1 id=&#34;tutoring-resources-&#34;&gt;Tutoring Resources&lt;/h1&gt;
+&lt;h1 id=&#34;tutoring-resources&#34;&gt;Tutoring Resources&lt;/h1&gt;
 &lt;p&gt;Something something&lt;/p&gt;
-&lt;h1 id=&#34;academic-conduct-&#34;&gt;Academic Conduct&lt;/h1&gt;
+&lt;h1 id=&#34;academic-conduct&#34;&gt;Academic Conduct&lt;/h1&gt;
 &lt;p&gt;Something somethingB&lt;/p&gt;
 </description>
     </item>
@@ -1082,7 +1082,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <guid>/post/teaching/grading/</guid>
       <description>&lt;p&gt;Notes from &amp;ldquo;
 &lt;a href=&#34;https://www.ncbi.nlm.nih.gov/pmc/arrticles/PMC4041495&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Teaching More by Grading Less&lt;/a&gt;
-&amp;quot;.&lt;/p&gt;
+&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;Grading is a ubiquitious but surprisingly recent phenomenon. The current A-D+F system only gained popularity in the 1940s. Grades are intended as feedback on performance, motivators of student effort, tools for comparing students, and objective evaluations of student knowledge. However, these goals are rarely achieved.&lt;/p&gt;
 &lt;p&gt;On the contrary, more qualitative feedback describing how work could be improved is more effective, and grades often distract from this feedback. Grades dampen intrinsic motivation, enhance fear of failure, reduce interest, decrease enjoyment, increase anxiety, stimulate aviodance, heighten competitiveness, and even hamper performance. Grading systems that reward effort seem to have better reception.&lt;/p&gt;
 &lt;p&gt;Grades are further unhelpful as a tool for comparing students. Curve-grading might be thought to be the fairest approach but in reality this mostly stimulates competition, while divorcing grades from actual mastery.&lt;/p&gt;
@@ -1104,7 +1104,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/summer/week1/wedn/</link>
       <pubDate>Wed, 05 Aug 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/summer/week1/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Spent most of yesterday working on the air pollution data. Plan to work today on the GP code and the paper, and maybe spend a little time cleaning the air pollution data and getting all the spatial info sorted out.&lt;/p&gt;
 &lt;p&gt;Morning: 10-12&lt;/p&gt;
 &lt;ul&gt;
@@ -1118,7 +1118,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Get spatial data sorted out&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Spent most of the day coding the GPs.&lt;/p&gt;
 </description>
     </item>
@@ -1128,7 +1128,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/summer/week1/mon/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/summer/week1/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Afternoon: 12-2&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Code the optimization GPs&lt;/li&gt;
@@ -1141,7 +1141,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Read VL chapter&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Spent most of the day coding the GPs.&lt;/p&gt;
 </description>
     </item>
@@ -1151,14 +1151,14 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/summer/week1/post-1/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/summer/week1/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Fell off the horse here with goal setting, what with everything going on but we&amp;rsquo;re starting up again now so here we go&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Finish response to reviewers document for Editor/R1&lt;/li&gt;
 &lt;li&gt;Code GP simulation for optimizing under a misspecified model&lt;/li&gt;
 &lt;li&gt;Begin analyzing air pollution data&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 </description>
     </item>
     
@@ -1167,7 +1167,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/summer/spring-post-1/</link>
       <pubDate>Mon, 03 Aug 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/summer/spring-post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Set date for general exam, do all the paperwork things&lt;/li&gt;
 &lt;li&gt;Resubmit paper&lt;/li&gt;
@@ -1201,7 +1201,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/spring/week7/thurs/</link>
       <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week7/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-10:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Respond to TAing emails&lt;/li&gt;
@@ -1218,7 +1218,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Meet with Tyler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;I did these things! My optimization finally ran without bugs, I managed to do a little tiny bit of SQL.&lt;/p&gt;
 </description>
     </item>
@@ -1228,9 +1228,9 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/spring/week7/wedn/</link>
       <pubDate>Wed, 06 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week7/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Finish prepping for committee meeting. Start to grade and read VL.&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Feel food about committee meeting. Graded a few homeworks and read a few chapters.&lt;/p&gt;
 </description>
     </item>
@@ -1264,7 +1264,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/spring/week7/tues/</link>
       <pubDate>Tue, 05 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week7/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-11&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Finish prepping for STRG&lt;/li&gt;
@@ -1281,7 +1281,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Prep for committee meeting&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;STRG went really well! People seemed to like my talk and we had a lot of good discussion. Continuing to prep for committee meeting.&lt;/p&gt;
 </description>
     </item>
@@ -1291,9 +1291,9 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/spring/week7/mon/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week7/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Finish prepping for STRG tomorrow. Continue work on committee meeting presentation.&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did that!&lt;/p&gt;
 </description>
     </item>
@@ -1303,7 +1303,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/spring/week7/post-1/</link>
       <pubDate>Mon, 04 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week7/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Give presentation to STRG&lt;/li&gt;
 &lt;li&gt;Give presentation to committee meeting and get useful feedback&lt;/li&gt;
@@ -1312,7 +1312,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;li&gt;Need a lot of bandwidth to tackle revisions, so we will do this next week&lt;/li&gt;
 &lt;li&gt;Grade HW 2&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Presentation went well.&lt;/p&gt;
 </description>
     </item>
@@ -1322,9 +1322,9 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/spring/week6/fri/</link>
       <pubDate>Fri, 01 May 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Choose and prep paper for STRG next week. Prepare for committee meeting.&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did these things. STRG is going to take longer than I had hoped. Long week ahead of me.&lt;/p&gt;
 </description>
     </item>
@@ -1334,7 +1334,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/spring/week6/thurs/</link>
       <pubDate>Thu, 30 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-10:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Respond to TAing emails&lt;/li&gt;
@@ -1351,7 +1351,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Meet with Tyler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;I did these things! My optimization finally ran without bugs, I managed to do a little tiny bit of SQL.&lt;/p&gt;
 </description>
     </item>
@@ -1361,9 +1361,9 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/spring/week6/wedn/</link>
       <pubDate>Wed, 29 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Find a dataset on Neotoma and debug the optimization case study.&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Spent a lot of time on both tasks. Neotoma is remarkably difficult to use. I&amp;rsquo;m trying to learn a tiny bit of SQL to access it because I don&amp;rsquo;t think there is a better dataset out there for this project, but it has been frustrating. The optimization still is not solving. I think it is either an issue with the bounds or an issue with the size of the problem.&lt;/p&gt;
 </description>
     </item>
@@ -1373,7 +1373,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
       <link>/post/notebook/2020/spring/week6/tues/</link>
       <pubDate>Tue, 28 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-11&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Read Vecchia paper for STRG&lt;/li&gt;
@@ -1392,7 +1392,7 @@ Cook&amp;rsquo;s distance and leverage&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;Afternoon: 3:30-5
 Neotoma&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Got a decent amount of reading done, but did not find a satisfactory dataset on Neotoma. More on this tomorrow I suppose.&lt;/p&gt;
 </description>
     </item>
@@ -1402,7 +1402,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week6/mon/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-9:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Set up for the week&lt;/li&gt;
@@ -1424,7 +1424,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Find Neotoma dataset&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Responded to all my emails. Got the code running for the pilot study/optimization integration, but it&amp;rsquo;s been a while since I looked at the optimization code. It runs but slowly and I don&amp;rsquo;t entirely remember how to fix it. Did not end up finding Neotoma dataset, instead I ended up working on SSN stuff that I didn&amp;rsquo;t finish yesterday, and in particular I learned how Cholesky sparse up-looking updates work.&lt;/p&gt;
 </description>
     </item>
@@ -1434,7 +1434,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week6/post-1/</link>
       <pubDate>Mon, 27 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week6/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Select a pollen dataset to use&lt;/li&gt;
 &lt;li&gt;Find a trade winds dataset to use&lt;/li&gt;
@@ -1443,7 +1443,7 @@ Neotoma&lt;/p&gt;
 &lt;li&gt;Look ahead to QSCI HW 3&lt;/li&gt;
 &lt;li&gt;Write up the SSN scratch paper before I forget it all&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Got access to Neotoma although it is much more complex than I feared&lt;/li&gt;
 &lt;li&gt;No progress on trade winds&lt;/li&gt;
@@ -1458,7 +1458,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/fri/</link>
       <pubDate>Fri, 24 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-10&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Debug sampling design code&lt;/li&gt;
@@ -1487,7 +1487,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Read fun papers&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Lots of scattered goals today so not all of them actually happened. I did look into the paleopollen stuff but there&amp;rsquo;s a lot there so still need to sift through what may be most applicable. I took some notes on Ch 7 but not Ch 8, and I did read some fun papers. Spent much more than 1 hour debugging the sampling design code but I did finally get it working!&lt;/p&gt;
 </description>
     </item>
@@ -1497,7 +1497,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/thurs/</link>
       <pubDate>Thu, 23 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-11&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Finish grading and respond to TAing emails&lt;/li&gt;
@@ -1514,7 +1514,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Meet with Tyler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Meetings and lab went well! Implemented profile likelihood method for parameter estimation in the sampling design case study but it still doesn&amp;rsquo;t seem to be working. Not sure what could be going on.&lt;/p&gt;
 </description>
     </item>
@@ -1524,9 +1524,9 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/wedn/</link>
       <pubDate>Wed, 22 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Just grade all day!&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;I did that! I got almost everything finished just one or two more assignments to go.&lt;/p&gt;
 </description>
     </item>
@@ -1536,7 +1536,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/tues/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-11&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Read Vecchia-Laplace paper&lt;/li&gt;
@@ -1557,7 +1557,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Grading&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;I did these things! I think the Vecchia-Laplace paper could potentially be useful for the SSN stuff if it turns out that calculating the covariance matrix isn&amp;rsquo;t so so hard, or it could at least be useful for the existing SSN framework. Only got a few assignments done.&lt;/p&gt;
 </description>
     </item>
@@ -1567,7 +1567,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/mon/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-9:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Lab checkins and set up for the week&lt;/li&gt;
@@ -1585,7 +1585,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on optimal design synthetic experiment&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 </description>
     </item>
     
@@ -1594,7 +1594,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week5/post-1/</link>
       <pubDate>Mon, 20 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week5/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Email Mevin about animal movement and pollen&lt;/li&gt;
 &lt;li&gt;Keep working on write-up and looking for datasets&lt;/li&gt;
@@ -1602,7 +1602,7 @@ Neotoma&lt;/p&gt;
 &lt;li&gt;Read and take notes on VL Ch 7 and 8&lt;/li&gt;
 &lt;li&gt;Grade for QSCI 483&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did email Mevin and got pointed to a really cool paleo dataset to use for that. Selected a cluster sampling pilot study procedure for the optimal sampling design project. Read and took (some) notes for VL Ch 7. Did a lot of gradnig for QSCI.&lt;/p&gt;
 </description>
     </item>
@@ -1612,7 +1612,7 @@ Neotoma&lt;/p&gt;
       <link>/post/notebook/2020/spring/week4/fri/</link>
       <pubDate>Fri, 17 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week4/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-10&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Respond to emails&lt;/li&gt;
@@ -1641,7 +1641,7 @@ Neotoma&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on SSN modeling&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did all these things although I did not finish writing up the animal movement case study &amp;ndash; there&amp;rsquo;s a lot more background to include. Read and took notes on both VL Ch 5 and 6. Turns out the pollen dataset that I thought was from AAAAI/NAB was actually not. It is more paleoecological than really pollen counts that we&amp;rsquo;re looking for. Only real pollen counts I&amp;rsquo;ve been able to find so far are AAAAI and EAN (Europe) both of which are closely guarded and cannot be made public. I&amp;rsquo;d really like to use a public dataset so I&amp;rsquo;m not sure what to do about this&amp;hellip;however I did find a wind speed dataset that seems to be pretty decent although right now it only seems to be marine measurements so I&amp;rsquo;m trying to see if there&amp;rsquo;s a land-based sister dataset.&lt;/p&gt;
 </description>
     </item>
@@ -1673,7 +1673,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week4/thurs/</link>
       <pubDate>Thu, 16 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week4/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on animal movement and synthetic data&lt;/li&gt;
@@ -1686,7 +1686,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Meet with Tyler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Found the bug in my animal movement code!!! Finally I can move on to other parts of this case study. Ran MCMC and it is giving me good and reasonable answers.&lt;/p&gt;
 </description>
     </item>
@@ -1738,7 +1738,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week4/wedn/</link>
       <pubDate>Wed, 15 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week4/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Respond to Sándor and find spatial dataset&lt;/li&gt;
@@ -1757,7 +1757,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did most of these things. Started working on the synthetic data case study for the optimization project.&lt;/p&gt;
 </description>
     </item>
@@ -1767,7 +1767,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week4/tues/</link>
       <pubDate>Tue, 14 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week4/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9:30-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Continue work on animal movement&lt;/li&gt;
@@ -1780,7 +1780,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;NSF Activity Report&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Finished the activity report, held office hours, worked on movement. Still stumped by my movement bugs. I&amp;rsquo;m getting not-PSD errors from a function that should not possibly be able to produce a non-PSD matrix.&lt;/p&gt;
 </description>
     </item>
@@ -1790,7 +1790,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week4/mon/</link>
       <pubDate>Mon, 13 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week4/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-9:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Lab checkins and set up for the week&lt;/li&gt;
@@ -1809,7 +1809,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on NSF progress report&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Worked on animal movement code. It seems as though my bug is the &amp;ldquo;wiggles&amp;rdquo; common to FEM advection-type equations so I am attempting to implement FD. It wasn&amp;rsquo;t too hard for this simple example and is slightly better practice anyways. Spent pretty much all day on that however.&lt;/p&gt;
 </description>
     </item>
@@ -1819,7 +1819,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/fri/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on animal movement case study&lt;/li&gt;
@@ -1836,7 +1836,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on pollen case study&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Mostly worked on the case study. Made some notes on VL Ch 3 but the movement stuff was very buggy.&lt;/p&gt;
 </description>
     </item>
@@ -1846,7 +1846,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/teaching/visible-learning/ch-03/</link>
       <pubDate>Fri, 10 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/visible-learning/ch-03/</guid>
-      <description>&lt;p&gt;An &lt;em&gt;empathy gap&lt;/em&gt; occurs when people are relatively unable to put themselves in the place of another person. Deep levels of empathy are difficult if you have never had the same experience as another person, or if you are not currently experiencing anything similar. It is easiest to empathize with people whose experiences you are currently mirroring, harder if you have mirrored them in the past, and hardest if you have never experienced them at all. Children in particular do not develop the ability to deeply understand others&amp;rsquo; viewpoints until late adolescence or early adulthood.&lt;/p&gt;
+      <description>&lt;p&gt;An &lt;em&gt;empathy gap&lt;/em&gt; occurs when people are relatively unable to put themselves in the place of another person. Deep levels of empathy are difficult if you have never had the same experience as another person, or if you are not currently experiencing anything similar. It is easiest to empathize with people whose experiences you are currently mirroring, harder if you have mirrored them in the past, and hardest if you have never experienced them at all. Children in particular do not develop the ability to deeply understand others&#39; viewpoints until late adolescence or early adulthood.&lt;/p&gt;
 &lt;p&gt;Inability to empathize with each other results in &lt;em&gt;negative escalations&lt;/em&gt;. When one person wrongs or hurts another, the other person retaliates. The first underestimates the harm they incurred and so views the retaliation as out of proportion, which justifies further retaliation, leading to a &lt;em&gt;snowball effect&lt;/em&gt; or &lt;em&gt;negative cascade&lt;/em&gt;.&lt;/p&gt;
 &lt;p&gt;On the other hand establishing positive relationships cascades and results in lasting benefits. Marked improvements have been observed to occur the year &lt;em&gt;following&lt;/em&gt; relationship-based interventions. Longitudinal studies have found persistent and profound benefits to positive teacher student relationships on a decadal scale. These positive relationships may help because they build trust that allows students to make mistakes and ask for help, and builds the confidence in students to try again.&lt;/p&gt;
 &lt;p&gt;Developing positive relationships can be difficult if the focus is on responding to uncooperative students. Social psychology shows that &lt;em&gt;emotional leakage&lt;/em&gt; is common. Hiding emotions is difficult, and when a teacher has negative emotions towards a student the student may realize this. No major theory of learning recommends punitive action in response to difficult students. For example, high school students tend to attribute disciplinary action to the teacher (&amp;ldquo;teacher hats me&amp;rdquo;) rather than accept personal responsibility.&lt;/p&gt;
@@ -1874,7 +1874,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/thurs/</link>
       <pubDate>Thu, 09 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make edits to animal movement modeling section&lt;/li&gt;
@@ -1887,7 +1887,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Meet with Tyler&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did these things! Was hoping to finish the animal movement section but it didn&amp;rsquo;t quite happen. Gotta make some decisions about presenting IOU vs OUF results.&lt;/p&gt;
 </description>
     </item>
@@ -1897,7 +1897,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/wedn/</link>
       <pubDate>Wed, 08 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Write personal statement and finish all my portion of the concurrent MS application&lt;/li&gt;
@@ -1914,7 +1914,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Read Mevin&amp;rsquo;s sources&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Finished application by 11:30. Got Dirichlet BC code up and running and am not seeing any obvious bugs right away. Looking good! Skimmed VL Ch 3 and Ch 4, will take notes tomorrow.&lt;/p&gt;
 </description>
     </item>
@@ -1924,7 +1924,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/tues/</link>
       <pubDate>Tue, 07 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
@@ -1942,7 +1942,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Email Sándor&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Got side tracked with adminstrative stuff again. Evidently I have to formally apply to the concurrent MS program in the stats department so that will take up much of my week. I did get the Dirichlet code up and running although there are probably a few lingering bugs. MCMC run is going now. Did not get to VL or emailing Sándor, although I actually looked at his email and there is not too much to respond to directly. I do owe him an update soon though.&lt;/p&gt;
 </description>
     </item>
@@ -1952,7 +1952,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/mon/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-11&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Prep for the week and finish up my preliminary analysis for the spatial stream network model&lt;/li&gt;
@@ -1970,7 +1970,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Look at bypass responses&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Morning stuff went well but I fell into administrative tasks and did not get the code done. I did email my committee, email with Erica about my TAing position, and email with the stats department about the concurrent master&amp;rsquo;s program. I took a brief look at Mevin&amp;rsquo;s response in the afternoon.&lt;/p&gt;
 </description>
     </item>
@@ -1980,7 +1980,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week3/post-1/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week3/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Still need to finish up my Dirichlet BC code from last week but I got a lot off my plate! I am done with the bypass and the dam passage paper and can get back to research more-or-less full time (less my new TAing position). My next few goals for spring quarter are all focused on my source project, but I would like to make some more progress on the optimal design front to keep some forward momentum on that front.&lt;/p&gt;
 &lt;p&gt;I would like to spend this week doing a mix of: finishing up the Dirichlet code and hopefully the animal movement case study, TAing, and responding to feedback from my bypass proposal. So my goals are&lt;/p&gt;
 &lt;ul&gt;
@@ -1990,7 +1990,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;Respond to Sándor&amp;rsquo;s email by Tuesday&lt;/li&gt;
 &lt;li&gt;Read two of Mevin&amp;rsquo;s suggested papers by Wednesday, the rest by Friday&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Finished up the Dirichlet BC code&lt;/li&gt;
 &lt;li&gt;Read but have not yet taken notes on VL Chs 3 and 4&lt;/li&gt;
@@ -2005,7 +2005,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/fri/</link>
       <pubDate>Fri, 03 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC stuff&lt;/li&gt;
@@ -2018,7 +2018,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC stuff&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Made some really good progress on Dirichlet BC stuff, but did not manage to get the code to a working point. I feel like I have a good handle on QSCI for this week, and I made some good progress on stream network analysis.&lt;/p&gt;
 </description>
     </item>
@@ -2028,7 +2028,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/thurs/</link>
       <pubDate>Thu, 02 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Look at QSCI stuff&lt;/li&gt;
@@ -2041,7 +2041,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Made some good progress on remembering how all the 
 &lt;a href=&#34;/courses/qsci-483/linear-algebra/math-diagnostics&#34;&gt;model diagnostics&lt;/a&gt;
  work. Taking this as an opportunity to go beyond what the course really calls for and cement my understanding of these things because they&amp;rsquo;re important to know.&lt;/p&gt;
@@ -2079,7 +2079,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/wedn/</link>
       <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
@@ -2096,7 +2096,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Wrote up some 
 &lt;a href=&#34;/courses/gaussian-processes&#34;&gt;resources&lt;/a&gt;
  so that I can stop rederiving/looking up common GP/MVN properties that I need to use. Also included on there the math for Dirichlet BCs. Now that the derivation is there I can more effectively write the code for the implementation, rather than writing stuff down on paper every time I try to do this.&lt;/p&gt;
@@ -2114,7 +2114,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/tues/</link>
       <pubDate>Tue, 31 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Look over the rest of QSCI HW 1&lt;/li&gt;
@@ -2133,7 +2133,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Didn&amp;rsquo;t make it through the whole thing, had to look up some of the model diagnostics Tim is using, but did get through VL Ch 1 and 2. Struggled with website formatting in the afternoon.&lt;/p&gt;
 </description>
     </item>
@@ -2327,7 +2327,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/teaching/visible-learning/core-takeaways/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/visible-learning/core-takeaways/</guid>
-      <description>&lt;h2 id=&#34;nine-basic-principles-&#34;&gt;Nine basic principles&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;nine-basic-principles&#34;&gt;Nine basic principles&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;Explanations of human learning in terms of innate talent are consistently undermined by research which states that substantial amounts of time, energy, instruction, and effort are required to develop mastery of any subject area.&lt;/li&gt;
 &lt;li&gt;We can naturally learn from any information, but to learn effectively that information has to be organized in a way that matches how our minds are organized. Minds are organized differently for different people, and even change as we age.&lt;/li&gt;
@@ -2339,18 +2339,18 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;Humans are fundamentally social, down to the neurological level. This sociality can be used as a tool (social brain hypothesis)&lt;/li&gt;
 &lt;li&gt;Ideas about learning that are contradicted by scientific evidence abound. Many of these ideas can be harmful.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;section-1-&#34;&gt;Section 1&lt;/h2&gt;
+&lt;h2 id=&#34;section-1&#34;&gt;Section 1&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;The mind may not be &amp;ldquo;designed for thinking&amp;rdquo; and requires time and effort to think&lt;/li&gt;
-&lt;li&gt;Teachers need to recognize how difficult tasks are for beginners. Focus should be not on material but on the actual process of moving from not knowing to knowing. To do this students need a safe environment to acknowledge they don&#39;t understand. We can only holld so much in our cognitive centers, so it is important to ``overlearn&amp;rsquo;&amp;rsquo; basic concepts until it is ingrained and automatic&lt;/li&gt;
+&lt;li&gt;Teachers need to recognize how difficult tasks are for beginners. Focus should be not on material but on the actual process of moving from not knowing to knowing. To do this students need a safe environment to acknowledge they don&#39;t understand. We can only holld so much in our cognitive centers, so it is important to ``overlearn&#39;&#39; basic concepts until it is ingrained and automatic&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;chapter-1-&#34;&gt;Chapter 1&lt;/h3&gt;
+&lt;h3 id=&#34;chapter-1&#34;&gt;Chapter 1&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Students do not dislike school, but tolerate it.&lt;/li&gt;
 &lt;li&gt;The brain may not be &amp;ldquo;designed&amp;rdquo; for abstract thinking and as a result school is a taxing process.&lt;/li&gt;
 &lt;li&gt;Thinking requires a large investment of resources for an uncertain outcome (understanding) and risk-averse humans prefer to invest these resources in crossing seemingly achievable &amp;ldquo;knowledge gaps&amp;rdquo; rather than &amp;ldquo;knowledge chasms&amp;rdquo;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;chapter-2-&#34;&gt;Chapter 2&lt;/h3&gt;
+&lt;h3 id=&#34;chapter-2&#34;&gt;Chapter 2&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Experts may be &amp;ldquo;worse&amp;rdquo; at teaching than novices. The &amp;ldquo;expert blind spot effect&amp;rdquo; explains this:
 &lt;ul&gt;
@@ -2360,14 +2360,14 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;section-2-&#34;&gt;Section 2&lt;/h2&gt;
+&lt;h2 id=&#34;section-2&#34;&gt;Section 2&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Major ideas about acquisition, memory retention, mental storage, and overload&lt;/li&gt;
 &lt;li&gt;Learning need not be conscious, we can only think about so much at once&lt;/li&gt;
 &lt;li&gt;We need to develop a vocabulary for learning, and need multiple strategies for learning&lt;/li&gt;
 &lt;li&gt;Challenges: learning styles (i.e. spatial, verbal, kinaesthetic), Mozart effects, multitasking, digital natives, and whether the Internet is really changing how we think&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;section-3-&#34;&gt;Section 3&lt;/h2&gt;
+&lt;h2 id=&#34;section-3&#34;&gt;Section 3&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Self-esteem follows success more often than predicting it&lt;/li&gt;
 &lt;li&gt;Building confidence is still important though: in order to maintain positive views of ourselves we build explanations (I cannot; rather than I did not work hard enough) that help our self esteem but hurt our learning&lt;/li&gt;
@@ -2381,7 +2381,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/mon/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/mon/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-11:30&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Do QSCI HW and prep for TAing&lt;/li&gt;
@@ -2394,7 +2394,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Work on Dirichlet BC code&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did the first half of the QSCI HW, read Ch 1, but did not end up having time to work on the BC code.&lt;/p&gt;
 </description>
     </item>
@@ -2404,7 +2404,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week2/post-1/</link>
       <pubDate>Mon, 30 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week2/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;First real week of the quarter and I am surprise TAing! I also found some frustrating uncommitted code from my Colorado trip which I need to reimplement, but rewriting code is often a way to make it better anyways&amp;hellip;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make all suggested changes to bypass proposal by Wednesday and send to committee&lt;/li&gt;
@@ -2412,7 +2412,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;Do the QSCI hw ahead of time to make sure I&amp;rsquo;ve got it down by Tuesday&lt;/li&gt;
 &lt;li&gt;Rewrite Dirichlet BC code by Friday&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Spent a lot of time on TAing this week, getting back up to speed on the basics of linear regression and model diagnostics. Mostly for myself, I made up a bunch of notes on the 
 &lt;a href=&#34;/courses/qsci-483&#34;&gt;math&lt;/a&gt;
  behind these topics, to cement my own understanding, although the students certainly won&amp;rsquo;t need to know much of that. I made it through the first two chapters of Visible Learning, although I still feel like I need to discuss it with someone to really digest it properly.&lt;/p&gt;
@@ -2456,11 +2456,11 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week1/fri/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week1/fri/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;I might be surprise-TAing next quarter, so I&amp;rsquo;m focusing all my energy on TA prep today. I&amp;rsquo;m going to try to get through the whole UW TA resources page and will be adding notes in 
 &lt;a href=&#34;/post/teaching&#34;&gt;posts&lt;/a&gt;
 .&lt;/p&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;I did that! I also met with Tim the course instructor to outline my responsibilities as a TA and did some editing on the Dirichlet BC code.&lt;/p&gt;
 </description>
     </item>
@@ -2483,7 +2483,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/teaching/taing/</link>
       <pubDate>Fri, 27 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/teaching/taing/</guid>
-      <description>&lt;h2 id=&#34;expectations-&#34;&gt;Expectations&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;expectations&#34;&gt;Expectations&lt;/h2&gt;
 &lt;p&gt;Understand early on what the professors expectations are, in detail&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Am I expected to attend class?&lt;/li&gt;
@@ -2491,7 +2491,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;Am I grading, writing answer keys, giving guest lectures, holding office hours, holding review sessions, leading discussion sections, responding to online questions, communicating from the instructor to the class, etc?&lt;/li&gt;
 &lt;li&gt;Know what the instructor is emphasizing in class&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;demeanor-&#34;&gt;Demeanor&lt;/h2&gt;
+&lt;h2 id=&#34;demeanor&#34;&gt;Demeanor&lt;/h2&gt;
 </description>
     </item>
     
@@ -2535,7 +2535,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;a href=&#34;https://teachingcommons.stanford.edu/resources/teaching/evaluating-students&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;evaluating students&lt;/a&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;grading-&#34;&gt;Grading&lt;/h2&gt;
+&lt;h2 id=&#34;grading&#34;&gt;Grading&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/preparing-to-teach/grading-2&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Grading&lt;/a&gt;
  is really hard. First thing to make clear is that I am using mastery-based (i.e. individual skills) rather than norm-referenced (i.e. relative to each other) grading.&lt;/p&gt;
@@ -2553,7 +2553,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;cheating-&#34;&gt;Cheating&lt;/h2&gt;
+&lt;h2 id=&#34;cheating&#34;&gt;Cheating&lt;/h2&gt;
 &lt;p&gt;How to stop it:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Explain clearly what is and is not allowed&lt;/li&gt;
@@ -2621,7 +2621,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;li&gt;course schedule&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Quick (ungraded) quiz to gauge background? Self-reported pre-assessment of background knowledge? Resources for filling in gaps? ``Common Sense Inventory:&amp;rsquo;&amp;rsquo; determine whether 15 statements related to course content are true or false?&lt;/li&gt;
+&lt;li&gt;Quick (ungraded) quiz to gauge background? Self-reported pre-assessment of background knowledge? Resources for filling in gaps? ``Common Sense Inventory:&#39;&#39; determine whether 15 statements related to course content are true or false?&lt;/li&gt;
 &lt;li&gt;Homework 0: voluntary/mandatory office hour?&lt;/li&gt;
 &lt;li&gt;If there is time left to teach, model what the rest of the course will be like. Think about whether registration has stabilized and whether to teach foundational material, or just interesting stuff&lt;/li&gt;
 &lt;/ul&gt;
@@ -2634,7 +2634,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/engaging-students-in-learning/promoting-student-engagement-through-active-learning&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Active learning&lt;/a&gt;
  is good. Give students a chance to practice that thing they just learned&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;office-hours-&#34;&gt;Office Hours&lt;/h2&gt;
+&lt;h2 id=&#34;office-hours&#34;&gt;Office Hours&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Most important thing is getting people to come in the first place&lt;/li&gt;
 &lt;li&gt;Give feedback on what&amp;rsquo;s been done so far and offer direction and general guidance&lt;/li&gt;
@@ -2682,9 +2682,9 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;/li&gt;
 &lt;li&gt;In this way everything done in the course is intentional and working towards an established goal&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;who-are-my-students-&#34;&gt;Who Are My Students&lt;/h2&gt;
+&lt;h2 id=&#34;who-are-my-students&#34;&gt;Who Are My Students&lt;/h2&gt;
 &lt;p&gt;Before I even get to learning goals, also consider: who are my students? Why are they taking my course? What can I expect that they already know? What range of backgrounds might the have? What do I expect them to struggle with?&lt;/p&gt;
-&lt;h2 id=&#34;what-are-my-learning-goals-&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
+&lt;h2 id=&#34;what-are-my-learning-goals&#34;&gt;What Are My Learning Goals&lt;/h2&gt;
 &lt;p&gt;
 &lt;a href=&#34;https://teaching.uncc.edu/sites/teaching.uncc.edu/files/media/files/file/GoalsAndObjectives/Bloom.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Blooms Taxonomy&lt;/a&gt;
 :&lt;/p&gt;
@@ -2702,7 +2702,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;p&gt;Both during the course and at the end of the course. Designing 
 &lt;a href=&#34;/post/teaching/assessment&#34;&gt;assessments&lt;/a&gt;
  is a whole separate can of worms.&lt;/p&gt;
-&lt;h2 id=&#34;how-will-i-achieve-those-goals-&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
+&lt;h2 id=&#34;how-will-i-achieve-those-goals&#34;&gt;How Will I Achieve Those Goals&lt;/h2&gt;
 &lt;p&gt;Before I get into the nitty-gritty of lesson planning, etc, now is also a good time to write a 
 &lt;a href=&#34;https://www.washington.edu/teaching/topics/preparing-to-teach/designing-your-course-and-syllabus&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;syllabus&lt;/a&gt;
 . Once I&amp;rsquo;ve done that I think I personally will benefit from calendaring. This will help me remember little things like: two weeks from today is the exam, I need to write it so I can tell students about format, etc.&lt;/p&gt;
@@ -2714,7 +2714,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week1/thurs/</link>
       <pubDate>Thu, 26 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week1/thurs/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Fix Anaconda errors and start animal movement MCMC running overnight&lt;/li&gt;
@@ -2727,7 +2727,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Think more about second-order inclusion probabilities&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Fixed Anaconda error, then discovered issue where some code was not pushed to GitHub. Unable to find the original code (mostly my implementation of Dirichlet BCs), but re-writing it should be a useful (if annyoing) exercise.&lt;/p&gt;
 &lt;p&gt;Started reading UW resources and made several 
 &lt;a href=&#34;/post/teaching&#34;&gt;posts&lt;/a&gt;
@@ -2819,7 +2819,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
       <link>/post/notebook/2020/spring/week1/wedn/</link>
       <pubDate>Wed, 25 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week1/wedn/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Make schedule for reading about teaching, and begin browsing UW resources&lt;/li&gt;
@@ -2832,7 +2832,7 @@ This system is ubiquitous around the world. However, about 75% of classtime in a
 &lt;ul&gt;
 &lt;li&gt;Refamiliarize myself with animal movement case study&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Schedule:
 The UW resource page has 20 sections. The CMU page has 16 sections, and the Visual Learning book has 31 chapters. I plan on reading roughly 1 section, 1 section, and 2 chapters each week, starting next week.&lt;/p&gt;
 &lt;p&gt;Proposal:
@@ -2848,9 +2848,9 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/outline/</guid>
       <description>&lt;p&gt;In this post I will outline the structure of my virtual lab notebook, for use during this time of woe. This is necessitated by the current COVID-19 work-from-home crisis, but will be helpful in general as a tool for accountability and productivity.&lt;/p&gt;
-&lt;h2 id=&#34;post-frequency-&#34;&gt;Post Frequency&lt;/h2&gt;
+&lt;h2 id=&#34;post-frequency&#34;&gt;Post Frequency&lt;/h2&gt;
 &lt;p&gt;I will post to the lab notebook at the beginning and end of each year, quarter, and week. I will also post to the lab notebook once per day.&lt;/p&gt;
-&lt;h2 id=&#34;post-content-&#34;&gt;Post Content&lt;/h2&gt;
+&lt;h2 id=&#34;post-content&#34;&gt;Post Content&lt;/h2&gt;
 &lt;p&gt;In each multi-day post I will outline my goals for the current time period, along with a self-imposed due date, and (particularly for yearly and quarterly posts) a rough outline of intermediate steps. Then at the end of the period I will summarize my progress toward those goals as well as any major progress in addition to those goals that I undertook in that time.&lt;/p&gt;
 &lt;p&gt;In each daily post I will outline what my goals were for the day, along with what I actually spent my time on. I will post mathematical and scientific outputs such as documents and plots that I produced that day, and reflect on my productivity and time management.&lt;/p&gt;
 </description>
@@ -2864,7 +2864,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
       <description>&lt;p&gt;I am just starting this lab notebook now in March 2020, so almost a third of the year is behind me already. That said, one of my big goals for the year, submitting my 
 &lt;a href=&#34;content/project/dam-passage-time&#34;&gt;dam passage&lt;/a&gt;
  paper to Proc B, I have already accomplished! Hooray! Hopefully I can continue the momentum now that COVID-19 has well and truly set in.&lt;/p&gt;
-&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;I have a tendency to be overly ambitious with my goal timelines. I think I&amp;rsquo;m okay with that for now, but I&amp;rsquo;m trying to temper my expectations a little bit. I&amp;rsquo;m hopeful that with my dam passage project behind me I can focus my time and make more steady progress on my other projects.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Complete my bypass to the PhD track by April 1
@@ -2918,7 +2918,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
       <link>/post/notebook/2020/spring/week1/tues/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week1/tues/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure&lt;/li&gt;
@@ -2931,7 +2931,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
 &lt;ul&gt;
 &lt;li&gt;Refamiliarize myself with animal movement case study&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Morning: 9-12&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure&lt;/li&gt;
@@ -2965,7 +2965,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
       <link>/post/notebook/2020/spring/week1/post-1/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/week1/post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Part of the week has already gone by, but I&amp;rsquo;ll go ahead and fill in some meta goals anyway&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Set up virtual lab notebook and COVID-19 accountability structure by Tuesday&lt;/li&gt;
@@ -2975,7 +2975,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
 &lt;li&gt;Refamiliarize myself with animal movement case study By Thursday&lt;/li&gt;
 &lt;li&gt;Complete all references for optimal design chapter in bypass proposal by Friday&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did all these things! Hooray!&lt;/p&gt;
 </description>
     </item>
@@ -2985,7 +2985,7 @@ Looked over the code, tried to re-run it. Got an Anaconda version conflict that 
       <link>/post/notebook/2020/spring/spring-post-1/</link>
       <pubDate>Tue, 24 Mar 2020 00:00:00 +0000</pubDate>
       <guid>/post/notebook/2020/spring/spring-post-1/</guid>
-      <description>&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+      <description>&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;p&gt;Much of this is copied and pasted from my goals for the year:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Complete my bypass to the PhD track by April 1&lt;/li&gt;
@@ -3132,6 +3132,7 @@ Three
 &lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
 &lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
 &lt;/ul&gt;
+
 &lt;/aside&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
@@ -3379,7 +3380,7 @@ tags:&lt;/li&gt;
 title: &amp;lsquo;Lab Notebook: Sp20 Week 4&amp;rsquo;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;goals-&#34;&gt;Goals&lt;/h2&gt;
+&lt;h2 id=&#34;goals&#34;&gt;Goals&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Need to debug and write up the animal movement case study, as I have fallen behind on my goal for that&lt;/li&gt;
 &lt;li&gt;Need to import pollen data and set up a preliminary model for it&lt;/li&gt;
@@ -3389,7 +3390,7 @@ title: &amp;lsquo;Lab Notebook: Sp20 Week 4&amp;rsquo;&lt;/li&gt;
 &lt;li&gt;Find large spatial dataset for optimal sampling design&lt;/li&gt;
 &lt;li&gt;Need to write up NSF GRF progress report&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;reality-&#34;&gt;Reality&lt;/h2&gt;
+&lt;h2 id=&#34;reality&#34;&gt;Reality&lt;/h2&gt;
 &lt;p&gt;Did debug and partially write up the animal movement case study but there is still more writing/background to do there. Found a problem with the pollen data so that also will take longer than expected. Worked a little bit on the SSN modeling and found a matrix formulation for it (another DT lyapunov equation) although in the end it&amp;rsquo;ll probably all be finite difference anyways. Took notes on VL Ch 3-6, and decided with Sándor that we will just do a purely synthetic dataset to start for the sampling design. Wrote up NSF progress report, although still waiting on Andrew to sign off.&lt;/p&gt;
 </description>
     </item>
