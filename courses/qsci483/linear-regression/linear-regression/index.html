@@ -637,9 +637,9 @@ The Model Linear regression is based upon the equation $$ y_i \sim N(X\beta,\sig
 
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-model-">The Model</a>
+    <li><a href="#the-model">The Model</a>
       <ul>
-        <li><a href="#fitting-">Fitting</a></li>
+        <li><a href="#fitting">Fitting</a></li>
         <li><a href="#important-quantities">Important Quantities</a></li>
       </ul>
     </li>
@@ -663,7 +663,7 @@ The Model Linear regression is based upon the equation $$ y_i \sim N(X\beta,\sig
  document to clarify any confusing notation, and check out my 
 <a href="/courses/qsci483/linear-regression/simple-linear-regression">simple linear regression</a>
  document if you would like a slightly simpler analysis to start off with. This document will charge right into matrix notation from the start.</p>
-<h2 id="the-model-">The Model</h2>
+<h2 id="the-model">The Model</h2>
 <p>Linear regression is based upon the equation
 $$
 y_i \sim N(X\beta,\sigma^2)
@@ -674,8 +674,8 @@ y_i &amp; \sim X\beta + \epsilon_i \\<br>
 \epsilon_i &amp; \sim N(0,\sigma^2)
 \end{align*}
 where the $\epsilon_i$ are iid. In the context of regression, it is important to remember that: $E[y_i] = X\beta$ and $E[\epsilon_i] = 0$. We will assume that there are $n$ data points and $k$ predictors. This $\beta$ is a $k\times 1$ vector, $X$ is a $n\times k$ matrix and $y$ and $\epsilon$ are $n\times 1$ vectors.</p>
-<h3 id="fitting-">Fitting</h3>
-<h4 id="objective-function-">Objective Function</h4>
+<h3 id="fitting">Fitting</h3>
+<h4 id="objective-function">Objective Function</h4>
 <p>To fit a simple linear regression we choose a measure of fit: least squares. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using the $1\times k$ vector $x_i$ of predictors for data point $i$:
 $$
 \hat{y}_i = x_i\hat{\beta}.
@@ -702,7 +702,7 @@ We can expand this quadratic equation as
 f(\hat{\beta})
 &amp; = y&rsquo;y - y&rsquo;X\hat{\beta} - \hat{\beta}&lsquo;X&rsquo;y + \hat{\beta}&lsquo;X&rsquo;X\hat{\beta}.
 \end{align*}</p>
-<h4 id="optimization-">Optimization</h4>
+<h4 id="optimization">Optimization</h4>
 <p>From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to each $\beta_i$, to find the minimum sum of squared residuals (the <em>least squares</em>). So let us take the partial derivative with respect to a particular coefficient:
 \begin{align*}
 \dfrac{\partial f}{ \partial \hat{\beta}_j}
@@ -733,13 +733,13 @@ We can derive this same equation in fewer steps using the more complex matrix ca
 \dfrac{\partial f}{ \partial \hat{\beta}}
 &amp; = \dfrac{\partial }{ \partial \hat{\beta}}\left(y&rsquo;y - y&rsquo;X\hat{\beta} - \hat{\beta}&lsquo;X&rsquo;y + \hat{\beta}&lsquo;X&rsquo;X\hat{\beta}\right) \\<br>
 &amp; = - \dfrac{\partial }{ \partial \hat{\beta}}\left(y&rsquo;X\hat{\beta}\right) - \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&lsquo;X&rsquo;y\right) + \dfrac{\partial }{ \partial \hat{\beta}}\left(\hat{\beta}&lsquo;X&rsquo;X\hat{\beta}\right) \\<br>
-&amp; = -y&rsquo;X-(X&rsquo;y)&lsquo;+\hat{\beta}&lsquo;X&rsquo;X + (X&rsquo;X\hat{\beta})&rsquo; \\<br>
+&amp; = -y&rsquo;X-(X&rsquo;y)'+\hat{\beta}&lsquo;X&rsquo;X + (X&rsquo;X\hat{\beta})&rsquo; \\<br>
 &amp; = -2(X&rsquo;y - X&rsquo;X\hat{\beta})&rsquo; \\<br>
 &amp; = 0.
 \end{align*}</p>
 <h3 id="important-quantities">Important Quantities</h3>
 <p>Now we have shown that the ordinary least squares estimator for $\beta$ is $(X&rsquo;X)^{-1}X&rsquo;y$. Using this we may calculate all sorts of other things.</p>
-<h4 id="predicted-values-">Predicted Values</h4>
+<h4 id="predicted-values">Predicted Values</h4>
 <p>The predicted values are
 \begin{align*}
 \hat{y}
@@ -747,29 +747,29 @@ We can derive this same equation in fewer steps using the more complex matrix ca
 &amp; = X(X&rsquo;X)^{-1}X&rsquo;y \\<br>
 &amp; = Hy.
 \end{align*}
-Here we have defined the &ldquo;hat matrix,&rdquo; $H = X(X&rsquo;X)^{-1}X'$. This is a useful matrix in linear regression, which maps the data to its predicted values. This is sometimes also called the projection matrix $P$, since it projects the data onto a lower-dimensional linear space. It is sometimes also called the influence matrix. It has two nice properties which we will use in a moment: it is symmetric and idempotent. This means $H'=H$ and $H^2 = H&rsquo;H = H$. We can see this by calculating:
+Here we have defined the &ldquo;hat matrix,&rdquo; $H = X(X&rsquo;X)^{-1}X&rsquo;$. This is a useful matrix in linear regression, which maps the data to its predicted values. This is sometimes also called the projection matrix $P$, since it projects the data onto a lower-dimensional linear space. It is sometimes also called the influence matrix. It has two nice properties which we will use in a moment: it is symmetric and idempotent. This means $H&rsquo;=H$ and $H^2 = H&rsquo;H = H$. We can see this by calculating:
 \begin{align*}
 H&rsquo; &amp; = (X(X&rsquo;X)^{-1}X&rsquo;)&rsquo; \\<br>
-&amp; = X(X&rsquo;X)^{-1}X&rsquo; \\<br>
+&amp; = X(X&rsquo;X)^{-1}X' \\<br>
 &amp; = H \\<br>
-H^2 &amp; = (X(X&rsquo;X)^{-1}X&rsquo;)(X(X&rsquo;X)^{-1}X&rsquo;) \\<br>
-&amp; = X(X&rsquo;X)^{-1}(X&rsquo;X)(X&rsquo;X)^{-1}X&rsquo; \\<br>
-&amp; = X(X&rsquo;X)^{-1}X&rsquo; \\<br>
+H^2 &amp; = (X(X&rsquo;X)^{-1}X')(X(X&rsquo;X)^{-1}X') \\<br>
+&amp; = X(X&rsquo;X)^{-1}(X&rsquo;X)(X&rsquo;X)^{-1}X' \\<br>
+&amp; = X(X&rsquo;X)^{-1}X' \\<br>
 &amp; = H
 \end{align*}</p>
-<h4 id="residuals-">Residuals</h4>
+<h4 id="residuals">Residuals</h4>
 <p>The residuals are
 \begin{align*}
 \hat{\epsilon}
 &amp; = y-\hat{y} \\<br>
 &amp; = y-Hy \\<br>
 &amp; = (I-H)y \\<br>
-&amp; = (I-X(X&rsquo;X)^{-1}X&rsquo;)y \\<br>
+&amp; = (I-X(X&rsquo;X)^{-1}X')y \\<br>
 &amp; = My
 \end{align*}
 Here we have defined the &ldquo;residual maker&rdquo; matrix, which can also be called the residual operator. This matrix takes the data and gives you the residuals of the model. It also inherits symmetry and idempotency from the hat matrix, since:
 \begin{align*}
-M&rsquo; &amp; = (I-H)&rsquo; \\<br>
+M' &amp; = (I-H)' \\<br>
 &amp; = I-H \\<br>
 M^2 &amp; = (I-H)(I-H) \\<br>
 &amp; = I - 2H + H^2 \\<br>
@@ -957,7 +957,7 @@ With all of this put together we now have the tools to analyze the
     
     
     
-    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+    <script src="/js/academic.min.dd3bd320b283a236b60c707f537377b7.js"></script>
 
     
 

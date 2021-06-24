@@ -639,8 +639,8 @@ We estimate the residual variance using the equation $$\hat{\sigma}^2 = \frac{1}
   <ul>
     <li>
       <ul>
-        <li><a href="#unbiasedness-">Unbiasedness</a></li>
-        <li><a href="#distribution-">Distribution</a></li>
+        <li><a href="#unbiasedness">Unbiasedness</a></li>
+        <li><a href="#distribution">Distribution</a></li>
       </ul>
     </li>
   </ul>
@@ -660,7 +660,7 @@ We estimate the residual variance using the equation $$\hat{\sigma}^2 = \frac{1}
           <div class="article-style">
             <p>A standard error is the estimated standard deviation $\hat{\sigma}$ for some variable. The residual standard error for linear regression is our estimate of the standard deviation of the noise $\epsilon$. Recall that we assume the noise is independent and heteroskedastic. This is important since it means we only need to estimate one single parameter for all of the noise variables.</p>
 <p>We estimate the residual variance using the equation $$\hat{\sigma}^2 = \frac{1}{n-k}\sum \hat{\epsilon}_i^2.$$ You can think of the $n-k$ term as accounting for the fact that we have estimated $k$ parameters before making this estimate. Recall that we fit our model by minimizing the sum of squared residuals. So we&rsquo;ve actually optimized this model to minimize exactly $\sum \hat{\epsilon}_i^2$. The more parameters we have to work with the better that optimization will be. So we would probably get an answer that was too small if we just calculated the mean $$\frac{1}{n}\sum \hat{\epsilon}_i^2.$$ Dividing by a smaller number $n-k$ accounts for this, making $\hat{\sigma}^2$ an unbiased estimator of the residual variance.</p>
-<h3 id="unbiasedness-">Unbiasedness</h3>
+<h3 id="unbiasedness">Unbiasedness</h3>
 <p>We can see why this is by calculating the expectation of $\hat{\sigma}^2$. We won&rsquo;t even both trying to avoid matrices in this derivation:
 \begin{align*}
 E[\hat{\sigma}^2]
@@ -674,7 +674,7 @@ where we have eliminated the cross terms since $E[\epsilon]=0$. Now we can calcu
 \begin{align*}
 X&rsquo;MX
 &amp; = X&rsquo;(I-H)X \\<br>
-&amp; = X&rsquo;X - X&rsquo;(X(X&rsquo;X)^{-1}X&rsquo;)X \\<br>
+&amp; = X&rsquo;X - X'(X(X&rsquo;X)^{-1}X')X \\<br>
 &amp; = X&rsquo;X - X&rsquo;X \\<br>
 &amp; = 0
 \end{align*}
@@ -687,7 +687,7 @@ E[\hat{\sigma}^2]
 &amp; = \frac{\sigma^2}{n-k}\mbox{tr}[I-H].
 \end{align*}
 Now, so long as $X$ is full rank (i.e. there are no redundant predictors) the hat matrix has trace $k$. This can be shown using complicated eigenvalue proofs that you can find on Google. Thus $\mbox{tr}[I-H] = \mbox{tr}[I]-\mbox{tr}[H] = n-k$. Thus indeed the $n-k$ term drops out and we find that $\hat{\sigma}^2$ is an unbiased estimator of the true residual variance.</p>
-<h3 id="distribution-">Distribution</h3>
+<h3 id="distribution">Distribution</h3>
 <p>In fact, we have done more than show it is unbiased. Much of the algebra that we did actually did not depend on the outer expectation. We actually showed more generally that $$\hat{\sigma}^2 = \frac{1}{n-k}\epsilon&rsquo;M\epsilon.$$ This is useful because it is a <em>quadratic form</em>, as we described above. Quadratic forms over multivariate normal random vectors have nice properties which we will now derive. Specifically we will show that: $$\hat{\sigma}^2 \sim \frac{\sigma^2}{n-k}\chi^2_{n-k}.$$</p>
 <p>This proof will involve some additional use of linear algebraic terms and assumptions. Specifically, we will use the fact that a symmetric matrix $A$ can be decomposed into $A = PDP^T$ for an <em>orthogonal</em> (i.e. $P^2 = I$) matrix $P$ and a diagonal matrix $D$. Orthogonal matrices are nice because $\tilde{z} = Pz$, the product of an orthogonal matrix with a standard normal vector, is still a standard normal vector.</p>
 <p>We will also use the fact that if $A$ is symmetric <em>and</em> idempotent then all the diagonal entries are either 0 or 1. We will further use the fact that the number of entries that are 1 is equal to the trace of $A$. Since $M$ is symmetric and idempotent we will use all these properties to show:
@@ -878,7 +878,7 @@ Now, so long as $X$ is full rank (i.e. there are no redundant predictors) the ha
     
     
     
-    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+    <script src="/js/academic.min.dd3bd320b283a236b60c707f537377b7.js"></script>
 
     
 

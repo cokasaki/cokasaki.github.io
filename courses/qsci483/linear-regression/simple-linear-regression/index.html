@@ -639,9 +639,9 @@ The Model Simple Linear Regression is based upon the equation $$ y_i \sim N(\bet
 
       <nav id="TableOfContents">
   <ul>
-    <li><a href="#the-model-">The Model</a>
+    <li><a href="#the-model">The Model</a>
       <ul>
-        <li><a href="#fitting-">Fitting</a></li>
+        <li><a href="#fitting">Fitting</a></li>
       </ul>
     </li>
   </ul>
@@ -662,7 +662,7 @@ The Model Simple Linear Regression is based upon the equation $$ y_i \sim N(\bet
             <p>In this document I will outline the math used in the analysis of a simple linear regression model. Make sure to check out my 
 <a href="/courses/qsci483/notation">notation</a>
  document to clarify any confusing notation.</p>
-<h2 id="the-model-">The Model</h2>
+<h2 id="the-model">The Model</h2>
 <p>Simple Linear Regression is based upon the equation
 $$
 y_i \sim N(\beta_0 + \beta_1 x_i,\sigma^2)
@@ -673,8 +673,8 @@ y_i &amp; \sim \beta_0 + \beta_1 x_i + \epsilon_i \\<br>
 \epsilon_i &amp; \sim N(0,\sigma^2)
 \end{align*}
 where the $\epsilon_i$ are iid. It is important to remember that the expectations, or means, of these variables are: $E[y_i] = \beta_0 + \beta_1 x_i$ and $E[\epsilon_i] = 0$. We will assume that there are $n$ data points and only 1 predictor. This is what makes it _simple_ linear regression. In more general linear regression models you have more than 1 predictor. In multivariate linear regression models you have more than one dependent variable as well. In addition to the predictor variable, we also have an intercept, or mean term, which can be thought of as a second predictor.</p>
-<h3 id="fitting-">Fitting</h3>
-<h4 id="objective-function-">Objective Function</h4>
+<h3 id="fitting">Fitting</h3>
+<h4 id="objective-function">Objective Function</h4>
 <p>To fit a simple linear regression we first must choose a measure of fit. Here we will choose least squares, since this corresponds to 
 <a href="/courses/qsci483/linear-regression/properties">maximum likelihood esitmation</a>
  in this model. This means we are looking for the parameter estimates that minimize the sum of squared residuals. A residual is calculated by the difference between $y_i$ and $\hat{y}_i$, the value predicted by our fitted model. We can calculate $\hat{y}_i$ using our predictor $x_i$ for data point $i$ along with estimated coefficients $\hat{\beta}_0$ and $\hat{\beta}_1$:
@@ -687,7 +687,7 @@ f(\hat{\beta})
 &amp; = \sum_{i=1}^n (\mbox{residual})^2 \\<br>
 &amp; = \sum_{i=1}^n (y_i - \hat{\beta}_0 - \hat{\beta}_1)^2 \\<br>
 \end{align*}</p>
-<h4 id="optimization-">Optimization</h4>
+<h4 id="optimization">Optimization</h4>
 <p>From calculus, we can use the fact that the extrema (minimums and maximums) of a function occur when the partial derivatives of that function are equal to zero. So we want to take the partial derivatives of $f$ with respect to both $\beta_0$ and $\beta_1$, to find the minimum sum of squared residuals (the <em>least squares</em>). So let us take the partial derivative with respect to $\hat{\beta}_0$:
 \begin{align*}
 \dfrac{\partial f}{ \partial \hat{\beta}_0} }
@@ -922,7 +922,7 @@ I encourage you to try doing the same calculation with $S_{xx}$: you will find t
     
     
     
-    <script src="/js/academic.min.0630fec5958cb075a5a38f042b3ddde6.js"></script>
+    <script src="/js/academic.min.dd3bd320b283a236b60c707f537377b7.js"></script>
 
     
 
