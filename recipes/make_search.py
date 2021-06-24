@@ -30,7 +30,7 @@ button_str = "        <button id='{name}'>{name}</button>"
 cat_buttons  = "\n".join([button_str.format(name=cat) for cat in cats])
 diet_buttons = "\n".join([button_str.format(name=diet) for diet in diets])
 cuis_buttons = "\n".join([button_str.format(name=cuisine) for cuisine in cuisines])
-misc_buttons = "\n".join([button_str.format(name=misc) for misc in misc])
+misc_buttons = "\n".join([button_str.format(name=m) for m in misc])
 
 def read_first_line(filename):
     f = open(filename,"r")
